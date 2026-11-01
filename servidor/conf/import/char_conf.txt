@@ -1,0 +1,5 @@
+// NNGO
+server_name: Ragnaruto
+start_point_pre: job_sage,115,97
+start_items_pre: 1201,1,2
+start_zeny: 0

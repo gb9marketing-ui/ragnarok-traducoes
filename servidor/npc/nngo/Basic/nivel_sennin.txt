@@ -1,0 +1,39 @@
+-	script	LevelSennin	-1,{
+
+OnInit:
+
+setArray .SenninLevel[0],
+1,84,110,143,186,242,316,411,535,696,
+905,1178,1532,1991,2589,3365,4375,5688,7395,9539,
+10494,11638,13966,16210,19452,23343,28012,33615,40339,48409,
+53250,58576,64433,70877,77972,85767,94344,103779,114157,125720,
+128084,129365,130658,131965,133284,134367,135710,137067,138438,139822,
+141220,141220,141220,141221,141221,141221,141221,141222,141222,141222,
+141222,141223,141223,141223,141223,141224,141224,141224,141224,141225,
+141225,141225,141225,141226,141226,141226,141226,141227,141227,141227,
+141227,141228,141228,141228,141228,141229,141229,141229,141229,141230,
+141230,141230,141230,141231,141231,141231,141231,141232,141232,141232;
+
+set .MaxLvlSennin, getarraysize(.SenninLevel);
+set .init, 1;
+
+
+OnNPCKillEvent:
+
+//if(fuu_basico != 1) {end;}
+//if(treino_fuu == 0) {end;}
+
+if(!.init) donpcevent strnpcinfo(3)+"::OnInit";
+
+if(killedrid == 1618) {set SenninExp, SenninExp + 120; dispbottom "[Nível Sennin] 120 pontos de EXP Sennin obtidos ["+SenninExp+" / "+.SenninLevel[SenninLvl]+"]";}
+if(.SenninLevel[SenninLvl] <= SenninExp && SenninLvl < .MaxLvlSennin) {
+set SenninLvl, SenninLvl + 1;
+dispbottom "[Level up] Seu nível Sennin agora é " + SenninLvl;
+set SenninExp,0;
+if(SenninLvl == .MaxLvlSennin) {
+dispbottom "Seu fuuinjutsu está no level máximo.";
+}
+end;
+}
+
+}

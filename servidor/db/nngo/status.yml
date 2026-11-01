@@ -1,0 +1,22 @@
+# NNGO: status proprios
+Header:
+  Type: STATUS_DB
+  Version: 4
+
+Body:
+  - Status: Superslowapsd
+    Icon: EFST_BLANK
+    DurationLookup: GODD_SPLASPD
+    CalcFlags:
+      Aspd: true
+    Flags:
+      NoSave: true
+      Debuff: true
+  - Status: Superslowwalk
+    Icon: EFST_BLANK
+    DurationLookup: GODD_SPLSWALK
+    CalcFlags:
+      Speed: true
+    Flags:
+      NoSave: true
+      Debuff: true

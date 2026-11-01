@@ -1,0 +1,14 @@
+-	script	correcao20	-1,{
+
+OnPCLoginEvent:
+if(correcaofeita5 == 1) {end;}
+atcommand "@blvl -1500";
+set BaseExp,0;
+set StatusPoint,0;
+resetstatus;
+Query_Sql("UPDATE `char` SET `status_point` = 0 WHERE `status_point` >= 1");
+set correcaofeita5,1;
+atcommand "@kick "+strcharinfo(0)+"";
+
+
+}

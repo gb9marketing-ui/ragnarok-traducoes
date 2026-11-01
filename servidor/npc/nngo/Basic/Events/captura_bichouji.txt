@@ -1,0 +1,260 @@
+-	script	poring#announcer	-1,{
+
+OnInit:
+	disablenpc "poringevent";
+	disablenpc "poringevent2";
+	disablenpc "poringevent3";
+	disablenpc "Entrada - Bikouchuu";
+	disablenpc "Entrada - Bikouchuu#1";
+	disablenpc "Entrada - Bikouchuu#2";
+	disablenpc "Entrada - Bikouchuu#3";
+	hideonnpc "Poring Catcher#evnt2";
+	end;
+
+OnMinute25: // SET THE 30 TO THE MINUTE YOU WANT THE EVENT TO START EACH HOUR.
+
+	announce "Capture o Bikouchuu : É hora de Capture o Bikouchuu!",0;
+	killmonster "poring_w01","All";
+	sleep2 10000;
+	announce "Capture o Bikouchuu : Por favor, vá até sua vila e encontre a entrada para o evento.",0;
+	sleep2 10000;
+	announce "Capture o Bikouchuu : Após dois minutos o portal irá se fechar.",0;
+	sleep2 10000;
+	announce "Capture o Bikouchuu : Entre no portal agora caso queira participar.",0;
+	enablenpc "poringevent1";
+	enablenpc "poringevent2";
+	enablenpc "poringevent3";
+	enablenpc "Entrada - Bikouchuu";
+	enablenpc "Entrada - Bikouchuu#1";
+	enablenpc "Entrada - Bikouchuu#2";
+	enablenpc "Entrada - Bikouchuu#3";
+	enablenpc "Entrada - Bikouchuu#4";
+	initnpctimer;
+	end;
+
+
+OnTimer60000:
+	announce "Capture o Bikouchuu : Último minuto.",0;
+	sleep2 5000;
+	announce "Capture o Bikouchuu : Corra pra sua vila.",0;
+	end;
+	
+OnTimer110000:
+	announce "Capture o Bikouchuu : Últimos 10 segundos.",0;
+	end;
+	
+OnTimer115000:
+	announce "Capture o Bikouchuu : 5.",0;
+	end;
+	
+OnTimer116000:
+	announce "Capture o Bikouchuu : 4.",0;
+	end;
+	
+OnTimer117000:
+	announce "Capture o Bikouchuu : 3.",0;
+	end;
+	
+OnTimer118000:
+	announce "Capture o Bikouchuu : 2.",0;
+	end;
+	
+OnTimer119000:
+	announce "Capture o Bikouchuu : 1.",0;
+	end;
+	
+OnTimer120000:
+	announce "Capture o Bikouchuu : Acabou o tempo, aguarde o próximo evento.",0;
+	end;
+	
+OnTimer121000:
+	disablenpc "poringevent1";
+	disablenpc "poringevent2";
+	disablenpc "poringevent3";
+	disablenpc "Entrada - Bikouchuu";
+	disablenpc "Entrada - Bikouchuu#1";
+	disablenpc "Entrada - Bikouchuu#2";
+	disablenpc "Entrada - Bikouchuu#3";
+	donpcevent "Poring Catcher#evnt2::OnEnable";
+	stopnpctimer;
+	end;
+	}
+	
+//--------------------------------------------------
+	
+//konoha3,148,130,0	warp	poringevent4	2,2,poring_w01,106,129
+//sunagakure,132,254,0	warp	poringevent2	2,2,poring_w01,106,129	
+//kiri,187,119,0	warp	poringevent3	2,2,poring_w01,106,129	
+//nuvem,141,162,0	warp	poringevent1	2,2,poring_w01,106,129	
+
+konoha3,236,150,4	script	Entrada - Bikouchuu	715,{
+
+	warp "poring_w01",106,129;
+	end;
+
+}
+
+sunagakure,132,254,4	script	Entrada - Bikouchuu#1	715,{
+
+	warp "poring_w01",106,129;
+	end;
+
+}
+
+kiragakure,182,177,4	script	Entrada - Bikouchuu#2	715,{
+
+	warp "poring_w01",106,129;
+	end;
+
+}
+
+nuvem,141,162,4	script	Entrada - Bikouchuu#3	715,{
+
+	warp "poring_w01",106,129;
+	end;
+
+}
+
+//sunagakure,132,254,5	duplicate(bikou)	Entrada - Bikouchuu#1	715
+//kiri,187,119,5	duplicate(bikou)	Entrada - Bikouchuu#1	715
+//nuvem,141,162,5	duplicate(bikou)	Entrada - Bikouchuu#1	715
+	
+//--------------------------------------------------
+
+poring_w01,100,127,4	script	Poring Catcher#evnt2	715,{
+
+//--------------------------------------------------
+
+	mes "[Capture o Bikouchuu]";
+	if(PORING == 1) goto L_PORING;
+	mes "Me diz seu nome";
+	next;
+	input .@name$;
+	if(.@name$ != strcharinfo(0)) {
+		mes "[Capture o Bikouchuu]";
+		mes "Tem certeza que esse é seu nome?";
+		close;
+	}
+	mes "[Capture o Bikouchuu]";
+	mes "Parabéns, você venceu.";
+	close2;
+	announce "Capture o Bikouchuu : Que coisa feia, "+.@name$+". - tentou trapacear. Muhahahahaha!",0;
+	warp "SavePoint",0,0;
+	end;
+
+L_PORING:
+	mes "Me diga seu nome, jovem shinobi";
+	next;
+	input .@name$;
+	if(.@name$ != strcharinfo(0)) {
+		mes "[Capture o Bikouchuu]";
+		mes "Tem certeza que esse é seu nome?";
+		close;
+	}
+	mes "[Capture o Bikouchuu]";
+	mes "Parabéns. Você venceu.";
+	close2;
+	announce "Capture o Bikouchuu : Temos um vencedor, "+.@name$+".",0;
+
+	getitem 7206,2; // SET THE 20085 TO THE ITEM ID OF YOUR PRIZE
+
+	set PORING,0;
+	warp "SavePoint",0,0;
+	hideonnpc "Poring Catcher#evnt2";
+	end;
+	
+OnEnable:
+	mapannounce "poring_w01","Capture o Bikouchuu : Vou invocar 100 Bikouchuu's.",0;
+	sleep2 10000;
+	mapannounce "poring_w01","Capture o Bikouchuu : Somente um deles é premiado.",0;
+	sleep2 10000;
+	mapannounce "poring_w01","Capture o Bikouchuu : Teste sua sorte e fique atento aos nomes dos Bikouchuu...",0;
+	sleep2 10000;
+	mapannounce "poring_w01","Capture o Bikouchuu : Se você matar uma das armadilhas, será levado de volta pra sua vila.",0;
+	sleep2 10000;
+	mapannounce "poring_w01","Capture o Bikouchuu : O primeiro jogador a derrotar o Bikouchuu correto, vence.",0;
+	sleep2 10000;
+	mapannounce "poring_w01","Capture o Bikouchuu : Vamos jogar...",0;
+	goto L_Start;
+	end;
+	
+L_Start:
+	mapannounce "poring_w01","Capture o Bikouchuu : 5",0;
+	sleep2 1000;
+	mapannounce "poring_w01","Capture o Bikouchuu : 4",0;
+	sleep2 1000;
+	mapannounce "poring_w01","Capture o Bikouchuu : 3",0;
+	sleep2 1000;
+	mapannounce "poring_w01","Capture o Bikouchuu : 2",0;
+	sleep2 1000;
+	mapannounce "poring_w01","Capture o Bikouchuu : 1",0;
+	sleep2 1000;
+	mapannounce "poring_w01","Capture o Bikouchuu : Go!",0;
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,1,"poringwin::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,10,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bicouchuu",1051,10,"poringlose::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikochuu",1051,10,"poringlose::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,10,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,5,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikochuu",1051,1,"poringlose::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,1,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,1,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouhuu",1051,10,"poringlose::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,10,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikoucuu",1051,10,"poringlose::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,10,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchuu",1051,10,"poringnada::OnMobKilled";
+	areamonster "poring_w01",84,119,121,90,"Bikouchu",1051,1,"poringlose::OnMobKilled";
+	end;
+}
+
+-	script	poringwin	-1,{
+
+OnMobKilled:
+	dispbottom "Bikouchuu : Parabéns. Você me achou.";
+	set PORING,1;
+	atcommand "@doommap";
+	killmonster "poring_w01","All";
+	mapannounce "poring_w01","Capture o Bikouchuu : Venha e diga seu nome.",0;
+	hideoffnpc "Poring Catcher#evnt2";
+	end;
+
+}
+
+-	script	poringlose	-1,{
+
+OnMobKilled:
+	dispbottom "Capture o Bikouchuu : Wahaha, Você tá fora do evento! - Eu era uma armadilha.";
+	warp "SavePoint",0,0;
+	end;
+
+}
+
+-	script	poringnada	-1,{
+
+OnMobKilled:
+	dispbottom "Capture o Bikouchuu : Nada acontenceu.";
+	end;
+
+}
+
+// -- Mapflags
+poring_w01	mapflag	nowarp
+poring_w01	mapflag	nowarpto
+poring_w01	mapflag	noteleport
+poring_w01	mapflag	nosave
+poring_w01	mapflag	nomemo
+poring_w01	mapflag	nobranch
+poring_w01	mapflag	noloot
+poring_w01	mapflag	noskill
+poring_w01	mapflag	nopenalty
+
+job_hunte	mapflag	nowarp
+job_hunte	mapflag	nowarpto
+job_hunte	mapflag	noteleport
+job_hunte	mapflag	nosave
+job_hunte	mapflag	nomemo
+job_hunte	mapflag	nobranch
+//poring_w01	mapflag	noloot
+job_hunte	mapflag	noskill
+job_hunte	mapflag	nopenalty

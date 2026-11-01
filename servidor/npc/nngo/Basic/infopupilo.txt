@@ -1,0 +1,243 @@
+kakashi,77,149,4	script	Sistema de Pupilo	76,{
+
+mes "O sistema de pupilo é bem simples, um jounin poderá recrutar genins de sua vila para seu time, após recrutar, se ambos estiverem no mesmo grupo e mesmo mapa, quando o genin matar um monstro ele receberá o dobro de exp, após o genin chegar ao nível 999, o jounin do time será recompensado com 1 ponto no ranking";
+next;
+mes "O jounin pode recrutar até 3 genins para o time, e poderá dispensar o genin a qualquer momento";
+close;
+
+OnInit:
+	waitingroom "[Informações]",0;
+
+}
+
+//kakashi,122,140,4	script	Semana da Patria	911,{
+
+if(jafalamosp == 1){goto jafalamos;}
+set jafalamosp,0;
+set chapeupatria,0;
+mes "[^FF0000Lilly^000000]";
+mes "Oh... olá jovem shinobi !!";
+mes "Eu sou a responsável pelo evento ^228B22Semana da Pátria^000000.";
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Essa é a primeira vez que nos vemos...";
+//set tenhohatpatria,1;
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Gostaria de uma explicação de como nosso evento funciona ??";
+menu "- Sim, por favor !!",expl,"- Não, obrigado.",firstend;
+
+firstend:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Tudo bem, fale comigo novamente para podermos iniciar nossas negociações !!";
+set jafalamosp,1;
+close;
+
+expl:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Okey, vamos la...";
+mes "O evento comemorativo consiste na realização das missões em troca de ^A0522DRecibos^000000.";
+mes "Estes ^A0522DRecibos^000000, são recebidos em quantidades diferentes de acordo com o Ranking das missões...";
+next;
+mes "[^FF0000Lilly^000000]";
+mes "A quantidade por missão é:";
+mes "^008B8BMissão Ranking D^000000 - Concede 1 Recibo";
+mes "^008B8BMissão Ranking C^000000 - Concede 3 Recibos";
+mes "^008B8BMissão Ranking B^000000 - Concede 5 Recibos";
+mes "^008B8BMissão Ranking A^000000 - Concede 7 Recibos";
+mes "^008B8BMissão Ranking S^000000 - Concede 10 Recibos";
+mes "^008B8BMissão Ranking SS^000000 - Concede 30 Recibos";
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Ao acumular estes recibos, é só trocar comigo por prêmios e ser feliz !!";
+set jafalamosp,1;
+close;
+
+jafalamos:
+mes "[^FF0000Lilly^000000]";
+mes "Olá !! Bem vindo de volta !!";
+mes "Como posso lhe ajudar hoje ??";
+menu "- Chapéu Exclusivo (400 Recibos)",chapeu,"- Kill KG 3 (5 Recibos)",killkg,"- Caixa Surpresa (20 Recibos)",surpresa,"- Caixa da Riqueza (20 Recibos)",riqueza,"- Caixa DNA Completo (300 Recibos)",dna,"- Fuuin no Sho (570 Recibos)",fuuin,"- Antígeno (550 Recibos)",antig,"- Caixa de Item Avançado (30 Recibos)",avan,"- Manual Ninja Avançado (5 Recibos)",manual,"- Nenhum, obrigado",nemquero;
+
+chapeu:
+if (chapeupatria == 1){goto jacomprou;}
+next;
+mes "[^FF0000Lilly^000000]";
+mes "O Chapéu Exclusivo ? Certo, ele custa 400 Recibos... Deseja comprar ?";
+menu "- Sim",schapeu,"- Não, fica pra próxima",nemquero;
+
+schapeu:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 400) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 400 Recibos pelo Chapéu Exclusivo do Evento. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,400;
+getitem 5308,1;
+set chapeupatria,1;
+close;
+
+jacomprou:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Você já comprou o Chapéu Especial... a venda dele é permitida uma única vez.";
+close;
+
+killkg:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Kill KG 3 ? Certo, ele custa 5 Recibos... Deseja comprar ?";
+menu "- Sim",skillkg,"- Não, fica pra próxima",nemquero;
+
+skillkg:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 5) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 5 Recibos por um Prêmio KG 3. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,5;
+getitem 554,1;
+close;
+
+surpresa:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Caixa Surpresa ? Certo, ela custa 20 Recibos... Deseja comprar ?";
+menu "- Sim",ssurpresa,"- Não, fica pra próxima",nemquero;
+
+ssurpresa:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 20) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 20 Recibos por uma Caixa Surpresa. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,20;
+getitem 12937,1;
+close;
+
+riqueza:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Caixa Surpresa ? Certo, ela custa 20 Recibos... Deseja comprar ?";
+menu "- Sim",sriqueza,"- Não, fica pra próxima",nemquero;
+
+sriqueza:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 20) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 20 Recibos por uma Caixa da Riqueza. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,20;
+getitem 7247,1;
+close;
+dna:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Caixa DNA Completo ? Certo, ela custa 300 Recibos... Deseja comprar ?";
+menu "- Sim",sdna,"- Não, fica pra próxima",nemquero;
+sdna:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 300) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 300 Recibos por uma Caixa DNA Completo. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,300;
+getitem 7249,1;
+close;
+fuuin:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Fuuin no Sho ? Certo, ele custa 570 Recibos... Deseja comprar ?";
+menu "- Sim",sfuuin,"- Não, fica pra próxima",nemquero;
+sfuuin:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 570) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 570 Recibos por um Fuuin no Sho. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,570;
+getitem 749,1;
+close;
+antig:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Antígeno ? Certo, ele custa 550 Recibos... Deseja comprar ?";
+menu "- Sim",santig,"- Não, fica pra próxima",nemquero;
+santig:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 550) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 550 Recibos por um Antígeno. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,550;
+getitem 973,1;
+close;
+avan:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Caixa de Item Avançado ? Certo, ela custa 30 Recibos... Deseja comprar ?";
+menu "- Sim",savan,"- Não, fica pra próxima",nemquero;
+savan:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 30) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 30 Recibos por uma Caixa de Item Avançado. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,30;
+getitem 7251,1;
+close;
+manual:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Manual Ninja Avançado ? Certo, ele custa 5 Recibos... Deseja comprar ?";
+menu "- Sim",smanual,"- Não, fica pra próxima",nemquero;
+smanual:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "Certo... pode me entregar os Recibos agora.";
+next;
+if (countitem(1077) < 5) goto No_Item;
+mes "[^FF0000Lilly^000000]";
+mes "Aqui está. Obrigada por contribuír com nosso país !!";
+announce "[Pátria] "+strcharinfo(0)+" trocou 5 Recibos por um Manual Ninja Avançado. Nossa pátria agradece !!",bc_blue|bc_all; 
+delitem 1077,5;
+getitem 7206,1;
+close;
+No_Item:
+next;
+mes "[^FF0000Lilly^000000]";
+mes "A quantidade de Recibos não é suficiente... volte quando tiver o bastante !!";
+close;
+nemquero:
+mes "[^FF0000Lilly^000000]";
+mes "Muito bem !! Volte sempre !!";
+close;
+OnInit:
+	waitingroom "[Evento: Semana da Pátria]",0;
+}

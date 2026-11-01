@@ -1,0 +1,192 @@
+
+//(=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+
+//( by: Aster0id )
+
+//(=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+
+//===== Versão =================================================
+
+//= 1.0
+
+//===== Descrição ==============================================
+
+//= NPC que dá ao jogar iniciante um Kit e 7 dias VIP.
+
+//===== Comentários ============================================
+
+//= 1.0 - NPC Criado.	[Aster0id]
+
+//==============================================================
+
+-	script	removenuvemenuke	-1,{
+
+OnPCLoginEvent:
+if(#nuvem == 1) goto nuvemchange;
+if(nukenin == 1) goto nukechange;
+if(#suna == 1) goto sunachange;
+end;
+
+sunachange:
+callfunc "nukenuvem";
+end;
+
+nuvemchange:
+callfunc "nukenuvem";
+end;
+
+nukechange:
+callfunc "nukenuvem";
+end;
+
+}
+
+-	script	gamakishi#announcer	-1,{
+
+OnInit:
+	disablenpc "kishievent";
+	disablenpc "kishievent2";
+	disablenpc "kishievent3";
+	disablenpc "Entrada - Gamakishi";
+	disablenpc "Entrada - Gamakishi#1";
+	disablenpc "Entrada - Gamakishi#2";
+	disablenpc "Entrada - Gamakishi#3";
+	hideonnpc "Kishi Killer#evnt2";
+	end;
+
+OnClock1400: // SET THE 30 TO THE MINUTE YOU WANT THE EVENT TO START EACH HOUR.
+
+	//if (gettime(4)==6){
+	announce "Que tal derrotarmos Gamakichis?!",0;
+	killmonster "geffen","All";
+	sleep2 10000;
+	enablenpc "kishievent1";
+	enablenpc "kishievent2";
+	enablenpc "kishievent3";
+	enablenpc "Entrada - Gamakishi";
+//	enablenpc "Entrada - Gamakishi#1";
+//	enablenpc "Entrada - Gamakishi#2";
+//	enablenpc "Entrada - Gamakishi#3";
+//	enablenpc "Entrada - Gamakishi#4";
+	initnpctimer;
+	announce "O Evento fechará suas incrições em dois minutos. A entrada fica ao lado da Loja de ROPs.",0;
+	//}
+	end;
+
+OnTimer128000:
+	disablenpc "kishievent1";
+	disablenpc "kishievent2";
+	disablenpc "kishievent3";
+	disablenpc "Entrada - Gamakishi";
+//	disablenpc "Entrada - Gamakishi#1";
+//	disablenpc "Entrada - Gamakishi#2";
+//	disablenpc "Entrada - Gamakishi#3";
+	donpcevent "Kishi Killer#evnt2::OnEnable";
+	stopnpctimer;
+	end;
+	}
+
+kakashi,102,147,4	script	Entrada - Gamakishi	716,{
+
+	warp "amatsu",197,79;
+	end;
+OnInit:
+	waitingroom "[Gamakichi Slayer]",0;
+
+}
+
+amatsu,202,92,4	script	Kishi Killer#evnt2	407,{
+
+//--------------------------------------------------
+
+	mes "[Gamakichi Slayer]";
+	if(GAMAKICHI == 1) goto L_KISHI;
+	mes "Me diga seu nome...";
+	next;
+	input .@name$;
+	if(.@name$ != strcharinfo(0)) {
+		mes "[Gamakichi Slayer]";
+		mes "Tem certeza de que esse é seu nome?";
+		close;
+	}
+	mes "[Gamakichi Slayer]";
+	mes "Parabéns, você venceu.";
+	close2;
+	announce "Gamakichi Slayer : Que coisa feia, "+.@name$+". - tentou trapacear. Muhahahahaha!",0;
+	warp "SavePoint",0,0;
+	end;
+
+L_KISHI:
+	mes "Me diga seu nome, jovem shinobi";
+	next;
+	input .@name$;
+	if(.@name$ != strcharinfo(0)) {
+		mes "[Gamakichi Slayer]";
+		mes "Tem certeza que esse é seu nome?";
+		close;
+	}
+	mes "[Gamakichi Slayer]";
+	mes "Parabéns. Você venceu.";
+	close2;
+	announce "O mais novo esfolador de Gamakichis é...: "+.@name$+" !!",0;
+
+	getitem 594,2; // SET THE 20085 TO THE ITEM ID OF YOUR PRIZE
+	getitem 627,1;
+	getitem 7246,1;
+
+	set GAMAKISHI,0;
+	warp "SavePoint",0,0;
+	hideonnpc "Kishi Killer#evnt2";
+	end;
+	
+OnEnable:
+	mapannounce "amatsu","Bom, o evento consiste em uma horda grande de Gamakichi's.",0;
+	sleep2 10000;
+	mapannounce "amatsu","O primeiro a derrotar 25 Gamakichi's, vence.",0;
+	sleep2 10000;
+	mapannounce "amatsu","Prontos ? Valendo!!",0;
+	sleep2 5000;
+	goto L_Start;
+	end;
+	
+L_Start:
+	//areamonster "poring_w01",84,119,121,90,"Gamakichi",1402,1,"kishipoint::OnMobKilled";
+	monster "amatsu",0,0,"Gamakichi",1402,185,"kishipoint::OnMobKilled";
+	//initnpctimer;
+	end;
+
+//OnTimer310000:
+
+}
+
+	-	script	kishipoint	-1,{
+
+OnMobKilled:
+if(@kichievent == 24){
+// Acaba
+	mapannounce "amatsu","Muito bem... Fim do jogo... Alguém derrotou 25 Gamakichi's...",0;
+	set GAMAKICHI,1;
+	set @kichievent,0;
+	atcommand "@doommap";
+	killmonster "amatsu","All";
+	mapannounce "amatsu","Apresente-se a mim, vencedor...",0;
+	sleep2 2500;
+	atcommand "@tonpc Kishi Killer#evnt2";
+	hideoffnpc "Kishi Killer#evnt2";
+	end;
+}
+else{
+set @kichievent, @kichievent + 1;
+dispbottom "Você eliminou "+@kichievent+" Gamakichi's.";
+}
+}
+
+amatsu	mapflag	nowarp
+amatsu	mapflag	nowarpto
+amatsu	mapflag	noteleport
+amatsu	mapflag	nosave
+amatsu	mapflag	nomemo
+amatsu	mapflag	nobranch
+amatsu	mapflag	noloot
+amatsu	mapflag	noskill
+amatsu	mapflag	nopenalty

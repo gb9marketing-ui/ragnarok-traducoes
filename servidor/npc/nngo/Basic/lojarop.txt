@@ -1,0 +1,404 @@
+gef_fild07,275,333,0	script	Tazuna#4	1201,{
+	function Qcheck; function Qsummon; Qcheck;
+
+if (questzabuzacompleta == 1){end;}
+if (escolta == 4){goto escolta4;}
+if (escolta == 5){goto fechar;}
+if (raidstartzab == 1){goto continuando4;}
+mes "[^FF0000Tazuna^000000]";
+mes "Quem é voce ? Saia daqui.";
+close;
+
+continuando4:
+mes "[^FF0000Tazuna^000000]";
+mes "A viagem foi bem cansativa...";
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Fale comigo novamente para iniciar o restante da escolta";
+set escolta,4;
+close;
+
+fechar:
+mes "É uma pessoa diferente do Tazuna, ele deve estar me esperando em outro lugar...";
+close;
+
+escolta4:
+mes "[^FF0000Tazuna^000000]";
+	mes "Vamos, está pronto pra ir?";
+	switch(select("- Sim, vamos continuar... (De novo com esse manto?)","- Ainda não estou pronto"))
+	{
+		case 1:
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "Estamos perto, vamos para a ponte !!";
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "TEM ALGO ALI !!!";
+		mes "*^FF0000Ao chegar perto, percebe que é só um Coelho Branco^000000*";
+		next;
+		mes "[^FF0000"+strcharinfo(0)+"^000000]";
+		mes "Calma, é só um coelho...";
+		next;
+		set confronto1zab2,1;
+		mes "[^FF0000"+strcharinfo(0)+"^000000]";
+		mes "Espere... Isso é um coelho albino de neve... Ainda é primavera; o que há com essa cor?";
+		next;
+		mes "[^FF0000"+strcharinfo(0)+"^000000]";
+		mes "Então, aquele deve ser um coelho que tem sido preso numa gaiola... Para ser usado num Kawarimi.";
+		mes "Então eles já estão aqui...";
+		set tazunamorto2,1;
+		break;
+		case 2:
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "Ah, Ok";
+		mes "Quando estiver pronto me avise";
+		close;
+	}
+	Qsummon;
+	set @sourcenpc$,strnpcinfo(0);
+	set @dest$,.DestinationNPC$;
+	close;
+	end;
+OnEndQuest:
+	message strcharinfo(0),"Você falhou por não conseguir proteger o Tazuna.";
+	set morreutaz,1;
+//	set tazunamorto2,2;
+	set @sourcenpc$,"";
+	set @joinquest,0;
+end;	
+// ============= Setting =========== //	
+
+OnInit:
+//1201 > tazuna
+	set .Mobs,1004;							//Monster that you need to protect.
+	set .MobsName$,"Tazuna";				//Mob name that show in map.
+	set .MaxQueue,20;						//Maximum player.
+	set .DestinationNPC$,"Zabuza#1";			//The name of destination NPC. (should complete name)
+	set .Reward,0;						//Reward when the player reach target NPC.
+	set .Amount,0;							//Amount of reward.
+	setarray .player[0],0,0,0;
+	
+end;
+	
+// ============= Event Label =========== //
+OnMyMobDead1:
+	if(attachrid(.MobID1))
+	set .MobID1,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead2:
+	if(attachrid(.MobID2))
+	set .MobID2,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead3:
+	if(attachrid(.MobID3))
+	set .MobID3,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead4:
+	if(attachrid(.MobID4))
+	set .MobID4,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead5:
+	if(attachrid(.MobID5))
+	set .MobID5,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead6:
+	if(attachrid(.MobID6))
+	set .MobID6,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead7:
+	if(attachrid(.MobID7))
+	set .MobID7,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead8:
+	if(attachrid(.MobID8))
+	goto OnEndQuest;
+	set .MobID8,0;
+	end;
+	
+OnMyMobDead9:
+	if(attachrid(.MobID9))
+	goto OnEndQuest;
+	set .MobID9,0;
+	end;
+
+OnMyMobDead10:
+	if(attachrid(.MobID10))
+	goto OnEndQuest;
+	set .MobID10,0;
+	end;
+
+OnMyMobDead11:
+	if(attachrid(.MobID11))
+	goto OnEndQuest;
+	set .MobID11,0;
+	end;
+
+OnMyMobDead12:
+	if(attachrid(.MobID12))
+	goto OnEndQuest;
+	set .MobID12,0;
+	end;
+
+OnMyMobDead13:
+	if(attachrid(.MobID13))
+	goto OnEndQuest;
+	set .MobID13,0;
+	end;
+
+OnMyMobDead14:
+	if(attachrid(.MobID14))
+	goto OnEndQuest;
+	set .MobID14,0;
+	end;
+
+OnMyMobDead15:
+	if(attachrid(.MobID15))
+	goto OnEndQuest;
+	set .MobID15,0;
+	end;
+
+OnMyMobDead16:
+	if(attachrid(.MobID16))
+	goto OnEndQuest;
+	set .MobID16,0;
+	end;
+
+OnMyMobDead17:
+	if(attachrid(.MobID17))
+	goto OnEndQuest;
+	set .MobID17,0;
+	end;
+
+OnMyMobDead18:
+	if(attachrid(.MobID18))
+	goto OnEndQuest;
+	set .MobID18,0;
+	end;
+
+OnMyMobDead19:
+	if(attachrid(.MobID19))
+	goto OnEndQuest;
+	set .MobID19,0;
+	end;
+
+OnMyMobDead20:
+	if(attachrid(.MobID20))
+	goto OnEndQuest;
+	set .MobID20,0;
+	end;
+
+//Only support till 10 Players
+//If you want to add till 11 player, copy paste the event label and rename it.
+//
+//example:
+//	OnMyMobDead10:
+//		if(attachrid(.MobID10))
+//		set .MobID10,0;
+//		goto OnEndQuest;
+//		end;
+// ============= End   Label =========== //
+
+
+function Qcheck {
+	if(@joinquest){
+		mes "Vamos logo criança !!";
+		mes "Quero chegar logo em casa !!";
+		close;
+	}
+	for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+		if((!.player[.@i]))//If the array value is 0 (mean that no player reserve it)
+		{
+			if(.player[.@i])continue;
+			return;	// Avaiable
+		}
+	}
+	
+	mes "Só uma pessoa por vez";
+	mes "Espere o atual acabar.";
+	close;
+
+	end;
+}
+
+function Qsummon {
+	for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+		if((!.player[.@i]))//If the array value is 0 (mean that no player reserve it)
+		{
+			if(.player[.@i])continue;
+			setarray .player[.@i],getcharid(3);
+			setd ".MobID"+.@i,questmonster (.MobsName$,.Mobs,strnpcinfo(0)+"::OnMyMobDead"+.@i);
+			set @sourcenpc$,strnpcinfo(3);
+			set @joinquest,.@i;
+			return;
+		}
+	}
+end;
+}
+OnPCLogoutEvent:
+	if (@joinquest){
+		for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+			if(.player[.@i] == getcharid(3))
+				setarray .player[.@i],0;
+					set morreutaz,1;
+		}
+	}
+end;
+}
+
+gef_fild07,220,185,5	script	inivizab5	341,12,12,{
+//if (tazunamorto2 == 2;){end;}
+if (questcompletazabuza == 1){end;}
+if (morreutaz == 1){end;}
+if (confronto1zab2 == 1){
+announce "[Modo História] Um poder imenso é sentido !!",bc_blue|bc_self;
+mes "[Voz Estranha]";
+mes "Aaah, sem sombra de dúvidas os Irmãos Demônio não tinham chance...";
+mes "* Você percebe algo se aproximando *";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "ABAIXE-SE";
+next;
+announce "[Modo História] Uma enorme espada é arremessada contra Tazuna !!",bc_blue|bc_self;
+atcommand "@effect 2";
+announce "[Modo História] Ela passou por cima dele e foi fixada ao solo !!",bc_blue|bc_self;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Isso é...";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Você é o ninja renegado da névoa... Momochi Zabuza!";
+next;
+mes "[^FF0000Zabuza^000000]";
+mes "Desculpe, mas... me dê o velhote.";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Tazuna-san, para trás!";
+mes "* Você olha fixamente nos olhos de Zabuza *";
+mes "Lute comigo.";
+next;
+mes "[^FF0000Zabuza^000000]";
+mes "Quando eu era um membro do esquadrão de assassinos da névoa";
+mes "eu tinha um caderno com informações sobre você...";
+next;
+mes "[^FF0000Zabuza^000000]";
+mes "O ninja "+strcharinfo(0)+"...";
+mes "Agora, vamos por um fim na conversa. Eu tenho que matar aquele velhote.";
+set confronto1zab2,0;
+mes "Mas "+strcharinfo(0)+", parece que eu tenho que vencê-lo primeiro.";
+	if((@sourcenpc$=="") ||(!@joinquest)){
+	}
+	if(@dest$ != strnpcinfo(0)){
+	}
+	getitem getvariableofnpc(.Reward,@sourcenpc$),getvariableofnpc(.Amount,@sourcenpc$);
+	getmapxy .@map$,.@x,.@y,1;
+//	delitem 7338,1;
+	killmonster .@map$,@sourcenpc$+"::OnMyMobDead"+@joinquest;
+	set @sourcenpc$,"";
+	set @joinquest,0;
+monster "gef_fild07",223,186,"Zabuza",1138,1;
+close;
+end;
+}
+end;
+}
+
+-	script	zabuz3	-1,{
+
+  OnNPCKillEvent:
+if(killedrid == 1138) {
+if(mateizab == 1) {end;}
+announce "[Modo História] Voce derrotou o Zabuza, agora vá até ele e de o golpe final !!",bc_blue|bc_self;
+set mateizab,1;
+end;
+}
+end;
+}
+
+// ----------------------------- Zabuza
+//======= Destination NPC =========//
+gef_fild07,207,192,5	script	Zabuza#1	68,{
+if (conversahaku1 == 1){end;}
+if (mateizab == 1){goto zabuzadiag;}
+end;
+
+zabuzadiag:
+mes "[^FF0000Zabuza^000000]";
+mes "Como... Você me venceu... ?";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "...";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Sim... Você vai morrer.";
+menu "- Sacar sua kunai",kun;
+
+kun:
+next;
+mes "* Subitamente, duas senbons eram arremessadas na direção de Zabuza, eram extremamente rápidas, você sequer tinha tempo de fazer algo *";
+mes "* Zabuza caía no chão, aparentemente morto *";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "O quê?!";
+next;
+mes "* Você corre até Zabuza e checa o pulso do mesmo *";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Realmente... ele está morto.";
+next;
+mes "[^FF0000Anbu Misterioso^000000]";
+mes "Obrigado, estive procurando uma oportunidade para matar Zabuza há um bom tempo...";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Essa máscara... um anbu da névoa !?";
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Anbu?";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "São shinobis poderosos que procuram e assassinam ninjas como Zabuza...";
+mes "Que por qualquer razão, tenham traído seu próprio vilarejo e escapado.";
+mes "Eles também matam quaisquer inimigos que ameaçem sua vila...";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "São shinobis extremamente raros, soube que existem apenas quatro em cada vila...";
+next;
+mes "[^FF0000Anbu Misterioso^000000]";
+mes "Isso, minha função é caçar esses ninjas. Sou um membro do time ANBU da vila da névoa.";
+mes "* O Anbu aproxima-se de Zabuza, colocando seu corpo em suas costas *";
+mes "Eu preciso deste corpo, pois parece conter muitos segredos...Adeus";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "É isso então... Vamos, estamos quase chegando";
+set conversahaku1,1;
+close;
+}
+
+gef_fild07,160,187,5	script	Tazuna#5	57,{
+if (questzabuzacompleta == 1){end;}
+if (conversahaku2 == 1){end;}
+if (conversahaku1 == 1){
+mes "[^FF0000Tazuna^000000]";
+mes "Hahaha, muito obrigado!";
+mes "Você realmente se provou ser um ninja incrível, vejo que tem um grande futuro pela frente!";
+mes "Eu posso continuar sozinho a partir daqui, muito obrigado!";
+mes "Não tem de que, se cuide!";
+set conversahaku2,1;
+warp "kakashi",0,0;
+end;
+}
+end;
+}

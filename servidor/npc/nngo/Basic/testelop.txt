@@ -1,0 +1,460 @@
+prt_fild02,170,373,0	script	Tazuna#2	1201,{
+	function Qcheck; function Qsummon; Qcheck;
+
+if (questzabuzacompleta == 1){mes "Eu ja protegi o Tazuna, essa é outra pessoa."; close;}
+if (escolta == 1){goto escolta1;}
+if (escolta == 2){goto fechar;}
+if (movetazuna1 == 1){goto continuando1;}
+mes "[^FF0000Tazuna^000000]";
+mes "Estou indo até a sala do Kage, me deixe em paz criança.";
+close;
+
+continuando1:
+mes "[^FF0000Tazuna^000000]";
+mes "Ótimo, agora vai começar o trabalho, espero que seja capaz de realizá-lo, criança.";
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Fale comigo novamente para iniciar a escolta";
+set escolta,1;
+close;
+
+fechar:
+mes "É uma pessoa diferente do Tazuna, ele deve estar me esperando em outro lugar...";
+close;
+
+escolta1:
+mes "[^FF0000Tazuna^000000]";
+	mes "Vamos, está pronto pra ir?";
+	switch(select("- Sim... porque está vestido assim ?","- Ainda não estou pronto"))
+	{
+		case 1:
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "Para me esconder dos bandidos, é claro !!";
+		mes "Agora vamos !!";
+		mes "Estou com pressa.";
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "Ah, e essa passagem é para podermos entrar no barco, guarde bem a sua.";
+		set nevoaszab,0;
+		set tazunamorto,0;
+		set confronto1zab,1;
+		break;
+		case 2:
+		next;
+		mes "[^FF0000Tazuna^000000]";
+		mes "Ah, Ok";
+		mes "Quando estiver pronto me avise";
+		close;
+	}
+	Qsummon;
+	set @sourcenpc$,strnpcinfo(0);
+	set @dest$,.DestinationNPC$;
+	getitem 7338,1;
+	close;
+	end;
+OnEndQuest:
+	message strcharinfo(0),"Você falhou por não conseguir proteger o Tazuna. Também perdeu sua moeda na luta.";
+	delitem 7338,1;
+	set tazunamorto,1;
+	set @sourcenpc$,"";
+	set @joinquest,0;
+end;	
+// ============= Setting =========== //	
+
+OnInit:
+//1201 > tazuna
+	set .Mobs,1004;							//Monster that you need to protect.
+	set .MobsName$,"Tazuna";				//Mob name that show in map.
+	set .MaxQueue,28;						//Maximum player.
+	set .DestinationNPC$,"Tazuna#3";			//The name of destination NPC. (should complete name)
+	set .Reward,0;						//Reward when the player reach target NPC.
+	set .Amount,0;							//Amount of reward.
+	setarray .player[0],0,0,0;
+	
+end;
+	
+// ============= Event Label =========== //
+OnMyMobDead1:
+	if(attachrid(.MobID1))
+	set .MobID1,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead2:
+	if(attachrid(.MobID2))
+	set .MobID2,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead3:
+	if(attachrid(.MobID3))
+	set .MobID3,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead4:
+	if(attachrid(.MobID4))
+	set .MobID4,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead5:
+	if(attachrid(.MobID5))
+	set .MobID5,0;
+	goto OnEndQuest;
+	end;
+
+OnMyMobDead6:
+	if(attachrid(.MobID6))
+	set .MobID6,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead7:
+	if(attachrid(.MobID7))
+	set .MobID7,0;
+	goto OnEndQuest;
+	end;
+	
+OnMyMobDead8:
+	if(attachrid(.MobID8))
+	goto OnEndQuest;
+	set .MobID8,0;
+	end;
+	
+OnMyMobDead9:
+	if(attachrid(.MobID9))
+	goto OnEndQuest;
+	set .MobID9,0;
+	end;
+
+OnMyMobDead10:
+	if(attachrid(.MobID10))
+	goto OnEndQuest;
+	set .MobID10,0;
+	end;
+
+OnMyMobDead11:
+	if(attachrid(.MobID11))
+	goto OnEndQuest;
+	set .MobID11,0;
+	end;
+
+OnMyMobDead12:
+	if(attachrid(.MobID12))
+	goto OnEndQuest;
+	set .MobID12,0;
+	end;
+
+OnMyMobDead13:
+	if(attachrid(.MobID13))
+	goto OnEndQuest;
+	set .MobID13,0;
+	end;
+
+OnMyMobDead14:
+	if(attachrid(.MobID14))
+	goto OnEndQuest;
+	set .MobID14,0;
+	end;
+
+OnMyMobDead15:
+	if(attachrid(.MobID15))
+	goto OnEndQuest;
+	set .MobID15,0;
+	end;
+
+OnMyMobDead16:
+	if(attachrid(.MobID16))
+	goto OnEndQuest;
+	set .MobID16,0;
+	end;
+
+OnMyMobDead17:
+	if(attachrid(.MobID17))
+	goto OnEndQuest;
+	set .MobID17,0;
+	end;	
+
+OnMyMobDead18:
+	if(attachrid(.MobID18))
+	goto OnEndQuest;
+	set .MobID18,0;
+	end;
+
+
+OnMyMobDead19:
+	if(attachrid(.MobID19))
+	goto OnEndQuest;
+	set .MobID19,0;
+	end;
+
+OnMyMobDead20:
+	if(attachrid(.MobID20))
+	goto OnEndQuest;
+	set .MobID20,0;
+	end;
+
+
+OnMyMobDead21:
+	if(attachrid(.MobID21))
+	goto OnEndQuest;
+	set .MobID21,0;
+	end;
+
+
+OnMyMobDead22:
+	if(attachrid(.MobID22))
+	goto OnEndQuest;
+	set .MobID22,0;
+	end;	
+
+OnMyMobDead23:
+	if(attachrid(.MobID23))
+	goto OnEndQuest;
+	set .MobID23,0;
+	end;
+
+OnMyMobDead24:
+	if(attachrid(.MobID24))
+	goto OnEndQuest;
+	set .MobID24,0;
+	end;
+
+OnMyMobDead25:
+	if(attachrid(.MobID25))
+	goto OnEndQuest;
+	set .MobID25,0;
+	end;
+
+OnMyMobDead26:
+	if(attachrid(.MobID26))
+	goto OnEndQuest;
+	set .MobID26,0;
+	end;
+
+OnMyMobDead27:
+	if(attachrid(.MobID27))
+	goto OnEndQuest;
+	set .MobID27,0;
+	end;
+
+OnMyMobDead28:
+	if(attachrid(.MobID28))
+	goto OnEndQuest;
+	set .MobID28,0;
+	end;
+
+OnMyMobDead29:
+	if(attachrid(.MobID29))
+	goto OnEndQuest;
+	set .MobID229,0;
+	end;
+
+OnMyMobDead30:
+	if(attachrid(.MobID30))
+	goto OnEndQuest;
+	set .MobID30,0;
+	end;		
+//Only support till 10 Players
+//If you want to add till 11 player, copy paste the event label and rename it.
+//
+//example:
+//	OnMyMobDead10:
+//		if(attachrid(.MobID10))
+//		set .MobID10,0;
+//		goto OnEndQuest;
+//		end;
+// ============= End   Label =========== //
+
+
+function Qcheck {
+	if(@joinquest){
+		mes "Vamos logo criança !!";
+		mes "Quero chegar logo em casa !!";
+		close;
+	}
+	for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+		if((!.player[.@i]))//If the array value is 0 (mean that no player reserve it)
+		{
+			if(.player[.@i])continue;
+			return;	// Avaiable
+		}
+	}
+	
+	mes "Sorry all jobs already taken,";
+	mes "no more slot.";
+	close;
+
+	end;
+}
+
+function Qsummon {
+	for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+		if((!.player[.@i]))//If the array value is 0 (mean that no player reserve it)
+		{
+			if(.player[.@i])continue;
+			setarray .player[.@i],getcharid(3);
+			setd ".MobID"+.@i,questmonster (.MobsName$,.Mobs,strnpcinfo(0)+"::OnMyMobDead"+.@i);
+			set @sourcenpc$,strnpcinfo(3);
+			set @joinquest,.@i;
+			return;
+		}
+	}
+end;
+}
+OnPCLogoutEvent:
+	if (@joinquest){
+		for(set .@i,1;.@i <= .MaxQueue;set .@i,.@i+1){
+			if(.player[.@i] == getcharid(3))
+				setarray .player[.@i],0;
+		}
+	}
+end;
+}
+
+
+//======= Destination NPC =========//
+mjolnir_07,294,213,4	script	Tazuna#3	57,{
+	if((@sourcenpc$=="") ||(!@joinquest)){
+	}
+	if(@dest$ != strnpcinfo(0)){
+	}
+	if(nevoaszab >= 2){
+	getitem getvariableofnpc(.Reward,@sourcenpc$),getvariableofnpc(.Amount,@sourcenpc$);
+	getmapxy .@map$,.@x,.@y,1;
+	delitem 7338,1;
+	killmonster .@map$,@sourcenpc$+"::OnMyMobDead"+@joinquest;
+	set @sourcenpc$,"";
+	set @joinquest,0;
+	set escolta,2;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Oh, meu deus... ";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Ainda bem, você parece ser realmente um ótimo ninja, conseguiu lidar tão bem com aqueles bandidos...";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Espere, esses bandidos não tinham porque estar aqui, eles vieram aqui apenas para te matar, não é?";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "O-O quê? B-Bem, sim...";
+	mes "Na verdade, estou sendo perseguido, e por isso precisava de um ninja para me proteger até lá...";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Perseguido? Então essa não é uma missão de rank C! Nossa missão era simplesmente proteger você de ladrões ou gangues, isso agora virou no mínimo uma missão rank B, isso é muito pra mim!";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Espere, por favor!";
+	mes "Eu sei que menti sobre isso ser uma missão de rank C, mas as missões de rank B são muito caras para mim!";
+	mes "Eu não posso pagar por algo assim.";
+	mes "Por favor, me ajude, você é o único que pode me ajudar!";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Hmm, acho que realmente não tem jeito... Mas quem está te perseguindo?";
+	mes "Preciso de mais detalhes sobre isso.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Parece que não tenho escolha a não ser lhe contar.";
+	mes "Não, eu quero que você saiba... isso é de fato uma missão além da escolta...";
+	next;
+	mes "[^FF0000Tazuna^000000]";		
+	mes "Acontece que um homem muito perigoso está atrás da minha vida.";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Homem muito perigoso? Quem?";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Sim, você provavelmente já ouviu o nome dele.";
+	mes "O rico magnata da frota de barcos... Um homem chamado Gatou.";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Huh!? Gatou é... Da companhia Gatou? Ele é um dos poucos homens extremamente ricos do mundo.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Sim...";
+	mes "Oficialmente ele comanda uma enorme companhia de frota de barcos...";
+	mes "Mas secretamente, ele vende drogas e outras coisas ilegais";
+	mes "usando ninjas e membros de gangues para cuidar dos negócios e dos países. Ele é um empresário muito mau.";	
+	mes "Faz um ano que ele pôs seus olhos no país das ondas.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Através de dinheiro ou meios violentos, ele rapidamente tomou controle da indústria de barcos do país.";
+	mes "Assim ele controla as rotas de navegação, que é a vida dessa pequena ilha.";
+	mes "Gatou agora tem um monopólio em todos os negócios de tráfego.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "A única coisa que Gatou tem medo agora, é que a ponte se complete.";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Entendo... Desde que você está construindo a ponte, você é um estorvo para ele.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Se você desistir da missão, eu definitivamente serei morto antes de chegar em casa.";
+	mes "Mas não se preocupe com isso...";
+	mes "Se eu morrer, meu neto de oito anos, irá chorar inconsolavelmente!";	
+	mes "E minha filha irá viver uma triste, triste vida, odiando os ninjas de sua vila para sempre!";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Acho que não tenho escolha mesmo... Vou continuar a protegê-lo.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Oh, muito obrigado!";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Bom... e agora pra onde vamos?";
+	mes "[^FF0000Tazuna^000000]";
+	mes "Temos de ir procurar o barco, em algum lugar próximo á água";
+	next;
+	mes "[^FF0000"+strcharinfo(0)+"^000000]";
+	mes "Até que você é esperto, velhote.";
+	next;
+	mes "[^FF0000Tazuna^000000]";
+	mes "Chega de enrolação pirralho, vamos logo!";
+	set dialogoenorme,1;
+	close;
+}
+}
+
+mjolnir_07,240,269,5	script	inivizab2	341,9,9,{
+if (questzabuzacompleta == 1){end;}
+if (dialogoenorme == 1){
+announce "[Modo História] Voce encontrou o barco !!",bc_blue|bc_self;
+//set dialogoenorme,0;
+set raidstartzab,1;
+warp "gef_fild07",282,333;
+end;
+}
+end;
+}
+// ------------------ NPC Q INVOCA OS MOB
+mjolnir_07,344,211,5	script	inivizab	341,6,6,{
+if (questzabuzacompleta == 1){end;}
+if (ativarnevoa1 == 1){end;}
+if (confronto1zab == 1){
+announce "[Modo História] Algo parece errado... sinto uma presença...",bc_blue|bc_self;
+set ativarnevoa1,1;
+//set confronto1zab,2;
+monster "mjolnir_07",344,211,"Chunin da Névoa",1023,2;
+end;
+}
+if (confronto1zab < 1) {end;}
+if (mateinevoa1 == 1) {end;}
+end;
+}
+
+// ------------------ Matar os MOB
+
+-	script	zabuz2	-1,{
+
+  OnNPCKillEvent:
+if(killedrid == 1023) {
+if(nevoaszab >= 2) {set mateinevoa1,1; set ativarnevoa1,0; end;}
+if(countitem(7338) > 0){
+set nevoaszab,nevoaszab+1;
+announce "[Modo História] Ainda faltam "+(2 - nevoaszab)+" Ninjas",bc_blue|bc_self;
+end;
+}
+}
+}

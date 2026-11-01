@@ -1,0 +1,321 @@
+salakagen.gat, 19, 20, 3	script	Mudança de Graduação::points	843,{
+
+	query_sql("SELECT `quest_points`, `S`, `A`, `B`, `C`, `D`, `E` FROM `char` WHERE `char_id` = '"+getcharid(0)+"'", @qp, @s, @a, @b, @c, @d, @e);
+
+	mes "Olá "+strcharinfo(0);
+	mes "Posso trocar um vale-graduação por uma mudança em seu nível ninja!!";
+	next;
+	mes "["+strnpcinfo(3)+"]";
+	mes "Em que posso ajudar?";
+	if(select("Subir de Graduação:Cancelar")==2)
+		close;
+	next;
+	mes "["+strnpcinfo(3)+"]";
+	if(@menu < 4)
+	{
+		switch(Class)
+		{
+			case 1:	set @next_job, 7;	break;
+			case 2:	set @next_job, 9;	break;
+			case 3:	set @next_job, 11;	break;
+			case 4:	set @next_job, 15;	break;
+			case 5:	set @next_job, 10;	break;
+			case 6:	set @next_job, 12;	break;
+			case 4007:	set @next_job, 17;	break;
+			case 23:	set @next_job, 4046;	break;
+			case 4006:	set @next_job, 18;	break;
+			case 4053:	set @next_job, 4056;	break;
+			case 4055:	set @next_job, 4058;	break;
+			case 4054:	set @next_job, 4057;	break;
+			case 7:	case 9:	case 15:	case 10:	case 11: case 12:	case 17:	case 18:	set @next_job, Class + 4001;	break;
+			case 4046:	set @next_job, 4047;	break;
+			case 4056:	set @next_job, 4059;	break;
+			case 4058:	set @next_job, 4061;	break;
+			case 4057:	set @next_job, 4060;	break;
+			case 4049: set @next_job, 4049; break;
+			default:
+				mes "Você não pode subir de graduação.";
+				close;
+		}
+		if(Class <= 6 || 	Class == 4007 || Class == 23 || Class == 4006 || Class == 4053 || Class == 4055 || Class == 4054 || (Class == 4049 && genin == 1))
+			set @price, 725;
+		else
+			set @price, 726;
+		if(ronaldo ==1)
+		{
+			mes "Você não está pronto ainda!";
+			close;
+		}
+		if(countitem(@price) < 1)
+		{
+			mes "Você não possui nenhum vale-graduação. Ele pode ser obtido por eventos ou missões.";
+			close;
+		}
+		if(@price == 725)
+		{
+			if(countitem(@price) >= 1){
+			if (class == 4049)
+			{
+				set Rank_A, 1;
+				set Rank_B, 0;
+			}
+			set chunin, 1;
+			set genin, 0;
+			delitem 725,1;
+		}
+		}
+		else
+		{
+			if (class == 4049)
+			{
+				set Rank_S, 1;
+				set Rank_A, 0;
+			}
+			set chunin, 0;
+			set jounin, 1;
+			delitem 726,1;
+		}
+		//query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '"+@price+"' WHERE `char_id` = '"+getcharid(0)+"'");
+		jobchange @next_job;
+		
+	if(chunin==1)	{announce "[Graduação] "+strcharinfo(0)+" subiu de graduação e agora é Chunin em troca de um vale-graduação.",bc_blue|bc_all; close;}
+	if(jounin==1)	{announce "[Graduação] "+strcharinfo(0)+" subiu de graduação e agora é Jounin em troca de um vale-graduação.",bc_blue|bc_all; close;}
+		
+
+
+	
+	}
+	
+OnInit:
+	callfunc("read_configs_07");
+	end;
+}
+
+function	script	read_configs_07	{
+
+setarray $ZENY_price[1], 50, 100, 250, 400, 700;
+setarray $ZENY_receive[1], 0, 0, 0, 0, 0;
+
+setarray $ITEM_price[1], 0, 0, 0, 0, 0, 0;
+setarray $ITEM_receive[1], 0, 0, 0, 0, 0, 0;
+
+setarray $LEVEL_price[1], 0, 0, 0, 0, 0;
+setarray $LEVEL_receive[1], 0, 0, 0, 0, 0;
+
+end;
+}
+
+salakagen.gat, 26, 8, 3	script	Recompensas::pontosm	434,{
+
+query_sql("SELECT `quest_points`, `S`, `A`, `B`, `C`, `D`, `E` FROM `char` WHERE `char_id` = '"+getcharid(0)+"'", @qp, @s, @a, @b, @c, @d, @e);
+mes "Olá! Caso você tenha completado missões e tenha os pontos dados por elas, você pode trocar por recompensas!!";
+mes "Você possui "+@qp+" pontos de missão acumulados.";
+next;
+mes "Afinal, já que você ajuda nossa vila, tem de ser recompensado. Vamos, pode escolher...";
+menu "- Promoção Jounin",jounin,"- Promoção Chunin",chunin,"- Antígeno",anti,"- Fuuin no Sho",fuuin,"- Perg Reverso",rever,"- Cert de Adestramento",mont,"- Sangue Preservado",sang,"- Mais Itens",proxi;
+
+//menu "- Vale Jounin",jounin,"- Vale Chunin",chunin,"- Antigeno",anti,"- Fuuin no Sho",fuuin,"- Perg Reverso",rever,"- Cert de Adestramento",mont,"- Sangue Preservado",sang,"- Manual Avan",manu,"- Kill KG 1",kill,"- Perg de EXP",expp,"- Caixa de Equip",equip,"- Caixa da Riqueza",riqueza,"- Caixa da Hat",hat;
+
+proxi:
+next;
+mes "Tenho mais estes aqui...";
+//close;
+menu "- Manual Avan",manu,"- Kill KG 1",kill,"- Perg de EXP",expp,"- Caixa de Equip",eequip,"- Caixa da Riqueza",riqueza,"- Caixa da Hat",hat;
+
+jounin:
+next;
+mes "Este item custa 1500 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",sjounin,"- Não, obrigado",fechadiag;
+
+sjounin:
+next;
+mes "Parabéns !!";
+if(@qp < 1500){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '1500' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 726,1;
+close;
+
+rever:
+next;
+mes "Este item custa 1500 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",srever,"- Não, obrigado",fechadiag;
+
+srever:
+next;
+mes "Parabéns !!";
+if(@qp < 1500){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '1500' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 639,1;
+close;
+
+fuuin:
+next;
+mes "Este item custa 25000 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",sfuuin,"- Não, obrigado",fechadiag;
+
+sfuuin:
+next;
+mes "Parabéns !!";
+if(@qp < 25000){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '25000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 749,1;
+close;
+
+anti:
+next;
+mes "Este item custa 15000 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",santi,"- Não, obrigado",fechadiag;
+
+santi:
+next;
+mes "Parabéns !!";
+if(@qp < 15000){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '15000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 973,1;
+close;
+
+chunin:
+next;
+mes "Este item custa 500 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",schunin,"- Não, obrigado",fechadiag;
+
+schunin:
+next;
+mes "Parabéns !!";
+if(@qp < 500){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '500' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 725,1;
+close;
+
+mont:
+next;
+mes "Este item custa 1000 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",smont,"- Não, obrigado",fechadiag;
+
+smont:
+next;
+mes "Parabéns !!";
+if(@qp < 1000){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '1000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7176,1;
+close;
+
+sang:
+next;
+mes "Este item custa 1000 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",ssang,"- Não, obrigado",fechadiag;
+
+ssang:
+next;
+mes "Parabéns !!";
+if(@qp < 1000){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '1000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 641,1;
+close;
+
+manu:
+next;
+mes "Este item custa 10 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",smanu,"- Não, obrigado",fechadiag;
+
+smanu:
+next;
+mes "Parabéns !!";
+if(@qp < 10){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '10' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7206,1;
+close;
+
+kill:
+next;
+mes "Este item custa 30 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",skillk,"- Não, obrigado",fechadiag;
+
+skillk:
+next;
+mes "Parabéns !!";
+if(@qp < 30){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '30' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 516,1;
+close;
+
+expp:
+next;
+mes "Este item custa 40 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",sexp,"- Não, obrigado",fechadiag;
+
+sexp:
+next;
+mes "Parabéns !!";
+if(@qp < 40){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '40' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 12208,1;
+close;
+
+eequip:
+next;
+mes "Este item custa 40 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",sequip,"- Não, obrigado",fechadiag;
+
+sequip:
+next;
+mes "Parabéns !!";
+if(@qp < 40){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '40' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7246,1;
+close;
+
+riqueza:
+next;
+mes "Este item custa 200 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",sriq,"- Não, obrigado",fechadiag;
+
+sriq:
+next;
+mes "Parabéns !!";
+if(@qp < 200){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '200' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7247,1;
+close;
+
+hat:
+next;
+mes "Este item custa 13000 pontos de missão";
+mes "Vai levar?";
+menu "- Sim",shat,"- Não, obrigado",fechadiag;
+
+shat:
+next;
+mes "Parabéns !!";
+if(@qp < 13000){ mes "Você não possuí pontos suficientes."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '13000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7248,1;
+close;
+
+fechadiag:
+close;
+}
+
+salakagea.gat,19,20,7	duplicate(points)	Mudança de Graduação#b	843
+salakage.gat,19,20,7	duplicate(points)	Mudança de Graduação#c	843
+salakagex.gat,19,20,7	duplicate(points)	Mudança de Graduação#d	843
+akatsuki,206,142,7	duplicate(points)	Mudança de Graduação#e	843
+lou_in02.gat,251,160,7	duplicate(points)	Mudança de Graduação#f	843
+
+salakagea.gat,26,8,7	duplicate(pontosm)	Recompensas#b	434
+salakage.gat,26,8,7	duplicate(pontosm)	Recompensas#c	434
+salakagex.gat,26,8,7	duplicate(pontosm)	Recompensas#d	434
+akatsuki.gat,26,8,7	duplicate(pontosm)	Recompensas#e	434
+lou_in02.gat,26,8,7	duplicate(pontosm)	Recompensas#f	434

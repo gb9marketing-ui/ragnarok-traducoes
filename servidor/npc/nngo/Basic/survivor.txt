@@ -1,0 +1,552 @@
+-	script	Evento#SV	Survivor#SV -1,{ //801 sprite caixão
+OnInit:
+// Nome do mapa
+set .SVmap$,"guild_vs3";
+// Tempo máximo do evento (em minutos/1h = 60)
+set .SVtime, 120;
+//IDS pergaminhos
+setarray .SVperg[1],0,0,0;
+end;
+
+//$JSstatus-> 0 = Sem JS | 1 = JS rolando | 2 = Npc Desativado | 3 = Registro Habilitado
+
+OnClock1600:
+OnClock2030:
+
+if($SVstatus == 0){
+set $SVnumber, 0;
+set $SVend, 0;
+set $SVstatus,3;
+set $SVmod, 0;
+pvpoff .SVmap$;
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+
+disablenpc "Saída#SV";
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 5 minutos.",0;
+initnpctimer;
+
+if(gettime(4) == 0){
+if($SVstatus == 0){
+set $SVnumber, 0;
+set $SVend, 0;
+set $SVstatus,3;
+set $SVmod, 0;
+pvpoff .SVmap$;
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+
+disablenpc "Saída#SV";
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 5 minutos.",0;
+initnpctimer;
+pvpoff .SVmap$;
+}
+}
+}
+pvpoff .SVmap$;
+end;
+
+//OnClock2030:
+if($SVstatus == 0){
+set $SVnumber, 0;
+set $SVend, 0;
+set $SVstatus,3;
+set $SVmod, 0;
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+
+disablenpc "Saída#SV";
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 5 minutos.",0;
+initnpctimer;
+}
+pvpoff .SVmap$;
+end;
+
+//OnTimer40000:
+OnTimer60000:
+if($SVstatus == 3){
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 4 minutos.",0;
+}
+end;
+
+//OnTimer45000: 
+OnTimer120000: 
+if($SVstatus == 3){
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 3 minutos.",0;
+}
+end;
+
+//OnTimer45000: 
+OnTimer180000: 
+if($SVstatus == 3){
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 2 minutos.",0;
+}
+end;
+
+//OnTimer45000: 
+OnTimer240000: 
+if($SVstatus == 3){
+Announce "[Survivor]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 1 minuto. Corra !!",0;
+}
+end;
+
+//OnTimer50000: 
+OnTimer300000: 
+if($SVstatus == 3){
+Announce "[Survivor]: As inscrições para o Evento Survivor estão encerradas. O evento iniciará em 5 minutos.",0;
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+warpchar .SVmap$,0,0,$SVcharid[.i];
+}
+}
+end;
+
+//OnTimer55000: 
+OnTimer310000: 
+if($SVstatus == 3){
+set $SVmod[1], rand(100);
+set $SVmod[2], rand(100);
+MapAnnounce .SVmap$,"[Survivor]: Bem vindos ao Evento Survivor. O PvP será liberado em 2 minutos.",1;
+}
+end;
+
+//OnTimer60000:
+OnTimer430000: 
+if($SVstatus == 3){
+MapAnnounce .SVmap$,"[Survivor]: Evento iniciado. O último shinobi entre os "+getmapusers(.SVmap$)+" será o vencedor. Boa Sorte a todos!",1;
+stopnpctimer;
+setnpctimer 0;
+initnpctimer;
+set $SVstatus,1;
+set .soma, 0;
+set .SVtime2, 0;
+pvpon .SVmap$;
+}
+end;
+
+OnPrisaoBreak0:
+monster .SVmap$,108,79,"[JS]YouAreDead",1226,2,"Evento#SV::OnYukimuraKill";
+end;
+OnPrisaoBreak1:
+monster .SVmap$,129,87,"[JS]Jounin",1634,1,"Evento#SV::OnJouninKill";
+end;
+OnPrisaoBreak2:
+monster .SVmap$,77,87,"[JS]Jounin",1634,1,"Evento#SV::OnJouninKill";
+end;
+OnPrisaoBreak3:
+monster .SVmap$,91,170,"[JS]Jounin",1634,1,"Evento#SV::OnJouninKill";
+end;
+OnPrisaoBreak4:
+monster .SVmap$,157,145,"[JS]Jounin",1634,1,"Evento#SV::OnJouninKill";
+end;
+
+OnYukimuraKill:
+getitem .SVperg[1], 1;
+getitem .SVperg[2], 2;
+getitem .SVperg[3], 3;
+end;
+
+OnJouninKill:
+getitem .SVperg[rand(1,3)], 1;
+end;
+
+OnBandidoKill:
+getitem .SVperg[rand(1,3)], 1;
+end;
+
+OnTimer30000:
+if($SVstatus == 1){
+if(.SVtime2 < .SVtime*2){
+stopnpctimer;
+setnpctimer 0;
+initnpctimer;
+set .soma, 0;
+set .SVtime2, .SVtime2 + 1;
+
+if(getmapusers(.SVmap$) == 1){
+killmonster .SVmap$, "All";
+stopnpctimer;
+setnpctimer 0;
+mapannounce .SVmap$,"[Survivor]: Parabéns! Você é o único sobrevivente. Ao centro do mapa você encontrará o responsável pela sua recompensa.",1;
+enablenpc "Saída#SV";
+pvpoff .SVmap$;
+set $SVstatus,0;
+}
+end;
+}else{
+killmonster .SVmap$, "All";
+stopnpctimer;
+setnpctimer 0;
+pvpoff .SVmap$;
+set $SVstatus,0;
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+Announce "[Survivor]: O Evento Survivor chegou ao fim. Não tivemos nenhum vencedor.",0;
+set $SVend, 1;
+enablenpc "Saída#SV";
+}
+}
+end;
+
+OnPCKillEvent:
+if($SVstatus == 1 && strcharinfo(3) == .SVmap$){
+//if(countitem(.SVperg[1]) < 1){
+//getitem .SVperg[1], 1;
+//end;
+//}
+//if(countitem(.SVperg[2]) < 1){
+//getitem .SVperg[2], 1;
+//end;
+//}
+//if(countitem(.SVperg[3]) < 1){
+//getitem .SVperg[3], 1;
+//end;
+//}
+}
+end;
+
+OnPCLoadMapEvent:
+//delitem .SVperg[1], countitem(.SVperg[1]);
+//delitem .SVperg[2], countitem(.SVperg[2]);
+//delitem .SVperg[3], countitem(.SVperg[3]);
+if(strcharinfo(3) == "guild_vs3") partyleave;
+end;
+
+OnPCDieEvent:
+if($SVstatus == 1 && strcharinfo(3) == .SVmap$){
+//if(countitem(.JSperg[1] > 0) getitem .JSperg[1], 1, killerrid2;
+//if(countitem(.JSperg[2] > 0) getitem .JSperg[2], 1, killerrid2;
+//if(countitem(.JSperg[3] > 0) getitem .JSperg[3], 1, killerrid2;
+//dispbottom "Você tem 30 segundos para ser recussitado ou sairá do evento.";
+//sleep2(30000);
+//set .@tt, pcisdead(1);
+//if(.@tt == 0) end;
+warp "kakashi",155,150;
+sleep2(2000);
+mapannounce .SVmap$,"[Survivor]: O shinobi "+strcharinfo(0)+" foi morto, sobrando assim apenas "+getmapusers(.SVmap$)+" sobreviventes.",1;
+if(getmapusers(.SVmap$) < 2){
+killmonster .SVmap$, "All";
+stopnpctimer;
+setnpctimer 0;
+mapannounce .SVmap$,"[Survivor]: Parabéns! Você é o único sobrevivente. Ao centro do mapa você encontrará o responsável pela sua recompensa.",1;
+enablenpc "Saída#SV";
+pvpoff .SVmap$;
+set $SVstatus,0;
+}
+end;
+}
+end;
+
+
+OnPCLogoutEvent:
+if($SVstatus == 1 && strcharinfo(3) == .SVmap$){
+//delitem .SVperg[1], countitem(.SVperg[1]);
+//delitem .SVperg[2], countitem(.SVperg[2]);
+//delitem .SVperg[3], countitem(.SVperg[3]);
+warp "kakashi",155,150;
+sleep2(2000);
+mapannounce .SVmap$,"[Survivor]: O shinobi "+strcharinfo(0)+" foi morto, sobrando assim apenas "+getmapusers(.SVmap$)+" sobreviventes.",1;
+if(getmapusers(.SVmap$) < 2){
+killmonster .SVmap$, "All";
+stopnpctimer;
+setnpctimer 0;
+mapannounce .SVmap$,"[Survivor]: Parabéns! Você é o único sobrevivente. Ao centro do mapa você encontrará o responsável pela sua recompensa.",1;
+enablenpc "Saída#SV";
+pvpoff .SVmap$;
+set $SVstatus,0;
+}
+end;
+}
+end;
+}
+
+//===== Script: ==============================================
+kakashi,73,159,5	script	Evento Sobrevivente	734,{
+
+// Nome do npc
+set .npc$,"^800000[Sobrevivente]^000000";
+
+if(getgmlevel() <= 5)
+{
+if(BaseLevel < 999){
+mes .npc$;
+mes "Desculpe, você não possui level suficiente para este evento.";
+close;
+end;
+}
+
+//if(chunin != 1 && jounin != 1 || jounin == 1){
+if($SVstatus < 3)
+{
+mes .npc$;
+mes "Desculpe, não estamos fazendo inscrições neste momento.";
+close;
+}
+mes .npc$;
+mes "Olá "+strcharinfo(0)+" o que posso fazer por você?";
+next;
+switch(select("Registrar:Informações"))
+{
+case 1:
+if(SVwin == 2521){
+mes .npc$;
+mes "Um vencedor não pode ir novamente à Jounin Shiken.";
+close;
+end;
+}
+
+if($SVcharid[99] > 0)
+{
+mes .npc$;
+mes "Desculpe, mas as vagas estão esgotadas.";
+close;
+end;
+}
+
+mes .npc$;
+mes "Antes de tudo, algumas informações:";
+mes "Você só pode fazer 1 inscrição por conta.";
+mes "Você perderá o evento caso esteja offline na hora do recall.";
+next;
+mes .npc$;
+mes "Continuar inscrição?";
+switch(select("Continuar:Cancelar"))
+{
+case 1:
+next;
+set .@teste,0;
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+if(getcharid(3) == $SVaccid[.i]) set .@teste, 1;
+}
+if(.@teste == 1){
+mes .npc$;
+mes "Desculpe, apenas 1 character por account pode ser inscrito.";
+close;
+end;
+}
+
+next;
+mes .npc$;
+mes "Parabéns! Você está inscrito no Evento Survivor!";
+mes "Boa Sorte!";
+close2;
+	set @i, $SVnumber;
+	set $SVnumber, $SVnumber +1;
+	set $SVname$[@i+1], strcharinfo(0);
+	set $SVaccid[@i+1], getcharid(3);
+	set $SVcharid[@i+1], getcharid(0);
+end;
+
+case 2:
+next;
+mes .npc$;
+mes "Tudo bem, estarei aqui se precisar.";
+close;
+end;
+}
+
+case 2:
+mes .npc$;
+mes "Basta sobreviver no meio desta sala para ser o vencedor. O modo é PvP e é necessário ser nível 999. Fique atento a regras de participação de cargos !!";
+close;
+}
+}
+
+mes .npc$;
+mes "Olá "+strcharinfo(0)+" o que posso fazer por você?";
+next;
+switch(select("Gerar novo SV:Finalizar SV atual:Ativar Npc:Desativar Npc:Inscrição"))
+{
+case 1:
+if($SVstatus == 1 || $SVstatus == 3){
+mes .npc$;
+mes "Uma Survivor já está ativa.";
+close;
+end;
+}
+mes .npc$;
+mes "Survivor criada com sucesso.";
+close2;
+callsub OnNewSV;
+end;
+
+case 2:
+mes .npc$;
+mes "Survivor cancelada com sucesso.";
+close2;
+callsub OnCancelSV;
+end;
+
+case 3:
+mes .npc$;
+mes "O npc Survivor foi ativo com sucesso.";
+set $SVstatus,0;
+close;
+end;
+
+case 4:
+mes .npc$;
+mes "O npc Survivor foi desativo com sucesso.";
+set $SVstatus,2;
+close;
+end;
+
+case 5:
+mes .npc$;
+mes "Parabéns! Você está inscrito ao Evento Survivor!";
+mes "Boa Sorte!";
+close2;
+	set @i, $SVnumber;
+	set $SVnumber, $SVnumber +1;
+	set $SVname$[@i+1], strcharinfo(0);
+	set $SVaccid[@i+1], getcharid(3);
+	set $SVcharid[@i+1], getcharid(0);
+end;
+}
+end;
+
+OnNewSV:
+if($SVstatus == 0){
+set $SVnumber, 0;
+set $SVstatus,3;
+set $SVmod, 0;
+set $SVend, 0;
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+
+disablenpc "Saída#SV";
+Announce "[Survivor Event]: As inscrições para o Evento Survivor estão abertas e serão encerradas dentro de 5 minutos.",0;
+initnpctimer "Evento#SV"; //Evento#JS	JouninShiken#JS
+}
+end;
+
+OnCancelSV:
+killmonster .SVmap$, "All";
+stopnpctimer "Evento#SV";
+//set $JSname$, 0;
+//set $JScharid, 0;
+//set $JSaccid, 0;
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+
+if($SVstatus == 3){
+Announce "[Survivor]: O Evento Survivor atual foi cancelado. Desculpem o transtorno, logo o evento será reativado.",0;
+}
+if($SVstatus == 1){
+MapAnnounce .SVmap$,"[Survivor]: O Evento Survivor foi cancelado. Desculpem o transtorno, logo o evento será reativado. Vocês podem sair do evento utilizando o Npc no centro do mapa.",0;
+}
+set $SVstatus, 0;
+end;
+
+}
+
+
+guild_vs3,48,49,4	script	Saída#SV	48,{ //colocar no mapa .JSmap$
+
+// Nome do npc
+set .npc$,"^800000[Survivor]^000000";
+
+set .@teste, 0;
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+if(getcharid(0) == $SVcharid[.i]){
+set .@teste, 1;
+}
+}
+
+if(.@teste == 1 && $SVend == 0){
+mes .npc$;
+mes "Parabéns "+strcharinfo(0)+"! Aqui está sua recompensa:";
+getitem 12937,10; //ID e quantidade (pergaminhos)
+set Zeny, Zeny + 2000000;
+announce "[Evento]: Survivor Event encerrado. Parabéns ao "+strcharinfo(0)+", o vencedor desta edição.",0;
+close2;
+}else{
+mes .npc$;
+mes "Desculpe, você não está habilitado a receber este prêmio.";
+close2;
+}
+warp "kakashi",123,90;
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVcharid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVaccid[.i], 0;
+}
+
+for( set .i, 1; .i < 100; set .i, .i + 1 ){
+set $SVname$[.i], 0;
+}
+disablenpc "Saída#SV";
+set $SVstatus, 0;
+end;
+
+}
+
+guild_vs3	mapflag	nowarp
+guild_vs3	mapflag	noteleport
+guild_vs3	mapflag	nowarpto
+guild_vs3	mapflag	nobranch
+guild_vs3	mapflag	nosave	SavePoint
+guild_vs3	mapflag	nomemo
+guild_vs3	mapflag	nopenalty
+guild_vs3	mapflag	noexp
+guild_vs3	mapflag	noparty

@@ -1,0 +1,2090 @@
+function	script	ovospascoa	{
+	set .@a,rand(1,5);
+getitem 7605, .@a;
+announce "[Páscoa] Incrível!! "+strcharinfo(0)+" abriu uma Caixa de Ovos e recebeu "+.@a+" ovos !!",bc_blue|bc_all;
+end;
+}
+
+function	script	caixadoce	{
+	set .@a,rand(8,15);
+getitem 570, .@a;
+announce "[Natal] Hohoho!! "+strcharinfo(0)+" abriu uma Caixa de Doces e recebeu "+.@a+" doces !!",bc_blue|bc_all;
+end;
+}
+
+function	script	caixacomun	{
+
+	set .@a,rand(1,100);
+
+//if (.@a > 80) {goto randomequipe1;} //20% Equipe level 1
+//if (.@a <= 80) && (.@a >60) {goto randomequipe2;} //20% Equipe level 2
+//if (.@a <= 60) && (.@a >40) {goto randomequipe3;} //20% Equipe level 3
+//if (.@a <= 40) && (.@a >30) {goto randomequipe4;} //10% Equipe level 4
+//if (.@a <= 30) && (.@a >20) {goto randomequipe5;} //10% Equipe level 5
+//if (.@a <= 8) && (.@a >1) {goto NADA;} //7% Nada
+if (.@a > 75) {goto randomequipe5;} //25% Equipe level 5
+if (.@a <= 75) && (.@a >50) {goto randomequipe6;} //25% Equipe level 6
+if (.@a <= 50) && (.@a >25) {goto randomequipe7;} //25% Equipe level 7
+if (.@a <= 25) && (.@a >2) {goto randomequipe8;} //25% Equipe level 8
+if (.@a == 1){
+set .@a, rand(1,100);
+//if (.@a < 11) {goto randomraro;} // 0,1% Random raro
+//if (.@a == 11) {goto randomlenda;} // 0,01% Random lendário
+if (.@a < 11) {goto randomequipe8;} // 0,1% Random raro
+if (.@a == 11) {goto randomequipe8;} // 0,01% Random lendário
+if (.@a > 11) {goto NADA;} // 0,89% Nada
+}
+
+randomequipe1:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_1;}
+if (.@b == 5) {goto random_capa_1;}
+if (.@b == 4) {goto random_bota_1;}
+if (.@b == 3) {goto random_arma_1;}
+if (.@b == 2) {goto random_pergaminho_1;}
+if (.@b == 1) {goto random_armadura_1;}
+end;
+
+random_acc_1:
+set @itemrecebido,rand(20342,20395);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+random_capa_1:
+set @itemrecebido,rand(14000,14025);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+random_bota_1:
+set @itemrecebido,rand(20092,20103);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+random_arma_1:
+set @itemrecebido,rand(26199,26244);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_1:
+set @itemrecebido,rand(16732,16771);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_1:
+set @itemrecebido,rand(15026,15061);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe1;}
+dispbottom "[Sys] Você recebeu um item nível 1";
+getitem @itemrecebido,1;
+end;
+
+NADA:
+mes "Mas que azar! A caixa estava vázia...";
+close;
+
+
+///////////////////////////////////
+
+randomequipe2:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_2;}
+if (.@b == 5) {goto random_capa_2;}
+if (.@b == 4) {goto random_bota_2;}
+if (.@b == 3) {goto random_arma_2;}
+if (.@b == 2) {goto random_pergaminho_2;}
+if (.@b == 1) {goto random_armadura_2;}
+end;
+
+random_acc_2:
+set @itemrecebido,rand(20396,20449);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+random_capa_2:
+set @itemrecebido,rand(14026,14051);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+random_bota_2:
+set @itemrecebido,rand(20104,20115);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+random_arma_2:
+set @itemrecebido,rand(26245,26290);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_2:
+set @itemrecebido,rand(16772,16811);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_2:
+set @itemrecebido,rand(15062,15097);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe2;}
+dispbottom "[Sys] Você recebeu um item nível 2";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe3:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_3;}
+if (.@b == 5) {goto random_capa_3;}
+if (.@b == 4) {goto random_bota_3;}
+if (.@b == 3) {goto random_arma_3;}
+if (.@b == 2) {goto random_pergaminho_3;}
+if (.@b == 1) {goto random_armadura_3;}
+end;
+
+random_acc_3:
+set @itemrecebido,rand(20450,20503);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+random_capa_3:
+set @itemrecebido,rand(14052,14077);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+random_bota_3:
+set @itemrecebido,rand(20116,20127);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+random_arma_3:
+set @itemrecebido,rand(26300,26329);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_3:
+set @itemrecebido,rand(16812,16851);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_3:
+set @itemrecebido,rand(15098,15133);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe3;}
+dispbottom "[Sys] Você recebeu um item nível 3";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe4:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_4;}
+if (.@b == 5) {goto random_capa_4;}
+if (.@b == 4) {goto random_bota_4;}
+if (.@b == 3) {goto random_arma_4;}
+if (.@b == 2) {goto random_pergaminho_4;}
+if (.@b == 1) {goto random_armadura_4;}
+end;
+
+random_acc_4:
+set @itemrecebido,rand(20504,20934);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+random_capa_4:
+set @itemrecebido,rand(14078,14233);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+random_bota_4:
+set @itemrecebido,rand(20128,20157);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+random_arma_4:
+set @itemrecebido,rand(26360,26731);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_4:
+set @itemrecebido,rand(16852,17153);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_4:
+set @itemrecebido,rand(15134,15315);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe4;}
+dispbottom "[Sys] Você recebeu um item nível 4";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe5:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_5;}
+if (.@b == 5) {goto random_capa_5;}
+if (.@b == 4) {goto random_bota_5;}
+if (.@b == 3) {goto random_arma_5;}
+if (.@b == 2) {goto random_pergaminho_5;}
+if (.@b == 1) {goto random_armadura_5;}
+end;
+
+random_acc_5:
+set @itemrecebido,rand(20935,21363);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+random_capa_5:
+set @itemrecebido,rand(14234,14389);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+random_bota_5:
+set @itemrecebido,rand(20158,20187);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+random_arma_5:
+set @itemrecebido,rand(26734,27107);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_5:
+set @itemrecebido,rand(17164,17465);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_5:
+set @itemrecebido,rand(15316,15497);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe5;}
+dispbottom "[Sys] Você recebeu um item nível 5";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe6:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_6;}
+if (.@b == 5) {goto random_capa_6;}
+if (.@b == 4) {goto random_bota_6;}
+if (.@b == 3) {goto random_arma_6;}
+if (.@b == 2) {goto random_pergaminho_6;}
+if (.@b == 1) {goto random_armadura_6;}
+end;
+
+random_acc_6:
+set @itemrecebido,rand(21364,21793);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+random_capa_6:
+set @itemrecebido,rand(14390,14545);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+random_bota_6:
+set @itemrecebido,rand(20188, 20217);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+random_arma_6:
+set @itemrecebido,rand(27110,27485);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_6:
+set @itemrecebido,rand(17476,17777);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_6:
+set @itemrecebido,rand(15498,15679);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe6;}
+dispbottom "[Sys] Você recebeu um item nível 6";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe7:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_7;}
+if (.@b == 5) {goto random_capa_7;}
+if (.@b == 4) {goto random_bota_7;}
+if (.@b == 3) {goto random_arma_7;}
+if (.@b == 2) {goto random_pergaminho_7;}
+if (.@b == 1) {goto random_armadura_7;}
+end;
+
+random_acc_7:
+set @itemrecebido,rand(21794,22224);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+random_capa_7:
+set @itemrecebido,rand(14546,14701);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+random_bota_7:
+set @itemrecebido,rand(20218, 20247);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+random_arma_7:
+set @itemrecebido,rand(27486,27857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_7:
+set @itemrecebido,rand(11010,11311);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_7:
+set @itemrecebido,rand(15680,15861);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe7;}
+dispbottom "[Sys] Você recebeu um item nível 7";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomequipe8:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_8;}
+if (.@b == 5) {goto random_capa_8;}
+if (.@b == 4) {goto random_bota_8;}
+if (.@b == 3) {goto random_arma_8;}
+if (.@b == 2) {goto random_pergaminho_8;}
+if (.@b == 1) {goto random_armadura_8;}
+end;
+
+random_acc_8:
+set @itemrecebido,rand(22225,22654);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+random_capa_8:
+set @itemrecebido,rand(14702,14857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+random_bota_8:
+set @itemrecebido,rand(20248, 20277);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+random_arma_8:
+set @itemrecebido,rand(27859,28232);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_8:
+set @itemrecebido,rand(11322,11623);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+random_armadura_8:
+set @itemrecebido,rand(15862,16043);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomequipe8;}
+dispbottom "[Sys] Você recebeu um item nível 8";
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomraro:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_R;}
+if (.@b == 5) {goto random_capa_R;}
+if (.@b == 4) {goto random_bota_R;}
+if (.@b == 3) {goto random_arma_R;}
+if (.@b == 2) {goto random_pergaminho_R;}
+if (.@b == 1) {goto random_armadura_R;}
+end;
+
+random_acc_R:
+set @itemrecebido,rand(19457,19466);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+random_capa_R:
+set @itemrecebido,rand(19417,19426);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+random_bota_R:
+set @itemrecebido,rand(19407,19416);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+random_arma_R:
+set @itemrecebido,rand(19427,19436);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+random_pergaminho_R:
+set @itemrecebido,rand(19437,19446);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+random_armadura_R:
+set @itemrecebido,rand(19447,19456);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.1% de chance recebeu um item raro!",bc_blue|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomlenda:
+set .@b,rand(1,6);
+if (.@b == 6) {goto random_acc_L;}
+if (.@b == 5) {goto random_capa_L;}
+if (.@b == 4) {goto random_bota_L;}
+if (.@b == 3) {goto random_arma_L;}
+if (.@b == 2) {goto random_pergaminho_L;}
+if (.@b == 1) {goto random_armadura_L;}
+end;
+
+random_acc_L:
+set @itemrecebido,rand(19588,19597);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+random_capa_L:
+set @itemrecebido,rand(19547,19556);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+random_bota_L:
+set @itemrecebido,rand(19598,19607);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+random_arma_L:
+set @itemrecebido,rand(19557,19566);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+random_pergaminho_L:
+set @itemrecebido,rand(19567,19576);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+random_armadura_L:
+set @itemrecebido,rand(19577,19587);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_blue|bc_all;
+end;
+
+/////////////////////////////////////
+
+}
+
+
+function	script	caixadna	{
+
+	set .@dna,rand(1,7);
+
+if (.@dna == 1) {getitem 12949,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Jashin",bc_blue|bc_all; end;}
+if (.@dna == 2) {getitem 12950,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Kikaichu",bc_blue|bc_all; end;}
+if (.@dna == 3) {getitem 12951,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Tayuya",bc_blue|bc_all; end;}
+if (.@dna == 4) {getitem 12952,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Ibuse",bc_blue|bc_all; end;}
+if (.@dna == 5) {getitem 12953,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Kibaku",bc_blue|bc_all; end;}
+if (.@dna == 6) {getitem 12954,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA de Mitsashi",bc_blue|bc_all; end;}
+if (.@dna == 7) {getitem 12621,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa de DNA, e recebeu um DNA Hashirama",bc_blue|bc_all; end;}
+end;
+
+
+}
+
+function	script	caixafrag	{
+
+	set .@fdna,rand(1,6);
+
+if (.@fdna == 1) {getitem 12939,1; dispbottom "Você recebeu um fragmento de Jashin ao abrir a Caixa de Fragmento de DNA"; end;}
+if (.@fdna == 2) {getitem 12940,1; dispbottom "Você recebeu um fragmento de Kikaichu ao abrir a Caixa de Fragmento de DNA"; end;}
+if (.@fdna == 3) {getitem 12941,1; dispbottom "Você recebeu um fragmento de Tayuya ao abrir a Caixa de Fragmento de DNA"; end;}
+if (.@fdna == 4) {getitem 12942,1; dispbottom "Você recebeu um fragmento de Ibuse ao abrir a Caixa de Fragmento de DNA"; end;}
+if (.@fdna == 5) {getitem 12943,1; dispbottom "Você recebeu um fragmento de Kibaku ao abrir a Caixa de Fragmento de DNA"; end;}
+if (.@fdna == 6) {getitem 12944,1; dispbottom "Você recebeu um fragmento de Mitsashi ao abrir a Caixa de Fragmento de DNA"; end;}
+end;
+
+
+}
+
+function	script	caixaitema	{
+
+	set .@itema,rand(1,12);
+
+if (.@itema == 1) {getitem 7524,1; dispbottom "Você recebeu 1  Esfera das sombra ao abrir a caixa de item avançado"; end;}
+if (.@itema == 2) {getitem 7442,1; dispbottom "Você recebeu 1 Selo maldito ao abrir a caixa de item avançado"; end;}
+if (.@itema == 3) {getitem 724,1; dispbottom "Você recebeu 1 Rubi amaldiçoado ao abrir a caixa de item avançado"; end;}
+if (.@itema == 4) {getitem 7513,1; dispbottom "Você recebeu 1 Relogio de bolso ao abrir a caixa de item avançado"; end;}
+if (.@itema == 5) {getitem 7023,1; dispbottom "Você recebeu 1 Lâmina perdida das trevas ao abrir a caixa de item avançado"; end;}
+if (.@itema == 6) {getitem 1008,1; dispbottom "Você recebeu 1 Colar do oblívio ao abrir a caixa de item avançado"; end;}
+if (.@itema == 7) {getitem 658,1; dispbottom "Você recebeu 1 União da tribo ao abrir a caixa de item avançado"; end;}
+if (.@itema == 8) {getitem 7169,1; dispbottom "Você recebeu 1 Ba gua ao abrir a caixa de item avançado"; end;}
+if (.@itema == 9) {getitem 7481,1; dispbottom "Você recebeu 1 Livro desconhecido ao abrir a caixa de item avançado"; end;}
+if (.@itema == 10) {getitem 7611,1; dispbottom "Você recebeu 1 Máscara destruída ao abrir a caixa de item avançado"; end;}
+if (.@itema == 11) {getitem 1014,1; dispbottom "Você recebeu 1 Mandíbula de formiga ao abrir a caixa de item avançado"; end;}
+if (.@itema == 12) {getitem 7027,1; dispbottom "Você recebeu 1 Chave para o subterrâneo ao abrir a caixa de item avançado"; end;}
+end;
+
+
+}
+
+function	script	caixahats	{
+
+set .@hatrecebido,rand(19300,19406);
+if (.@hatrecebido == 19306) {getitem 7248,1; mes "Chapéu inválido"; close;}
+getitem .@hatrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa de hats, e recebeu um belo chapéu novo",bc_blue|bc_all;
+end;
+
+}
+
+function	script	caixazeny	{
+
+set .@zenyrecebido,rand(500000,1800000);
+set Zeny, Zeny + .@zenyrecebido;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa de zeny, e recebeu "+.@zenyrecebido+" como recompensa",bc_blue|bc_all;
+end;
+
+}
+
+//1 = 20
+//2 = 20
+//3 = 20
+//4 = 20
+//5 = 16
+//Raro = aleatório entre nivel 1 e 10 = 3
+//Lendário = aleatório entre nivel 1 e 10 = 1
+//
+//6 = 20
+//7 = 20
+//8 = 20
+//9 = 20
+//10 = 16
+//Raro = aleatório entre nivel 1 e 10 = 3
+//Lendário = aleatório entre nivel 1 e 10 = 1
+
+/*==========================================
+*bota 3 = 20116,20127
+*bota 4 = 20128,20157
+*bota 5 = 20158, 20187
+*bota 6 = 20188, 20217
+*bota 7 = 20218, 20247
+*bota 8 = 20248, 20277
+*bota 9 = 20278, 20309
+*bota 10 = 20310, 20341
+*
+*armadura 3 = 15098,15133
+*15134,15315
+*15316,15497
+*15498,15679
+*15680,15861
+*15862,16043
+*16044, 16387
+*16388,16731
+*
+*pergaminhos
+*16812,16851
+*16852,17153
+*17164,17465
+*17476,17777
+*11010,11311
+*11322,11623
+*11634,11999,9000,9222,29006,29392
+*29654,30629
+*
+*armas
+*26300,26329
+*26360,26731
+*26734,27107
+*27110,27485
+*27486,27857
+*27859,28232
+*28235,28970
+*
+*capa
+*14052,14077
+*14078,14233
+*14234,14389
+*14390,14545
+*14546,14701
+*14702,14857
+*
+*accesorios
+*20450,20503
+*20504,20934
+*20935,21363
+*21364,21793
+*21794,22224
+*22225,22654
+*22655,24422
+*24423,26190
+ *------------------------------------------*/
+
+//20% 1
+//20% 2
+//20% 3
+//10% 4
+//10% 5
+//8%  6
+//2% 7
+//2% 8
+//7% não vir nada
+//totalizando 99%
+
+//Abaixo de 1%:
+
+//0.1% chance de vir um raro
+//0.01% chance de vir um lendário
+
+//-------------------------- Torre
+
+function	script	fn_caixa	{
+
+	set .@a,rand(1,100);
+
+if (.@a >= 98) {goto randomkgequip;} //1% randomkg e equip
+if (.@a <= 87) && (.@a > 75) {goto kill1;}
+if (.@a <= 75) && (.@a > 65){goto kill2;}
+if (.@a <= 65) && (.@a > 58){goto kill3;}
+if (.@a <= 58) && (.@a > 52){goto kill4;}
+if (.@a <= 52) && (.@a > 48){goto kill5;}
+if (.@a <= 48) && (.@a > 45){goto kill6;}
+if (.@a <= 45) && (.@a > 36){goto manuavan;}
+if (.@a <= 36) && (.@a > 18){goto pergs;}
+if (.@a <= 18) && (.@a >8) {goto corpos;} //25% Equipe level 6
+if (.@a < 8) {goto manuavan;}
+
+
+pergs:
+set .@a,rand(1,2);
+if (.@a == 1) {goto xp;}
+if (.@a == 2) {goto drop;}
+
+xp:
+{getitem 12208,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Pergaminho de Experiencia (9%)",bc_blue|bc_all; end;}
+
+drop:
+{getitem 12208,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Pergaminho de Experiencia (9%)",bc_blue|bc_all; end;}
+
+corpos:
+set .@a,rand(1,2);
+if (.@a == 1) {goto zabuza;}
+if (.@a == 2) {goto haku;}
+
+haku:
+{getitem 7245,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Cadáver Haku (5%)",bc_blue|bc_all; end;}
+
+zabuza:
+{getitem 7244,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Cadáver Zabuza (5%)",bc_blue|bc_all; end;}
+
+manuavan:
+{getitem 7206,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Manual Ninja Avançado (9%)",bc_blue|bc_all; end;}
+
+kill1:
+{getitem 516,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 1 (13%)",bc_blue|bc_all; end;}
+
+kill2:
+{getitem 552,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 2 (10%)",bc_blue|bc_all; end;}
+
+kill3:
+{getitem 554,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 3 (7%)",bc_blue|bc_all; end;}
+
+kill4:
+{getitem 581,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 4 (6%)",bc_blue|bc_all; end;}
+
+kill5:
+{getitem 594,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 5 (4%)",bc_blue|bc_all; end;}
+
+kill6:
+{getitem 612,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Kill KG 6 (3%)",bc_blue|bc_all; end;}
+
+randomkgequip:
+set .@a,rand(1,22);
+if(.@a == 22){goto kg12;}
+if (.@a == 7) {goto kg7;}
+if (.@a == 6) {goto kg1;}
+if (.@a == 5) {goto kg2;}
+if (.@a == 4) {goto kg3;}
+if (.@a == 3) {goto kg4;}
+if (.@a == 2) {goto kg5;}
+if (.@a == 1) {goto kg6;}
+if (.@a == 8) {goto kg8;}
+if (.@a == 9) {goto kg9;}
+if (.@a == 21) {goto kg11;}
+if (.@a == 20) {goto kg10;}
+if (.@a == 10) {goto equipbox1;}
+if (.@a == 11) {goto equipbox2;}
+if (.@a == 12) {goto equipbox3;}
+if (.@a == 13) {goto equipbox5;}
+if (.@a == 14) {goto equipbox6;}
+if (.@a == 15) {goto equipbox7;}
+if (.@a == 16) {goto equipbox8;}
+if (.@a == 17) {goto equipbox9;}
+if (.@a == 18) {goto equipbox10;}
+if (.@a == 19) {goto nngopoint;}
+
+nngopoint:
+{getitem 7116,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um NNGO Point (1%)",bc_blue|bc_all; end;}
+
+equipbox1:
+{getitem 2339,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox2:
+{getitem 2340,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox3:
+{getitem 1161,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox5:
+{getitem 1152,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox6:
+{getitem 1151,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox7:
+{getitem 2411,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox8:
+{getitem 2412,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox9:
+{getitem 2509,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+equipbox10:
+{getitem 2510,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Equipamento Especial (1%)",bc_blue|bc_all; end;}
+
+kg12:
+{getitem 628,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg11:
+{getitem 12617,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg1:
+{getitem 663,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg2:
+{getitem 659,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg3:
+{getitem 735,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg4:
+{getitem 744,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg5:
+{getitem 7328,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg6:
+{getitem 745,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg7:
+{getitem 685,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg8:
+{getitem 669,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg9:
+{getitem 681,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+
+kg10:
+{getitem 7112,1; announce "[Premiação] "+strcharinfo(0)+" abriu uma Caixa Surpresa, e recebeu um Item de KG (1%)",bc_blue|bc_all; end;}
+}
+
+// NNGO Custom Box
+
+function	script	caixapvp	{
+
+	set .@a,rand(1,100);
+if (.@a > 72) {goto tier4;} //25% Equipe level 5
+if (.@a <= 72) && (.@a >60) {goto tier3;} //25% Equipe level 3
+if (.@a <= 60) && (.@a >40) {goto tier4;} //25% Equipe level 4
+if (.@a <= 40) && (.@a >30) {goto tier5;} //25% Equipe level 5
+if (.@a <= 30) && (.@a >20) {goto tier6;} // tier 6
+if (.@a <= 20) && (.@a >=10) {goto tentasorte;} // tier 7
+if (.@a <= 9) && (.@a >= 6) {goto tier7;}
+if (.@a < 5) && (.@a >=2) {goto tentasorte;} // tier 8
+if (.@a == 1){
+set .@a, rand(1,100);
+if (.@a < 11) {goto tierraro;} // 0,1% Random raro
+if (.@a == 11) {goto tierlendario;} // 0,01% Random lendário
+if (.@a > 11) {goto tierraro;} // 0,89% Nada
+}
+
+tentasorte:
+set .@a,rand(1,5);
+if (.@a == 5) {goto tier7;}
+if (.@a == 4) {goto tier3;} // tier 6
+if (.@a == 3) {goto tier4;} // tier 7
+if (.@a == 2) {goto tier5;} // tier 8
+if (.@a == 1) {goto tier6;}
+end;
+
+tier7:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_t7;}
+if (.@b == 5) {goto pvp_capa_t7;}
+if (.@b == 4) {goto pvp_bota_t7;}
+if (.@b == 3) {goto pvp_arma_t7;}
+if (.@b == 2) {goto pvp_pergaminho_t7;}
+if (.@b == 1) {goto pvp_armadura_t7;}
+end;
+
+pvp_acc_t7:
+set @itemrecebido,rand(20342,20395);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_t7:
+set @itemrecebido,rand(14000,14025);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_t7:
+set @itemrecebido,rand(20092,20103);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_t7:
+set @itemrecebido,rand(26199,26244);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_t7:
+set @itemrecebido,rand(16732,16771);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_t7:
+set @itemrecebido,rand(15026,15061);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier7;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+//--------------- Tier 3
+tier3:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_1;}
+if (.@b == 5) {goto pvp_capa_1;}
+if (.@b == 4) {goto pvp_bota_1;}
+if (.@b == 3) {goto pvp_arma_1;}
+if (.@b == 2) {goto pvp_pergaminho_1;}
+if (.@b == 1) {goto pvp_armadura_1;}
+end;
+
+pvp_acc_1:
+set @itemrecebido,rand(20342,20395);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_1:
+set @itemrecebido,rand(14000,14025);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_1:
+set @itemrecebido,rand(20092,20103);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_1:
+set @itemrecebido,rand(26199,26244);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_1:
+set @itemrecebido,rand(16732,16771);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_1:
+set @itemrecebido,rand(15026,15061);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier3;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 3 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+NADA:
+mes "Mas que azar! A caixa estava vázia...";
+close;
+
+
+///////////////////////////////////
+
+tier4:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_2;}
+if (.@b == 5) {goto pvp_capa_2;}
+if (.@b == 4) {goto pvp_bota_2;}
+if (.@b == 3) {goto pvp_arma_2;}
+if (.@b == 2) {goto pvp_pergaminho_2;}
+if (.@b == 1) {goto pvp_armadura_2;}
+end;
+
+pvp_acc_2:
+set @itemrecebido,rand(20396,20449);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_2:
+set @itemrecebido,rand(14026,14051);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_2:
+set @itemrecebido,rand(20104,20115);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_2:
+set @itemrecebido,rand(26245,26290);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_2:
+set @itemrecebido,rand(16772,16811);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_2:
+set @itemrecebido,rand(15062,15097);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier4;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 4 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+tier5:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_3;}
+if (.@b == 5) {goto pvp_capa_3;}
+if (.@b == 4) {goto pvp_bota_3;}
+if (.@b == 3) {goto pvp_arma_3;}
+if (.@b == 2) {goto pvp_pergaminho_3;}
+if (.@b == 1) {goto pvp_armadura_3;}
+end;
+
+pvp_acc_3:
+set @itemrecebido,rand(20450,20503);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_3:
+set @itemrecebido,rand(14052,14077);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_3:
+set @itemrecebido,rand(20116,20127);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_3:
+set @itemrecebido,rand(26300,26329);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_3:
+set @itemrecebido,rand(16812,16851);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_3:
+set @itemrecebido,rand(15098,15133);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier5;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+tier6:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_4;}
+if (.@b == 5) {goto pvp_capa_4;}
+if (.@b == 4) {goto pvp_bota_4;}
+if (.@b == 3) {goto pvp_arma_4;}
+if (.@b == 2) {goto pvp_pergaminho_4;}
+if (.@b == 1) {goto pvp_armadura_4;}
+end;
+
+pvp_acc_4:
+set @itemrecebido,rand(20504,20934);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_4:
+set @itemrecebido,rand(14078,14233);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_4:
+set @itemrecebido,rand(20128,20157);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+//announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_4:
+set @itemrecebido,rand(26360,26731);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+//announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_4:
+set @itemrecebido,rand(16852,17153);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+//announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_4:
+set @itemrecebido,rand(15134,15315);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tier6;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP e recebeu um item PvP Tier 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pvp5:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc5;}
+if (.@b == 5) {goto pvp_capa_5;}
+if (.@b == 4) {goto pvp_bota_5;}
+if (.@b == 3) {goto pvp_arma_5;}
+if (.@b == 2) {goto pvp_pergaminho_5;}
+if (.@b == 1) {goto pvp_armadura_5;}
+end;
+
+pvp_acc_5:
+set @itemrecebido,rand(20935,21363);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_5:
+set @itemrecebido,rand(14234,14389);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+//announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_5:
+set @itemrecebido,rand(20158,20187);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+//announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_5:
+set @itemrecebido,rand(26734,27107);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_5:
+set @itemrecebido,rand(17164,17465);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_5:
+set @itemrecebido,rand(15316,15497);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp5;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pvp6:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_6;}
+if (.@b == 5) {goto pvp_capa_6;}
+if (.@b == 4) {goto pvp_bota_6;}
+if (.@b == 3) {goto pvp_arma_6;}
+if (.@b == 2) {goto pvp_pergaminho_6;}
+if (.@b == 1) {goto pvp_armadura_6;}
+end;
+
+pvp_acc_6:
+set @itemrecebido,rand(21364,21793);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_6:
+set @itemrecebido,rand(14390,14545);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_6:
+set @itemrecebido,rand(20188, 20217);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_6:
+set @itemrecebido,rand(27110,27485);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_6:
+set @itemrecebido,rand(17476,17777);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_6:
+set @itemrecebido,rand(15498,15679);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp6;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 6 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pvp7:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_7;}
+if (.@b == 5) {goto pvp_capa_7;}
+if (.@b == 4) {goto pvp_bota_7;}
+if (.@b == 3) {goto pvp_arma_7;}
+if (.@b == 2) {goto pvp_pergaminho_7;}
+if (.@b == 1) {goto pvp_armadura_7;}
+end;
+
+pvp_acc_7:
+set @itemrecebido,rand(21794,22224);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_7:
+set @itemrecebido,rand(14546,14701);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_7:
+set @itemrecebido,rand(20218, 20247);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_7:
+set @itemrecebido,rand(27486,27857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_7:
+set @itemrecebido,rand(11010,11311);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_7:
+set @itemrecebido,rand(15680,15861);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp7;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pvp8:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_8;}
+if (.@b == 5) {goto pvp_capa_8;}
+if (.@b == 4) {goto pvp_bota_8;}
+if (.@b == 3) {goto pvp_arma_8;}
+if (.@b == 2) {goto pvp_pergaminho_8;}
+if (.@b == 1) {goto pvp_armadura_8;}
+end;
+
+pvp_acc_8:
+set @itemrecebido,rand(22225,22654);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_8:
+set @itemrecebido,rand(14702,14857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_8:
+set @itemrecebido,rand(20248, 20277);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_8:
+set @itemrecebido,rand(27859,28232);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_8:
+set @itemrecebido,rand(11322,11623);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_8:
+set @itemrecebido,rand(15862,16043);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pvp8;}
+announce "[PvP] "+strcharinfo(0)+" recebeu um item PvP nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+tierraro:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_R;}
+if (.@b == 5) {goto pvp_capa_R;}
+if (.@b == 4) {goto pvp_bota_R;}
+if (.@b == 3) {goto pvp_arma_R;}
+if (.@b == 2) {goto pvp_pergaminho_R;}
+if (.@b == 1) {goto pvp_armadura_R;}
+end;
+
+pvp_acc_R:
+set @itemrecebido,rand(19457,19466);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_capa_R:
+set @itemrecebido,rand(19417,19426);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_bota_R:
+set @itemrecebido,rand(19407,19416);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_arma_R:
+set @itemrecebido,rand(19427,19436);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_pergaminho_R:
+set @itemrecebido,rand(19437,19446);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pvp_armadura_R:
+set @itemrecebido,rand(19447,19456);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+tierlendario:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pvp_acc_L;}
+if (.@b == 5) {goto pvp_capa_L;}
+if (.@b == 4) {goto pvp_bota_L;}
+if (.@b == 3) {goto pvp_arma_L;}
+if (.@b == 2) {goto pvp_pergaminho_L;}
+if (.@b == 1) {goto pvp_armadura_L;}
+end;
+
+pvp_acc_L:
+set @itemrecebido,rand(19588,19597);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pvp_capa_L:
+set @itemrecebido,rand(19547,19556);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pvp_bota_L:
+set @itemrecebido,rand(19598,19607);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pvp_arma_L:
+set @itemrecebido,rand(19557,19566);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pvp_pergaminho_L:
+set @itemrecebido,rand(19567,19576);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pvp_armadura_L:
+set @itemrecebido,rand(19577,19587);
+if(getiteminfo(@itemrecebido,2) == -1) {goto tierlendario;}
+getitem @itemrecebido,1;
+announce "[Premiação] "+strcharinfo(0)+" abriu uma caixa comum, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+}
+/////////////////////////////////////
+
+function	script	caixapve	{
+
+	set .@a,rand(1,100);
+if (.@a > 75) {goto pve5;} //25% Equipe level 5
+if (.@a <= 75) && (.@a >50) {goto pve6;} //25% Equipe level 6
+if (.@a <= 50) && (.@a >25) {goto pve7;} //25% Equipe level 7
+if (.@a <= 25) && (.@a >2) {goto pve8;} //25% Equipe level 8
+if (.@a == 1){
+set .@a, rand(1,100);
+if (.@a < 11) {goto pve8;} // 0,1% Random raro
+if (.@a == 11) {goto pve8;} // 0,01% Random lendário
+if (.@a > 11) {goto pve9;} // 0,89% Nada
+}
+
+pve1:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_1;}
+if (.@b == 5) {goto pve_capa_1;}
+if (.@b == 4) {goto pve_bota_1;}
+if (.@b == 3) {goto pve_arma_1;}
+if (.@b == 2) {goto pve_pergaminho_1;}
+if (.@b == 1) {goto pve_armadura_1;}
+end;
+
+pve_acc_1:
+set @itemrecebido,rand(20342,20395);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_1:
+set @itemrecebido,rand(14000,14025);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_1:
+set @itemrecebido,rand(20092,20103);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_1:
+set @itemrecebido,rand(26199,26244);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_1:
+set @itemrecebido,rand(16732,16771);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_1:
+set @itemrecebido,rand(15026,15061);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve1;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 1",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+NADA:
+mes "Mas que azar! A caixa estava vázia...";
+close;
+
+
+///////////////////////////////////
+
+pve2:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_2;}
+if (.@b == 5) {goto pve_capa_2;}
+if (.@b == 4) {goto pve_bota_2;}
+if (.@b == 3) {goto pve_arma_2;}
+if (.@b == 2) {goto pve_pergaminho_2;}
+if (.@b == 1) {goto pve_armadura_2;}
+end;
+
+pve_acc_2:
+set @itemrecebido,rand(20396,20449);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_2:
+set @itemrecebido,rand(14026,14051);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_2:
+set @itemrecebido,rand(20104,20115);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_2:
+set @itemrecebido,rand(26245,26290);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_2:
+set @itemrecebido,rand(16772,16811);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_2:
+set @itemrecebido,rand(15062,15097);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve2;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 2",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve3:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_3;}
+if (.@b == 5) {goto pve_capa_3;}
+if (.@b == 4) {goto pve_bota_3;}
+if (.@b == 3) {goto pve_arma_3;}
+if (.@b == 2) {goto pve_pergaminho_3;}
+if (.@b == 1) {goto pve_armadura_3;}
+end;
+
+pve_acc_3:
+set @itemrecebido,rand(20450,20503);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_3:
+set @itemrecebido,rand(14052,14077);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_3:
+set @itemrecebido,rand(20116,20127);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_3:
+set @itemrecebido,rand(26300,26329);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_3:
+set @itemrecebido,rand(16812,16851);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_3:
+set @itemrecebido,rand(15098,15133);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve3;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 3",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve4:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_4;}
+if (.@b == 5) {goto pve_capa_4;}
+if (.@b == 4) {goto pve_bota_4;}
+if (.@b == 3) {goto pve_arma_4;}
+if (.@b == 2) {goto pve_pergaminho_4;}
+if (.@b == 1) {goto pve_armadura_4;}
+end;
+
+pve_acc_4:
+set @itemrecebido,rand(20504,20934);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_4:
+set @itemrecebido,rand(14078,14233);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_4:
+set @itemrecebido,rand(20128,20157);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_4:
+set @itemrecebido,rand(26360,26731);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_4:
+set @itemrecebido,rand(16852,17153);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_4:
+set @itemrecebido,rand(15134,15315);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve4;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 4",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve5:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_5;}
+if (.@b == 5) {goto pve_capa_5;}
+if (.@b == 4) {goto pve_bota_5;}
+if (.@b == 3) {goto pve_arma_5;}
+if (.@b == 2) {goto pve_pergaminho_5;}
+if (.@b == 1) {goto pve_armadura_5;}
+end;
+
+pve_acc_5:
+set @itemrecebido,rand(20935,21363);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_5:
+set @itemrecebido,rand(14234,14389);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_5:
+set @itemrecebido,rand(20158,20187);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_5:
+set @itemrecebido,rand(26734,27107);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_5:
+set @itemrecebido,rand(17164,17465);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_5:
+set @itemrecebido,rand(15316,15497);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve5;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 5 !!",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve6:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_6;}
+if (.@b == 5) {goto pve_capa_6;}
+if (.@b == 4) {goto pve_bota_6;}
+if (.@b == 3) {goto pve_arma_6;}
+if (.@b == 2) {goto pve_pergaminho_6;}
+if (.@b == 1) {goto pve_armadura_6;}
+end;
+
+pve_acc_6:
+set @itemrecebido,rand(21364,21793);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_6:
+set @itemrecebido,rand(14390,14545);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_6:
+set @itemrecebido,rand(20188, 20217);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_6:
+set @itemrecebido,rand(27110,27485);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_6:
+set @itemrecebido,rand(17476,17777);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_6:
+set @itemrecebido,rand(15498,15679);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve6;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 6",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve7:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_7;}
+if (.@b == 5) {goto pve_capa_7;}
+if (.@b == 4) {goto pve_bota_7;}
+if (.@b == 3) {goto pve_arma_7;}
+if (.@b == 2) {goto pve_pergaminho_7;}
+if (.@b == 1) {goto pve_armadura_7;}
+end;
+
+pve_acc_7:
+set @itemrecebido,rand(21794,22224);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_7:
+set @itemrecebido,rand(14546,14701);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_7:
+set @itemrecebido,rand(20218, 20247);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_7:
+set @itemrecebido,rand(27486,27857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_7:
+set @itemrecebido,rand(11010,11311);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_7:
+set @itemrecebido,rand(15680,15861);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve7;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 7",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+pve8:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_8;}
+if (.@b == 5) {goto pve_capa_8;}
+if (.@b == 4) {goto pve_bota_8;}
+if (.@b == 3) {goto pve_arma_8;}
+if (.@b == 2) {goto pve_pergaminho_8;}
+if (.@b == 1) {goto pve_armadura_8;}
+end;
+
+pve_acc_8:
+set @itemrecebido,rand(22225,22654);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_8:
+set @itemrecebido,rand(14702,14857);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_8:
+set @itemrecebido,rand(20248, 20277);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_8:
+set @itemrecebido,rand(27859,28232);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_8:
+set @itemrecebido,rand(11322,11623);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_8:
+set @itemrecebido,rand(15862,16043);
+if(getiteminfo(@itemrecebido,2) == -1) {goto pve8;}
+announce "[PvE] "+strcharinfo(0)+" recebeu um item PvE nível 8",bc_yellow|bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomraro:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_R;}
+if (.@b == 5) {goto pve_capa_R;}
+if (.@b == 4) {goto pve_bota_R;}
+if (.@b == 3) {goto pve_arma_R;}
+if (.@b == 2) {goto pve_pergaminho_R;}
+if (.@b == 1) {goto pve_armadura_R;}
+end;
+
+pve_acc_R:
+set @itemrecebido,rand(19457,19466);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_all,0xD41F1F;
+getitem @itemrecebido,1;
+end;
+
+pve_capa_R:
+set @itemrecebido,rand(19417,19426);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_all,0xD41F1F;
+getitem @itemrecebido,1;
+end;
+
+pve_bota_R:
+set @itemrecebido,rand(19407,19416);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_all,0xD41F1F;
+getitem @itemrecebido,1;
+end;
+
+pve_arma_R:
+set @itemrecebido,rand(19427,19436);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+ strcharinfo(0) +"  APARECE COLORIDO!",bc_all,0x00ff66;
+//announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!has entered PVP ARENA",0,0xFF3399;",bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_pergaminho_R:
+set @itemrecebido,rand(19437,19446);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_all;
+getitem @itemrecebido,1;
+end;
+
+pve_armadura_R:
+set @itemrecebido,rand(19447,19456);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomraro;}
+announce "[PvP] "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.1% de chance recebeu um item raro! Parabéns!!",bc_all;
+getitem @itemrecebido,1;
+end;
+
+/////////////////////////////////////
+
+randomlenda:
+set .@b,rand(1,6);
+if (.@b == 6) {goto pve_acc_L;}
+if (.@b == 5) {goto pve_capa_L;}
+if (.@b == 4) {goto pve_bota_L;}
+if (.@b == 3) {goto pve_arma_L;}
+if (.@b == 2) {goto pve_pergaminho_L;}
+if (.@b == 1) {goto pve_armadura_L;}
+end;
+
+pve_acc_L:
+set @itemrecebido,rand(19588,19597);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[PvP] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pve_capa_L:
+set @itemrecebido,rand(19547,19556);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pve_bota_L:
+set @itemrecebido,rand(19598,19607);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pve_arma_L:
+set @itemrecebido,rand(19557,19566);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pve_pergaminho_L:
+set @itemrecebido,rand(19567,19576);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+
+pve_armadura_L:
+set @itemrecebido,rand(19577,19587);
+if(getiteminfo(@itemrecebido,2) == -1) {goto randomlenda;}
+getitem @itemrecebido,1;
+announce "[Premiação] NOSSA !! "+strcharinfo(0)+" abriu uma caixa de Equipamentos PvP, e com 0.01% de chance recebeu um item lendário!",bc_yellow|bc_all;
+end;
+}
+/////////////////////////////////////

@@ -1,0 +1,1739 @@
+pay_dun01,235,49,4	script	Linhagem Ninjutsu	843,{
+//------------------------ Daqui pra baixo
+if(dennin == 1) && (lvlden == 1){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(dennin == 1) && (lvlden == 2){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(dennin == 1) && (lvlden == 3){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(dennin == 1) && (lvlden == 4){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(dennin == 1) && (lvlden == 5){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000kakashi^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(dennin == 1) && (lvlden == 6){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(dennin == 1) && (lvlden == 7){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(dennin == 1) && (lvlden == 8){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(dennin == 1) && (lvlden == 9){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000kakashi^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 1 Fuuin no Sho, 50.000.000 de Zeny e 20 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Kakashi^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (countitem(749) < 1){ mes "[^FF0000Kakashi^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+set Zeny,Zeny-50000000;
+delitem 749,1;
+delitem 1079,20;
+mes "[^FF0000Kakashi^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+// ------------ Daqui pra cima
+if(nin_avan != 1) {mes "[^FF0000Kakashi^000000]"; mes "Você precisa estudar Ninjutsu avançado antes de aprender comigo."; close;}
+if(WeaponLvl2 < 100){
+mes "[^FF0000Kakashi^000000]";
+mes "Você precisa ser nível 100 de Ninjutsu antes de conversarmos... vá treinar !!"; close;}
+if (countitem(751) < 1){ mes "[^FF0000Kakashi^000000]";
+mes "Você precisa da Pedra de Ninjutsu Avançado... vá treinar !!"; close;}
+// ----------- Daqui pra baixo
+
+if(fazendodennin == 1){goto checarum;}
+if(dennin == 0){
+mes "[^FF0000Kakashi^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Ninjutsu.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Ninjutsu nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodennin,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Kakashi^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Kakashi^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Kakashi^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Kakashi^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000kakashi^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Kakashi^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Kakashi^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Kakashi^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Kakashi^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13102) < 5){ mes "[^FF0000Kakashi^000000]"; mes "Você precisa de 5 Fragmentos de Velocidade... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Kakashi^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Kakashi^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13102,5;
+set dennin,1;
+set lvlden,1;
+set fazendodennin,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Kakashi^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Ninjutsu nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+// ------------------ Até aqui
+OnInit:
+	waitingroom "[Linhagem Ninjutsu]",0;
+}
+
+gef_fild10,177,235,4	script	Linhagem Taijutsu	60,{
+
+//------------------------ Daqui pra baixo
+if(dentai == 1) && (lvlden == 1){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Lee^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(dentai == 1) && (lvlden == 2){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Lee^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(dentai == 1) && (lvlden == 3){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Lee^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(dentai == 1) && (lvlden == 4){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Lee^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(dentai == 1) && (lvlden == 5){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000Lee^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(dentai == 1) && (lvlden == 6){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Lee^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(dentai == 1) && (lvlden == 7){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Lee^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(dentai == 1) && (lvlden == 8){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Lee^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(dentai == 1) && (lvlden == 9){
+mes "[^FF0000Lee^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 1 Fuuin no Sho, 50.000.000 de Zeny e 20 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Lee^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (countitem(749) < 1){ mes "[^FF0000Lee^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+set Zeny,Zeny-50000000;
+delitem 1079,20;
+delitem 749,1;
+mes "[^FF0000Lee^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+// ----------------- Até aqui
+
+if(tai_avan != 1) {mes "[^FF0000Lee^000000]"; mes "Você precisa estudar Taijutsu avançado antes de treinar comigo."; close;}
+if (WeaponLvl < 100) {
+mes "[^FF0000Lee^000000]";
+mes "Você precisa ser nível 100 de Taijutsu antes de conversarmos... vá treinar !!"; close;}
+if (countitem(752) < 1){ mes "[^FF0000Lee^000000]";
+mes "Você precisa da Pedra de Taijutsu Avançado... vá treinar !!"; close;}
+
+// ----------- Daqui pra baixo
+
+if(fazendodentai == 1){goto checarum;}
+if(dentai == 0){
+mes "[^FF0000Lee^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Ninjutsu.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Lee^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Ninjutsu nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Lee^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodentai,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Lee^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Lee^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Lee^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Lee^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000Lee^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Lee^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Lee^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Lee^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Lee^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13100) < 5){ mes "[^FF0000Lee^000000]"; mes "Você precisa de 5 Fragmentos de Taijutsu... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Lee^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Lee^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Lee^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13100,5;
+set dentai,1;
+set lvlden,1;
+set fazendodentai,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Lee^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Taijutsu nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+
+OnInit:
+	waitingroom "[Linhagem Taijutsu]",0;
+}
+
+gef_fild12,93,19,4	script	Linhagem Fuuinjutsu	65,{
+
+// ------------ Daqui pra baixo Fuuin para Shikamaru
+
+if(denfuin == 1) && (lvlden == 1){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 2){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 3){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 4){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 5){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 6){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 7){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(denfuin == 1) && (lvlden == 8){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(denfuin == 1) && (lvlden == 9){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 1 Fuuin no Sho, 50.000.000 de Zeny e 20 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Shikamaru^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (countitem(749) < 1){ mes "[^FF0000Shikamaru^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+set Zeny,Zeny-50000000;
+delitem 1079,20;
+delitem 749,1;
+mes "[^FF0000Shikamaru^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+
+// ----------------- Até aqui Fuuin
+
+if(fuuin_avan != 1) {mes "[^FF0000Shikamaru^000000]"; mes "Você precisa estudar Fuuinjutsu avançado antes de treinar comigo."; close;}
+if (WeaponLvl5 < 100){
+mes "[^FF0000Shikamaru^000000]";
+mes "Você precisa ser nível 100 de Fuuinjutsu antes de conversarmos... vá treinar !!"; close;}
+if (countitem(753) < 1){ mes "[^FF0000Shikamaru^000000]";
+mes "Você precisa da Pedra de Fuuinjutsu Avançado... vá treinar !!"; close;}
+
+
+// ---------------- Daqui pra baixo Fuuin
+
+if(fazendodenfuin == 1){goto checarum;}
+if(denfuin == 0){
+mes "[^FF0000Shikamaru^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Ninjutsu.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Ninjutsu nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodenfuin,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Shikamaru^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Shikamaru^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Shikamaru^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Shikamaru^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000Shikamaru^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Shikamaru^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Shikamaru^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Shikamaru^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Shikamaru^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13104) < 5){ mes "[^FF0000Shikamaru^000000]"; mes "Você precisa de 5 Fragmentos de Fuuinjutsu... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Shikamaru^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Shikamaru^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13104,5;
+set denfuin,1;
+set lvlden,1;
+set fazendodenfuin,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Shikamaru^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Fuuinjutsu nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+
+//----------------------- Até aqui Fuuin
+
+OnInit:
+	waitingroom "[Linhagem Fuuinjutsu]",0;
+}
+
+gef_fild06,382,212,4	script	Linhagem Genjutsu	831,{
+
+// ------------ Daqui pra baixo Genjutsu Kurenai
+
+if(dengen == 1) && (lvlden == 1){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(dengen == 1) && (lvlden == 2){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(dengen == 1) && (lvlden == 3){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(dengen == 1) && (lvlden == 4){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(dengen == 1) && (lvlden == 5){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(dengen == 1) && (lvlden == 6){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(dengen == 1) && (lvlden == 7){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(dengen == 1) && (lvlden == 8){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(dengen == 1) && (lvlden == 9){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 1 Fuuin no Sho, 50.000.000 de Zeny e 20 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Kurenai^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (countitem(749) < 1){ mes "[^FF0000Kurenai^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+set Zeny,Zeny-50000000;
+delitem 1079,20;
+delitem 749,1;
+mes "[^FF0000Kurenai^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+
+//--------------- Daqui pra Cima Genjutsu -----------------------
+
+if(gen_avan != 1) {mes "[^FF0000Kurenai^000000]"; mes "Você precisa estudar Genjutsu avançado antes de treinar comigo."; close;}
+if (WeaponLvl3 < 100){
+mes "[^FF0000Kurenai^000000]";
+mes "Você precisa ser nível 100 de Genjutsu antes de conversarmos... vá treinar !!"; close;}
+if (countitem(750) < 1){ mes "[^FF0000Kurenai^000000]";
+mes "Você precisa da Pedra de Genjutsu Avançado... vá treinar !!"; close;}
+
+
+// ------------- Daqui pra Baixo Genjutsu
+
+if(fazendodengen == 1){goto checarum;}
+if(dengen == 0){
+mes "[^FF0000Kurenai^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Ninjutsu.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Genjutsu nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodengen,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Kurenai^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Kurenai^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Kurenai^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Kurenai^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000Kurenai^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Kurenai^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Kurenai^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Kurenai^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Kurenai^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13105) < 5){ mes "[^FF0000Kurenai^000000]"; mes "Você precisa de 5 Fragmentos de Genjutsu... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Kurenai^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Kurenai^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13105,5;
+set dengen,1;
+set lvlden,1;
+set fazendodengen,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Kurenai^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Genjutsu nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+
+// ------------ Até aqui Genjutsu
+
+OnInit:
+	waitingroom "[Linhagem Genjutsu]",0;
+}
+
+
+moc_fild04,47,22,4	script	Linhagem Medicina	423,{
+
+//------- daqui pra baixo Tsunade medicina
+
+if(denmed == 1) && (lvlden == 1){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(denmed == 1) && (lvlden == 2){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(denmed == 1) && (lvlden == 3){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(denmed == 1) && (lvlden == 4){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(denmed == 1) && (lvlden == 5){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(denmed == 1) && (lvlden == 6){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(denmed == 1) && (lvlden == 7){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(denmed == 1) && (lvlden == 8){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(denmed == 1) && (lvlden == 9){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 1 Fuuin no Sho, 50.000.000 de Zeny e 20 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Tsunade^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (countitem(749) < 1){ mes "[^FF0000Tsunade^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+set Zeny,Zeny-50000000;
+delitem 1079,20;
+delitem 749,1;
+mes "[^FF0000Tsunade^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+//----------- ate aqui Tsunade Medicina
+
+if(med_avan != 1) {mes "[^FF0000Tsunade^000000]"; mes "Você precisa estudar Medicina avançada antes de treinar comigo"; close;}
+if (WeaponLvl4 < 100){
+mes "[^FF0000Tsunade^000000]";
+mes "Você precisa ser nível 100 de Medicina antes de conversarmos... vá treinar !!"; close;}
+if (countitem(754) < 1){ mes "[^FF0000Tsunade^000000]";
+mes "Você precisa da Pedra de Medicina Avançado... vá treinar !!"; close;}
+
+// ------------- Daqui pra Baixo Medicina
+
+if(fazendodenmed == 1){goto checarum;}
+if(denmed == 0){
+mes "[^FF0000Tsunade^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Medicina.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Medicina nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodenmed,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Tsunade^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Tsunade^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Tsunade^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Tsunade^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000Tsunade^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Tsunade^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Tsunade^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Tsunade^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Tsunade^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13103) < 5){ mes "[^FF0000Tsunade^000000]"; mes "Você precisa de 5 Fragmentos de Medicina... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Tsunade^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Tsunade^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13103,5;
+set denmed,1;
+set lvlden,1;
+set fazendodenmed,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Tsunade^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Medicina nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+
+// ------------ Até aqui Medicina
+OnInit:
+	waitingroom "[Linhagem Medicina]",0;
+}
+
+// ----   NÃO EDITAR MAIS DEPOIS DAQUI
+prt_fild03,217,32,4	script	Linhagem Velocidade	67,{
+
+if(denvel == 1) && (lvlden == 1){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o segundo nível de sua linhagem, eu preciso de 5.000.000 de Zeny e 2 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 2){ mes "[^FF0000Minato^000000]"; mes "São necessários 2 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 5000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 5.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-5000000;
+delitem 1079,2;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 2... incrível !!",bc_yellow|bc_all;
+set lvlden,2;
+close;
+}
+
+if(denvel == 1) && (lvlden == 2){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o terceiro nível de sua linhagem, eu preciso de 8.000.000 de Zeny e 3 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 3){ mes "[^FF0000Minato^000000]"; mes "São necessários 3 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 8000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 8.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-8000000;
+delitem 1079,3;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 3... incrível !!",bc_yellow|bc_all;
+set lvlden,3;
+close;
+}
+
+if(denvel == 1) && (lvlden == 3){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o quarto nível de sua linhagem, eu preciso de 12.000.000 de Zeny e 4 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 4){ mes "[^FF0000Minato^000000]"; mes "São necessários 4 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 12000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 12.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-12000000;
+delitem 1079,4;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 4... incrível !!",bc_yellow|bc_all;
+set lvlden,4;
+close;
+}
+
+if(denvel == 1) && (lvlden == 4){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o quinto nível de sua linhagem, eu preciso de 17.000.000 de Zeny e 6 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 6){ mes "[^FF0000Minato^000000]"; mes "São necessários 6 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 17000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 17.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-17000000;
+delitem 1079,6;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 5... incrível !!",bc_yellow|bc_all;
+set lvlden,5;
+close;
+}
+
+if(denvel == 1) && (lvlden == 5){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o sexto nível de sua linhagem, eu preciso de 24.000.000 de Zeny e 8 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 8){ mes "[^FF0000Minato^000000]"; mes "São necessários 8 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 24000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 24.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-24000000;
+delitem 1079,8;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 6... incrível !!",bc_yellow|bc_all;
+set lvlden,6;
+close;
+}
+
+if(denvel == 1) && (lvlden == 6){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o sétimo nível de sua linhagem, eu preciso de 29.000.000 de Zeny e 10 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 10){ mes "[^FF0000Minato^000000]"; mes "São necessários 10 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 29000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 29.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-29000000;
+delitem 1079,10;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 7... incrível !!",bc_yellow|bc_all;
+set lvlden,7;
+close;
+}
+
+if(denvel == 1) && (lvlden == 7){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o oitavo nível de sua linhagem, eu preciso de 35.000.000 de Zeny e 14 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 14){ mes "[^FF0000Minato^000000]"; mes "São necessários 14 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 35000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 35.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-35000000;
+delitem 1079,14;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 8... incrível !!",bc_yellow|bc_all;
+set lvlden,8;
+close;
+}
+
+if(denvel == 1) && (lvlden == 8){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o nono nível de sua linhagem, eu preciso de 42.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 16){ mes "[^FF0000Minato^000000]"; mes "São necessários 16 Chakras Lendários para implementar no seu"; close;}
+if (Zeny < 42000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 42.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-42000000;
+delitem 1079,16;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 9... incrível !!",bc_yellow|bc_all;
+set lvlden,9;
+close;
+}
+
+
+if(denvel == 1) && (lvlden == 9){
+mes "[^FF0000Minato^000000]";
+mes "Oh, vejo que está interessado em evoluír sua linhagem...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Ok !! Vamos estabelecer o que você deve me trazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Para o décimo e último nível de sua linhagem, eu preciso de 50.000.000 de Zeny e 16 Chakras Lendários para infudir ao seu.";
+next;
+if (countitem(1079) < 20){ mes "[^FF0000Minato^000000]"; mes "São necessários 20 Chakras Lendários para implementar no seu"; close;}
+if (countitem(749) < 1){ mes "[^FF0000Minato^000000]"; mes "Preciso de um Fuuin no Sho para continuar com seu treinamento"; close;}
+if (Zeny < 50000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 50.000.000 de Zeny para as suas despesas de treinamento."; close;}
+set Zeny,Zeny-50000000;
+delitem 1079,20;
+delitem 749,1;
+mes "[^FF0000Minato^000000]";
+mes "Meus parabéns !! Vamos tornar sua linhagem mais forte !!";
+announce "[Linhagem Shinobi] Impossível... O ninja "+strcharinfo(0)+" acabou de evoluir sua linhagem para o nível 10... uma nova lenda nasceu !!",bc_yellow|bc_all;
+set lvlden,10;
+close;
+}
+if(lvlden >= 1){mes "[^FF0000Minato^000000]"; mes "Você já é forte o suficiente... procure outras formas de melhorar suas habilidades !!"; close;}
+if(denvel == 1) && (lvlden == 10){mes "[^FF0000Minato^000000]"; mes "Você já está no nível de um shinobi lendário... não tenho mais nada para ensinar."; close;}
+if(vel_avan != 1) {mes "[^FF0000Minato^000000]"; mes "Você precisa estudar Velocidade avançada antes de aprender comigo."; close;}
+if (WeaponLvl6 < 100){
+mes "[^FF0000Minato^000000]";
+mes "Você precisa ser nível 100 de Velocidade antes de conversarmos... vá treinar !!"; close;}
+if (countitem(7021) < 1){ mes "[^FF0000Minato^000000]";
+mes "Você precisa da Pedra de Velocidade Avançada... vá treinar !!"; close;}
+if(fazendodenvel == 1){goto checarum;}
+if(denvel == 0){
+mes "[^FF0000Minato^000000]";
+mes "Oh... olá jovem ninja !!";
+mes "Vejo que chegou no ápice da força e do talento de um ninja...";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Eu posso lhe fazer mais forte, pois sou o melhor no treino de Velocidade.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Diga-me, gostaria de passar pela provação para começar a treinar comigo ??";
+menu "- Sim, eu vou ficar mais forte !!",simt,"- Não, obrigado.",chatf;
+
+chatf:
+close;
+
+simt:
+next;
+mes "[^FF0000Minato^000000]";
+mes "Hahaha, do jeito que eu achei que seria... Muito bem, vou lhe informar as provações que precisa fazer.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Velocidade nível 2, ser Rank A ou superior...";
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+next;
+mes "[^FF0000Minato^000000]";
+mes "Você pode concluír o desafio ?";
+mes "Mostre-me que você é capaz !!";
+set fazendodenvel,1;
+close;
+}
+
+checarum:
+mes "[^FF0000Minato^000000]";
+mes "Muito bom te ver, jovem ninja... já conseguiu todos os pré requisitos ?";
+menu "- Sim, estou pronto !!",slvlum,"- Não, gostaria de saber o que devo fazer",rever,"- Ainda não...",nope;
+
+slvlum:
+mes "[^FF0000Minato^000000]";
+mes "Ok, vamos ver se você tem tudo pronto...";
+if(torrefeita < 1){mes "[^FF0000Minato^000000]"; mes "Você precisa concluír a Torre na maior Dificuldade"; close;}
+if(questzabuzacompleta < 1){mes "[^FF0000Minato^000000]"; mes "Você precisa ajudar o Tazuna primeiro"; close;}
+if (countitem(1079) < 10){ mes "[^FF0000Minato^000000]"; mes "É necessário 10 Chakras Lendários para implementar no seu"; close;}
+if( title$ == "RankE") { mes "[^FF0000Minato^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankD") { mes "[^FF0000Minato^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankC") { mes "[^FF0000Minato^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if( title$ == "RankB") { mes "[^FF0000Minato^000000]"; mes "É necessário no mínimo Rank A para iniciar o treino"; close;}
+if (countitem(13101) < 5){ mes "[^FF0000Minato^000000]"; mes "Você precisa de 5 Fragmentos de Velocidade... isto é necessário."; close;}
+if (Zeny < 7000000) {mes "[^FF0000Minato^000000]"; mes "É preciso de 7.000.000 de Zeny para as suas despesas de treinamento."; close;}
+if (derrotoubossfogo < 1) { mes "[^FF0000Minato^000000]"; mes "Você deve derrotar a ameaça flamejante do mundo ninja !!"; close;}
+next;
+mes "[^FF0000Minato^000000]";
+mes "Muito bem, você tem todos os pré-requisitos para iniciar seu treinamento comigo.";
+next;
+set Zeny,Zeny-7000000;
+delitem 1079,10;
+delitem 13101,5;
+set denvel,1;
+set lvlden,1;
+set fazendodenvel,0;
+getitem 7078,1;
+announce "[Linhagem Shinobi] Mas... O que é isso ?? É sentido um poder enorme, algo... incrível !!",bc_yellow|bc_all;
+close;
+
+nope:
+close;
+
+rever:
+next;
+mes "[^FF0000Minato^000000]";
+mes "É necessário ter Ajudado o Tazuna com seu problema, Concluído a Torre na Dificuldade mais elevada, juntado 5 Fragmentos de Velocidade nível 2, ser Rank A ou superior"; 
+mes "Conseguir um Certificado de Ninja de Elite por 1300 pontos de missão, 7.000.000 de Zeny e derrotar a ameaça flamejante do mundo shinobi e 10 Chakras Lendários.";
+close;
+
+OnInit:
+	waitingroom "[Linhagem Velocidade]",0;
+
+//kakashi,110,132,4	script	Não clique em mim	50,{
+//if (countitem(7078) < 1){ mes "[^FF0000Tsunade^000000]";
+//mes "Você precisa da Pedra de Medicina Avançado... vá treinar !!"; close;}
+//if(dennin == 1){ mes "Reconhecido Nin"; close;}
+//if(dentai == 1){ mes "Reconhecido Tai"; close;}
+//mes "Boa sorte !!";
+//next;
+//mes "Nada Reconhecido";
+//set lvlden,1;
+//set denmed,0;
+//set dennin,0;
+//set denvel,0;
+//set dentai,0;
+//set denfuin,1;
+//set dengen,0;
+//set lvlden2,0;
+//close;
+
+//OnInit:
+//	waitingroom "[NÃO CLIQUE EM MIM]",0;
+//}
+}
+mag_dun01,125,75,0,0	monster	Shinsenkai	1719,1,20000000,0,0
+
+
+-	script	fog03	-1,{
+
+  OnNPCKillEvent:
+if(killedrid == 1719) {
+if(derrotoubossfogo == 1) {end;}
+announce "[Linhagem] A Ameaça Flamejante foi derrotada, você é o herói do mundo ninja !!",bc_blue|bc_self;
+set derrotoubossfogo,1;
+end;
+}
+}

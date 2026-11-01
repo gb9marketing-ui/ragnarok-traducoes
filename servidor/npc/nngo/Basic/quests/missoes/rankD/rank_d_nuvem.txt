@@ -1,0 +1,684 @@
+nuvem,0,0,0,0	monster	Erva Daninha	1080,40,360000,180000,1
+
+nuvem,248,107,5	script	Lata de Lixo#nu1	845,{
+if(checkquest(1007)==1 && l1!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l1,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,219,225,5	script	Lata de Lixo#nu2	845,{
+if(checkquest(1007)==1 && l2!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l2,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,251,259,5	script	Lata de Lixo#nu3	845,{
+if(checkquest(1007)==1 && l3!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l3,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,56,255,5	script	Lata de Lixo#nu4	845,{
+if(checkquest(1007)==1 && l4!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l4,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,181,100,5	script	Lata de Lixo#nu5	845,{
+if(checkquest(1007)==1 && l5!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l5,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,92,122,5	script	Lata de Lixo#nu6	845,{
+if(checkquest(1007)==1 && l6!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l6,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,29,16,5	script	Lata de Lixo#nu7	845,{
+if(checkquest(1007)==1 && l7!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l7,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,154,94,5	script	Lata de Lixo#nu8	845,{
+if(checkquest(1007)==1 && l8!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l8,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,143,267,5	script	Lata de Lixo#nu9	845,{
+if(checkquest(1007) ==1 && l9!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l9,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,68,206,5	script	Lata de Lixo#nu10	845,{
+if(checkquest(1007) ==1 && l10!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l10,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,24,164,5	script	Lata de Lixo#nu11	845,{
+if(checkquest(1007) ==1 && l11!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l11,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,228,127,5	script	Lata de Lixo#nu12	845,{
+if(checkquest(1007) ==1 && l12!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l12,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+nuvem,161,30,5	script	Lata de Lixo#nu13	845,{
+if(checkquest(1007) ==1 && l13!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l13,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+salakagex,38,29,5	script	Lata de Lixo#nu14	845,{
+if(checkquest(1007) ==1 && l14!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l14,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//-----------------------------------------------------------
+
+salakagex,39,5,5	script	Lata de Lixo#nu15	845,{
+if(checkquest(1007) ==1 && l15!=1){
+mes "Um Arquivo Estragado foi Achado no Lixo!";
+set l15,1;
+getitem 7151,1;
+close;
+}else{end;}}
+
+//------------------------------------------------------
+
+nuvem,182,288,5	script	Ovelha#nu1	890,{
+
+if(tosa1==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa1,tosa1 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,93,79,5	script	Ovelha#nu2	890,{
+
+if(tosa2==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa2,tosa2 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,241,210,5	script	Ovelha#nu3	890,{
+
+if(tosa3==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa3,tosa3 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,31,121,5	script	Ovelha#nu4	890,{
+
+if(tosa4==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa4,tosa4 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,60,22,5	script	Ovelha#nu5	890,{
+
+if(tosa5==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa5,tosa5 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+//------------------------------------------------------
+
+nuvem,111,144,5	script	Ovelha#nu6	890,{
+
+if(tosa6==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa6,tosa6 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+//------------------------------------------------------
+
+nuvem,131,186,5	script	Ovelha#nu7	890,{
+
+if(tosa7==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa7,tosa7 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+//------------------------------------------------------
+
+nuvem,189,234,5	script	Ovelha#nu8	890,{
+
+if(tosa8==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa8,tosa8 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+//------------------------------------------------------
+
+nuvem,222,133,5	script	Ovelha#nu9	890,{
+
+if(tosa9==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa9,tosa9 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+//------------------------------------------------------
+
+nuvem,107,72,5	script	Ovelha#nu10	890,{
+
+if(tosa10==0 && checkquest(1008) ==1) goto inicio;
+mes "Meeeeeeh !";
+close;
+
+inicio:
+mes "Tosar Ovelha?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Meeeeeeh !";
+mes "^3349CC Ovelha Tosada ~ ^000000";
+set tosa10,tosa10 +1;
+set tosa,tosa +1;
+close;
+
+n:
+mes "Meeeeeeh  T_T";
+close;
+}
+
+nuvem,287,165,5	script	Monte de Palha#nu1	430,{
+if(checkquest(1009) ==1 && f1<10 && countitem(7197) < 1){
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+set f1,f1 +1;
+getitem 7197,1;
+close;
+}else{end;}}
+
+nuvem,122,233,5	script	Monte de Palha#nu2	430,{
+if(checkquest(1009) !=1) {mes "Só um monte de palha.."; close;}
+if(checkquest(1009) ==1 && f1<10 && countitem(7197) < 1){
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+set f1,f1 +1;
+getitem 7197,1;
+close;
+}else{end;}}
+
+nuvem,81,165,5	script	Monte de Palha#nu3	430,{
+if(checkquest(1009) !=1) {mes "Só um monte de palha.."; close;}
+if(checkquest(1009) ==1 && f1<10 && countitem(7197) < 1){
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+mes "Foi Recolhido ^3349CC 1 Palha ^000000, dê de alimento aos Bois e Retorne para pegar mais uma!";
+next;
+set f1,f1 +1;
+getitem 7197,1;
+close;
+}else{end;}}
+
+
+
+
+//------------------------------------------------------
+
+nuvem,283,112,1	script	Boi#nu1	889,{
+
+
+if(alb1<2 && countitem(7197) > 0) goto inicio;
+mes "Muuuuuuh !";
+close;
+
+inicio:
+mes "Alimentar Boi?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Muuuuuuh !";
+mes "^3349CC Boi Alimentado ~ ^000000";
+set alb1,alb1 +1;
+set alb,alb +1;
+delitem 7197,1;
+close;
+
+n:
+mes "Muuuuuuh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,283,115,1	script	Boi#nu2	889,{
+
+if(alb2<2 && countitem(7197) > 0) goto inicio;
+mes "Muuuuuuh !";
+close;
+
+inicio:
+mes "Alimentar Boi?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Muuuuuuh !";
+mes "^3349CC Boi Alimentado ~ ^000000";
+set alb2,alb2 +1;
+set alb,alb +1;
+delitem 7197,1;
+close;
+
+n:
+mes "Muuuuuuh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,283,118,1	script	Boi#nu3	889,{
+
+if(alb3<2 && countitem(7197) > 0) goto inicio;
+mes "Muuuuuuh !";
+close;
+
+inicio:
+mes "Alimentar Boi?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Muuuuuuh !";
+mes "^3349CC Boi Alimentado ~ ^000000";
+set alb3,alb3 +1;
+set alb,alb +1;
+delitem 7197,1;
+close;
+
+n:
+mes "Muuuuuuh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,282,106,1	script	Boi#nu4	889,{
+
+if(alb4<2 && countitem(7197) > 0) goto inicio;
+mes "Muuuuuuh !";
+close;
+
+inicio:
+mes "Alimentar Boi?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Muuuuuuh !";
+mes "^3349CC Boi Alimentado ~ ^000000";
+set alb4,alb4 +1;
+set alb,alb +1;
+delitem 7197,1;
+close;
+
+n:
+mes "Muuuuuuh  T_T";
+close;
+}
+//------------------------------------------------------
+
+nuvem,282,103,1	script	Boi#nu5	889,{
+
+if(alb5<2 && countitem(7197) > 0) goto inicio;
+mes "Muuuuuuh !";
+close;
+
+inicio:
+mes "Alimentar Boi?";
+menu "Sim",-,
+     "Não",n;
+
+mes "Muuuuuuh !";
+mes "^3349CC Boi Alimentado ~ ^000000";
+set alb5,alb5 +1;
+set alb,alb +1;
+delitem 7197,1;
+close;
+
+n:
+mes "Muuuuuuh  T_T";
+close;
+}
+
+
+
+nuvem,280,110,1	script	Fazendeiro#nu	85,{
+
+mes "Sol Forte, Cheiro de Boi.. Isto é ser um Fazendeiro !";
+next;
+mes "Minha mulher as vezes Reclama, mas é o nosso meio de Sustento xP";
+close;
+}
+
+
+//==========================
+// Gatos
+//==========================
+yuno_fild08,231,303,5	script	Tora#1nu	876,{
+
+if(jafezgato==1) goto jafez;
+if (checkquest(1005) == 1) goto inicio;
+end;
+
+inicio:
+mes "Miau!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+completequest 1005;
+close;
+
+jafez:
+mes "Miau!";
+close;
+}
+
+yuno_fild08,349,172,5	script	Tora#2nu	876,{
+
+if(jafezgato==1) goto jafez;
+if (checkquest(1005) == 1) goto inicio;
+end;
+
+inicio:
+mes "Miau!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+completequest 1005;
+close;
+
+jafez:
+mes "Miau!";
+close;
+}
+yuno_fild08,174,190,5	script	Tora#3nu	876,{
+
+if(jafezgato==1) goto jafez;
+if (checkquest(1005) == 1) goto inicio;
+
+inicio:
+mes "Miau!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+completequest 1005;
+close;
+
+jafez:
+mes "Miau!";
+close;
+}
+
+yuno_fild08,224,53,5	script	Tora#4nu	876,{
+
+if(jafezgato==1) goto jafez;
+if (checkquest(1005) == 1) goto inicio;
+end;
+
+inicio:
+mes "Miau!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+next;
+mes "Você achou o gato Tora, retorne para o NPC de Missões!";
+completequest 1005;
+close;
+
+jafez:
+mes "Miau!";
+close;
+}
+
+//==========================
+// Timer
+//==========================
+
+konoha,156,175,5	script	ToraTimerNu  	-1,{
+
+
+OnTimer60000:
+enablenpc "Tora#1nu";
+disablenpc "Tora#2nu";
+disablenpc "Tora#3nu";
+disablenpc "Tora#4nu";
+end;
+
+OnTimer120000:
+disablenpc "Tora#1nu";
+enablenpc "Tora#2nu";
+disablenpc "Tora#3nu";
+disablenpc "Tora#4nu";
+end;
+
+OnTimer180000:
+disablenpc "Tora#1nu";
+disablenpc "Tora#2nu";
+enablenpc "Tora#3nu";
+disablenpc "Tora#4nu";
+end;
+
+OnTimer240000:
+disablenpc "Tora#1nu";
+disablenpc "Tora#2nu";
+disablenpc "Tora#3nu";
+enablenpc "Tora#4nu";
+stopnpctimer;
+initnpctimer;
+end;
+
+OnInit:
+disablenpc "Tora#1nu";
+disablenpc "Tora#2nu";
+disablenpc "Tora#3nu";
+disablenpc "Tora#4nu";
+initnpctimer;
+end;
+
+}

@@ -1,0 +1,101 @@
+kakashi,114,143,4	script	Entrada WoE	834,{
+	if(agitcheck()!=1) {mes "Não está tendo guerra nesse momento"; close;}
+	if (getcharid(2)){ mes "Só pode entrar quem está em um clã!"; close;}
+	if (BaseLevel < 999) {mes "O nível mínimo necessário para entrar na guerra é 999"; close;}
+	mes "[Teleportador para a guerra]";
+	mes "Olá Guerreiro";
+	next;
+	mes "[Teleportador para a guerra]";
+	mes "Gostaria de entrar na Guerra?";
+	next;
+	menu "Sim",r1,"Não",r2;
+	
+	r1:
+	mes "[Teleportador para a guerra]";
+	mes "OK "+ strcharinfo(0) +"!";
+	percentheal 100, 100 ;
+	if (countitem(19020) >= 1) || (countitem(19195) >= 1) || (countitem(19196) >= 1) || (countitem(19197) >= 1) || (nukenin == 1) {warp "ve_fild01",79,345; close;}
+	if (#konoha == 1) {warp "ve_fild01",56,200; close;}
+	if (#nuvem == 1) {warp "ve_fild01",84,93; close;}
+	if (#nevoa == 1) {warp "ve_fild01",185,22; close;}
+	if (#suna == 1) {warp "ve_fild01",20,304; close;}
+	close;
+
+	r2:
+	close;
+}
+
+ve_fild01,346,94,0	warp	woe1	1,1,ra_fild08,25,74
+ra_fild08,20,74,0	warp	woe2	1,1,ve_fild01,341,94
+ra_fild08,288,371,0	warp	woe3	1,1,payg_cas01,265,73
+ve_fild01,366,270,0	warp	woe4	1,1,moc_fild20,24,300
+moc_fidl20,21,295,0	warp	woe5	1,1,ve_fild01,361,270
+moc_fild20,338,24,0	warp	woe6	1,1,gefg_cas04,17,145
+
+
+/*
+prt_fild02,227,162,4	script	Porteiro#woe2	114,{
+	if(agitcheck()!=1) {mes "Não está tendo guerra nesse momento"; close;}
+	if (BaseLevel < 999) {mes "O nível mínimo necessário para entrar na guerra é 999"; close;}
+	mes "[Teleportador para a guerra]";
+	mes "Olá Guerreiro";
+	next;
+	mes "[Teleportador para a guerra]";
+	mes "Gostaria de entrar na Guerra?";
+	next;
+	menu "Sim",r1,"Não",r2;
+	
+	r1:
+	mes "[Teleportador para a guerra]";
+	mes "OK "+ strcharinfo(0) +"!";
+//	percentheal 100, 100 ;
+	warp "payg_cas02",272,57;
+	close;
+
+	r2:
+	close;
+}
+
+yuno_fild08,160,195,4	script	Porteiro#woe3	114,{
+	if(agitcheck()!=1) {mes "Não está tendo guerra nesse momento"; close;}
+	if (BaseLevel < 999) {mes "O nível mínimo necessário para entrar na guerra é 999"; close;}
+	mes "[Teleportador para a guerra]";
+	mes "Olá Guerreiro";
+	next;
+	mes "[Teleportador para a guerra]";
+	mes "Gostaria de entrar na Guerra?";
+	next;
+	menu "Sim",r1,"Não",r2;
+	
+	r1:
+	mes "[Teleportador para a guerra]";
+	mes "OK "+ strcharinfo(0) +"!";
+//	percentheal 100, 100 ;
+	warp "prtg_cas01",99,32;
+	close;
+
+	r2:
+	close;
+}
+
+gef_fild04,171,280,4	script	Porteiro#woe4	114,{
+	if(agitcheck()!=1) {mes "Não está tendo guerra nesse momento"; close;}
+	if (BaseLevel < 999) {mes "O nível mínimo necessário para entrar na guerra é 999"; close;}
+	mes "[Teleportador para a guerra]";
+	mes "Olá Guerreiro";
+	next;
+	mes "[Teleportador para a guerra]";
+	mes "Gostaria de entrar na Guerra?";
+	next;
+	menu "Sim",r1,"Não",r2;
+	
+	r1:
+	mes "[Teleportador para a guerra]";
+	mes "OK "+ strcharinfo(0) +"!";
+//	percentheal 100, 100 ;
+	warp "gefg_cas04",24,149;
+	close;
+
+	r2:
+	close;
+}

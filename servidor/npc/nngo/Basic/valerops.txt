@@ -1,0 +1,1254 @@
+kakashi,78,108,4	script	Vale Rops	882,{
+
+mes "Olá bravo guerreiro, eu sou o vendedor de vale rops!";
+next;
+mes "Aqui você poderá trocar seus rops da loja, por vale rops na quantia que quiser e apenas com uma operação! Prático né?";
+next;
+mes "Me diga então, gostaria de comprar vale rops?";
+menu "- Sim",L_sim,"- Não, Obrigado",L_nao;
+
+L_nao:
+close;
+
+L_sim:
+next;
+Query_SQL "SELECT `lojaRS_cash` FROM `login` WHERE `account_id` = '"+getcharid(3)+"'", @quantiatualrops;
+mes "Beleza, quantos vale rops gostaria de comprar? Lembrando que cada vale rop custa 1 ROP!";
+mes "============";
+mes "^DC143CSeu saldo atual: "+@quantiatualrops+"^000000";
+input @quantiarops;
+if (@quantiarops == 0) {close;}
+if (checkweight(634,@quantiarops) == 0) {next; mes "Você está com sobrepeso e não poderá receber os vale rops enquanto não liberar espaço no inventário"; close;}
+if (@quantiarops > @quantiatualrops){next; mes "Oh não, você não possui rops o suficiente para realizar essa compra"; close;}
+Query_SQL "UPDATE `login` SET `lojaRS_cash` = `lojaRS_cash` - '"+@quantiarops+"' WHERE `account_id`='"+getcharid(3)+"'";
+next;
+getitem 634,@quantiarops;
+mes "Compra concluída com sucesso";
+close;
+}
+
+himinn,45,48,4	script	Amuletos	940,{
+
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Olá, sou a vendedora de Amuletos Especiais do NNGO!";
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Posso trocar seus Vale ROPs por eles... diga-me, está interessado em algum ?";
+menu "- Amuleto Especial Ninjutsu",nin,"- Amuleto Especial Taijutsu",tai,"- Amuleto Especial Genjutsu",gen,"- Amuleto Especial Fuuinjutsu",fuuin,"- Amuleto Especial Velocidade",vel,"- Amuleto Especial Medicina",med,"- Nenhum, obrigado",nenhum;
+
+nenhum:
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Tudo bem !!";
+close;
+
+nin:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Ninjutsu ?"; 
+mes "Ele fornece +17 Int e é uma ótima escolha para ninjas que utilizam ninjutsus !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",snin,"- Deixa pra próxima, obrigado.",fecharloja;
+
+snin:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2609,1;
+close;
+
+tai:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Taijutsu ?"; 
+mes "Ele fornece +17 Str e é uma ótima escolha para ninjas que utilizam taijutsu !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",stai,"- Deixa pra próxima, obrigado.",fecharloja;
+
+stai:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2610,1;
+close;
+
+fuuin:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Fuuinjutsu ?"; 
+mes "Ele fornece +17 Dex e é uma ótima escolha para ninjas que utilizam fuuinjutsus !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",sfuuin,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sfuuin:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2611,1;
+close;
+
+gen:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Genjutsu ?"; 
+mes "Ele fornece +17 Luk e é uma ótima escolha para ninjas que utilizam genjutsus !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",sgen,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sgen:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2625,1;
+close;
+
+med:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Medinin ?"; 
+mes "Ele fornece +17 Vit e é uma ótima escolha para ninjas que utilizam jutsu médico !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",smed,"- Deixa pra próxima, obrigado.",fecharloja;
+
+smed:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2612,1;
+close;
+
+vel:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Aaah,o Amuleto Especial Velocidade ?"; 
+mes "Ele fornece +17 Agi e é uma ótima escolha para ninjas rápidos !!";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",svel,"- Deixa pra próxima, obrigado.",fecharloja;
+
+svel:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 2626,1;
+close;
+
+fecharloja:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+No_Item:
+next;
+mes "[^FF0000Vendedora de Amuletos^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+OnInit:
+	waitingroom "[Amuletos]",0;
+}
+
+kakashi,97,150,4	script	Loja ROPs	939,{
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Olá, posso levá-lo até a sala de itens especiais do NNGO, gostaria de ir ?";
+menu "- Sim, claro",loja,"- Obrigado, deixa pra lá",nem;
+
+loja:
+next;
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Tudo bem";
+warp "himinn",48,45;
+end;
+
+nem:
+next;
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Ok, volte sempre !!";
+close;
+
+onInit:
+	waitingroom "[Loja ROPs]",0;
+}
+
+himinn,47,28,4	script	Retorno	49,{
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Olá, terminou de fazer suas compras certo ?";
+next;
+mes "Quer voltar ao Centro de Treinamento ?";
+menu "- Sim, por favor",quero,"- Estou bem aqui mesmo",noo;
+
+quero:
+next;
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Beleza";
+warp "kakashi",86,135;
+end;
+
+noo:
+next;
+mes "[^FF0000Porteiro da Loja de ROPs^000000]";
+mes "Tudo bem, tenha um bom proveito !!";
+close;
+
+OnInit:
+	waitingroom "[Retorno]",0;
+}
+
+himinn,46,41,4	script	Removedores	940,{
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Olá, sou a vendedora de Removedores do NNGO !!";
+mes "Tenho diversos itens e serviços... gostaria de algum ?";
+menu "- Removedor de KG Especial",kgesp,"- Removedor de Quest Avançada",remavan,"- Removedor de KG",remkg,"- Removedor de Linha Kugutsu",kugrem,"- Removedor de Treino Intermediário",reminter,"- Removedor de Treino Avançado",tavan,"- Removedor de Kuchyose",remkuchy,"Nenhum, obrigado",nrem;
+
+
+kgesp:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de KG Especial ?";
+mes "Ele é capaz de remover uma KG e lhe devolver os itens";
+mes "Custa 100 ROPs, vai querer ?";
+menu "- Sim",skgesp,"- Deixa pra próxima, obrigado.",fecharloja;
+
+skgesp:
+next;
+if (countitem(634) < 100) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,100;
+getitem 7242,1;
+close;
+
+
+remavan:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Quest Avançada ?";
+mes "Ele é capaz de remover uma quest avançada de um dos seus jutsus";
+mes "Custa 6 ROPs, vai querer ?";
+menu "- Sim",sremavan,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sremavan:
+next;
+if (countitem(634) < 6) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,6;
+getitem 1097,1;
+close;
+
+kugrem:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Quest Avançada ?";
+mes "Ele é capaz de remover uma quest avançada de um dos seus jutsus";
+mes "Custa 10 ROPs, vai querer ?";
+menu "- Sim",skugrem,"- Deixa pra próxima, obrigado.",fecharloja;
+
+skugrem:
+next;
+if (countitem(634) < 10) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,10;
+getitem 7087,1;
+close;
+
+tavan:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Treino Avançado ?";
+mes "Ele é capaz de remover seu treino avançado";
+mes "Custa 10 ROPs, vai querer ?";
+menu "- Sim",stavan,"- Deixa pra próxima, obrigado.",fecharloja;
+
+stavan:
+next;
+if (countitem(634) < 10) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,10;
+getitem 1095,1;
+close;
+
+remkg:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de KG Especial ?";
+mes "Ele é capaz de remover por completo uma Kekken Genkai";
+mes "Custa 15 ROPs, vai querer ?";
+menu "- Sim",sremkg,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sremkg:
+next;
+if (countitem(634) < 15) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,15;
+getitem 1091,1;
+close;
+
+reminter:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Treino Intermediário ?";
+mes "Ele é capaz de remover por completo um Treino Intermediário";
+mes "Custa 7 ROPs, vai querer ?";
+menu "- Sim",sreminter,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sreminter:
+next;
+if (countitem(634) < 7) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,7;
+getitem 1092,1;
+close;
+
+bas:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Treino Básico ?";
+mes "Ele é capaz de remover por completo um Treino Básico";
+mes "Custa 5 ROPs, vai querer ?";
+menu "- Sim",srembas,"- Deixa pra próxima, obrigado.",fecharloja;
+
+srembas:
+next;
+if (countitem(634) < 5) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,5;
+getitem 1090,1;
+close;
+
+nrem:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+remkuchy:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Aaah, o Removedor de Treino Básico ?";
+mes "Ele é capaz de remover por completo um contrato com sua Kuchyose";
+mes "Custa 12 ROPs, vai querer ?";
+menu "- Sim",sremkuchy,"- Deixa pra próxima, obrigado.",fecharloja;
+
+sremkuchy:
+next;
+if (countitem(634) < 12) goto No_Item;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,12;
+getitem 643,1;
+close;
+
+fecharloja:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+No_Item:
+next;
+mes "[^FF0000Vendedora de Removedores^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+OnInit:
+	waitingroom "[Removedores]",0;
+}
+
+himinn,51,41,4	script	Servicos	940,{
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Olá, sou a vendedora de servicos do NNGO !!";
+mes "Posso vender todo tipo de servico disponível";
+next;
+mes "Há algo em que eu possa ajudar ?";
+menu "- Sim",yes,"Outra hora, obrigado",naumm;
+
+yes:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Certo, irei listar para voce os serviços que ofereço.";
+menu "- Troca de Sexo",seex,"- Troca de Nome",nick,"- Ticket VIP",vip,"- NNGO Point",nngo,"- Troca de Vila",vila,"- Troca de Sharingan",shari,"Nenhum deles",naumm;
+
+nngo:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "NNGO Point ?";
+mes "Bom... posso lhe vender por 5 ROPs, tudo bem ?";
+menu "- Ok",snngo,"Eu volto outra hora",naumm;
+
+snngo:
+next;
+if (countitem(634) < 5) goto No_Item;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,5;
+getitem 7116,1;
+close;
+
+elem:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Troca de Sexo ?";
+mes "Bom... posso lhe vender por 3 ROPs, tudo bem ?";
+menu "- Ok",selem,"Eu volto outra hora",naumm;
+
+selem:
+next;
+if (countitem(634) < 3) goto No_Item;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,3;
+getitem 7141,1;
+close;
+
+vip:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Ticket VIP ?";
+mes "Bom... posso lhe vender por 20 ROPs, tudo bem ?";
+menu "- Ok",svip,"Eu volto outra hora",naumm;
+
+svip:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+if (countitem(634) < 20) goto No_Item;
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,20;
+getitem 7280,1;
+close;
+
+seex:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Troca de Sexo ?";
+mes "Bom... posso lhe vender por 1 ROP, tudo bem ?";
+menu "- Ok",ssex,"Eu volto outra hora",naumm;
+
+ssex:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+if (countitem(634) < 1) goto No_Item;
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,1;
+getitem 734,1;
+close;
+
+vila:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Posso lhe vender um ótimo Troca de Vila, por somente  18 ROPs...";
+mes "O que acha do preço ?";
+menu "- Tudo bem, eu aceito",svila,"- Acho que vou ficar na minha vila",naumm;
+
+svila:
+next;
+if (countitem(634) < 18) goto No_Item;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,18;
+getitem 7081,1;
+close;
+
+nick:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Este cupom lhe permite que mude seu nome no registro ninja...";
+mes "Ele está a venda por 20 ROPs, o que acha ?";
+menu "- Vou levar",snick,"- Manterei meu nome",naumm;
+
+snick:
+next;
+if (countitem(634) < 20) goto No_Item;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Parabéns pela sua compra...";
+mes "O Responsável pelo registro ninja encontra-se logo mais abaixo ou na sala VIP.";
+delitem 634,20;
+getitem 7150,1;
+close;
+
+shari:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Este cupom permite que voce mude seu sharingan";
+mes "Ele está a venda por 14 ROPs, o que acha ?";
+menu "- Vou levar",sshari,"- Manterei meu nome",naumm;
+
+sshari:
+next;
+if (countitem(634) < 14) goto No_Item;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,14;
+getitem 12945,1;
+close;
+
+No_Item:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+naumm:
+next;
+mes "[^FF0000Vendedora de Serviços^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+OnInit:
+	waitingroom "[Serviços]",0;
+}
+
+//nomeeeeeeeeeeeee
+himinn,47,7,4	script	Registro Shinobi	894,{
+// ============ Npc's Name ====================
+set .@npcname$,"[ ^002f77Atendente^000000 ]";
+// ============ Name Filters ======================
+setarray .filter$[0],
+	"Admin",
+	"Game Master",
+	"[GM]",
+	"GM ","!";
+
+// ============ Main Script =======================
+OnInit:
+	waitingroom "[Mudar Nome]",0;
+
+offers:
+	mes .@npcname$;
+	mes "Bem-vindo ao livro de registros!";
+	mes "";
+	mes "^FF0000 - Nós podemos mudar seu nome se você tiver um ticket de mudança de nome.";
+	next;
+	if((getcharid(2) > 0) || (getcharid(1) > 0))
+	{
+		mes .@npcname$;
+		mes "Se quer mudar de nome, se retire de sua party/guild.";
+		close;
+	}
+	else if(countitem(7150) < 1)
+	{
+		mes .@npcname$;
+		mes "Você não tem um ticket de mudança de nome.";
+		close;
+	}
+	else
+	{
+		inputs:
+		mes .@npcname$;
+		mes "Digite o nome que deseja ter:";
+		if (input(.@newname$, 4, 23))
+		{
+			mes "^ff0000 - Precisa ter pelo menos de 4-23 caraceteres^000000";
+			next;
+			goto inputs;
+		}
+		
+		if ( callfunc( "check_string", .@newname$ ) == 0 ) {
+				mes "^ff0000 - Nome inválido^000000";
+				mes "Você só pode usar a-z A-Z e 0-9";
+				next;
+				goto inputs;
+		}
+		for (set .@i , 0; .@i < getarraysize ( .filter$ ); set .@i, .@i + 1)
+		{
+			if(compare(.@newname$, .filter$[.@i]))
+			{
+				mes "^ff0000 - Nome inválido^000000";
+				next;
+				goto inputs;
+			}
+		}
+		
+		mes .@npcname$;
+		mes "Gostaria de continuar?";
+		mes "";
+		mes " ^ff0000- Você será kickado do servidor para completar a mudança de nome.^000000";
+		mes "";
+		mes "^ff0000- Após isso basta entrar novamente concluir a mudança nome.^000000";
+		if(select("Não:Sim")==1) close;
+		next;
+		// Checks if the name is available
+		query_sql "SELECT `account_id` FROM `char` WHERE `name` = '"+escape_sql(.@newname$)+"'",.@aid;
+		if(.@aid)
+		{
+			mes "^FF0000 - Nome indisponível^000000";
+			next;
+			goto inputs;
+		}
+		else 
+		{
+			mes "^006633 - Available^000000";
+			mes .@npcname$;
+			delitem 7150,1;
+			query_sql "UPDATE `char` SET name = '"+escape_sql(.@newname$)+"' WHERE char_id = "+getcharid(0)+";";
+			mes "Seu nome ^ff0000"+strcharinfo(0)+"^000000 foi alterado para ^ff0000"+.@newname$+"^000000.";
+			announce "Livro de registros: "+strcharinfo(0)+" acaba de mudar seu nome para "+.@newname$+"",bc_blue|bc_all;
+			close2;
+			atcommand "@kick "+strcharinfo(0);
+			end;
+		} // The players name has been changed.
+	}
+} // End of Script.
+
+function	script	check_string	{
+
+	set .@str$, getarg(0);
+	set .@len, getstrlen(.@str$);
+	set .@key$, "|^" + rand(0xffffff) + "^|";
+	set .@tmp$, "";
+
+	setarray .@char_list$
+		,"A","B","C","D","E","F","G","H","I","J","K","L","M", "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
+		// compare isn't case sensitive, so don't need to add "a", "b", "c", "d", "e", ...
+		,"1","2","3","4","5","6","7","8","9","0"," "
+	;
+	set .@size, getarraysize(.@char_list$);
+
+	while ( .@i<.@len ) {
+		set .@j, 0;
+
+		while ( .@j < .@size ) {
+			if ( compare( .@key$ + .@str$, .@key$ + .@tmp$ + .@char_list$[.@j] ) ) {
+				set .@tmp$,.@tmp$+.@char_list$[.@j];
+				break;
+			}
+			set .@j, .@j+1;
+		}
+
+		if ( .@j == .@size )
+			return 0;
+
+		set .@i, .@i+1;
+		sleep2( .@i % 20 == 0 );
+	}
+
+	return 1;
+
+}
+//--------------- NPC dos HATS
+
+himinn,50,54,4	script	Vendedora de HATs	940,{
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Olá, sou a Vendedora de HATs do NNGO !!";
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Aqui poderá trocar seus Vale ROPs por lindos chapéus.";
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Vou lhe mostrar o que eu tenho...";
+menu "- Olhos Biônicos",orelhanew,"- Asas de Anjo",orelhanewtwo,"- Bandagem Danzou",menestrelred,"- Máscara Tobi(Branca)",pesarkyuubi,"- Chapéu de Palha",angeling,"- Bobo da Corte",chifres,"- Fechar",closeshop;
+
+nextpage:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Muito bem, tenho estes outros !!";
+menu "- Chapéu de Cachorro",palha,"- Obrigado",closeshop;
+
+// Hats
+lacomeigo:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Lacinho Meigo... eles custa 160 ROPs.";
+menu "- Eu compro",slacome,"- Obrigado",closeshop;
+
+slacome:
+next;
+if (countitem(634) < 160) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,160;
+getitem 5140,1;
+close;
+
+
+olhom:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Olho Mágico... eles custa 110 ROPs.";
+menu "- Eu compro",solhom,"- Obrigado",closeshop;
+
+solhom:
+next;
+if (countitem(634) < 110) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,110;
+getitem 5138,1;
+close;
+
+orelhanewtwo:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Asas de Anjo... custam 150 ROPs.";
+menu "- Eu compro",sorelhanewtwo,"- Obrigado",closeshop;
+
+sorelhanewtwo:
+next;
+if (countitem(634) < 150) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,150;
+getitem 5074,1;
+close;
+
+orelhanew:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Os Olhos Biônicos... ele custa 80 ROPs.";
+menu "- Eu compro",sorelhanew,"- Obrigado",closeshop;
+
+sorelhanew:
+next;
+if (countitem(634) < 80) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,80;
+getitem 5325,1;
+close;
+
+navees:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Capuz de Morpheus... ele custa 70 ROPs.";
+menu "- Eu compro",snavees,"- Obrigado",closeshop;
+
+snavees:
+next;
+if (countitem(634) < 70) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,70;
+getitem 5126,1;
+close;
+
+coroadep:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Alice... ele custa 170 ROPs.";
+menu "- Eu compro",scoroadep,"- Obrigado",closeshop;
+
+scoroadep:
+next;
+if (countitem(634) < 170) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,170;
+getitem 5137,1;
+close;
+
+palha:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Chapéu de Cachorro... ele custa 60 ROPs.";
+menu "- Eu compro",spalha,"- Obrigado",closeshop;
+
+spalha:
+next;
+if (countitem(634) < 60) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,60;
+getitem 19327,1;
+close;
+
+abareta:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Orelhas de Cachorro... ele custa 50 ROPs.";
+menu "- Eu compro",saba,"- Obrigado",closeshop;
+
+saba:
+next;
+if (countitem(634) < 50) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,50;
+getitem 5118,1;
+close;
+
+anjoa:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "A auréolas de anjo é um hat divino, literalmente. Ele custa 100 ROPs.";
+menu "- Eu quero",sanjoa,"- Obrigado",closeshop;
+
+sanjoa:
+next;
+if (countitem(634) < 100) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,100;
+getitem 5257,1;
+close;
+
+quepe:
+next;
+mes "Item indisponível no momento";
+close;
+
+gatinho:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Um gatinho que mia bastante... Ele custa 90 ROPs.";
+menu "- Eu quero ele",sgat,"- Obrigado",closeshop;
+
+sgat:
+next;
+if (countitem(634) < 90) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,90;
+getitem 5372,1;
+close;
+
+foneazul:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Um lindo fone azul, ele custa 80 ROPs.";
+menu "- Eu quero ele",sfonea,"- Obrigado",closeshop;
+
+sfonea:
+next;
+if (countitem(634) < 80) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,80;
+getitem 5151,1;
+close;
+
+coelhorosa:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Gatinho Tagarela. Ele custa 105 ROPs.";
+menu "- Eu quero ele",scoelho,"- Obrigado",closeshop;
+
+scoelho:
+next;
+if (countitem(634) < 105) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,105;
+getitem 5372,1;
+close;
+
+olhopreto:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Versão sombria do original Olho Mágico !! Ele custa 95 ROPs.";
+menu "- Eu quero ele",solho,"- Obrigado",closeshop;
+
+solho:
+next;
+if (countitem(634) < 95) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,95;
+getitem 12611,1;
+close;
+
+cartola:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Uau, a IMP !! Ela custa 300 ROPs.";
+menu "- Eu quero ele",scartola,"- Obrigado",closeshop;
+
+scartola:
+next;
+if (countitem(634) < 300) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,300;
+getitem 19376,1;
+close;
+
+corsario:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Alma Sombria?!! Ele custa 120 ROPs.";
+menu "- Eu quero ele",scorsario,"- Obrigado",closeshop;
+
+scorsario:
+next;
+if (countitem(634) < 120) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,120;
+getitem 19347,1;
+close;
+
+gorro:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Deviruchi Branco!! Ele custa 150 ROPs.";
+menu "- Eu quero eles",sgorro,"- Obrigado",closeshop;
+
+sgorro:
+next;
+if (countitem(634) < 150) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,150;
+getitem 5228,1;
+close;
+
+chifres:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Bobo da Corte !! Ele custa 80 ROPs.";
+menu "- Eu quero ela",schifres,"- Obrigado",closeshop;
+
+schifres:
+next;
+if (countitem(634) < 80) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,80;
+getitem 2488,1;
+close;
+
+angeling:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Chapéu de Palha !! Ele custa 140 ROPs.";
+menu "- Eu quero ele",sangeling,"- Obrigado",closeshop;
+
+sangeling:
+next;
+if (countitem(634) < 140) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,140;
+getitem 2489,1;
+close;
+
+menestrelred:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Bandagem Danzou !! Ele custa 120 ROPs.";
+menu "- Eu quero ele",smenes,"- Obrigado",closeshop;
+
+smenes:
+next;
+if (countitem(634) < 120) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,120;
+getitem 19206,1;
+close;
+
+pesarkyuubi:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "O Mascara branca do Tobi !! Ela custa 200 ROPs.";
+menu "- Eu quero ele",skyuubi,"- Obrigado",closeshop;
+
+skyuubi:
+next;
+if (countitem(634) < 200) goto No_Item;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,200;
+getitem 19217,1;
+close;
+
+
+closeshop:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Obrigado, volte sempre !!";
+close;
+
+No_Item:
+next;
+mes "[^FF0000Vendedora de HATs^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+OnInit:
+	waitingroom "[Chapéus Especiais]",0;
+}
+
+himinn,47,54,4	script	Vendedora de Montarias	940,{
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Olá, sou a Vendedora de Montarias do NNGO !!";
+next;
+mes next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Há algo que possa fazer para lhe ajudar ?";
+menu "- (Hot) Montaria Raposa",raposa,"- Montaria Sapo",sapo,"- Montaria Lobo",lobo,"- Montaria Passaro",passa,"- Nada agora, obrigado",fecharmont;
+
+fecharmont:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+leo:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria do Leão ? Ela é uma edição limitada... MUITO RARA !!";
+mes "Vai levar ? Ele custa 280 ROPs";
+menu "Sim, pode prepará-lo",sleo,"Hoje vou deixar passar, obrigado",fecharmont;
+
+sleo:
+next;
+if (countitem(634) < 280) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,280;
+getitem 2647,1;
+announce "[Loja] Uau !! "+strcharinfo(0)+" comprou uma Montaria Leão por 280 Rops !!",bc_blue|bc_self;
+close;
+
+sninja:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria do Sapo Ninja ? Ela é uma edição limitada... rara !!";
+mes "Vai levar ? Ele custa 150 ROPs";
+menu "Sim, pode prepará-lo",ssninja,"Hoje vou deixar passar, obrigado",fecharmont;
+
+ssninja:
+next;
+if (countitem(634) < 150) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,150;
+getitem 2648,1;
+announce "[Loja] Uau !! "+strcharinfo(0)+" comprou uma Montaria Sapo Ninja por 150 Rops !!",bc_blue|bc_self;
+close;
+
+passa:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria Passaro ? Ele é feito com o material explosido de um shinobi...";
+mes "Vai levar ? Ele custa 125 ROPs";
+menu "Sim, pode prepará-lo",spassa,"Hoje vou deixar passar, obrigado",fecharmont;
+
+spassa:
+next;
+if (countitem(634) < 125) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,125;
+getitem 2645,1;
+close;
+
+sapo:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria Sapo ? Ele é rápido e um ótimo companheiro também";
+mes "Vai levar ? Ele custa 80 ROPs";
+menu "Sim, pode prepará-lo",ssapo,"Hoje vou deixar passar, obrigado",fecharmont;
+
+ssapo:
+next;
+if (countitem(634) < 80) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,80;
+getitem 2641,1;
+close;
+
+No_Item:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+
+lobo:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria Lobo ? Ele é astuto, mas um pouco mau humorado...";
+mes "Vai levar ? Ele custa 80 ROPs";
+menu "Sim, pode prepará-lo",slobo,"Hoje vou deixar passar, obrigado",fecharmont;
+
+slobo:
+next;
+if (countitem(634) < 80) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,80;
+getitem 2642,1;
+close;
+
+raposa:
+next;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Aah, a Montaria Raposa ? Ele é extremamente rara, rápida e charmosa... eu mesma tenho uma.";
+mes "Vai levar ? Ele custa 250 ROPs";
+menu "Sim, pode prepará-la",sraposa,"Hoje vou deixar passar, obrigado",fecharmont;
+
+sraposa:
+next;
+if (countitem(634) < 250) goto No_Item;
+mes "[^FF0000Vendedora de Montarias^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,250;
+getitem 2643,1;
+close;
+
+OnInit:
+	waitingroom "[Montarias]",0;
+}
+
+himinn,51,48,4	script	Vendedor de Raros	459,{
+mes "[^FF0000Itens Limitados^000000]";
+mes "Olá, sou o vendedor de Itens Limitados do NNGO !!";
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Há algo que possa fazer para lhe ajudar ?";
+menu "- Kiba (Tai)",sametai,"- Kiba (Nin)",samenin,"- Conjunto Hyuuga",samehada,"- Samehada (Costas)",kubicostas,"- Nada agora, obrigado",fecharmont;
+
+kubicostas:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, A Samehada Costas... Ela é uma excelente aquisição !!";
+mes "Vai levar ? Ela custa 150 ROPs";
+menu "Sim, pode prepará-la",skubicostas,"Hoje vou deixar passar, obrigado",fecharmont;
+
+skubicostas:
+next;
+if (countitem(634) < 150) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,150;
+getitem 12636,1;
+close;
+
+natalc:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, a chave para a cidade de natal... com ela você pode adentrar a cidade pelo Jovem no Centro de Treinamento.";
+mes "Vai levar ? Ela custa 65 ROPs";
+menu "Sim, pode prepará-la",snatal,"Hoje vou deixar passar, obrigado",fecharmont;
+
+snatal:
+next;
+if (countitem(634) < 65) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,65;
+getitem 7561,1;
+close;
+
+samehada:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, o Conjunto Hyuuga ? Ele é muito bom, mas te impossibilita de usar habilidades.";
+mes "PS: Ela substituí qualquer hat que estiver usando, lembre-se disso !!";
+mes "Vai levar ? Ele custa 170 ROPs";
+menu "Sim, pode prepará-la",ssamehada,"Hoje vou deixar passar, obrigado",fecharmont;
+
+ssamehada:
+next;
+if (countitem(634) < 170) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,170;
+getitem 2304,1;
+close;
+
+gaara:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, a Samehada ?? Ela não concede status e você pode usá-la em suas costas...";
+mes "PS: Ela substituí qualquer hat que estiver usando, lembre-se disso !!";
+mes "Vai levar ? Ele custa 150 ROPs";
+menu "Sim, pode prepará-la",sgaara,"Hoje vou deixar passar, obrigado",fecharmont;
+
+sgaara:
+next;
+if (countitem(634) < 150) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,150;
+getitem 12626,1;
+close;
+
+
+fecharmont:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Entendo... bom, volte sempre !!";
+close;
+
+sametai:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, a Kiba Taijutsu ?? Ela tem 240 STR e 135 de Acerto...";
+mes "Vai levar ? Ele custa 170 ROPs";
+menu "Sim, pode prepará-la",spassa,"Hoje vou deixar passar, obrigado",fecharmont;
+
+spassa:
+next;
+if (countitem(634) < 170) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,170;
+getitem 1129,1;
+close;
+
+samenin:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Aah, a Kiba Ninjutsu ?? Ela tem 70 STR, 15 de Acerto e 15% SP...";
+mes "Vai levar ? Ele custa 170 ROPs";
+menu "Sim, pode prepará-la",ssapo,"Hoje vou deixar passar, obrigado",fecharmont;
+
+ssapo:
+next;
+if (countitem(634) < 170) goto No_Item;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Parabéns, boa sorte com seu novo item !!";
+delitem 634,170;
+getitem 1149,1;
+close;
+
+No_Item:
+next;
+mes "[^FF0000Itens Limitados^000000]";
+mes "Ainda lhe faltam Vale ROPs... volte quando tiver o suficiente !!";
+close;
+
+
+OnInit:
+	waitingroom "[Itens Limitados]",0;
+
+}
+
+prontera,138,187,5	script	Arrumar ED	3,3,105,{
+mes "Deseja corrigir os edificios principais?";
+menu "- Sim",sim,"- Nao",nao;
+
+sim:
+mes "Prontinho, consertado!";
+set $kon3dest,0;
+set $sun3dest,0;
+set $nev3dest,0;
+set $nuv3dest,0;
+close;
+
+nao:
+mes "Ok";
+close;
+
+OnInit:
+	waitingroom "[Reparar ED]",0;
+}

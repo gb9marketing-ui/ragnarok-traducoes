@@ -1,0 +1,237 @@
+-	script	SkillRz#RS	ResetSkillAJ#ZS	-1,{
+OnPcLoginEvent:
+
+if (getskilllv(370) > 7){ skill 370,7,0; dispbottom "Correção de nível efetuada em Rasengan.";}
+if (getskilllv(357) == 5 && tai_intermediario == 1 && tai_avan < 1){ skill 357,3,0; dispbottom "Correção de nível efetuada em Dai Senkou.";}
+if (getskilllv(357) >= 5 && tai_avan == 1 && ajuste_tai1 < 1){ skill 357,5,0; set ajuste_tai1,1; dispbottom "Correção de nível efetuada em Dai Senkou.";}
+if (getskilllv(307) >= 1) { skill 307,0,0; set med_skill_int, med_skill_int - 1; set Byakugo,0; set accept_med_int, accept_med_int - 1; dispbottom "Byakugo no Jutsu removido do treino de medicina.";}
+end;
+
+}
+
+-	script	EDS#CZ	VoltarGen#CS -1,{
+OnPcLoginEvent:
+if(strcharinfo(3) == "gengar_arena"){ warp "SavePoint",0,0; }
+if(strcharinfo(3) == "gengar_aren"){ warp "SavePoint",0,0; }
+if(strcharinfo(3) == "akat_espera"){ warp "SavePoint",0,0; }
+if(strcharinfo(3) == "akat_arena"){ warp "SavePoint",0,0; }
+end;
+}
+
+-	script	EDS#CS	AvisoED#CS -1,{
+OnMon1850:
+OnTue1850:
+OnThu1850:
+
+announce "[Guerra de Edifícios] O Período de Guerras começa em 10 minutos. Preparem-se, Shinobis !!",bc_blue|bc_all;
+end;
+}
+
+kakashi,78,124,3	script	Geng#1	944,{
+query_sql("SELECT `quest_points`, `S`, `A`, `B`, `C`, `D`, `E` FROM `char` WHERE `char_id` = '"+getcharid(0)+"'", @qp, @s, @a, @b, @c, @d, @e);
+if (BaseLevel < 850) {mes "[^FF0000Geng^000000]"; mes "Desculpe, jovem ninja... só posso oferecer serviços para shinobis com nível igual ou superior a 850."; close;}
+if (countitem(7176) == 1) goto passar;
+mes "[^FF0000Geng^000000]";
+mes "Oh... olá, voce parece ser um grande ninja...";
+mes "Diga-me, tem viajado muito ??";
+menu "Sim, e andando...",anda,"Érr... tenho que ir",L_Close;
+
+L_Close:
+next;
+mes "[^FF0000Geng^000000]";
+mes "Entendo... volte outra hora.";
+close;
+
+anda:
+next;
+mes "[^FF0000Geng^000000]";
+mes "Sim... sim... pois seus problemas acabam agora !!!";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Eu posso lhe enviar para um local onde poderá alugar montarias por um determinado tempo.";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Mas para isso, é necessário que traga para mim um ^FF0000Certificado de Adestramento^000000.";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Já tem um destes em sua posse ??";
+menu "Sim, aqui está...",ss,"Ainda vou conseguir.",comercio;
+
+ss:
+next;
+mes "[^FF0000Geng^000000]";
+mes "Deixe-me ver se está com voce...";
+if (countitem(7176) < 1) goto No_Item;
+next;
+mes "[^FF0000Geng^000000]";
+mes "Ok, pode passar... bom proveito !!";
+next;
+warp "ra_temsky",150,133;
+end;
+
+passar:
+mes "[^FF0000Geng^000000]";
+mes "Ok, pode passar... bom proveito !!";
+next;
+warp "ra_temsky",150,133;
+end;
+
+comercio:
+next;
+mes "[^FF0000Geng^000000]";
+mes "Deveria tentar parar de me enganar...";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Mas olha... eu posso lhe vender um, porém eu preciso de pontos de missão para me tornar um Chunin...";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Preciso de 1000 pontos, e poderei lhe vender o item.";
+next;
+mes "[^FF0000Geng^000000]";
+mes "Diga-me, vamos trocar ??";
+menu "Sim, vamos.",troca,"Fica pra próxima, obrigado.",L_Close;
+
+troca:
+next;
+mes "[^FF0000Geng^000000]";
+mes "Pra já...";
+if(@qp < 1000){mes "[^FF0000Geng^000000]"; mes "Desculpe, jovem ninja... só posso oferecer ele por 1000 pontos."; close;}
+query_sql("UPDATE `char` SET `quest_points` = `quest_points` - '1000' WHERE `char_id` = '"+getcharid(0)+"'");
+getitem 7176,1;
+announce "[Pontos de missão] "+strcharinfo(0)+" comprou um Certificado de Adestramento por 1000 Pontos de Missão.",bc_blue|bc_all; 
+close;
+
+No_Item:
+mes "[^FF0000Geng^000000]";
+mes "Eu preciso do certificado para lhe deixar passar, jovem shinobi !!";
+close;
+
+
+OnInit:
+	waitingroom "[Aluguel de Montaria 850+]",0;
+}
+
+ra_temsky,151,138,3	script	Mary#1	719,{
+if (countitem(7176) < 1) goto No_Item;
+mes "[^FF0000Mary^000000]";
+mes "Oh... olá, veio alugar uma montaria, certo ?...";
+next;
+mes "[^FF0000Mary^000000]";
+mes "Pode escolher o que deseja...";
+menu "Montaria Lobo (1 dia)",dog,"Montaria Lobo (7 dias)",dog7,"Montaria Sapo (1 dia)",frog,"Montaria Sapo (7 dias)",frog7;
+
+dog7:
+mes "[^FF0000Mary^000000]";
+mes "A montaria lobo dura 7 dias e custa 3.000.000 Zeny...";
+mes "Vai querer ?";
+menu "Sim",sdog7,"Deixa pra lá...",nvlw;
+
+sdog7:
+	if (Zeny < 3000000) {
+		mes "[^FF0000Mary^000000]";
+		mes "Você não possui o zeny necessário";
+		close;
+}
+next;
+mes "[^FF0000Mary^000000]";
+mes "Muito bem, aqui está sua montaria...";
+set Zeny, Zeny - 3000000;
+rentitem 2642,604800;
+close;
+
+frog7:
+mes "[^FF0000Mary^000000]";
+mes "A montaria sapo dura 7 dias e custa 3.000.000 Zeny...";
+mes "Vai querer ?";
+menu "Sim",sfrog7,"Deixa pra lá...",nvlw;
+
+sfrog7:
+	if (Zeny < 3000000) {
+		mes "[^FF0000Mary^000000]";
+		mes "Você não possui o zeny necessário";
+		close;
+}
+next;
+mes "[^FF0000Mary^000000]";
+mes "Muito bem, aqui está sua montaria...";
+set Zeny, Zeny - 3000000;
+rentitem 2641,604800;
+close;
+
+dog:
+mes "[^FF0000Mary^000000]";
+mes "A montaria lobo dura 1 dia e custa 650 mil...";
+mes "Vai querer ?";
+menu "Sim",sdog,"Deixa pra lá...",nvlw;
+
+nvlw:
+mes "[^FF0000Mary^000000]";
+mes "Tudo bem, obrigada.";
+close;
+
+frog:
+mes "[^FF0000Mary^000000]";
+mes "A montaria sapo dura 1 dia e custa 650 mil...";
+mes "Vai querer ?";
+menu "Sim",sfrog,"Deixa pra lá...",nvlw;
+
+No_Item:
+mes "[^FF0000Mary^000000]";
+mes "Eu preciso do certificado para lhe dar uma montaria !!";
+close;
+
+sfrog:
+	if (Zeny < 650000) {
+		mes "[^FF0000Mary^000000]";
+		mes "Você não possui o zeny necessário";
+		close;
+}
+next;
+mes "[^FF0000Mary^000000]";
+mes "Muito bem, aqui está sua montaria...";
+set Zeny, Zeny - 650000;
+rentitem 2641,86400;
+close;
+
+sdog:
+	if (Zeny < 650000) {
+		mes "[^FF0000Mary^000000]";
+		mes "Você não possui o zeny necessário";
+		close;
+}
+next;
+mes "[^FF0000Mary^000000]";
+mes "Muito bem, aqui está sua montaria...";
+set Zeny, Zeny - 650000;
+rentitem 2642,86400;
+close;
+
+OnInit:
+	waitingroom "[Mary]",0;
+}
+
+ra_temsky,149,130,3	script	Retorno#mont	706,{
+mes "[^FF0000Retorno^000000]";
+mes "Gostaria de voltar para o centro de treinamento ?";
+menu "- Sim",sct,"- Ficarei aqui, obrigado",nficar;
+
+sct:
+next;
+warp "kakashi",90,106;    
+end; 
+
+nficar:
+mes "[^FF0000Retorno^000000]";
+mes "Ok...";
+close;
+
+OnInit:
+	waitingroom "[Retorno]",0;
+
+OnPCDieEvent:
+if(strcharinfo(3) == "konoha" || strcharinfo(3) == "suna" || strcharinfo(3) == "nevoa"){
+//warp "kakashi",155,150;
+warp "SavePoint",0,0;
+sleep2(2000);
+end;}
+}

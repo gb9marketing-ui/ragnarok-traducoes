@@ -1,0 +1,33 @@
+fuin1: payon_in01 161 91
+fuin2: payon_in01 169 93
+fuin3: payon_in01 169 83
+fuin4: payon_in01 166 83
+
+
+fuin1: morroc_in 81 101
+fuin2: morroc_in 79 101
+fuin3: morroc_in 77 101
+fuin4: morroc_in 70 101
+
+fuin1: payon_in03 4 98
+fuin2: payon_in03 4 95
+fuin3: payon_in03 4 93
+fuin4: Payon_in03 4 90
+
+*fuin1: payon_in01 4 51
+fuin2: payon_in01 6 50
+fuin3: payon_in01 6 47
+fuin4: payon_in01 4 46
+
+skill (id) = lvl max
+177 = 5
+677 = 5
+678 = 5
+182 = 5
+321 = 10
+28 = 10
+320 = 10
+114 = 5
+30 = 10
+543 = 5
+255 = 5

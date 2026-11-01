@@ -1,0 +1,12 @@
+# Naruto Maniacs (convertido do Cronus) - nao editar o original do rAthena, editar aqui
+Header:
+  Type: CONSTANT_DB
+  Version: 1
+
+Body:
+  - Name: IG_FingingOre
+    Value: 20000
+  - Name: RC_Boss
+    Value: 10
+  - Name: RC_NonBoss
+    Value: 11

@@ -1,0 +1,741 @@
+//(=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+
+//( by: Aster0id )
+
+//(=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=)
+
+//===== Versão =================================================
+
+//= 1.0
+
+//===== Descrição ==============================================
+
+//= NPC que dá ao jogar iniciante um Kit e 7 dias VIP.
+
+//===== Comentários ============================================
+
+//= 1.0 - NPC Criado.	[Aster0id]
+
+//==============================================================
+
+payon_in03,24,66,3	script	Kit Iniciante#1	121,{
+set .@kit, 7234; //- Insira o id do seu Kit Iniciante.
+if(#japegou == 1) { mes "Ja lhe entreguei um Kit iniciante."; close; }
+mes "Olá " +strcharinfo(0)+ " seja bem vindo ao mundo de Naruto New Generation!";
+mes "Eu sou o responsável por lhe dar um Kit Iniciante como cortesia.";
+mes "Irá lhe ajudar muito, garanto...";
+next;
+mes "Por favor, insira seu login.";
+input .@conta$;
+getitem .@kit,1;
+//query_sql "UPDATE `login` SET `level`='1',`diasvip`=`diasvip`+"7" WHERE `userid`='"+.@conta$+"'"; < Da VIP
+set #japegou, 1;
+mes "Lhe desejo boa sorte em sua jornada, jovem shinobi.";
+close;
+
+OnInit:
+	waitingroom "[Kit Iniciante]",0;
+}
+
+xmas,157,167,3	script	Retorno#9	706,{
+mes "[^FF0000Porteiro do Natal^000000]";
+mes "Olá, vou te levar ao Centro de Treinamento !!";
+warp "kakashi",120,140;
+
+OnInit:
+	waitingroom "[Retorno]",0;
+}
+prontera,122,140,4	script	Easter#2	971,{
+mes "[^FF0000Easter^000000]";
+mes "Olá! Eu sou uma deusa Anglo-Saxã, que represento a Primavera(para o hemisfério norte), a ressurreição, renascimento, além de meu nome significar Páscoa.";
+next;
+mes "[^FF0000Easter^000000]";
+mes "Mas isso você já sabia, não é mesmo?! Bom, estou aqui pois o Coelho que distribui os Ovos está fazendo exatamente isso agora, ha-ha! Mas se você tiver alguns de chocolate e queira entregar para ele pode passar a mim! Em troca lhe darei algumas opções de recompensa!";
+menu "- Chapéu do Bunny",helice,"- Chapéu do Coelinho",poringnoel,"- Antígeno",antig,"- Fuuin no Sho",fuuin,"- Chakra Lendário",chakl,"- Próximo",nextpage;
+
+helice:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, ele custa 150 Ovos, você quer ?";
+menu "- Sim",shelice,"- Não",fechadiag;
+
+shelice:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 150 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,150;
+getitem 12629,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+poringnoel:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, ele custa 100 Ovos, você quer ?";
+menu "- Sim",sporing,"- Não",fechadiag;
+
+sporing:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 100 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,100;
+getitem 5198,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+antig:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Antígeno custa 105 ovos, você quer ?";
+//mes "Disponível em breve !!";
+menu "- Sim",santi,"- Não",fechadiag;
+//close;
+
+santi:
+next;
+//if(antinatal > 0){ mes "[^FF0000Easter^000000]"; mes "Este personagem já comprou um Antígeno."; close;}
+if ( countitem(7605) < 105 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,105;
+getitem 973,1;
+//set antinatal,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+fuuin:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Fuuin no Sho custa 145 ovos, você quer ?";
+//mes "Disponível em breve !!";
+//mes "Lembrando que só poderá comprar 2 por personagem !!";
+menu "- Sim",sfuuin,"- Não",fechadiag;
+//close;
+
+sfuuin:
+next;
+//if(fuuinnatal == 2){ mes "[^FF0000Easter^000000]"; mes "Este personagem já comprou um Antígeno."; close;}
+//if(fuuinnatal == 1){
+//if ( countitem(570) < 200 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+//delitem 570,500;
+//getitem 749,1;
+//set fuuinnatal,2;
+//mes "Parabéns pela sua compra !!";
+//close;
+//}
+//if(fuuinnatal == 0){
+if ( countitem(7605) < 145 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,145;
+getitem 749,1;
+//set fuuinnatal,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+chakl:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Chakra Lendário custa 25 ovos, você quer ?";
+menu "- Sim",schakl,"- Não",fechadiag;
+
+schakl:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 25 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,25;
+getitem 1079,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+fechadiag:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Okey então...";
+close;
+
+nextpage:
+mes "[^FF0000Easter^000000]";
+mes "Tenho mais itens, veja !!";
+menu "- Caixa de Hat",caixahat,"- Manual Avançado",manuav,"- Premio KG 3",kg3,"- Caixa da Riqueza",riqueza,"- Itens KG",itenskg,"- Itens Avançados",itemavan;
+
+caixahat:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Caixa de Hat custa 100 ovos, você quer ?";
+menu "- Sim",scaixahat,"- Não",fechadiag;
+
+scaixahat:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 100 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,100;
+getitem 7248,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+manuav:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Manual Avançado custa 1 ovo, você quer ?";
+menu "- Sim",smanuav,"- Não",fechadiag;
+
+smanuav:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher o Ovo.";
+if ( countitem(7605) < 1 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,1;
+getitem 7206,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+kg3:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Prêmio KG 3 custa 1 ovo, você quer ?";
+menu "- Sim",skg3,"- Não",fechadiag;
+
+skg3:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher o Ovo.";
+if ( countitem(7605) < 1 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,1;
+getitem 554,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+riqueza:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Caixa da Riqueza custa 7 ovos, você quer ?";
+menu "- Sim",sriqueza,"- Não",fechadiag;
+
+sriqueza:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 7 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,7;
+getitem 7247,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+itenskg:
+mes "[^FF0000Easter^000000]";
+mes "Estes são os itens que posso oferecer !!";
+menu "- Osso Antigo",ossos,"- Pergaminho da Terra",sterra,"- Pergaminho do Céu",sceu,"- Chakra Misterioso",koori,"- Coração do Sasori",kug,"- Liberação do 8 Portão",lee,"- Olhos de Hyuuga",byak,"- Próxima Pag",proxipag;
+
+ossos:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Osso Antigo custa 50 ovos, você quer ?";
+menu "- Sim",sossos,"- Não",fechadiag;
+
+sossos:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 628,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+sterra:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Pergaminho da Terra custa 50 ovos, você quer ?";
+menu "- Sim",ssterra,"- Não",fechadiag;
+
+ssterra:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 681,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+sceu:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Pergaminho do Céu custa 50 ovos, você quer ?";
+menu "- Sim",ssceu,"- Não",fechadiag;
+
+ssceu:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 669,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+koori:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Chakra Misterioso custa 50 ovos, você quer ?";
+menu "- Sim",skoori,"- Não",fechadiag;
+
+skoori:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 745,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+kug:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Coração de Sasori custa 50 ovos, você quer ?";
+menu "- Sim",skug,"- Não",fechadiag;
+
+skug:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 744,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+lee:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Liberação do 8 Portão custa 50 ovos, você quer ?";
+menu "- Sim",slee,"- Não",fechadiag;
+
+slee:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 735,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+byak:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Olho de Hyuuga custa 50 ovos, você quer ?";
+menu "- Sim",sbyak,"- Não",fechadiag;
+
+sbyak:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 659,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+proxipag:
+mes "[^FF0000Easter^000000]";
+mes "Mais estes outros para KG...";
+menu "- Pílula Suprema",baika,"- Olhos de Uchiha",shari,"- Coração de Origami",konan,"- Selamento Uzumaki",uzum,"- Próximo",nextpagee;
+
+baika:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Pílula Suprema custa 50 ovos, você quer ?";
+menu "- Sim",sbaika,"- Não",fechadiag;
+
+sbaika:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 685,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+shari:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, os Olhos de Uchiha custam 50 ovos, você quer ?";
+menu "- Sim",sshari,"- Não",fechadiag;
+
+sshari:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 663,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+konan:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Coração de Origami custa 50 ovos, você quer ?";
+menu "- Sim",skonan,"- Não",fechadiag;
+
+skonan:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 7112,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+uzum:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Selamento Uzumaki custa 50 ovos, você quer ?";
+menu "- Sim",suzu,"- Não",fechadiag;
+
+suzu:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12621,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+nextpagee:
+mes "[^FF0000Easter^000000]";
+mes "Outros...";
+menu "- DNA Jashin",jashin,"- DNA Kikaichu",kikaichu,"- DNA Flauta",flauta,"- DNA Ibuse",ibuse,"- DNA Kibaku",kibaku,"- DNA Mitsashi",mits,"- DNA Hashirama",hashi;
+
+jashin:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Jashin custa 50 ovos, você quer ?";
+menu "- Sim",sjashin,"- Não",fechadiag;
+
+sjashin:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12949,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+kikaichu:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Kikaichu custa 50 ovos, você quer ?";
+menu "- Sim",skikaichu,"- Não",fechadiag;
+
+skikaichu:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12950,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+flauta:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Flauta custa 50 ovos, você quer ?";
+menu "- Sim",sflauta,"- Não",fechadiag;
+
+sflauta:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12951,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+ibuse:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Ibuse custa 50 ovos, você quer ?";
+menu "- Sim",sibuse,"- Não",fechadiag;
+
+sibuse:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12952,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+kibaku:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Kibaku custa 50 ovos, você quer ?";
+menu "- Sim",skibaku,"- Não",fechadiag;
+
+skibaku:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12953,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+mits:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Mitsashi custa 50 ovos, você quer ?";
+menu "- Sim",smits,"- Não",fechadiag;
+
+smits:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12954,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+hashi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o DNA Hashirama custa 50 ovos, você quer ?";
+menu "- Sim",shashi,"- Não",fechadiag;
+
+shashi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 50 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,50;
+getitem 12621,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+itemavan:
+mes "[^FF0000Easter^000000]";
+mes "Tenho alguns itens que lhe podem ser úteis !!";
+menu "- Esfera das Sombras",esfera,"- Lâmina perdida nas trevas",lamina,"- Colar do Oblívio",colar,"- Selo Maldito",selo,"- Livro Desconhecido",livro,"- Próximo",proxava;
+
+esfera:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Esfera das Sombras custa 2 ovos, você quer ?";
+menu "- Sim",sesfera,"- Não",fechadiag;
+
+sesfera:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7524,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+lamina:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Lâmina Perdida nas Trevas custa 2 ovos, você quer ?";
+menu "- Sim",slamina,"- Não",fechadiag;
+
+slamina:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7023,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+colar:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Colar do Oblívio custa 2 ovos, você quer ?";
+menu "- Sim",scolar,"- Não",fechadiag;
+
+scolar:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,5;
+getitem 1008,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+selo:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Selo Maldito custa 2 ovos, você quer ?";
+menu "- Sim",sselo,"- Não",fechadiag;
+
+sselo:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7442,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+livro:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Livro Desconhecido custa 2 ovos, você quer ?";
+menu "- Sim",slivro,"- Não",fechadiag;
+
+slivro:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7481,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+proxava:
+mes "[^FF0000Easter^000000]";
+mes "Tenho também estes itens...";
+menu "- Ba Gua",bagua,"- Mandíbula de Formiga",mandi,"- Rubi Amaldiçoado",rubi,"- Máscara Destruída",masc,"- União da Tribo",uniao,"- Relógio de Bolso",relogio,"- Chave para o Subt.",chave;
+
+bagua:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Ba Gua custa 2 ovos, você quer ?";
+menu "- Sim",sbagua,"- Não",fechadiag;
+
+sbagua:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7169,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+mandi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Esfera das Sombras custa 2 ovos, você quer ?";
+menu "- Sim",smandi,"- Não",fechadiag;
+
+smandi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 1014,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+rubi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, o Rubi Amaldiçoado custa 2 ovos, você quer ?";
+menu "- Sim",srubi,"- Não",fechadiag;
+
+srubi:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 724,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+masc:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Máscara Destruída custa 2 ovos, você quer ?";
+menu "- Sim",smasc,"- Não",fechadiag;
+
+smasc:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7611,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+chave:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Esfera das Sombras custa 2 ovos, você quer ?";
+menu "- Sim",schave,"- Não",fechadiag;
+
+schave:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7027,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+uniao:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Esfera das Sombras custa 2 ovos, você quer ?";
+menu "- Sim",suniao,"- Não",fechadiag;
+
+suniao:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 658,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+relogio:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Muito bem, a Esfera das Sombras custa 2 ovos, você quer ?";
+menu "- Sim",srelogio,"- Não",fechadiag;
+
+srelogio:
+next;
+mes "[^FF0000Easter^000000]";
+mes "Ok... vou recolher os Ovos.";
+if ( countitem(7605) < 2 ){ mes "[^FF0000Easter^000000]"; mes "Você não tem a quantidade de itens."; close;}
+delitem 7605,2;
+getitem 7513,1;
+mes "Parabéns pela sua compra !!";
+close;
+
+OnInit:
+	waitingroom "[Easter]",0;
+
+}
+xmas_fild01	mapflag	nowarp
+xmas_fild01	mapflag	noteleport
+xmas_fild01	mapflag	nowarpto
+xmas_fild01	mapflag	nobranch
+xmas_fild01	mapflag	nosave	SavePoint
+xmas_fild01	mapflag	nomemo
+xmas_fild01	mapflag	nopenalty
+xmas_fild01	mapflag	noexp

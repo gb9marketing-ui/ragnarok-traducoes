@@ -1,0 +1,961 @@
+Header:
+  Type: SKILL_DB
+  Version: 4
+
+Body:
+  - Id: 721
+    Name: AM_CANNIBALIZE2
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 722
+    Name: AM_CANNIBALIZE3
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 723
+    Name: AM_CANNIBALIZE4
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 724
+    Name: AM_CANNIBALIZE5
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 725
+    Name: AM_CANNIBALIZE6
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 726
+    Name: AM_CANNIBALIZE7
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 727
+    Name: AM_CANNIBALIZE8
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 728
+    Name: AM_CANNIBALIZE9
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 729
+    Name: AM_CANNIBALIZE10
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 730
+    Name: AM_CANNIBALIZE11
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 731
+    Name: AM_CANNIBALIZE12
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 732
+    Name: AM_CANNIBALIZE13
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 733
+    Name: AM_CANNIBALIZE14
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 734
+    Name: AM_CANNIBALIZE15
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 735
+    Name: AM_CANNIBALIZE16
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 736
+    Name: AM_CANNIBALIZE17
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 737
+    Name: AM_CANNIBALIZE18
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 738
+    Name: AM_CANNIBALIZE19
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 739
+    Name: AM_CANNIBALIZE20
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 740
+    Name: AM_CANNIBALIZE21
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 741
+    Name: AM_CANNIBALIZE22
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 742
+    Name: AM_CANNIBALIZE23
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 743
+    Name: AM_CANNIBALIZE24
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 744
+    Name: AM_CANNIBALIZE25
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 745
+    Name: AM_CANNIBALIZE26
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 746
+    Name: AM_CANNIBALIZE27
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 747
+    Name: AM_CANNIBALIZE28
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 748
+    Name: AM_CANNIBALIZE29
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 970
+    Name: AM_CANNIBALIZE30
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 971
+    Name: AM_CANNIBALIZE31
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 972
+    Name: AM_CANNIBALIZE32
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 973
+    Name: AM_CANNIBALIZE33
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 974
+    Name: AM_CANNIBALIZE34
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 975
+    Name: AM_CANNIBALIZE35
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 976
+    Name: AM_CANNIBALIZE36
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 977
+    Name: AM_CANNIBALIZE37
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 978
+    Name: AM_CANNIBALIZE38
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 979
+    Name: AM_CANNIBALIZE39
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 980
+    Name: AM_CANNIBALIZE40
+    Description: Summon Flora
+    MaxLevel: 5
+    TargetType: Ground
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 981
+    Name: BA_PANGVOICE50_981
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 985
+    Name: BA_PANGVOICEZ
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 987
+    Name: BA_PANGVOICEZ2
+    Description: Throw Venom Knife
+    MaxLevel: 1
+    Type: Weapon
+    TargetType: Attack
+    DamageFlags:
+      IgnoreDefense: true
+      IgnoreFlee: true
+    Flags:
+      IsQuest: true
+    Hit: Multi_Hit
+    CastCancel: false
+  - Id: 749
+    Name: BA_PANGVOICE2
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 750
+    Name: BA_PANGVOICE3
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 751
+    Name: BA_PANGVOICE4
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 752
+    Name: BA_PANGVOICE5
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 753
+    Name: BA_PANGVOICE6
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 754
+    Name: BA_PANGVOICE7
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 755
+    Name: BA_PANGVOICE8
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 756
+    Name: BA_PANGVOICE9
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 757
+    Name: BA_PANGVOICE10
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 758
+    Name: BA_PANGVOICE11
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 759
+    Name: BA_PANGVOICE12
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 760
+    Name: BA_PANGVOICE13
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 761
+    Name: BA_PANGVOICE14
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 762
+    Name: BA_PANGVOICE15
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 763
+    Name: BA_PANGVOICE16
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 764
+    Name: BA_PANGVOICE17
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 765
+    Name: BA_PANGVOICE18
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 766
+    Name: BA_PANGVOICE19
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 767
+    Name: BA_PANGVOICE20
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 768
+    Name: BA_PANGVOICE21
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 769
+    Name: BA_PANGVOICE22
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 770
+    Name: BA_PANGVOICE23
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 771
+    Name: BA_PANGVOICE24
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 772
+    Name: BA_PANGVOICE25
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 773
+    Name: BA_PANGVOICE26
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 774
+    Name: BA_PANGVOICE27
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 775
+    Name: BA_PANGVOICE28
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 776
+    Name: BA_PANGVOICE29
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 777
+    Name: BA_PANGVOICE30
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 945
+    Name: BA_PANGVOICE31
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 946
+    Name: BA_PANGVOICE32
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 947
+    Name: BA_PANGVOICE33
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 948
+    Name: BA_PANGVOICE34
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 949
+    Name: BA_PANGVOICE35
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 950
+    Name: BA_PANGVOICE36
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 951
+    Name: BA_PANGVOICE37
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 957
+    Name: BA_PANGVOICE38
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 958
+    Name: BA_PANGVOICE39
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 959
+    Name: BA_PANGVOICE40
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 960
+    Name: BA_PANGVOICE41
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 961
+    Name: BA_PANGVOICE42
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 962
+    Name: BA_PANGVOICE43
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 963
+    Name: BA_PANGVOICE44
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 964
+    Name: BA_PANGVOICE45
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 965
+    Name: BA_PANGVOICE46
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 966
+    Name: BA_PANGVOICE47
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 967
+    Name: BA_PANGVOICE48
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 968
+    Name: BA_PANGVOICE49
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 969
+    Name: BA_PANGVOICE50
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 992
+    Name: BA_PANGVOICEX
+    Description: Pang Voice
+    MaxLevel: 1
+    Type: Misc
+    TargetType: Self
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+    CastCancel: false
+  - Id: 986
+    Name: BA_PANGVOICEZ1
+    Description: Pang Voice
+    MaxLevel: 5
+    Type: Weapon
+    TargetType: Attack
+    Flags:
+      IsNpc: true
+    Hit: Single
+    CastCancel: false
+  - Id: 990
+    Name: GODD_STEALSOMETHING
+    Description: Roubar chakra
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 994
+    Name: GODD_SPLASPD
+    Description: Diminuir ASPD
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 993
+    Name: GODD_SPLSWALK
+    Description: Diminuir movespeed
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 995
+    Name: GODD_PULLEN
+    Description: Hook
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 996
+    Name: DOTASWAP
+    Description: DOTASWAP
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single
+  - Id: 997
+    Name: GM_INCREASESP
+    Description: Increase Sp
+    MaxLevel: 10
+    CastCancel: false
+  - Id: 998
+    Name: GM_INCREASEHP
+    Description: Increase Hp
+    MaxLevel: 10
+    CastCancel: false
+  - Id: 999
+    Name: NARUTO_CAPTUREBIJUU
+    Description: Capture Bijuu
+    MaxLevel: 1
+    Type: Magic
+    TargetType: Attack
+    DamageFlags:
+      NoDamage: true
+    Hit: Single

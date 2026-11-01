@@ -1,0 +1,117 @@
+kiragakure,217,213,4	script	Sala Vip::vip	922,{
+	if (countitem(634) >= 99999) && (getgmlevel() < 1) {mes "Vejo que você não é vip, mas possui um vale rop no inventário, gostaria de gastar ele para entrar uma vez na sala vip?";
+menu "Sim, eu gostaria de entrar",claro,"Não, obrigado",r2;
+
+}
+	if (getgmlevel() < 1) goto B;
+
+	mes "[Teleportador para sala vip]";
+	mes "Olá Shinobi";
+	next;
+	mes "[Teleportador para sala vip]";
+	mes "Gostaria de entrar na Sala VIP do NNGO?";
+	next;
+	menu "Sim",r1,"Não",r2;
+	
+	r1:
+	mes "[Teleportador para sala vip]";
+	mes "OK "+ strcharinfo(0) +"!";
+	warp "ra_in01", 209,90;
+	close;
+
+	r2:
+	mes "[Teleportador para sala vip]";
+	mes "Ok..";
+	close;
+
+	B:
+	mes "Você não é vip, para se tornar vip acesse o fórum e se informe.";
+	close;
+
+	claro:
+	next;
+	delitem 634,1;
+	mes "Ok, seja bem vindo a sala vip, lembrando que você terá acesso apenas esta vez, caso queira entrar denovo terá que usar outro vale rop, ou ser vip!";
+	next;
+	mes "Até mais!";
+	next;
+	warp "ra_in01", 209,90;
+	
+
+
+}
+
+ra_in01,222,95,4	Script	Mapas Exclusivos	951,{
+mes "^44DD77[Mestra de Treinamento]^000000";
+mes "Oooh, olá... eu sou a Mestra de Treinamento e estou encarregada de";
+mes "lhe mostrar os mapas exclusivos para VIPs...";
+next;
+mes "^44DD77[Mestra de Treinamento]^000000";
+mes "Portanto... como posso ajudá-lo ?";
+menu "- Mapa de nível 650 ou superior",mapa1,"- Nada, por hoje.",nadahj;
+
+mapa1:
+mes "^44DD77[Mestra de Treinamento]^000000";
+mes "Esse mapa é indicado para níveis próximos de 650 ou superior, deseja ir ?";
+menu "Sim, um ninja aceita todos os desafios.",smapa1,"Ficarei aqui, estou cansado.",nadahj;
+
+smapa1:
+mes "^44DD77[Mestra de Treinamento]^000000";
+mes "É assim que se fala, vamos lá jovem shinobi !!";
+next;
+warp "man_fild02", 232,253;
+end;
+
+nadahj:
+mes "^44DD77[Mestra de Treinamento]^000000";
+mes "Entendo... bom, até outro momento !!";
+close;
+
+OnInit:
+	waitingroom "[Mapas para VIPs]",0;
+}
+
+man_fild02,230,259,4	Script	Retornar	884,{
+mes "^444488[Retornar]^000000";
+mes "Deseja retornar para a Sala VIP ?";
+menu "- Sim",voltarvip,"- Ficarei aqui",ficarvip;
+
+voltarvip:
+mes "^444488[Retornar]^000000";
+mes "Muito bem, vamos";
+warp "ra_in01", 209,90;
+end;
+
+ficarvip:
+mes "^444488[Retornar]^000000";
+mes "Exatamente, treino nunca é excesso !!";
+close;
+
+OnInit:
+	waitingroom "[Retornar]",0;
+}
+
+konoha3,215,135, 4	duplicate(vip)	Sala Vip#1	922
+sunagakure,274,239, 4	duplicate(vip)	Sala Vip#2	922
+prt_monk, 233, 195, 4	duplicate(vip)	Sala Vip#3	922
+akatsuki,98,205,4	duplicate(vip)	Sala Vip#4	922
+kumogakure,53,109, 4	duplicate(vip)	Sala Vip#5	922
+lou_in02,242,162, 4	duplicate(vip)	Sala Vip#6	922
+
+man_fild02	mapflag	nomemo
+man_fild02	mapflag	noteleport
+man_fild02	mapflag	nowarp
+man_fild02	mapflag	nowarpto
+
+
+man_fild02,0,0,0,0	monster	Phionn	1532,48,5000,0,0
+man_fild02,0,0,0,0	monster	Fergus	1530,1,7200000,0,0
+man_fild02,0,0,0,0	monster	Pesadelo Infernal	1554,48,5000,0,0
+man_fild02,0,0,0,0	monster	Sacerdotisa Sombria	1552,48,5000,0,0
+
+// ------------------- Mapa Freee
+
+pay_dun01,0,0,0,0	monster	Terror Púrpura	1409,38,5000,0,0
+pay_dun01,0,0,0,0	monster	Vulto do Conhecimento	1195,42,5000,0,0
+pay_dun01,0,0,0,0	monster	Assolador	1306,42,5000,0,0
+pay_dun01,0,0,0,0	monster	Esfolador de Almas	1108,1,7400000,0,0

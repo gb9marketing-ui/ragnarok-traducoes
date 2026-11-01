@@ -1,0 +1,132 @@
+function	script	newden	{
+
+if (dennin == 1 || dentai == 1 || dengen == 1 || denfuin == 1 || denvel == 1 || denmed == 1) {
+//-------------------------- Ninjutsu
+if (dennin == 1) && (lvlden == 1) {bonus bInt,1; bonus bMatk,50; bonus bMaxSP,2500; bonus2 bElementDamage,Water,1; bonus2 bElementDamage,Earth,1; bonus2 bElementDamage,Wind,1; bonus2 bElementDamage,Fire,1; bonus bSPrecovRate,2;}
+if (dennin == 1) && (lvlden == 2) {bonus bInt,2; bonus bMatk,100; bonus bMaxSP,2500; bonus2 bElementDamage,Water,2; bonus2 bElementDamage,Earth,2; bonus2 bElementDamage,Wind,2; bonus2 bElementDamage,Fire,2; bonus bSPrecovRate,5;}
+if (dennin == 1) && (lvlden == 3) {bonus bInt,4; bonus bMatk,200; bonus bMaxSP,5000; bonus2 bElementDamage,Water,3; bonus2 bElementDamage,Earth,3; bonus2 bElementDamage,Wind,3; bonus2 bElementDamage,Fire,3; bonus bSPrecovRate,7;}
+if (dennin == 1) && (lvlden == 4) {bonus bInt,6; bonus bMatk,300; bonus bMaxSP,5000; bonus2 bElementDamage,Water,4; bonus2 bElementDamage,Earth,4; bonus2 bElementDamage,Wind,4; bonus2 bElementDamage,Fire,4; bonus bSPrecovRate,10;}
+if (dennin == 1) && (lvlden == 5) {bonus bInt,8; bonus bMatk,400; bonus bMaxSP,7500; bonus2 bElementDamage,Water,5; bonus2 bElementDamage,Earth,5; bonus2 bElementDamage,Wind,5; bonus2 bElementDamage,Fire,5; bonus bSPrecovRate,12;}
+if (dennin == 1) && (lvlden == 6) {bonus bInt,10; bonus bMatk,500; bonus bMaxSP,7500; skill 364,10; bonus2 bElementDamage,Water,6; bonus2 bElementDamage,Earth,6; bonus2 bElementDamage,Wind,6; bonus2 bElementDamage,Fire,6; bonus bSPrecovRate,15;}
+if (dennin == 1) && (lvlden == 7) {bonus bInt,12; bonus bMatk,600; bonus bMaxSP,10000; skill 364,10; bonus2 bElementDamage,Water,7; bonus2 bElementDamage,Earth,7; bonus2 bElementDamage,Wind,7; bonus2 bElementDamage,Fire,7; bonus bSPrecovRate,17;}
+if (dennin == 1) && (lvlden == 8) {bonus bInt,14; bonus bMatk,700; bonus bMaxSP,15000; skill 364,10; bonus2 bElementDamage,Water,8; bonus2 bElementDamage,Earth,8; bonus2 bElementDamage,Wind,8; bonus2 bElementDamage,Fire,8; bonus bSPrecovRate,20;}
+if (dennin == 1) && (lvlden == 9) {bonus bInt,17; bonus bMatk,900; bonus bMaxSP,20000; skill 364,10; bonus2 bElementDamage,Water,9; bonus2 bElementDamage,Earth,9; bonus2 bElementDamage,Wind,9; bonus2 bElementDamage,Fire,9; bonus bSPrecovRate,22;}
+if (dennin == 1) && (lvlden == 10) {bonus bInt,20; bonus bMatk,1000; bonus bMaxSP,25000; skill 364,10; bonus2 bElementDamage,Water,10; bonus2 bElementDamage,Earth,10; bonus2 bElementDamage,Wind,10; bonus2 bElementDamage,Fire,10; bonus bSPrecovRate,25;}
+//------------------------- Taijutsu
+if (dentai == 1) && (lvlden == 1) {bonus bStr,1; bonus bBaseAtk,100; bonus2 bAddEle,Holy,1;}
+if (dentai == 1) && (lvlden == 2) {bonus bStr,2; bonus bBaseAtk,200;; bonus2 bAddEle,Holy,2;}
+if (dentai == 1) && (lvlden == 3) {bonus bStr,4; bonus bBaseAtk,300; bonus2 bAddEle,Holy,3;}
+if (dentai == 1) && (lvlden == 4) {bonus bStr,6; bonus bBaseAtk,400;; bonus2 bAddEle,Holy,4;}
+if (dentai == 1) && (lvlden == 5) {bonus bStr,8; bonus bBaseAtk,600; bonus2 bAddEle,Holy,5;}
+if (dentai == 1) && (lvlden == 6) {bonus bStr,10; bonus bBaseAtk,800; bonus2 bAddEle,Holy,6;}
+if (dentai == 1) && (lvlden == 7) {bonus bStr,12; bonus bBaseAtk,1000; bonus2 bAddEle,Holy,7;}
+if (dentai == 1) && (lvlden == 8) {bonus bStr,14; bonus bBaseAtk,1200; bonus2 bAddEle,Holy,8;}
+if (dentai == 1) && (lvlden == 9) {bonus bStr,17; bonus bBaseAtk,1400; bonus2 bAddEle,Holy,9; skill 479,1;}
+if (dentai == 1) && (lvlden == 10) {bonus bStr,20; bonus bBaseAtk,1500; bonus2 bAddEle,Holy,10; skill 479,1;}
+//-------------------------- Fuuin
+if (denfuin == 1) && (lvlden == 1) {bonus bDex,1; bonus bCastRate,-1; bonus bHit,5; bonus bSPrecovRate,3;}
+if (denfuin == 1) && (lvlden == 2) {bonus bDex,2; bonus bCastRate,-2; bonus bHit,10; bonus bSPrecovRate,6;}
+if (denfuin == 1) && (lvlden == 3) {bonus bDex,4; bonus bCastRate,-3; bonus bHit,15; bonus bSPrecovRate,9;}
+if (denfuin == 1) && (lvlden == 4) {bonus bDex,6; bonus bCastRate,-4; bonus bHit,20; bonus bSPrecovRate,12;}
+if (denfuin == 1) && (lvlden == 5) {bonus bDex,8; bonus bCastRate,-5; bonus bHit,25; bonus bSPrecovRate,15;}
+if (denfuin == 1) && (lvlden == 6) {bonus bDex,10; bonus bCastRate,-6; bonus bHit,30; bonus bSPrecovRate,18;}
+if (denfuin == 1) && (lvlden == 7) {bonus bDex,12; bonus bCastRate,-7; bonus bHit,35; bonus bSPrecovRate,21;}
+if (denfuin == 1) && (lvlden == 8) {bonus bDex,14; bonus bCastRate,-8; bonus bHit,40; bonus bSPrecovRate,24;}
+if (denfuin == 1) && (lvlden == 9) {bonus bDex,17; bonus bCastRate,-9; bonus bHit,45; bonus bSPrecovRate,27; skill 483,1;}
+if (denfuin == 1) && (lvlden == 10) {bonus bDex,20; bonus bCastRate,-10; bonus bHit,50; bonus bSPrecovRate,30; skill 483,1;}
+//------------------------- Velocidade
+if (denvel == 1) && (lvlden == 1) {bonus bAgi,1; bonus bFlee,5; bonus bSpeedAddRate,1; }
+if (denvel == 1) && (lvlden == 2) {bonus bAgi,2; bonus bFlee,10; bonus bSpeedAddRate,2;}
+if (denvel == 1) && (lvlden == 3) {bonus bAgi,4; bonus bFlee,15; bonus bSpeedAddRate,3;}
+if (denvel == 1) && (lvlden == 4) {bonus bAgi,6; bonus bFlee,20; bonus bSpeedAddRate,4;}
+if (denvel == 1) && (lvlden == 5) {bonus bAgi,8; bonus bFlee,25; bonus bSpeedAddRate,5;}
+if (denvel == 1) && (lvlden == 6) {bonus bAgi,10; bonus bDelayRate,-2; bonus bFlee,30; bonus bSpeedAddRate,6;}
+if (denvel == 1) && (lvlden == 7) {bonus bAgi,12; bonus bDelayRate,-3; bonus bFlee,35; bonus bSpeedAddRate,7;}
+if (denvel == 1) && (lvlden == 8) {bonus bAgi,14; bonus bDelayRate,-4; bonus bFlee,40; bonus bSpeedAddRate,8;}
+if (denvel == 1) && (lvlden == 9) {bonus bAgi,17; bonus bDelayRate,-6; bonus bFlee,45; bonus bSpeedAddRate,9; skill 249,4;}
+if (denvel == 1) && (lvlden == 10) {bonus bAgi,20; bonus bDelayRate,-8; bonus bFlee,50; bonus bSpeedAddRate,10; skill 249,5;}
+//-------------------------- Genj
+if (dengen == 1) && (lvlden == 1) {bonus bLuk,1; bonus bFlee2,1; bonus2 bSCResist,SC_Stun,1; bonus2 bSCResist,SC_Freeze,1; bonus2 bSCResist,Eff_Silence,1; bonus2 bSCResist,Eff_Poison,1; bonus2 bSCDamage,SC_Confusion,1; bonus bCritical,2; bonus bCritAtkRate,1;}
+if (dengen == 1) && (lvlden == 2) {bonus bLuk,2; bonus bFlee2,2; bonus2 bSCResist,SC_Stun,2; bonus2 bSCResist,SC_Freeze,2; bonus2 bSCResist,Eff_Silence,2; bonus2 bSCResist,Eff_Poison,2; bonus2 bSCDamage,SC_Confusion,2; bonus bCritical,4; bonus bCritAtkRate,1;}
+if (dengen == 1) && (lvlden == 3) {bonus bLuk,4; bonus bFlee2,3; bonus2 bSCResist,SC_Stun,3; bonus2 bSCResist,SC_Freeze,3; bonus2 bSCResist,Eff_Silence,3; bonus2 bSCResist,Eff_Poison,3; bonus2 bSCDamage,SC_Confusion,3; bonus bCritical,6; bonus bCritAtkRate,2;}
+if (dengen == 1) && (lvlden == 4) {bonus bLuk,6; bonus bFlee2,4; bonus2 bSCResist,SC_Stun,4; bonus2 bSCResist,SC_Freeze,4; bonus2 bSCResist,Eff_Silence,4; bonus2 bSCResist,Eff_Poison,4; bonus2 bSCDamage,SC_Confusion,4; bonus bCritical,8; bonus bCritAtkRate,2;}
+if (dengen == 1) && (lvlden == 5) {bonus bLuk,8; bonus bFlee2,5; bonus2 bSCResist,SC_Stun,5; bonus2 bSCResist,SC_Freeze,5; bonus2 bSCResist,Eff_Silence,5; bonus2 bSCResist,Eff_Poison,5; bonus2 bSCDamage,SC_Confusion,5; bonus bCritical,10; bonus bCritAtkRate,3;}
+if (dengen == 1) && (lvlden == 6) {bonus bLuk,10; bonus bFlee2,6; bonus2 bSCResist,SC_Stun,6; bonus2 bSCResist,SC_Freeze,6; bonus2 bSCResist,Eff_Silence,6; bonus2 bSCResist,Eff_Poison,6; bonus2 bSCDamage,SC_Confusion,6; bonus bCritical,12; bonus bCritAtkRate,3; skill 986,6;}
+if (dengen == 1) && (lvlden == 7) {bonus bLuk,12; bonus bFlee2,7; bonus2 bSCResist,SC_Stun,7; bonus2 bSCResist,SC_Freeze,7; bonus2 bSCResist,Eff_Silence,7; bonus2 bSCResist,Eff_Poison,7; bonus2 bSCDamage,SC_Confusion,7; bonus bCritical,14; bonus bCritAtkRate,4; skill 986,6;}
+if (dengen == 1) && (lvlden == 8) {bonus bLuk,14; bonus bFlee2,8; bonus2 bSCResist,SC_Stun,8; bonus2 bSCResist,SC_Freeze,8; bonus2 bSCResist,Eff_Silence,8; bonus2 bSCResist,Eff_Poison,8; bonus2 bSCDamage,SC_Confusion,8; bonus bCritical,16; bonus bCritAtkRate,4; skill 986,6;}
+if (dengen == 1) && (lvlden == 9) {bonus bLuk,17; bonus bFlee2,9; bonus2 bSCResist,SC_Stun,9; bonus2 bSCResist,SC_Freeze,9; bonus2 bSCResist,Eff_Silence,9; bonus2 bSCResist,Eff_Poison,9; bonus2 bSCDamage,SC_Confusion,9; bonus bCritical,18; bonus bCritAtkRate,5; skill 986,6;}
+if (dengen == 1) && (lvlden == 10) {bonus bLuk,20; bonus bFlee2,10; bonus2 bSCResist,SC_Stun,10; bonus2 bSCResist,SC_Freeze,10; bonus2 bSCResist,Eff_Silence,10; bonus2 bSCResist,Eff_Poison,10; bonus2 bSCDamage,SC_Confusion,10; bonus bCritical,20; bonus bCritAtkRate,5; skill 986,6;}
+// ---------------------------- Medicina
+if (denmed == 1) && (lvlden == 1) {bonus bVit,1; bonus bMaxHP,10000; bonus bHPrecovRate,1; bonus bMagicAtkDef,1; bonus bNearAtkDef,1; bonus bHealPower,1;}
+if (denmed == 1) && (lvlden == 2) {bonus bVit,2; bonus bMaxHP,15000; bonus bHPrecovRate,2; bonus bMagicAtkDef,1; bonus bNearAtkDef,2; bonus bHealPower,2;}
+if (denmed == 1) && (lvlden == 3) {bonus bVit,4; bonus bMaxHP,20000; bonus bHPrecovRate,3; bonus bMagicAtkDef,2; bonus bNearAtkDef,3; bonus bHealPower,3;}
+if (denmed == 1) && (lvlden == 4) {bonus bVit,6; bonus bMaxHP,30000; bonus bHPrecovRate,4; bonus bMagicAtkDef,2; bonus bNearAtkDef,4; bonus bHealPower,4;}
+if (denmed == 1) && (lvlden == 5) {bonus bVit,8; bonus bMaxHP,45000; bonus bHPrecovRate,5; bonus bMagicAtkDef,3; bonus bNearAtkDef,5; bonus bHealPower,5;}
+if (denmed == 1) && (lvlden == 6) {bonus bVit,10; skill 1014,1; bonus bMaxHP,50000; bonus bHPrecovRate,6; bonus bMagicAtkDef,3; bonus bNearAtkDef,6; bonus bHealPower,6;}
+if (denmed == 1) && (lvlden == 7) {bonus bVit,12; skill 1014,1; bonus bMaxHP,75000; bonus bHPrecovRate,7; bonus bMagicAtkDef,4; bonus bNearAtkDef,7; bonus bHealPower,7;}
+if (denmed == 1) && (lvlden == 8) {bonus bVit,14; skill 1014,1; bonus bMaxHP,100000; bonus bHPrecovRate,8; bonus bMagicAtkDef,4; bonus bNearAtkDef,8; bonus bHealPower,8;}
+if (denmed == 1) && (lvlden == 9) {bonus bVit,17; skill 1014,1; bonus bMaxHP,125000; bonus bHPrecovRate,9; bonus bMagicAtkDef,5; bonus bNearAtkDef,9; bonus bHealPower,9;}
+if (denmed == 1) && (lvlden == 10) {bonus bVit,20; skill 1014,2; bonus bMaxHP,150000; bonus bHPrecovRate,10; bonus bMagicAtkDef,5; bonus bNearAtkDef,10; bonus bHealPower,10;}
+end;
+}
+}
+//if (dengen == 1) {callfunc "dengen";}
+//if (denvel == 1) {callfunc "denvel";}
+//end;
+//}
+
+//function	script	dentai {
+//if (lvlden == 1) {}
+//if (lvlden == 2) {}
+//if (lvlden == 3) {}
+//if (lvlden == 4) {}
+//if (lvlden == 5) {}
+//if (lvlden == 6) {}
+//if (lvlden == 7) {}
+//if (lvlden == 8) {}
+//if (lvlden == 9) {}
+//if (lvlden == 10) {}
+//end;
+//}
+
+//function	script	dengen {
+//if (lvlden == 1) {}
+//if (lvlden == 2) {}
+//if (lvlden == 3) {}
+//if (lvlden == 4) {}
+//if (lvlden == 5) {}
+//if (lvlden == 6) {}
+//if (lvlden == 7) {}
+//if (lvlden == 8) {}
+//if (lvlden == 9) {}
+//if (lvlden == 10) {}
+//end;
+//}
+
+//function	script	denfuin {
+//if (lvlden == 1) {}
+//if (lvlden == 2) {}
+//if (lvlden == 3) {}
+//if (lvlden == 4) {}
+//if (lvlden == 5) {}
+//if (lvlden == 6) {}
+//if (lvlden == 7) {}
+//if (lvlden == 8) {}
+//if (lvlden == 9) {}
+//if (lvlden == 10) {}
+//end;
+//}
+
+//function	script	denvel {
+//if (lvlden == 1) {}
+//if (lvlden == 2) {}
+//if (lvlden == 3) {}
+//if (lvlden == 4) {}
+//if (lvlden == 5) {}
+//if (lvlden == 6) {}
+//if (lvlden == 7) {}
+//if (lvlden == 8) {}
+//if (lvlden == 9) {}
+//if (lvlden == 10) {}
+//end;
+//}

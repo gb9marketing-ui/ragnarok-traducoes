@@ -1,0 +1,522 @@
+salakagea,39,16,5	script	Tazuna#1	57,{
+if (movetazuna1 == 1) {mes "[^FF0000Tazuna^000000]"; mes "Me encontre na saída de Konoha, criança !!"; close;}
+if (BaseLevel < 999) {mes "[^FF0000Tazuna^000000]"; mes "Preciso de um ninja mais forte para me ajudar..."; close;}
+if (nwarp == 1) {goto jatp;}
+if (tazuna1 == 1) && (tazuna2 == 1) {goto iniciar2;}
+if (tazuna1 == 1) {mes "[^FF0000Tazuna^000000]"; mes "Fale logo com Kage, estou com pressa !!"; close;}
+mes "[^FF0000Tazuna^000000]";
+mes "Droga, não aparece nenhum ninja para me ajudar...";
+menu "- O que aconteceu ?",oq,"- Ignorar",exit;
+
+jatp:
+mes "[^FF0000Tazuna^000000]";
+mes "Me encontre na saída de Konoha";
+close;
+
+iniciar2:
+set nwarp,1;
+mes "[^FF0000Tazuna^000000]";
+mes "Então, você falou com o seu kage?";
+menu "Sim, eu falei.",ss,"Não, irei falar com ele agora mesmo",exit;
+
+ss:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Ótimo, e então? Vai realmente aceitar minha missão de escolta?";
+mes "Esteja ciente que será uma missão perigosa! Não quero um pirralho brincando de ninja para me escoltar";
+mes "Acha que pode cumprir sua função?";
+menu "- Droga! Eu não sou um pirralho! Eu aceito!",aceitos,"- Acho que preciso pensar mais sobre isso",exit;
+
+aceitos:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Bom, para mim você é um pirralho, mas que seja, espero que me prove o contrário nessa missão!";
+mes "Preciso ir até o país das ondas..."; 
+mes "Porém há risco de encontrar criaturas selvagens, ninjas renegados e afins... preciso pagar para que a vila me empreste ninjas de escolta.";
+mes "Então espero que faça um trabalho bem feito, está pronto para partir?";
+menu "- Sim, estou pronto !!",bora,"- Preciso me preparar.",exit;
+
+bora:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Ótimo, primeiramente pegaremos um barco até o país das ondas, há um barco nos arredores da vila da folha que nos levará até lá, preciso que você primeiramente me escolte até o barco...";
+mes "Mas espero que você seja realmente forte! O local onde fica aquele barco é cercado de chunins da vila da folha, nunca se sabe quando um deles vai nos atacar.";
+next;
+mes "[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Não se preocupe, eu certamente te protegerei até o país das ondas!";
+set nwarp,2;
+set movetazuna1,1;
+next;
+warp "prt_fild02",174,374;
+end;	
+
+exit:
+close;
+
+exit2:
+mes "Obrigado... Parece que não conseguirei achar um ninja tão cedo.";
+close;
+
+oq:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "O que ? Quem é você ? ";
+mes "Ah, bem, eu sou um cidadão do país das ondas...";
+mes "Vim aqui para que o pessoal dessa vila pudesse me escoltar até um determinado lugar...";
+mes "Mas não acho nenhum ninja !!";
+menu "- Eu sou um ninja !!",eu,"- Oh, é mesmo? Boa sorte na sua busca.",exit2;
+
+eu:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Sério? Mas você não me parece confiável...";
+mes "Ninjas não deveriam ser mais incríveis? Você é só uma criança...";
+mes "Bem, é melhor que nada. Então, pode me ajudar?";
+menu "- Sim, ajudarei você!",go,"- O que ? Eu estou ocupado.",exit;
+
+go:
+next;
+mes "[^FF0000Tazuna^000000]";
+mes "Hmm, obrigado, espero que não seja só o que aparenta, veremos se é mesmo um ninja...";
+mes "Fale com o kage da sua vila que deseja aceitar minha missão para que ele lhe aprove e você possa me escoltar.";
+set tazuna1,1;
+close;
+}
+
+
+salakagea,32,22,5	script	Hokage#1	718,{
+mes "[^FF0000Kage^000000]";
+mes "Olá, em que posso ajudar hoje, jovem ninja ?";
+menu "- Quest Natalina",natal,"- Episódio 1 - Tazuna",tazunquest;
+
+natal:
+if(pegouchave == 1){mes "[^FF0000Kage^000000]"; mes "Como vai a cidade de natal ?"; close;}
+if(sorteionatal == 1){goto conferirnatal;}
+mes "*Ao entrar na sala , você percebe ela inteiramente decorada, e uma estranha criatura passeando...";
+next;
+mes "*O Kage observa a criatura atentamente, como se estivesse avaliando ela...";
+menu "- O que é isso, Kage-sama ?",cont1,"Que estranho...",fechadig;
+
+fechadig:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Hm...";
+close;
+
+conferirnatal:
+mes "[^FF0000Kage^000000]";
+mes "Oh, você voltou... vamos ver o progresso da sua busca...";
+// Palavra 1
+if(palavra == 1){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Natal^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7466) < 1){ goto faltacarta;}
+if (countitem(7461) < 2) {goto faltacarta;}
+if (countitem(11005) < 1) {goto faltacarta;}
+if (countitem(7465) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7466,1;
+delitem 7461,2;
+delitem 11005,1;
+delitem 7465,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+// Palavra 2
+if(palavra == 2){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Festa^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7463) < 1) {goto faltacarta;}
+if (countitem(7462) < 1) {goto faltacarta;}
+if (countitem(7537) < 1) {goto faltacarta;}
+if (countitem(11005) < 1) {goto faltacarta;}
+if (countitem(7461) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7463,1;
+delitem 7462,1;
+delitem 11005,1;
+delitem 7537,1;
+delitem 7461,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+// Palavra 3
+if(palavra == 3){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Neve^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7466) < 1) {goto faltacarta;}
+if (countitem(7462) < 2) {goto faltacarta;}
+if (countitem(7213) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7466,1;
+delitem 7462,2;
+delitem 7213,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+//Palavra4
+if(palavra == 4){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204União^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7469) < 1) {goto faltacarta;}
+if (countitem(7466) < 1) {goto faltacarta;}
+if (countitem(7534) < 1) {goto faltacarta;}
+if (countitem(7461) < 1) {goto faltacarta;}
+if (countitem(7467) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7469,1;
+delitem 7466,1;
+delitem 7534,1;
+delitem 7461,1;
+delitem 7467,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+//Palavra 5
+if(palavra == 5){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Família^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7461) < 2) {goto faltacarta;}
+if (countitem(7463) < 1) {goto faltacarta;}
+if (countitem(7535) < 1) {goto faltacarta;}
+if (countitem(7534) < 2) {goto faltacarta;}
+if (countitem(7465) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7461,2;
+delitem 7463,1;
+delitem 7535,1;
+delitem 7534,2;
+delitem 7465,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+//Palavra 6
+if(palavra == 6){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Amor^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7461) < 1) {goto faltacarta;}
+if (countitem(7535) < 1) {goto faltacarta;}
+if (countitem(7467) < 1) {goto faltacarta;}
+if (countitem(7536) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7461,1;
+delitem 7535,1;
+delitem 7467,1;
+delitem 7536,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+//Palavra 7
+if(palavra == 7){
+next;
+mes "[^FF0000Kage^000000]";
+mes "Sua Palavra era (^FF3204Presente^000000)";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Vejamos se ja possuí as letras...";
+if (countitem(7468) < 1) {goto faltacarta;}
+if (countitem(7536) < 1) {goto faltacarta;}
+if (countitem(7462) < 3) {goto faltacarta;}
+if (countitem(7537) < 1) {goto faltacarta;}
+if (countitem(7466) < 1) {goto faltacarta;}
+if (countitem(11005) < 1) {goto faltacarta;}
+next;
+mes "[^FF0000Kage^000000]";
+mes "Muito bem !! Aqui está sua chave !!";
+delitem 7468,1;
+delitem 7536,1;
+delitem 7462,3;
+delitem 7537,1;
+delitem 7466,1;
+delitem 11005,1;
+next;
+getitem 7561,1;
+announce "Que legal!! "+strcharinfo(0)+" acabou de adquirir a entrada para a Cidade de Natal!!",bc_yellow|bc_all;
+set pegouchave,1;
+close;
+}
+faltacarta:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Parece que ainda faltam letras... volte com todas, por favor.";
+close;
+
+cont1:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Huh ? Ah, é você "+strcharinfo(0)+".";
+mes "Fala daquela criatura ? Você ainda não está sabendo do evento de natal feito pelas três grandes vilas ?";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Hm... leia isto.";
+mes "Ele lhe entrega um papel bem chamativo, cheio de cores brancas e vermelhas, e informações contidas.";
+next;
+mes "[^FF0000...^000000]";
+mes "Evento de Natal !!";
+mes "Durante o período de natal, diversas marionetes foram espalhadas por todo o mundo shinobi, algumas delas possuem cartas...";
+next;
+mes "[^FF0000...^000000]";
+mes "Cada uma dessas cartas possui uma letra, totalizando 15 letras diferentes, sendo A,E,F,I,L,M,N,O,P,R,S,T,U,V e Z.";
+mes "Se junte aos shinobis nessa aventura e consiga muitos prêmios!";
+menu "- Não entendi bem...",cont2,"- Ir embora",fechadig;
+
+cont2:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Bom, é um evento em que todos os kages concordaram em fazer... Diversas marionetes, como aquela ali, foram espalhadas nos arredores das quatro vilas - suna, konoha, névoa e nuvem.";
+mes "E em cada vila, as marionetes possuem cartas diferentes, sendo necessário que você vá em vilas diferentes para obter todas...";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Você precisa coletar algumas dessas cartas para trocar comigo pela chave da cidade natalina.";
+next;
+mes "[^FF0000Kage^000000]";
+mes "É uma cidade feita para um evento muito maior de natal, onde você e outros shinobis deverão se aliar para caçar as caixas de presente ambulantes, e por fim, conseguir premios incríveis!";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Bom, o que me diz? Gostaria de participar do evento natalino?";
+menu "- Sim, eu quero.",cont3,"- Desculpe, não estou afim.",fechadig;
+
+cont3:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Bom, pegue isso...";
+mes "*Ele pega uma pequena caixa de papelão e estende até você*";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Coloque sua mão aqui dentro e retire um dos papéis, virá uma palavra escrita nele... Você deverá obter as cartas necessárias para formar essa palavra, e então vir até aqui.";
+next;
+mes "*Você coloca sua mão na caixa e remove um papel, olhando-o com um pouco de hesitação...*";
+next;
+mes "*Você entrega o papel para o Kage olhar...*";
+set @a,rand(1,7);
+if (@a == 1) {goto palavra1;}
+if (@a == 2) {goto palavra2;}
+if (@a == 3) {goto palavra3;}
+if (@a == 4) {goto palavra4;}
+if (@a == 5) {goto palavra5;}
+if (@a == 6) {goto palavra6;}
+if (@a == 7) {goto palavra7;}
+
+palavra1:
+next;
+set palavra,1;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Natal^000000) !!";
+mes "Isso significa que você precisa das letras [1x(N) , 2x(A), 1x(T) e 1x(L)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra2:
+next;
+set palavra,2;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Festa^000000) !!";
+mes "Isso significa que você precisa das letras [1x(F) , 1x(E), 1x(S) , 1x(T) , 1x(A)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra3:
+next;
+set palavra,3;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Neve^000000) !!";
+mes "Isso significa que você precisa das letras [1x(N) , 2x(E) e 1x(V)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra4:
+next;
+set palavra,4;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204União^000000) !!";
+mes "Isso significa que você precisa das letras [1x(U) , 1x(N) , 1x(I) , 1x(A) e 1x(O)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra5:
+next;
+set palavra,5;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Família^000000) !!";
+mes "Isso significa que você precisa das letras [2x(A) , 1x(F) , 1x(M) , 2x(I) e 1x(L)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra6:
+next;
+set palavra,6;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Amor^000000) !!";
+mes "Isso significa que você precisa das letras [1x(A) , 1x(M) , 1x(O) e 1x(R)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+palavra7:
+next;
+set palavra,7;
+set sorteionatal,1;
+mes "[^FF0000Kage^000000]";
+mes "Parece que a palavra sorteada foi (^FF3204Presente^000000) !!";
+mes "Isso significa que você precisa das letras [1x(P) , 1x(R) , 3x(E) , 1x(S) , 1x(N) e 1x(T)], colete-as e traga-as para mim, em troca eu lhe darei a chave para a cidade natalina!";
+close;
+
+tazunquest:
+next;
+if(questzabuzacompleta == 1){mes "[^FF0000Kage^000000]"; mes "Como vai ? Treinando muito ? "; close;}
+if(conversahaku2 == 1){
+menu "- Completar missão de escolta",missc;
+
+missc:
+mes "[^FF0000Kage^000000]";
+mes "Vejo que voltou em segurança... e além disso, seu olhar mudou. Parece que aprendeu muitas coisas...";
+mes "E então, como se sente agora?";
+menu "- Eu... Preciso ser mais forte !!",fortee;
+
+fortee:
+mes "[^FF0000Kage^000000]";
+mes "Sim, e isso é só o início do seu caminho como ninja";
+mes "você ainda verá muitas outras coisas, participará de missões muito mais perigosas";
+mes "Então continue sempre se esforçando, para um dia se tornar forte...";
+mes "Forte o suficiente para não perder para ninguém!";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Bom, você fez um ótimo trabalho nessa missão, aqui está sua recompensa pelo esforço";
+set questzabuzacompleta,1;
+set .@b,rand(1,8);
+if (.@b == 8) {next; getitem 20310,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 7) {next; getitem 24424,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 6) {next; getitem 20310,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 5) {next; getitem 30150,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 4) {next; getitem 16620,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;
+}
+if (.@b == 3) {next; getitem 28956,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 2) {next; getitem 24424,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+if (.@b == 1) {next; getitem 20310,1;
+announce "[Modo História] "+strcharinfo(0)+" completou o episódio 1 e recebeu um item épico!",bc_yellow|bc_all;
+close;}
+end;
+}
+
+if(tazuna2 == 1 ){mes "[^FF0000Kage^000000]"; mes "Já falou com o Senhor Tazuna?"; close;}
+if(tazuna1 == 1 )
+{
+mes"[^FF0000"+strcharinfo(0)+"^000000]";
+mes "Ei, kage, eu quero aceitar a missão daquele senhor ali!";
+next;
+mes "[^FF0000Kage^000000]";
+mes "Senhor? Oh, o Senhor Tazuna... Bem, vejamos então...";
+mes "^FF6666*O Kage procura alguns papeis sobre a mesa^000000";
+mes "Aqui está. Uma missão de escolta, de rank C...";
+mes "Você ainda é jovem para uma missão dessas... será que consegue completa-la?";
+menu "- Eu já estou pronto, por favor!",miss,"- Tem razão, melhor eu treinar mais",fort;
+
+fort:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Bem, então treine duro e volte quando se sentir pronto.";
+close;
+
+miss:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Hmm, você parece ter bastante confiança em suas habilidades, tudo bem então, lhe direi os detalhes.";
+mes "^FF6666* O kage começava a ler a folha de papel *^000000";
+mes "Bem, é uma missão de rank C, ela consiste em escoltar o Senhor Tazuna até a entrada do país das ondas...";
+next;
+mes "[^FF0000Kage^000000]";
+mes "E então, você tem certeza que vai aceitar? O mundo ninja é um lugar perigoso, você pode encontrar outros shinobis de vilas inimigas no caminho, assim como animais selvagens, bandidos, e entre outras coisas.";
+menu "- Finalmente uma missão de verdade!",go2,"- I-Isso é muito pra mim!",exit2;
+
+exit2:
+mes "[^FF0000Kage^000000]";
+mes "É mesmo? Tudo bem então, procurarei outro shinobi que esteja preparado.";
+close;
+
+go2:
+next;
+mes "[^FF0000Kage^000000]";
+mes "Hahah, tudo bem então, mas não se anime muito, apesar de tudo, é apenas uma missão rank C, dificilmente você entrará em uma batalha de verdade.";
+mes "Bom, fale com o Senhor Tazuna, ele lhe explicará sobre onde ele quer que você leve-o.";
+set tazuna2,1;
+close;
+}
+mes "[^FF0000Kage^000000]";
+mes "A vida de um Kage é sempre muito corrida...";
+close;
+}
+tur_dun03,131,194,0	warp	MAP NEW	3,3,pay_dun01,20,33
+
+salakage, 39, 16, 4	duplicate(Tazuna#1)	Tazuna#10	57
+salakagen, 39, 16, 4	duplicate(Tazuna#1)	Tazuna#11	57
+salakagex, 39, 16, 4	duplicate(Tazuna#1)	Tazuna#12	57
+salakage, 32, 22, 4	duplicate(Hokage#1)	Kage#10	746
+salakagen, 32, 22, 4	duplicate(Hokage#1)	Kage#11	707
+salakagex, 32, 22, 4	duplicate(Hokage#1)	Kage#12	707

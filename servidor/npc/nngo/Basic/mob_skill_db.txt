@@ -1,0 +1,672 @@
+//1033,painjigo@AL_ress,any,54,4,10000,5000,15000,yes,master,always,0,,,,,,,
+//1033,painjigo@skill,any,70,1,10000,0,1000,no,master,always,,,,,,,,
+//1033,painjigo@AL_magni,any,74,5,10000,0,5000,no,master,always,,,,,,,,
+//1033,painriku@Bruma,any,404,1,10000,0,5000,no,master,always,,,,,,,,
+//1033,painriku@Protecao,any,479,5,10000,0,5000,no,master,always,,,,,,,,
+1033,painriku@Protecao,any,255,5,10000,0,5000,no,master,always,,,,,,,, //TESTANDO DEVOTION
+1033,painriku@invoca,any,731,5,10000,1,60000,yes,self,always,0,,,,,,,
+1384,painriku@invoca,any,731,5,10000,1,60000,yes,self,always,0,,,,,,,
+//1033,painriku@invoca,any,732,5,10000,1,60000,yes,self,always,0,,,,,,,
+//1033,painriku@invoca,any,733,5,10000,1,60000,yes,self,always,0,,,,,,,
+//1033,painriku@invoca,any,734,5,10000,1,60000,yes,self,always,0,,,,,,,
+//1033,painriku@invoca,any,735,5,10000,1,60000,yes,self,always,0,,,,,,,
+1051,Thief Bug Larva@NPC_AGIUP,loot,350,1,1000,0,10000,yes,self,always,0,,,,,,,
+1051,Thief Bug Larva@NPC_AGIUP,idle,350,1,0,0,10000,yes,self,always,0,,,,,,,
+1402,Poison Toad@NPC_POISON,attack,176,3,500,800,5000,no,target,always,0,,,,,,,
+1402,Poison Toad@NPC_POISONATTACK,attack,188,1,2000,0,5000,yes,target,always,0,,,,,,,
+1402,Poison Toad@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,7,,,,,,
+1402,Lançasdefogo@Kichi,attack,19,5,10000,2500,2000,no,target,always,,,,,,,,
+1040,ColunaPedra@Manmute,attack,90,10,10000,2500,2000,no,target,always,,,,,,,,
+1656,frostdiver@genin,any,15,7,10000,5000,3000,yes,target,always,,,,,,,,
+1656,coldbolt@genin,attack,14,7,10000,5000,3000,no,target,always,,,,,,,,
+1656,hammerfall@genin,any,110,2,10000,5000,3000,yes,target,always,,,,,,,,
+1634,thunder@jounin,attack,21,5,5000,0,2000,no,target,always,,,,,,,,
+1634,chuva@jounin,any,83,5,3000,0,2000,no,target,always,,,,,,,,
+1634,trovao@jounin,attack,84,5,4000,0,2000,no,target,always,,,,,,,,
+1634,nevasca@jounin,any,89,5,1000,0,2000,no,target,always,,,,,,,,
+1635,trovao@anbu,attack,20,5,10000,0,2000,no,target,always,,,,,,,,
+1635,asura@anbu,attack,271,5,2000,1000,5000,yes,target,always,,,,,,,,
+1635,soul@anbu,attack,379,5,8000,0,500,no,target,always,,,,,,,,
+1635,anbu@Spider Web,any,405,1,5000,0,2000,no,target,always,,,,,,,,
+1636,coldbolt@chunin,attack,14,10,10000,1500,2000,yes,target,always,,,,,,,,
+1636,soul@chunin,any,13,10,10000,1500,2000,no,target,always,,,,,,,,
+1106,Akamaru@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1106,Akamaru@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1025,Snake@NPC_POISON,attack,176,2,500,800,5000,no,target,always,0,,,,,,,
+1025,Snake@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1296,Pakkun@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1831,fire@cama,any,19,10,10000,0,2000,no,target,always,,,,,,,,
+1831,ira@cama,any,85,5,10000,1000,1000,yes,target,always,,,,,,,,
+1315,wind@ninkame,attack,542,10,10000,0,2000,no,target,always,,,,,,,,
+1316,wind@ninkame,attack,542,10,10000,0,2000,no,target,always,,,,,,,,
+1177,Zenorc@NPC_POISON,attack,176,2,500,800,5000,no,target,always,0,,,,,,,
+1177,Zenorc@NPC_DARKNESSATTACK,attack,190,3,500,500,5000,no,target,always,0,,,,,,,6
+1177,Zenorc@NPC_EMOTION,loot,197,1,2000,0,5000,yes,self,always,0,29,,,,,,
+1088,AkaB@NPC_WATERTTACK,any,184,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_WATERTTACK,any,184,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_WATERTTACK,any,184,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_WATERTTACK,any,184,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_GROUNDATTACK,any,185,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_GROUNDATTACK,any,185,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_GROUNDATTACK,any,185,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_GROUNDATTACK,any,185,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_FIREATTACK,any,186,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_FIREATTACK,any,186,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_FIREATTACK,any,186,10,10000,0,0,no,target,always,,,,,,,,
+1088,AkaB@NPC_FIREATTACK,any,186,10,10000,0,0,no,target,always,,,,,,,,
+1089,stone@gama,any,16,5,6000,0,2000,no,target,always,,,,,,,,
+1089,fireball@gama,any,17,10,7000,0,2000,no,target,always,,,,,,,,
+1089,thunder@gama,attack,21,5,6000,0,1000,no,target,always,,,,,,,,
+1089,edp@gama,any,378,5,5000,0,0,no,self,always,,,,,,,,
+1418,trasher@manda,attack,81,5,5000,0,0,no,target,always,,,,,,,,
+1418,pantano@manda,attack,92,5,5000,0,1000,no,target,always,,,,,,,,
+1418,acid@manda,any,490,5,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@AL_HEAL,walk,28,2,10000,0,0,no,friend,friendstatusoff,0,,,,,,,4
+1381,Katsuyo@AL_CURE,walk,35,1,7500,0,0,no,self,mystatusoff,0,,,,,,,4
+1381,Katsuyo@ASC_BREAKER,any,379,10,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@ASC_METEORASSAULT,any,406,10,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@ASC_METEORASSAULT,any,406,10,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@ASC_METEORASSAULT,any,406,10,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@ASC_METEORASSAULT,any,406,10,5000,0,0,no,target,always,,,,,,,,
+1381,Katsuyo@ASC_METEORASSAULT,any,406,10,5000,0,0,no,target,always,,,,,,,,
+1057,cold@enma,any,14,3,5000,0,2000,no,target,always,,,,,,,,
+1057,spike@enma,attack,90,3,5000,0,2000,no,target,always,,,,,,,,
+1057,soul@enma,attack,379,5,1000,0,1000,no,target,always,,,,,,,,
+1057,wind@enma,any,542,5,2000,0,2000,no,target,always,,,,,,,,
+1070,Kukre@NPC_WATERATTACK,attack,184,1,2000,0,5000,yes,target,always,0,,,,,,,
+1070,Kukre@NPC_EMOTION,loot,197,1,2000,0,5000,yes,self,always,0,0,,,,,,
+1005,Familiar@NPC_BLINDATTACK,angry,177,1,500,0,5000,yes,target,always,0,,,,,,,
+1005,Familiar@NPC_BLINDATTACK,attack,177,1,500,0,5000,yes,target,always,0,,,,,,,
+1005,Familiar@NPC_DARKNESSATTACK,angry,190,1,2000,0,5000,yes,target,always,0,,,,,,,
+1005,Familiar@NPC_DARKNESSATTACK,attack,190,1,2000,0,5000,yes,target,always,0,,,,,,,
+1042,Steel Chonchon@NPC_SILENCEATTACK,attack,178,2,500,700,5000,no,target,always,0,,,,,,,
+1042,Steel Chonchon@NPC_WINDATTACK,attack,187,1,2000,0,5000,yes,target,always,0,,,,,,,
+1209,Cramp@NPC_POISON,attack,176,3,500,800,5000,no,target,always,0,,,,,,,
+1209,Cramp@NPC_POISONATTACK,attack,188,1,2000,0,5000,yes,target,always,0,,,,,,,
+1053,Thief Bug Female@NPC_AGIUP,idle,350,1,0,0,10000,yes,self,always,0,,,,,,,
+1053,Thief Bug Female@NPC_AGIUP,loot,350,1,1000,0,10000,yes,self,always,0,,,,,,,
+1619,Porcellio@AL_PNEUMA,attack,25,1,500,0,5000,yes,self,longrangeattacked,,,,,,,,18
+1619,Porcellio@NPC_GROUNDATTACK,attack,185,2,1000,0,5000,yes,target,always,0,,,,,,,
+1619,Porcellio@NPC_KEEPING,attack,201,1,2000,1000,5000,no,self,myhpltmaxrate,25,,,,,,,9
+1201,Rybio@SM_PROVOKE,chase,6,10,500,600,5000,no,target,always,0,,,,,,,4
+1201,Rybio@AS_SONICBLOW,attack,136,10,500,800,5000,no,target,always,0,,,,,,,4
+1201,Rybio@NPC_POISON,attack,176,2,500,800,5000,no,target,always,0,,,,,,,4
+1618,Ungoliant@AL_TELEPORT,idle,26,1,5000,0,5000,yes,self,rudeattacked,,,,,,,,
+1618,Ungoliant@AL_TELEPORT,attack,26,1,5000,0,5000,yes,self,rudeattacked,,,,,,,,
+1618,Ungoliant@NPC_PETRIFYATTACK,attack,180,2,1000,500,5000,no,target,always,0,,,,,,,3
+1618,Ungoliant@NPC_POISONATTACK,attack,188,3,1000,0,5000,yes,target,always,0,,,,,,,
+//1618,Ungoliant@NPC_SUMMONSLAVE,idle,196,3,10000,700,30000,no,self,slavele,0,1625,,,,,,
+//1618,Ungoliant@NPC_SUMMONSLAVE,attack,196,3,10000,700,30000,no,self,slavele,0,1625,,,,,,
+1618,Ungoliant@NPC_BLOODDRAIN,attack,199,1,500,0,5000,yes,target,always,0,,,,,,,14
+1618,Ungoliant@NPC_DARKBREATH,attack,202,3,500,500,5000,no,target,always,0,,,,,,,29
+1507,Bloody Murderer@AS_SONICBLOW,attack,136,5,500,800,5000,no,target,always,0,,,,,,,29
+1507,Bloody Murderer@NPC_CURSEATTACK,attack,181,3,500,800,5000,no,target,always,0,,,,,,,29
+1196,Skeleton Prisoner@NPC_CRITICALSLASH,attack,170,1,500,500,5000,no,target,always,0,,,,,,,
+1196,Skeleton Prisoner@NPC_SPLASHATTACK,attack,174,1,2000,0,5000,yes,target,attackpcge,2,,,,,,,
+1202,Phendark@NPC_POISON,attack,176,2,500,800,5000,no,target,always,0,,,,,,,29
+1202,Phendark@NPC_STUNATTACK,attack,179,3,500,1500,5000,no,target,always,0,,,,,,,29
+1202,Phendark@NPC_WINDATTACK,attack,187,2,500,500,5000,no,target,always,0,,,,,,,29
+1257,Injustice@AS_SONICBLOW,attack,136,10,500,800,5000,no,target,always,0,,,,,,,2
+1257,Injustice@NPC_DARKNESSATTACK,attack,190,1,2000,0,5000,yes,target,always,0,,,,,,,
+1395,kisame@lancas,attack,14,10,10000,0,3000,no,target,always,,,,,,,,
+1395,kisame@rajada,any,15,10,10000,0,2000,no,target,always,,,,,,,,
+1395,kisame@esfera,attack,86,50,10000,0,5000,no,target,always,,,,,,,,
+1395,kisame@barreira,attack,87,10,10000,0,3000,no,around,always,,,,,,,,
+1395,kisame@congelar,attack,88,10,10000,0,2000,no,target,always,,,,,,,,
+1395,kisame@nevasca,attack,89,50,10000,0,5000,no,target,always,,,,,,,,
+1395,kisame@escudo,any,252,10,10000,0,5000,no,self,always,,,,,,,,
+1395,kisame@golpe,any,384,10,10000,0,2000,no,self,always,,,,,,,,
+1396,itachi@escudomagico,any,12,20,10000,0,100,no,self,always,,,,,,,,
+1396,itachi@bolas,attack,17,50,10000,0,2000,no,target,always,0,,,,,,,21
+1396,itachi@amaterasu,any,18,200,10000,0,3000,no,around1,always,,,,,,,,
+1396,itachi@lancas,any,19,50,10000,0,2000,no,target,always,,,,,,,,
+1396,itachi@chuva,any,83,100,10000,0,2000,no,around,always,,,,,,,,
+1396,itachi@escudo,any,252,20,10000,0,2000,no,self,always,,,,,,,,
+1396,itachi@espelho,any,276,30,10000,0,500,no,self,always,,,,,,,,
+1396,itachi@aparar,any,356,100,10000,0,0,no,self,always,,,,,,,,
+1397,sasori@lex,attack,78,10,10000,0,3000,no,target,always,,,,,,,,
+1397,sasori@NPC_SUMMONSLAVE,any,196,3,10000,1000,60000,no,self,slavele,1,1879,1796,1840,,,,
+1397,sasori@edp,any,378,200,10000,0,1000,no,self,always,,,,,,,,
+1397,sasori@destruidor,attack,379,100,10000,0,3000,no,target,always,,,,,,,,
+1397,sasori@bombacida,any,490,100,10000,1000,5000,no,target,always,0,,,,,,,
+1398,orochimaru@petrificar,attack,16,100,10000,0,5000,no,target,always,,,,,,,,
+1398,orochimaru@Ryuuka,any,19,10,5000,0,5000,no,target,always,0,,,,,,,0
+1398,orochimaru@impacto,attack,62,5,7000,0,10000,no,target,always,,,,,,,,
+1398,orochimaru@troca,any,531,5,10000,0,4000,no,self,always,,,,,,,,
+1399,gaara@kyrie,any,73,10,5000,0,6000,no,self,always,,,,,,,,
+1399,gaara@coluna,any,90,100,10000,0,3000,no,target,always,,,,,,,,
+1399,gaara@furiadaterra,any,91,100,10000,0,5000,no,around1,always,0,,,,,,,29
+1399,gaara@pantano,any,92,10,3000,0,20000,no,target,always,,,,,,,,
+1399,gaara@bloqueio,any,249,100,10000,0,10000,no,self,always,,,,,,,,
+1399,gaara@sousou,attack,476,10,10000,0,20000,no,target,always,,,,,,,,
+1401,Shinobi@SM_BASH,attack,5,5,500,0,5000,yes,target,always,0,,,,,,,
+1401,Shinobi@AL_TELEPORT,idle,26,1,500,0,5000,yes,self,always,0,,,,,,,
+1401,Shinobi@AL_TELEPORT,idle,26,1,10000,0,0,yes,self,rudeattacked,,,,,,,,
+1401,Shinobi@HT_CLAYMORETRAP,idle,123,5,500,0,300000,yes,around2,always,0,,,,,,,9
+1401,Shinobi@AS_CLOAKING,idle,135,1,500,200,5000,yes,self,always,0,,,,,,,
+1401,Shinobi@TF_BACKSLIDING,attack,150,1,10000,500,3600000,no,target,myhpltmaxrate,10,,,,,,,
+1401,Shinobi@NPC_REBIRTH,dead,208,2,5000,0,0,yes,self,always,0,,,,,,,29
+1401,Shinobi@MO_BODYRELOCATION,chase,264,1,2000,500,5000,no,target,myhpltmaxrate,10,,,,,,,
+1154,Pasana@SM_BASH,attack,5,5,500,0,5000,yes,target,always,0,,,,,,,
+1154,Pasana@AL_TELEPORT,idle,26,1,10000,0,0,yes,self,rudeattacked,,,,,,,,
+1154,Pasana@NPC_CRITICALSLASH,attack,170,1,500,500,5000,no,target,always,0,,,,,,,29
+1154,Pasana@NPC_COMBOATTACK,attack,171,1,500,700,5000,no,target,always,0,,,,,,,
+1154,Pasana@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,9,0x3095,,,,,
+1154,Pasana@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,
+1494,Kind of Beetle@NPC_COMBOATTACK,attack,171,1,500,700,5000,no,target,always,0,,,,,,,
+1494,Kind of Beetle@NPC_GROUNDATTACK,attack,185,2,500,500,5000,no,target,always,0,,,,,,,6
+1494,Kind of Beetle@NPC_KEEPING,attack,201,1,2000,0,5000,yes,self,myhpltmaxrate,30,,,,,,,19
+1408,Bloody Butterfly@KN_PIERCE,attack,56,10,500,700,5000,no,target,always,0,,,,,,,6
+1408,Bloody Butterfly@NPC_SLEEPATTACK,attack,182,5,500,0,5000,yes,target,always,0,,,,,,,7
+1408,Bloody Butterfly@NPC_SLEEPATTACK,chase,182,5,500,0,5000,yes,target,always,0,,,,,,,7
+1408,Bloody Butterfly@NPC_DARKSTRIKE,chase,340,5,2000,700,5000,no,target,always,0,,,,,,,6
+1018,SoulStrike,attack,13,10,5000,300,3000,no,target,always,,,,,,,,
+1018,FireBall,attack,17,10,5000,700,2000,no,target,always,,,,,,,,
+1018,Creamy@NPC_SLEEPATTACK,attack,182,3,500,0,5000,yes,target,always,0,,,,,,,
+1018,Creamy@NPC_WINDATTACK,attack,187,1,2000,0,5000,yes,target,always,0,,,,,,,
+1114,Dustiness@NPC_BLINDATTACK,attack,177,3,2000,0,5000,yes,target,always,0,,,,,,,
+1114,Dustiness@NPC_SILENCEATTACK,attack,178,3,500,700,5000,no,target,always,0,,,,,,,
+1114,Dustiness@NPC_SLEEPATTACK,attack,182,3,500,0,5000,yes,target,always,0,,,,,,,
+1114,Dustiness@NPC_WINDATTACK,attack,187,1,2000,0,5000,yes,target,always,0,,,,,,,
+1004,Hornet@NPC_PIERCINGATT,attack,158,2,500,0,5000,yes,target,always,0,,,,,,,6
+1004,Hornet@NPC_WINDATTACK,attack,187,1,2000,0,5000,yes,target,always,0,,,,,,,
+1059,Mistress@AL_PNEUMA,chase,25,1,2000,0,5000,yes,self,longrangeattacked,,,,,,,,18
+1059,Mistress@AL_PNEUMA,attack,25,1,2000,0,5000,yes,self,longrangeattacked,,,,,,,,18
+1059,Mistress@WZ_JUPITEL,chase,84,28,2000,0,5000,yes,target,always,0,,,,,,,
+1059,Mistress@WZ_JUPITEL,attack,84,28,2000,0,5000,yes,target,always,0,,,,,,,
+1059,Mistress@NPC_GUIDEDATTACK,attack,172,5,500,0,20000,no,target,always,0,,,,,,,18
+1059,Mistress@NPC_GUIDEDATTACK,chase,172,5,500,0,20000,no,target,always,0,,,,,,,18
+1059,Mistress@NPC_SILENCEATTACK,chase,178,5,2000,0,5000,no,target,always,0,,,,,,,
+1059,Mistress@NPC_SILENCEATTACK,attack,178,5,2000,0,5000,no,target,always,0,,,,,,,
+1059,Mistress@NPC_STOP,attack,342,1,2000,0,15000,no,target,always,0,,,,,,,6
+1059,Mistress@NPC_AGIUP,attack,350,5,10000,0,30000,yes,self,myhpltmaxrate,30,,,,,,,6
+1293,Creamy Fear@NPC_BLINDATTACK,attack,177,5,500,0,5000,yes,target,always,0,,,,,,,
+1293,Creamy Fear@NPC_CURSEATTACK,attack,181,5,500,800,5000,no,target,always,0,,,,,,,
+1293,Creamy Fear@RG_INTIMIDATE,attack,219,1,500,0,5000,yes,target,always,0,,,,,,,
+1321,Chidori,attack,84,10,2000,600,3000,no,target,always,,,,,,,,
+1321,Dragon Tail@NPC_SLEEPATTACK,attack,182,3,500,0,5000,yes,target,always,0,,,,,,,
+1321,Dragon Tail@NPC_WINDATTACK,attack,187,2,500,500,5000,no,target,always,0,,,,,,,
+1321,Dragon Tail@NPC_BLOODDRAIN,attack,199,1,500,0,5000,yes,target,always,0,,,,,,,
+1321,Oodama,any,267,5,3000,200,3000,no,target,always,,,,,,,,
+1128,Horn@NPC_PIERCINGATT,attack,158,2,500,0,5000,yes,target,always,0,,,,,,,6
+1128,Horn@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1169,Skeleton Worker@NPC_CRITICALSLASH,attack,170,1,500,500,5000,no,target,always,0,,,,,,,
+1169,Skeleton Worker@NPC_CRITICALSLASH,angry,170,1,5000,500,5000,no,target,always,0,,,,,,,
+1169,Skeleton Worker@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,1,,,,,,
+1838,Knocker@HT_LANDMINE,idle,116,2,4000,1000,18000,yes,target,always,,,,,,,,5
+1838,Knocker@NPC_GROUNDATTACK,attack,185,2,4000,0,5000,yes,target,always,,,,,,,,
+1121,Giearth@HT_SANDMAN,idle,119,5,500,0,300000,yes,around2,always,0,,,,,,,29
+1121,Giearth@TF_SPRINKLESAND,attack,149,1,500,0,5000,yes,target,always,0,,,,,,,6
+1121,Giearth@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1121,Giearth@NPC_EMOTION,walk,197,1,2000,0,5000,yes,self,always,0,8,,,,,,
+1735,Sabaku Taisou,attack,90,10,5000,500,2000,no,target,always,,,,,,,,
+1735,Alicel@NPC_GUIDEDATTACK,attack,172,1,1000,1000,20000,no,target,always,0,,,,,,,
+1735,Alicel@NPC_DARKNESSATTACK,attack,190,3,500,500,5000,no,target,always,0,,,,,,,
+1735,Alicel@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,29,,,,,,
+1735,Alicel@MO_BODYRELOCATION,chase,264,1,2000,500,5000,no,target,always,0,,,,,,,
+1736,Aliot@KN_SPEARSTAB,attack,58,10,1000,0,5000,yes,target,always,0,,,,,,,
+1736,Aliot@BS_MAXIMIZE,attack,114,5,500,1000,5000,no,self,always,0,,,,,,,
+1736,Aliot@BS_MAXIMIZE,chase,114,5,500,1000,5000,no,self,always,0,,,,,,,
+1736,Aliot@NPC_CRITICALSLASH,attack,170,1,1000,500,5000,no,target,always,0,,,,,,,
+1736,Aliot@NPC_SPLASHATTACK,attack,174,1,2000,0,5000,yes,target,attackpcge,2,,,,,,,
+1736,Aliot@NPC_REBIRTH,dead,208,3,2000,0,10000,yes,self,always,0,,,,,,,
+1736,Aliot@CR_AUTOGUARD,attack,249,5,1000,0,300000,yes,self,always,0,,,,,,,
+1736,Aliot@CR_AUTOGUARD,chase,249,5,2000,0,300000,yes,self,longrangeattacked,,,,,,,,
+1737,Ichibi@MG_NAPALMBEAT,any,11,35,1000,2000,10000,no,target,always,,,,,,,,
+1737,Ichibi@MG_SOULSTRIKE,any,13,50,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@MG_SOULSTRIKE,any,13,50,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@KN_AUTOCOUNTER,any,356,10,5000,0,0,no,self,always,,,,,,,,
+1737,Ichibi@KN_AUTOCOUNTER,any,61,5,5000,0,0,no,self,always,,,,,,,,
+1737,Ichibi@WZ_HEAVENDRIVE,any,91,15,2000,0,0,no,around8,always,,,,,,,,
+1737,Ichibi@WZ_HEAVENDRIVE,any,91,15,2000,0,0,no,around8,always,,,,,,,,
+1737,Ichibi@NPC_PETRIFYATTACK,any,180,5,1000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_PETRIFYATTACK,any,180,5,1000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_GROUNDATTACK,any,185,20,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_GROUNDATTACK,any,185,20,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_WINDATTACK,any,187,15,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_WINDATTACK,any,92,5,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_WINDATTACK,any,653,5,1000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_WINDATTACK,any,16,5,2000,0,0,no,target,always,,,,,,,,
+1737,Ichibi@NPC_WINDATTACK,any,90,50,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@MG_NAPALMBEAT,any,11,70,1000,5000,10000,no,target,always,,,,,,,,
+1738,Hachibi@KN_BOWLINGBASH,any,62,15,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@KN_BOWLINGBASH,any,62,15,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@NPC_WINDATTACK,any,187,20,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@NPC_WINDATTACK,any,187,20,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@NPC_POWERUP,any,349,10,2000,0,0,no,self,always,,,,,,,,
+1738,Hachibi@NPC_POWERUP,any,349,10,2000,0,0,no,self,always,,,,,,,,
+1738,Hachibi@HW_NEPALMVULCAN,any,400,15,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@HW_NEPALMVULCAN,any,400,15,2000,0,0,no,target,always,,,,,,,,
+1738,Hachibi@WS_OVERTHRUSTMAX,any,486,5,10000,0,0,no,self,myhpltmaxrate,1500,,,,,,,
+1738,Hachibi@WS_OVERTHRUSTMAX,any,486,5,10000,0,0,no,self,myhpltmaxrate,1500,,,,,,,
+1738,Hachibi@NJ_RAIGEKISAI,any,541,15,4000,0,0,no,self,always,,,,,,,,
+1738,Hachibi@NJ_RAIGEKISAI,any,541,15,4000,0,0,no,self,always,,,,,,,,
+1163,Raydric@SM_MAGNUM,attack,7,9,2500,500,5000,no,self,always,0,,,,,,,6
+1163,Raydric@BS_MAXIMIZE,chase,114,5,500,1000,5000,no,self,always,0,,,,,,,
+1163,Raydric@BS_MAXIMIZE,attack,114,5,500,1000,5000,no,self,always,0,,,,,,,
+1163,Raydric@NPC_DARKNESSATTACK,attack,190,3,500,500,5000,no,target,always,0,,,,,,,6
+1163,Raydric@NPC_EMOTION,chase,197,1,2000,0,5000,yes,self,always,0,0,,,,,,
+1163,Raydric@CR_AUTOGUARD,attack,249,2,500,0,300000,yes,self,always,0,,,,,,,
+1163,Raydric@CR_AUTOGUARD,chase,249,2,2000,0,300000,yes,self,longrangeattacked,,,,,,,,
+1046,Doppelganger@AL_HEAL,attack,28,2,10000,0,5000,yes,self,myhpltmaxrate,30,,,,,,,2
+1046,Doppelganger@AL_HEAL,chase,28,2,10000,0,5000,yes,self,myhpltmaxrate,30,,,,,,,2
+1046,Doppelganger@AL_HEAL,attack,28,2,10000,0,5000,yes,friend,friendhpltmaxrate,60,,,,,,,2
+1046,Doppelganger@AL_HEAL,chase,28,2,10000,0,5000,yes,friend,friendhpltmaxrate,60,,,,,,,2
+1046,Doppelganger@AL_DECAGI,chase,30,10,500,0,20000,no,target,always,0,,,,,,,5
+1046,Doppelganger@AL_DECAGI,attack,30,10,500,0,20000,no,target,always,0,,,,,,,5
+1046,Doppelganger@KN_TWOHANDQUICKEN,attack,60,20,10000,0,120000,yes,self,myhpltmaxrate,30,,,,,,,6
+1046,Doppelganger@BS_HAMMERFALL,chase,110,11,10000,0,5000,yes,target,skillused,18,,,,,,,
+1046,Doppelganger@BS_HAMMERFALL,chase,110,11,2000,0,5000,yes,target,always,0,,,,,,,
+1046,Doppelganger@BS_HAMMERFALL,attack,110,11,2000,0,5000,yes,target,always,0,,,,,,,
+1046,Doppelganger@NPC_CRITICALSLASH,attack,170,1,2000,0,5000,yes,target,always,0,,,,,,,
+1046,Doppelganger@CR_AUTOGUARD,chase,249,10,2000,500,300000,no,self,longrangeattacked,,,,,,,,29
+1046,Doppelganger@CR_AUTOGUARD,attack,249,10,2000,500,300000,no,self,always,0,,,,,,,29
+1046,Doppelganger@NPC_ARMORBRAKE,attack,344,10,2000,0,5000,yes,target,always,0,,,,,,,
+1046,Doppelganger@NPC_POWERUP,attack,349,5,10000,0,30000,yes,self,myhpltmaxrate,30,,,,,,,6
+1046,Doppelganger@LK_SPIRALPIERCE,attack,397,5,10000,1000,10000,no,target,myhpltmaxrate,80,,,,,,,36
+1047,zabuza@skill1,any,86,5,10000,500,1000,no,target,always,0,,,,,,,
+1047,zabuza@skill1,any,88,10,10000,500,1000,no,target,always,0,,,,,,,
+1047,zabuza@skill1,any,89,10,10000,500,1000,no,target,always,0,,,,,,,
+1048,haku@skill1,any,14,10,10000,500,1000,no,target,always,0,,,,,,,
+1048,haku@skill2,any,15,10,10000,500,1000,no,target,always,0,,,,,,,
+1048,haku@skill3,any,157,1,10000,500,1000,no,self,always,0,,,,,,,
+1492,Incantation Samurai@AL_HEAL,idle,28,2,10000,0,10000,yes,self,myhpltmaxrate,50,,,,,,,
+1492,Incantation Samurai@KN_BRANDISHSPEAR,attack,57,20,2000,500,5000,no,target,always,0,,,,,,,
+1492,Incantation Samurai@KN_TWOHANDQUICKEN,attack,60,20,10000,0,120000,yes,self,myhpltmaxrate,30,,,,,,,6
+1492,Incantation Samurai@NPC_CRITICALSLASH,attack,170,1,2000,0,5000,no,target,always,0,,,,,,,
+1492,Incantation Samurai@NPC_GUIDEDATTACK,attack,172,5,500,0,20000,no,target,always,0,,,,,,,
+1492,Incantation Samurai@RG_INTIMIDATE,attack,219,10,2000,0,60000,no,target,always,0,,,,,,,
+1492,Incantation Samurai@NPC_POWERUP,attack,349,5,10000,0,30000,yes,self,myhpltmaxrate,30,,,,,,,6
+1492,Incantation Samurai@NPC_AGIUP,attack,350,5,10000,0,120000,yes,self,myhpltmaxrate,30,,,,,,,9
+1492,Incantation Samurai@ASC_BREAKER,idle,379,10,10000,500,5000,no,target,longrangeattacked,,,,,,,,
+1492,Incantation Samurai@ASC_BREAKER,chase,379,10,5000,500,10000,no,target,always,0,,,,,,,
+1492,Incantation Samurai@ASC_BREAKER,attack,379,10,2000,0,5000,no,target,always,0,,,,,,,32
+1492,Incantation Samurai@NPC_HELLJUDGEMENT,attack,662,10,10000,1000,10000,no,self,always,0,,,,,,,36
+1492,Incantation Samurai@NPC_HELLJUDGEMENT,chase,662,10,10000,1000,10000,no,self,always,0,,,,,,,36
+1305,Ancient Worm@AS_VENOMDUST,attack,140,1,500,1500,5000,no,target,always,0,,,,,,,
+1305,Ancient Worm@NPC_POISON,attack,176,5,500,800,5000,no,target,always,0,,,,,,,
+1305,Ancient Worm@NPC_STOP,attack,342,1,500,500,5000,no,target,always,0,,,,,,,
+1194,Arclouse@NPC_GROUNDATTACK,attack,185,1,4000,0,5000,yes,target,always,0,,,,,,,
+1194,Arclouse@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,7,0x3195,,,,,
+1194,Arclouse@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,
+1099,Argiope@AS_VENOMDUST,attack,140,1,500,1500,5000,no,target,always,0,,,,,,,
+1099,Argiope@NPC_POISON,attack,176,3,500,800,5000,no,target,always,0,,,,,,,
+1099,Argiope@NPC_POISONATTACK,attack,188,2,500,500,5000,no,target,always,0,,,,,,,
+1099,Argiope@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,,
+1099,Argiope@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,7,0x3795,,,,,
+1211,Brilight@NPC_PIERCINGATT,attack,158,2,500,0,5000,yes,target,always,0,,,,,,,
+1211,Brilight@NPC_SILENCEATTACK,attack,178,3,500,700,5000,no,target,always,0,,,,,,,
+1211,Brilight@NPC_FIREATTACK,attack,186,2,500,500,5000,no,target,always,0,,,,,,,
+1211,Brilight@NPC_KEEPING,attack,201,1,2000,0,5000,yes,self,myhpltmaxrate,20,,,,,,,9
+1294,Killer Mantis@NPC_CRITICALSLASH,attack,170,1,500,500,5000,no,target,always,0,,,,,,,6
+1294,Killer Mantis@NPC_COMBOATTACK,attack,171,1,500,700,5000,no,target,always,0,,,,,,,
+1294,Killer Mantis@NPC_GROUNDATTACK,attack,185,3,500,500,5000,no,target,always,0,,,,,,,6
+1294,Killer Mantis@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,
+1294,Killer Mantis@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,6,0x3795,,,,,
+1139,Mantis@NPC_COMBOATTACK,attack,171,1,500,700,5000,no,target,always,0,,,,,,,6
+1139,Mantis@NPC_GROUNDATTACK,attack,185,2,500,500,5000,no,target,always,0,,,,,,,6
+1139,Mantis@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,9,0x3195,,,,,
+1139,Mantis@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,
+1262,Mutant Dragon@SM_MAGNUM,attack,7,20,2000,500,2000,no,self,always,0,,,,,,,
+1262,Mutant Dragon@MG_FIREBALL,chase,17,10,3000,0,3000,yes,target,always,0,,,,,,,
+1262,Mutant Dragon@NPC_FIREATTACK,attack,186,5,2000,500,2000,no,target,always,0,,,,,,,6
+1632,Gremlin@NPC_CRITICALSLASH,attack,170,1,5000,500,5000,no,target,always,0,,,,,,,6
+1632,Gremlin@RG_STRIPARMOR,attack,217,5,2000,0,5000,yes,target,always,0,,,,,,,
+1147,Maya@AL_HEAL,chase,28,2,10000,0,5000,no,self,myhpltmaxrate,30,,,,,,,3
+1147,Maya@AL_HEAL,attack,28,2,10000,0,5000,no,self,myhpltmaxrate,30,,,,,,,3
+1147,Maya@AL_HEAL,attack,28,2,10000,0,5000,no,friend,friendhpltmaxrate,60,,,,,,,3
+1147,Maya@AL_HEAL,chase,28,2,10000,0,5000,no,friend,friendhpltmaxrate,60,,,,,,,3
+1147,Maya@KN_BRANDISHSPEAR,attack,57,20,2000,500,5000,no,target,always,0,,,,,,,
+1147,Maya@WZ_HEAVENDRIVE,chase,91,5,10000,0,5000,no,target,skillused,18,,,,,,,
+1147,Maya@WZ_HEAVENDRIVE,attack,91,5,2000,0,5000,no,target,always,0,,,,,,,
+1147,Maya@WZ_HEAVENDRIVE,chase,91,5,2000,0,5000,no,target,always,0,,,,,,,
+1147,Maya@NPC_GUIDEDATTACK,attack,172,5,500,0,20000,no,target,always,0,,,,,,,18
+1147,Maya@CR_AUTOGUARD,attack,249,10,500,0,5000,yes,self,always,0,,,,,,,
+1147,Maya@NPC_ARMORBRAKE,attack,344,10,2000,0,5000,no,target,always,0,,,,,,,6
+1147,Maya@NPC_POWERUP,attack,349,5,10000,0,120000,yes,self,myhpltmaxrate,30,,,,,,,6
+1289,Maya Purple@KN_BRANDISHSPEAR,attack,57,20,5000,1000,5000,no,target,always,0,,,,,,,
+1289,Maya Purple@WZ_HEAVENDRIVE,attack,91,5,500,1200,5000,yes,target,always,0,,,,,,,
+1289,Maya Purple@WZ_HEAVENDRIVE,chase,91,5,500,1200,5000,yes,target,always,0,,,,,,,
+1289,Maya Purple@NPC_EMOTION,chase,197,1,200,0,5000,yes,self,always,0,19,0x81,,,,,
+1289,Maya Purple@NPC_EMOTION,idle,197,1,2000,0,5000,yes,self,always,0,7,0x37B5,,,,,
+1058,Metaller@NPC_SILENCEATTACK,chase,178,3,500,700,5000,no,target,always,0,,,,,,,2
+1058,Metaller@NPC_SILENCEATTACK,attack,178,3,500,700,5000,no,target,always,0,,,,,,,2
+1058,Metaller@NPC_FIREATTACK,attack,186,1,2000,0,5000,yes,target,always,0,,,,,,,
+1058,Metaller@NPC_EMOTION,walk,197,1,2000,0,5000,yes,self,always,0,2,,,,,,
+1159,Phreeoni@AL_HEAL,idle,28,2,10000,0,10000,yes,self,myhpltmaxrate,50,,,,,,,
+1159,Phreeoni@AL_HEAL,idle,28,2,10000,0,5000,yes,self,mystatuson,hiding,,,,,,,
+1159,Phreeoni@WZ_HEAVENDRIVE,chase,91,5,10000,0,5000,no,target,skillused,18,,,,,,,19
+1159,Phreeoni@NPC_GUIDEDATTACK,chase,172,5,500,0,20000,no,target,always,0,,,,,,,
+1159,Phreeoni@NPC_LICK,attack,206,5,2000,0,5000,yes,target,always,0,,,,,,,3
+1159,Phreeoni@NPC_HELMBRAKE,attack,345,10,2000,0,5000,no,target,skillused,18,,,,,,,
+1159,Phreeoni@NPC_POWERUP,attack,349,5,10000,0,120000,yes,self,myhpltmaxrate,30,,,,,,,6
+1372,akio@skill1,any,14,10,10000,500,1000,no,target,always,0,,,,,,,
+1372,akio@skill1,any,88,10,10000,500,1000,no,target,always,0,,,,,,,
+1372,akio@skill1,any,92,5,10000,500,1000,no,target,always,0,,,,,,,
+1165,Sandman@AS_CLOAKING,attack,135,1,2000,200,5000,yes,self,always,0,,,,,,,
+1165,Sandman@AS_CLOAKING,chase,135,1,2000,200,5000,yes,self,always,0,,,,,,,
+1165,Sandman@AS_CLOAKING,angry,135,1,2000,200,5000,yes,self,always,0,,,,,,,
+1165,Sandman@AS_CLOAKING,idle,135,1,2000,200,5000,yes,self,always,0,,,,,,,
+1165,Sandman@TF_SPRINKLESAND,attack,149,1,500,0,5000,yes,target,always,0,,,,,,,
+1165,Sandman@TF_SPRINKLESAND,angry,149,1,500,0,5000,yes,target,always,0,,,,,,,
+1165,Sandman@NPC_GROUNDATTACK,attack,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1165,Sandman@NPC_GROUNDATTACK,angry,185,1,2000,0,5000,yes,target,always,0,,,,,,,
+1516,Increase Soil@NPC_METAMORPHOSIS,attack,193,2,50,5000,5000,no,self,always,0,1516,,,,,,
+1586,Leaf Cat@AL_HEAL,chase,28,1,10000,500,5000,no,self,myhpltmaxrate,30,,,,,,,18
+1586,Leaf Cat@AL_HEAL,attack,28,1,10000,500,5000,no,friend,friendhpltmaxrate,60,,,,,,,18
+1586,Leaf Cat@AL_HEAL,attack,28,1,10000,500,5000,no,self,myhpltmaxrate,30,,,,,,,18
+1586,Leaf Cat@AL_HEAL,chase,28,1,10000,500,5000,no,friend,friendhpltmaxrate,60,,,,,,,18
+1261,Wild Rose@AS_SONICBLOW,attack,136,5,500,800,5000,no,target,always,0,,,,,,,6
+1261,Wild Rose@NPC_WINDATTACK,attack,187,1,2000,0,5000,yes,target,always,0,,,,,,,
+1261,Wild Rose@NPC_EMOTION,loot,197,1,2000,0,5000,yes,self,always,0,2,,,,,,
+
+//kuty
+
+//sapo
+1790,gama1@,any,34,10,2000,0,0,no,master,always,,,,,,,,
+1789,gama2@,any,34,10,2000,0,0,no,master,always,,,,,,,,
+1789,gama2@,any,136,10,2000,0,0,no,target,always,,,,,,,,
+1788,gama3@,any,34,10,2000,0,0,no,master,always,,,,,,,,
+1788,gama3@,any,136,10,2000,0,0,no,target,always,,,,,,,,
+1788,gama3@,any,539,10,2000,0,0,no,target,always,,,,,,,,
+
+//lesma
+1916,lesma1@,any,28,20,5000,2000,0,no,master,always,,,,,,,,
+1782,lesma2@,any,28,29,5000,2000,0,no,master,always,,,,,,,,
+//1782,lesma2@,any,365,2,2000,0,0,no,target,always,,,,,,,,
+1787,lesma3@,any,70,10,2000,0,0,no,master,always,,,,,,,,
+1787,lesma3@,any,365,10,2000,0,0,no,target,always,,,,,,,,
+1787,lesma3@,any,400,10,2000,0,0,no,target,always,,,,,,,,
+1787,lesma2@,any,28,20,7000,0,0,no,master,always,,,,,,,,
+
+//cobra
+1781,cobra1@,any,73,5,2000,0,5000,no,master,always,,,,,,,,
+1772,cobra2@,any,73,5,2000,0,5000,no,master,always,,,,,,,,
+1772,cobra2@,any,62,10,2000,0,0,no,target,always,,,,,,,,
+1784,cobra3@,any,73,5,2000,0,5000,no,master,always,,,,,,,,
+1784,cobra3@,any,62,10,2000,0,0,no,target,always,,,,,,,,
+1784,cobra3@,any,21,10,2000,0,0,no,target,always,,,,,,,,
+
+//cachorro
+1324,cachorro1@,any,1005,10,2000,0,0,no,target,always,,,,,,,,
+1325,cachorro2@,any,1005,10,2000,0,0,no,target,always,,,,,,,,
+1325,cachorro2@,any,5,10,2000,0,0,no,target,always,,,,,,,,
+1326,cachorro3@,any,1005,10,2000,0,0,no,target,always,,,,,,,,
+1326,cachorro3@,any,58,10,2000,0,0,no,target,always,,,,,,,,
+1326,cachorro3@,any,91,10,2000,0,0,no,target,always,,,,,,,,
+
+//macaco
+1327,macaco1@,any,66,10,2000,0,0,no,master,always,,,,,,,,
+1328,macaco2@,any,66,10,2000,0,0,no,master,always,,,,,,,,
+1328,macaco2@,any,171,10,2000,0,0,no,target,always,,,,,,,,
+1329,macaco3@,any,66,10,2000,0,0,no,master,always,,,,,,,,
+1329,macaco3@,any,171,10,2000,0,0,no,target,always,,,,,,,,
+1329,macaco3@,any,536,10,2000,0,0,no,target,always,,,,,,,,
+
+
+//teste
+
+1381,KatsuyoEdit,any,255,10,30,500,0,yes,master,always,,,,,,,,
+1113,macaco3@,any,342,10,2000,0,0,no,target,always,,,,,,,,
+
+1771,nukenin@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+1839,nukenin@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+1401,nukenin@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+1154,nukenin@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+
+1312,generaltartaruga@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+
+//marionetes
+1447,thor@marionete1,any,110,5,1000,0,2000,no,target,always,,,,,,,,
+1448,petrificar@marionete2,any,16,10,1000,0,2000,no,target,always,,,,,,,,
+//1449,assumptio@marionete3,any,361,5,1000,0,2000,no,master,always,,,,,,,,
+1449,lancafogo@marionete3,any,5,1,1000,0,2000,no,target,always,,,,,,,,
+1449,lancafogo@marionete3,any,379,1,1000,0,2000,no,target,always,,,,,,,,
+1449,lancafogo@marionete3,any,349,5,10000,0,25000,no,self,always,,,,,,,,
+
+//kyuubi
+1086,gama1@,any,136,50,2000,0,0,no,target,always,,,,,,,,
+1086,gama2@,any,406,50,2000,0,0,no,target,always,,,,,,,,
+1086,gama2@,any,81,10,2000,0,0,no,target,always,,,,,,,,
+1086,gama3@,any,519,10,2000,0,0,no,target,always,,,,,,,,
+
+
+//hachibi
+1738,gama1@,any,62,10,2000,0,0,no,target,always,,,,,,,,
+1738,gama2@,any,85,10,2000,0,0,no,target,always,,,,,,,,
+1738,gama2@,any,84,10,2000,0,0,no,target,always,,,,,,,,
+1738,gama3@,any,42,10,2000,0,0,no,target,always,,,,,,,,
+
+
+//Shichibi
+1983,gama1@,any,13,10,2000,0,0,no,target,always,,,,,,,,
+1983,gama2@,any,542,5,2000,0,0,no,target,always,,,,,,,,
+1983,gama2@,any,287,5,2000,0,0,no,target,always,,,,,,,,
+1983,gama3@,any,394,10,2000,0,0,no,target,always,,,,,,,,
+
+//Rokubi
+1985,gama1@,any,89,10,2000,0,0,no,target,always,,,,,,,,
+1985,gama2@,any,140,10,2000,0,0,no,target,always,,,,,,,,
+1985,gama2@,any,86,5,2000,0,0,no,target,always,,,,,,,,
+1985,gama3@,any,286,5,2000,0,0,no,self,always,,,,,,,,
+
+//Gobi
+1982,gama1@,any,56,10,2000,0,0,no,target,always,,,,,,,,
+1982,gama2@,any,415,7,2000,0,0,no,target,always,,,,,,,,
+1982,gama2@,any,490,5,2000,0,0,no,target,always,,,,,,,,
+1982,gama3@,any,157,1,2000,0,0,no,self,always,,,,,,,,
+
+1258,gama1@,any,56,10,2000,0,0,no,target,always,,,,,,,,
+1258,gama2@,any,415,7,2000,0,0,no,target,always,,,,,,,,
+1258,gama2@,any,490,5,2000,0,0,no,target,always,,,,,,,,
+1258,gama3@,any,157,1,2000,0,0,no,self,always,,,,,,,,
+
+//Yonbi
+1981,gama1@,any,19,10,2000,2000,0,no,target,always,,,,,,,,
+1981,gama2@,any,90,10,2000,2000,0,no,target,always,,,,,,,,
+1981,gama2@,any,91,5,2000,1000,0,no,target,always,,,,,,,,
+1981,gama3@,any,5,10,2000,1000,0,no,target,always,,,,,,,,
+
+//Sanbi
+1986,gama1@,any,356,10,2000,0,0,no,self,always,,,,,,,,
+1986,gama2@,any,257,5,2000,0,0,no,self,always,,,,,,,,
+1986,gama2@,any,539,5,2000,0,0,no,target,always,,,,,,,,
+1986,gama3@,any,538,10,2000,0,0,no,target,always,,,,,,,,
+
+//Nibi
+1984,gama1@,any,535,10,2000,0,0,no,target,always,,,,,,,,
+1984,gama2@,any,83,10,2000,0,0,no,target,always,,,,,,,,
+1984,gama2@,any,7,10,2000,0,0,no,target,always,,,,,,,,
+1984,gama3@,any,536,5,2000,0,0,no,target,always,,,,,,,,
+
+//Ichibi
+1984,gama1@,any,542,5,2000,0,0,no,target,always,,,,,,,,
+1984,gama2@,any,92,5,2000,0,0,no,target,always,,,,,,,,
+1984,gama2@,any,653,10,10000,0,0,no,target,always,,,,,,,,
+1984,gama3@,any,400,5,2000,0,0,no,target,always,,,,,,,,
+
+//Taka e Otogakure
+1987,newtaka@1,any,536,3,30,30,20,no,target,always,,,,,,,,
+1987,newtaka@2,any,749,1,10,0,20,yes,self,always,,,,,,,,
+1987,newtaka@3,any,750,1,10,0,20,yes,self,always,,,,,,,,
+1987,takakuchiyose,any,726,5,1,0,0,no,self,always,,,,,,,,
+1987,takataijutsu,any,62,10,80,0,30,no,target,always,,,,,,,,
+
+//Dungeon da Vila oculta da Cachoeira
+2125,kirichunin1,any,87,5,30,0,0,no,self,always,,,,,,,,
+2125,kirichunin2,any,14,7,60,20,0,yes,target,always,,,,,,,,
+2125,kirichunin3,any,538,5,20,20,0,no,target,always,,,,,,,,
+2125,kirichunin4,any,88,13,45,0,0,no,self,always,,,,,,,,
+2125,kirichunin4,any,135,10,1,0,0,no,self,always,,,,,,,,
+
+2124,kirijounin1,any,135,10,15,0,0,no,self,always,,,,,,,,
+2124,kirijounin2,any,88,20,60,0,0,no,self,always,,,,,,,,
+2124,kirijounin3,any,538,10,40,5,0,no,target,always,,,,,,,,
+2124,kirijounin4,any,14,15,55,0,10,no,target,always,,,,,,,,
+2124,kirijounin5,any,404,3,30,0,0,no,self,always,,,,,,,,
+2124,kirijounin6,any,361,1,25,0,0,no,self,always,,,,,,,,
+2124,kirijounin7,any,289,5,5,0,0,no,target,always,,,,,,,,
+2124,kirijounin7,any,318,12,15,0,0,no,self,always,,,,,,,,
+
+// M O N S T R O S [SKILLS]
+// 	C O M P L E M E N T A R E S
+
+//Nível genin  -  PRONTO
+1586,Leafcat@stun,any,178,5,2500,0,1000,yes,target,always,,,,,,,,
+1586,Leafcat@attack,any,159,5,3000,0,10000,yes,target,always,,,,,,,,
+1104,P.Esquilo@shot,any,152,50,6000,0,1000,no,target,always,,,,,,,,
+1104.P.Esquilo@lick,any,206,5,2000,1000,10000,yes,target,always,,,,,,,,
+
+//Nível Genin ~ Pakkun.  PRONTO.
+1166,Javali@attack,any,58,10,4500,0,10000,no,target,always,,,,,,,,
+1166,Javali@attack1,any,172,5,4900,0,5000,no,target,always,,,,,,,,
+1103,P.Espinho@attack,any,172,5,4900,0,1000,no,target,always,,,,,,,,
+1103,P.Espinho@shadow,any,190,10,7000,0,2000,no,target,always,,,,,,,,
+
+//Nível genin suna - Pronto
+//1020,Cacto@atk,any,5,10,5000,0,1000,no,target,always,,,,,,,,
+//1020,Poisoncacto,any,176,10,2000,200,10,no,self,always,,,,,,,,
+1107,Traumatico,any,398,5,5000,0,25000,no,target,always,,,,,,,,
+1107,Rasengan,any,370,5,6000,0,20000,no,target,always,,,,,,,,
+1030,Poisonattack,any,176,10,7000,0,20000,no,target,always,,,,,,,,
+1030,Traumatico,any,398,5,5000,0,15000,no,target,always,,,,,,,,
+
+//1220,KickRandom,any,413,5,8000,0,0,no,self,always,,,,,,,,
+//1220,ShadowBreath,any,202,5,6000,0,0,no,target,always,,,,,,,,
+
+1001,PoisonTail,any,188,7,6000,0,0,no,target,always,,,,,,,,
+1001,PoisonAttack,any,406,3,2000,0,0,no,target,always,,,,,,,,
+
+1127,Hide,any,135,10,2000,0,0,no,self,always,,,,,,,,
+1127,Tocaia,any,137,50,7000,0,0,no,target,always,,,,,,,,
+
+//1386,DotonAttack,any,90,5,4000,1000,0,yes,target,always,,,,,,,,
+//1386,ShottDoton,any,514,5,3000,250,0,no,target,always,,,,,,,,
+
+//1558,SandAttack,any,185,10,2000,0,10000,yes,target,always,,,,,,,,
+//1558,SandParalise,any,182,1,5000,500,1000,no,target,always,,,,,,,,
+
+//2026,DefesaDadeLion,any,249,5,4000,0,0,no,self,always,,,,,,,,
+//2026,AttackDadeLion,any,370,10,7000,0,0,no,target,always,,,,,,,,
+
+//Pronto
+1094,SuperDef,any,361,3,80000,1500,0,yes,self,always,,,,,,,,
+1094,DrainBlood,any,200,15,5000,200,0,no,target,always,,,,,,,,
+1364,NinkameColina@Huuma,any,525,10,2000,500,0,yes,target,always,,,,,,,,
+1364,NinkameColina@Kunai,any,524,5,7000,0,0,no,target,always,,,,,,,,
+1364,NinkameColina@Shuriken,any,523,10,8900,0,0,no,target,always,,,,,,,,
+
+//Pronto
+1155,PetitTerreste@Tyr,any,62,5,4000,0,0,no,target,always,,,,,,,,
+1155,PetitTerrestre@Avn,any,1001,5,6000,0,0,no,target,always,,,,,,,,
+//1448,Anolian@SM_BASH,any,5,25,2000,0,0,no,target,always,,,,,,,,
+//1448,Anolian@Buff,any,113,5,3000,0,0,no,self,always,,,,,,,,
+
+//Pronto
+1317,Foca@Suiton,any,184,10,4500,2000,0,yes,target,always,,,,,,,,
+1317,Foca@Suitondown,any,538,5,8000,500,0,yes,target,always,,,,,,,,
+1323,Lontra@salto,any,529,10,1000,0,10000,no,target,always,,,,,,,,
+1323,Lontra@Haran,any,88,5,7500,1060,0,5000,yes,self,always,,,,,,,,
+
+//Pronto
+1012,Sapo@asshou,any,379,3,2000,1200,5000,yes,target,always,,,,,,,,
+1012,Sapo@Deses,any,516,5,2000,2000,10000,yes,self,always,,,,,,,,
+1074,Molusco@attack,any,14,5,3500,700,7000,yes,target,always,,,,,,,,
+1074,Molusco@trap,any,361,3,7000,500,50000,no,self,always,,,,,,,,
+1255,Nereida@onimpact,any,172,3,4000,0,5000,no,target,always,,,,,,,,
+1255,Nereida@perfure,any,397,1,7000,1000,10000,no,target,always,,,,,,,,
+
+//No
+//1556,PoisonToad@1,any,379,10,7000,0,no,target,always,,,,,,,,
+//1556,PoisonToad@2,any,529,10,10000,0,0,no,target,always,,,,,,,,
+//1556,PoisonToad@3,any,397,8,4000,0,0,no,target,always,,,,,,,,
+//1556,PoisonToad@4,any,378,2,1000,0,0,no,self,always,,,,,,,,
+//1441,Planta_Venenosa@1,any,179,10,7000,0,0,no,target,always,,,,,,,,
+//1441,Planta_Venenosa@2,any,199,5,8000,320,0,no,target,always,,,,,,,,
+//1441,Planta_Venenosa@3,any,176,5,5000,0,0,no,target,always,,,,,,,,
+
+//Pronto
+1369,MVP_Nidachou@recall,any,196,10,10000,200,0,no,self,slavele,1,1036,,,,,,
+1369,MVP_Nidachou@attack,any,400,10,7000,150,0,no,target,always,,,,,,,,
+1369,MVP_Nidachou@nindou,any,1009,10,4000,100,0,no,target,always,,,,,,,,
+1369,MVP_Nidachou@slaoque,any,339,10,6000,0,0,no,target,always,,,,,,,,
+1369,MVP_Nidachou@gen,any,662,50,7500,200,0,no,self,always,,,,,,,,
+1369,MVP_Nidachou@def,any,361,10,2300,100,0,no,self,always,,,,,,,,
+1410,TreeEnchanted@1,any,337,25,5400,100,0,no,target,always,,,,,,,,
+1410,TreeEnchanted@2,any,129,25,7000,0,0,no,target,always,,,,,,,,
+1410,TreeEnchanted@3,any,1006,25,10000,0,0,no,self,always,,,,,,,,
+
+//  H A R D C O R E - S K I L L S
+1278,earthquake,any,653,5,2000,0,5000,no,self,always,,,,,,,,
+1278,colunadepedra,any,81,20,8000,100,2000,no,target,always,,,,,,,,
+1278,petrific@area,any,666,10,4000,0,10000,no,self,always,,,,,,,,
+
+1380,earthattack,any,185,25,8000,230,3000,no,target,always,,,,,,,,
+1380,perfure,any,397,25,5900,0,5000,no,target,always,,,,,,,,
+1380,slowdown,any,92,30,3000,50,5000,no,target,always,,,,,,,,
+
+2123,cursingattack,any,181,8000,0,0,target,always,,,,,,,,
+2123,kickarea,any,417,10000,0,300,target,always,,,,,,,,
+2123,earthattack,any,185,25,8000,230,5000,no,target,always,,,,,,,,
+
+1366,zukkoku,any,536,10,6500,320,1,no,target,always,,,,,,,,
+1366,shieldflame,any,535,7,4000,0,0,no,self,always,,,,,,,,
+1366,fireattack,any,186,10,8000,100,0,no,target,always,,,,,,,,
+1366,slowdown@2,any,470,1,5000,150,0,no,target,always,,,,,,,,
+
+1383,flameattack,any,534,10,7800,500,1000,no,target,always,,,,,,,,
+1383,firewall,any,18,5,7000,600,1000,yes,target,always,,,,,,,,
+1383,coluna,any,80,30,8000,0,1000,no,target,always,,,,,,,,
+1383,supernova,any,81,10,2000,200,5000,no,self,always,,,,,,,,
+
+2068,housenka,any,17,5,5600,100,0,no,target,always,,,,,,,,
+2068,goukakyuu,any,19,7,8000,210,0,no,target,always,,,,,,,,
+2068,reflect,any,252,1,2000,0,0,no,self,always,,,,,,,,
+2068,Coluna,any,80,20,8000,0,14000,no,target,always,,,,,,,,
+
+2016,icewall,any,87,20,7000,0,5000,no,self,always,,,,,,,,
+2016,waterfall,any,538,15,2000,600,2000,no,target,always,,,,,,,,
+2016,frozenattack,any,537,50,8000,170,5000,no,target,always,,,,,,,,
+2016,hide,any,135,10,2000,0,10000,no,self,always,,,,,,,,
+
+2020,Diluvio@hozuki,any,286,20,1000,100,20000,no,self,always,,,,,,,,
+2020,Nevasca@hozuki,any,89,25,8000,200,5000,no,target,always,,,,,,,,
+2020,hide@hozuki,any,135,20,6000,0,11000,no,self,always,,,,,,,,
+2020,WaterAtt,any,186,25,6500,650,3000,no,target,always,,,,,,,,
+
+1087,Poison@Toad,any,140,10,8000,200,10000,no,target,always,,,,,,,,
+1087,Honharyuu,any,15,15,8000,540,10,no,target,always,,,,,,,,
+1087,Poisonkatsu,any,141,40,5000,100,0,no,target,always,,,,,,,,
+1087,waterattack,any,539,20,9500,400,10000,no,self,always,,,,,,,,
+1087,protect,any,276,10,5000,0,200,no,self,always,,,,,,,,
+
+1412,KaminariOroshi,any,21,20,6000,100,5000,no,target,always,,,,,,,,
+1412,Chidori,any,84,15,3000,50,10000,no,target,always,,,,,,,,
+1412,SleepAttack,any,182,20,7000,0,6000,no,target,always,,,,,,,
+1412,DemonShock@,any,192,25,8000,200,3000,no,target,always,,,,,,,,
+
+1713,Atsugai,any,400,5,4500,200,5000,no,target,always,,,,,,,,
+1713,Kamaitachi,any,540,5,6000,320,0,no,target,always,,,,,,,,
+1713,Desesperado,any,516,10,7000,50,0,no,target,always,,,,,,,,
+1713,Repulsor,any,115,5,3000,50,1000,no,target,always,,,,,,,,
+
+1716,Tyr,any,62,12,7000,0,2000,no,target,always,,,,,,,,
+1716,SaltoDasSombras,any,529,10,8000,0,3000,no,target,always,,,,,,,,
+1716,Spiritattack,any,159,10,5000,100,5000,no,target,always,,,,,,,,
+
+1680,WindAttack,any,187,10,8000,100,2000,no,target,always,,,,,,,,
+1680,Kaupe,any,531,3,6000,0,10000,no,self,always,,,,,,,,
+1680,FukaiYasumi,any,182,10,7000,0,4000,no,target,always,,,,,,,,
+
+1259,SuckerBlood,any,199,5,7000,100,8000,no,target,always,,,,,,,,
+1259,Perfurar,any,397,5,5000,0,1000,no,target,always,,,,,,,,
+1259,Dinamic,any,421,10,9500,0,0,no,target,always,,,,,,,,
+1259,breakweapon,any,343,1,2000,200,10000,no,target,always,,,,,,,,
+
+2013,BrandirLança,any,53,15,7000,0,5000,no,target,always,,,,,,,,
+2013,Shiko,any,399,20,10000,0,7000,no,target,always,,,,,,,,
+2013,Assalto,any,381,20,5700,0,2000,no,target,always,,,,,,,,
+2013,PowerUP,any,486,20,2000,0,20000,no,self,always,,,,,,,,
+2013,daisenkou,any,357,10,4000,0,30000,no,self,always,,,,,,,,
+
+1222,Yukio@Destruc,dead,173,100,10000,500,0,no,self,always,,,,,,,,

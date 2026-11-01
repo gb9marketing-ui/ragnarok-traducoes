@@ -1,0 +1,372 @@
+//===== eAthena Script ======================================= 
+//= Sealed Shrine
+//===== By: ================================================== 
+//= L0ne_W0lf
+//===== Current Version: ===================================== 
+//= 1.4
+//===== Compatible With: ===================================== 
+//= eAthena SVN
+//===== Description: ========================================= 
+//= [Aegis Conversion]
+//= Seal away the Great Demon Baphomet.
+//===== Additional Comments: ================================= 
+//= 1.0 First version. [L0ne_W0lf]
+//= 1.1 Added setquest for instance cooldown. [L0ne_W0lf]
+//= 1.2 Fixed Torch#12 not being disabled. (bugreport:4044) [L0ne_w0lf]
+//= 1.3 Fixed cutins not being removed. (bugreport:4117) [L0ne_w0lf]
+//= 1.4 Fixed some typos. [Gepard]
+//============================================================ 
+
+// NPC Assustado
+//hu_fild06,104,283,3	script	Morador Assustado	797,{
+if(hallow1 == 1){mes "O rapaz olha fixamente para um local aleatório... parece estar em trauma."; close;}
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Wooaah !!";
+mes "*Ele cambaleava para trás, assustado com sua chegada repentina*";
+menu "O que houve ?",cont1,"Ignorá-lo",fechardiag;
+
+fechardiag:
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Tudo bem, só não me assuste desse jeito, poxa !!";
+close;
+
+cont1:
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Oh, é só um shinobi, ainda bem...";
+mes "Não me assuste assim, você quase me matou do coração!!";
+next;
+menu "Por que se assustou ?",cont2,"Desculpe",fechardiag;
+
+cont2:
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "O que ? É claro que foi por causa dos boatos!";
+mes "Não sei o que faria caso a criança demoníaca aparecesse aqui...";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Pela sua cara...";
+mes "Não está sabendo ? Francamente... você vive em uma caverna?";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Escute, shinobi... há alguns dias, um grande chakra maligno foi sentidos pelos ninjas sensoriais.";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Com isto, diversos boatos surgiram... vilas menores foram atacadas e pereceram...";
+mes "Muitas pessoas foram mortas e, segundo os boatos, uma criança demoníaca corre pelo mundo espalhando caos.";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Todos estão com medo dessa criança, não temos um minuto de paz desde o início destes boatos.";
+menu "Você sabe onde encontro essa criança?",cont3,"Isso parece assustador... Bom, se cuida",fechardiag;
+
+cont3:
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Que diabos? Quem iria querer se encontrar com uma aberração dessas? Você deve estar com um parafuso a menos.";
+mes "* O morador se acalma e respira fundo por um momento. Você pode ver nitidamente a sua insegurança.*";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Bom, bom... Se deseja tanto encontrá-lo, lhe contarei alguns outros boatos que ouvi...";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Escute bem, segundo alguns ninjas que passaram por aqui recentemente, há um local onde Genins novatos treinam...";
+mes "E até mesmo os mais velhos Jounins...";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Como era mesmo ?... Ah, é uma espécie de ilha, não sei ao certo, mas é propriedade da Vila da Núvem...";
+mes "Em algum lugar, há uma passagem para um campo aberto, onde até pouco tempo haviam pessoas morando, mas...";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "* O morador perde o olhar por alguns segundos...";
+mes "Aquele lugar foi devastado da noite pro dia, ainda é possível notar algumas casas em árvores e coisas assim, mas tudo em péssimo estado.";
+mes "Porque não passa lá ? Dizem que pode ter sido a criança.";
+next;
+mes "[^FF8C00 Morador Assustado ^000000]";
+mes "Porque me olha assim ? Agora cabe a você descobrir, o ninja aqui não sou eu.";
+mes "Aquela destruição... todas aquelas vidas...";
+mes "* Parece que ele se perdeu em seus pensamentos, continuar uma conversa é inútil... melhor procurar por algo. *";
+set hallow1,1;
+close;
+}
+
+// Prova 01
+//hu_fild05,94,222,5	script	Prova#1	341,9,9,{
+if (prova01 == 1) {end;}
+if (hallow1 == 1) {mes "Você olha ao redor, porém não encontra muitas coisas além da casa destruída...";
+mes "Ah, mas há uma kunai quebrada e ensanguentada no chão; Ela tem um formato estranho no entanto.";
+getitem 727,1;
+set hallow1,2;
+close;
+announce "A kunai estava com o sangue ressecado, porém olhando ao redor, você percebe algumas pegadas com sangue que seguem para fora da casa.",bc_blue|bc_self;
+}
+end;
+}
+
+// Prova 02
+//hu_fild05,106,115,5	script	Prova#2	341,9,9,{
+if (prova01 == 1) {end;}
+if (hallow1 == 2) {mes "Você olha ao redor, há ossos de animais mortos, e também de... Pessoas...";
+mes "Há algumas marcas de queimado em um dos grandes ossos, a marca é como o contorno de uma pessoa...";
+mes "Aparentemente alguém se enfiou na frente de um forte fogo para proteger algo ali, mas não sei o que era...";
+next;
+mes "Ao aproximar-se do local notam-se pedaços de tecido rasgado que estavam grudados aos ossos; Pareciam queimados, como se estivessem sido empurrados contra os ossos...";
+mes "Há também um pouco de sangue, mas nada muito exagerado... algo como um corte, talvez?";
+set hallow1,3;
+close;
+announce "Que tipo de chacina aconteceu neste lugar?... Não é tempo para isso, devo procurar por algo que possa ser útil...",bc_blue|bc_self;
+}
+end;
+}
+
+// Prova 03
+//hu_fild05,146,98,5	script	Prova#3	341,9,9,{
+if (prova01 == 1) {end;}
+if (hallow1 == 3) {mes "Você olha ao redor, notando diversos troncos de madeira caídos, alguns queimados, outros não.";
+mes "Percebe-se uma parte do chão que estava coberta com folhas, aparentemente algum tipo de armadilha, porém era óbvio demais...";
+mes "Talvez uma passagem secreta para algum lugar?";
+mes "Ou talvez fosse realmente uma armadilha?";
+next;
+mes "O importante é, acima das folhas, havia uma carta rasgada, com algo escrito nela..."; 
+mes "você não conseguia ler tão distante, provavelmente teria que se arriscar e apanhá-la.";
+menu "Pegar a Carta",questa,"Ignorar a Carta",questb;
+
+// ------------- Quest A
+questa:
+set hallow1,4;
+set hallowa,1;
+getitem 7183,1;
+warp "gl_church", 110,195;
+close;
+
+// -------------- Quest B
+questb:
+next;
+mes "Você decidiu ignorar a Carta";
+set hallow1,4;
+set hallowb,1;
+close;
+
+}
+end;
+}
+
+//hu_fild05,316,207,5	script	QuestB#1	341,9,9,{
+if (hallowb == 1){
+mes "Você investigava a casa devastada, era um pouco parecida com a primeira, porém essa não havia uma kunai ensanguentada"; 
+mes "Havia, na verdade, uma carta!!";
+next;
+mes "Você começa a lê-la...";
+mes "------------------------";
+mes "Se alguém encontrar esta carta, por favor, entregue-a ao meu filho...";
+mes "Filho, eu sinto muito... sua mãe e eu... nós lutamos o máximo que pudemos, mas...";
+mes "Estou escrevendo esta carta em meu último momento de vida. A criança já foi, mas creio que morrerei em breve por hemorragia.";
+mes "Quero que você viva, meu filho amado... Por isso, pegue todo o dinheiro que temos guardado em casa e comece uma nova vida.";
+mes "Nós sempre lhe amaremos ...!";
+mes "Ass: Sua mãe e seu pai";
+mes "------------------------";
+next;
+mes "Você guarda a carta em seu bolso.";
+set hallowb,2;
+close;
+}
+end;
+}
+
+//hu_fild05,310,326,3	script	Criança Tristonha	896,{
+if (hallowb != 2){ mes "Você chega perto da criança e ela só sabe chorar... o que pode ter acontecido ?"; close;}
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "Mamãe...Papai...";
+mes "*Sniff...Sniff...*";
+next;
+mes "A criança tentava limpar suas lágrimas, porém não conseguia parar de chorar";
+menu "Ei, está tudo bem?",questb2,"Ignorá-la",fechadiagb;
+
+fechadiagb:
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "Alguém por favor me ajude !! *Sniff*";
+close;
+
+questb2:
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "Q-Quem é você?";
+mes "*Ela te encara com o rosto cheio de lágrimas*";
+next;
+mes "Você diz que é um shinobi e que está tentando ajudar.";
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "S-Shinobi?";
+mes "Po-Por favor, salve a mamãe e o papai! Por favor!";
+mes "*Ela segura em sua perna, enquanto se ajoelha e chora*";
+next;
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "Mamãe e o Papai me mandaram fugir, enquanto lutavam com aquele monstro...";
+mes "Eu... Eu... Não quero que nada de ruim aconteça com eles !! Por favor, Shinobi !!";
+menu "Entregar a mensagem",questb3,"Afastar-se",sairfora;
+
+sairfora:
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "Por favor... !! Não vá embora, ajude a mamãe e o papai... *Sniff*";
+close;
+
+questb3:
+mes "*Você retira a mensagem de seu bolso e diz que provavelmente foi escrita pelos pais dele*";
+next;
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "N-Não pode ser...";
+mes "*A criança lia a carta, enquanto mais e mais lágrimas escorriam pelo seu rosto*";
+mes "M-M-Mamãe, papai!";
+next;
+mes "* De repente a criança para e começa a olhar fixamente em seu bolso... *";
+next;
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "E-Essa kunai... Era da mamãe !!";
+mes "Você entrega a Kunai para o garoto";
+delitem 727,1;
+next;
+mes "* Você explica ao garoto que poderia vingar os pais dele, enquanto se afasta...*";
+next;
+mes "* O garoto em seguida lhe pede para esperar *";
+next;
+mes "[^FF8C00 Criança Tristonha ^000000]";
+mes "E-Eu achei isso no caminho, é algo sobre o assassino que matou meus pais, talvez lhe seja útil !";
+getitem 7183,1;
+next;
+mes "Você pega a carta e começa a lê-la:";
+mes "---------------------------------";
+mes "...mana, ela era uma criança orfã, que foi raptada por um grupo de shinobis viajantes; os shinobis utilizaram a criança como experimento de um novo jutsu...";
+mes "Ela estava sozinha, abandonada, era o alvo perfeito. Eles aplicaram o jutsu que tinha como objetivo criar uma máquina de matar... mas algo deu errado.";
+next;
+mes "Após a falha, a crinça supostamente assassinou todos os viajantes e passou a obter um ódio enorme por todos os shinobis.";
+mes "Se algum shinobi poderoso estiver lendo esta carta... por favor, pare a criança...";
+mes "Ela atualmente deve estar próxima ao Centro de Treinamento, esperando fazer mais e mais vítimas !!";
+mes "---------------------------------";
+next;
+mes "Parece que isso era tudo... Não, espere !!";
+mes "Há uma parte ilegivel, mas no final está escrito:";
+mes "---------------------------------";
+mes "Muito cuidado, caso você recuse a oferta de ser levado ao local, você será MORTO";
+mes "---------------------------------";
+mes "Devo voltar ao Centro de Treinamento !!";
+set hallowb,3;
+next;
+warp "kakashi" ,95,138;
+close;
+}
+
+//gl_church,112,192,5	script	QuestA#1	341,9,9,{
+if (hallowa == 1){
+mes "[...]";
+mes "Você levantava após cair de um grande buraco, você estava um pouco desnorteado por causa da queda, porém sem ferimentos.";
+mes "Você lia a mensagem, nela estava escrito:";
+mes "*Estou escrevendo isso nos últimos momentos da minha vida, em breve a criança demoníaca estará aqui, por isso quero que todos saibam, quem ela realmente é, e onde ela está...*";
+next;
+mes "A criança é na verdade hu...";
+mes " ";
+mes "... Ao chegar lá, ela lhe aguarda em algum lugar escondido, tente achá-la.";
+mes "*Não era possível ler uma grande parte do pergaminho, pois estava faltando pedaços.*";
+next;
+mes "Ao olhar ao redor, você percebia que estava em um lugar escuro e aparentemente abandonado.";
+mes "Haviam alguns bancos, porém nenhum sinal de haver alguma pessoa...";
+mes "Acredito ser melhor averiguar o local...";
+mes "----------";
+mes "Parece ter algo naquela mesa... o que pode ser ?";
+close;
+}
+end;
+}
+
+// ------------- Mesa Quest A
+//gl_church,119,178,5	script	Mesa#3	341,9,9,{
+if (hallowa == 1){mes "Você chega na mesa e apanha o papel, ele está com uma lista de anotações...";
+mes "você não sabe ao certo o que eram, mas começa a lê-las:";
+mes "----------------------------------";
+mes "-Garganta da nuvem-";
+mes "-Esgoto-";
+mes "Cemitério";
+mes "----------------------------------";
+mes "Parece que a única palavra não riscada é a de Cemitério... mas o que isso significa ?";
+set hallowa,2;
+next;
+mes "Talvez seja melhor voltar... não me sinto bem neste lugar.";
+next;
+warp "kakashi", 95,138;
+close;
+
+}
+end;
+}
+
+// NPC do CT
+//kakashi,102,138,3	script	Dungeon Halloween#1	735,{
+if(entradahallow == 1){mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Oh... olá, vejo que está pronto, não ?";
+mes "Irei te levar até o local, porém deixe-me alertá-lo: Há diversos shinobis ali que perderam muito...";
+mes "Sua sanidade, sua vida, e até mesmo sua alma...";
+mes "Entrar ali é o mesmo que jogar a sua vida fora... perca o foco por um segundo e você será morto.";
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Deseja entrar mesmo assim ?";
+menu "Sim, eu quero entrar !!",entraraid,"N-Não... Não irei mais.",vaimorrer;
+
+vaimorrer:
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "É mesmo ?? Que pena...";
+mes "*Ele espera você se virar, e lhe dá um golpe certeiro pelas costas...*";
+mes "*Em seu último momento de vida, ele sussura em seu ouvido:*";
+mes "-- Esqueci de lhe contar, mas a criança demoníaca... SOU EU !!";
+next;
+atcommand "@die";
+close;
+
+entraraid:
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Muito bem, então.";
+next;
+warp "gl_chyard", 144,280;
+close;
+}
+
+if(hallowa == 2 || hallowb == 3){
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Você... Seus olhos me mostram tudo...";
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Você procura a criança demoníaca, não é?";
+menu "Sim, quem é você?",squem,"Não...",fechad;
+
+fechad:
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Hehehehehe... Você não pode me enganar.";
+close;
+
+squem:
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Eu sei onde ela está... Não é muito longe... Em um cemitério...";
+mes "Posso levá-lo até lá, você só precisa ouvir a minha história.";
+menu "Muito bem, prossiga.",squem2,"Fica pra próxima, obrigado.",fechad;
+
+squem2:
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Há muito tempo, um grupo de viajantes decidiram realizar um ritual em uma criança...";
+mes "O ritual foi um sucesso, porém não da maneira esperada pelos shinobis viajantes.";
+mes "A criança ganhou poder, perdendo parte de sua sanidade, mas ela não se tornou fiel a eles...";
+mes "Dizem que hoje essa criança habita um cemitério, esperando ninjas curiosos para matá-los !!";
+next;
+mes "[^FF8C00 Dungeon Halloween ^000000]";
+mes "Bem, você ouviu minha história... Volte até mim quando estiver pronto que eu me encarregarei em te levar.";
+set entradahallow,1;
+close;
+
+}
+mes "Você é ignorado completamente.";
+close;
+
+
+OnInit:
+	waitingroom "[Dungeon Halloween]",0;
+}

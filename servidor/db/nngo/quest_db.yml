@@ -1,0 +1,3454 @@
+# Naruto Maniacs (convertido do Cronus) - nao editar o original do rAthena, editar aqui
+Header:
+  Type: QUEST_DB
+  Version: 3
+
+Body:
+  - Id: 1000
+    Title: "Academia: Kage Bunshin"
+  - Id: 1001
+    Title: "Academia: Henge no Jutsu"
+    Targets:
+      - Mob: DEVILING
+        Count: 1
+  - Id: 1002
+    Title: "Academia: Arremeso de Kunai"
+  - Id: 1003
+    Title: "Academia: Arremeso de Shuriken"
+    Targets:
+      - Mob: DEVILING
+        Count: 10
+  - Id: 1004
+    Title: "Academia: Kawarimi"
+  - Id: 1005
+    Title: "Rank D: Achar gato"
+  - Id: 1006
+    Title: "Rank D: Limpar ervas"
+  - Id: 1007
+    Title: "Rank D: Recolher lixo"
+  - Id: 1008
+    Title: "Rank D: Tosar ovelhas"
+  - Id: 1009
+    Title: "Rank D: Alimentar Gado"
+  - Id: 1010
+    Title: "Skill 1 Rank E"
+    Targets:
+      - Mob: THARA_FROG
+        Count: 50
+  - Id: 1011
+    Title: "Skill 2 Rank E"
+    Targets:
+      - Mob: SIDE_WINDER
+        Count: 50
+  - Id: 1012
+    Title: "Skill 1 Rank D"
+    Targets:
+      - Mob: THARA_FROG
+        Count: 10
+  - Id: 1013
+    Title: "Skill 2 Rank D"
+    Targets:
+      - Mob: SIDE_WINDER
+        Count: 10
+  - Id: 1014
+    Title: "Skill 1 Rank C"
+    Targets:
+      - Mob: KAVAC
+        Count: 100
+      - Mob: HARWORD
+        Count: 50
+  - Id: 1015
+    Title: "Skill 2 Rank C"
+    Targets:
+      - Mob: HARWORD
+        Count: 200
+  - Id: 1016
+    Title: "Skill 1 Rank B"
+  - Id: 1017
+    Title: "Skill 2 Rank B"
+    Targets:
+      - Mob: SEYREN
+        Count: 10
+  - Id: 2001
+    Title: "Skill 1 Rank A"
+  - Id: 2002
+    Title: "Rank A: Doton"
+    Targets:
+      - Mob: SCORPION
+        Count: 1
+  - Id: 2003
+    Title: "Rank A: Fuuton"
+    Targets:
+      - Mob: SCORPION
+        Count: 1
+  - Id: 2004
+    Title: "Rank A: Katon"
+    Targets:
+      - Mob: SCORPION
+        Count: 1
+  - Id: 2005
+    Title: "Rank A: Raiton"
+    Targets:
+      - Mob: SCORPION
+        Count: 1
+  - Id: 2006
+    Title: "Rank A: Suiton"
+    Targets:
+      - Mob: SCORPION
+        Count: 1
+  - Id: 2007
+    Title: "Rank C: Estudo intermediário"
+  - Id: 2008
+    Title: "Kunai refinada"
+  - Id: 2009
+    Title: "alfaiate"
+    Targets:
+      - Mob: TENGU
+        Count: 100
+  - Id: 2010
+    Title: "botanico"
+    Targets:
+      - Mob: GIANT_HONET
+        Count: 100
+  - Id: 2011
+    Title: "construtor"
+    Targets:
+      - Mob: ARCLOUSE
+        Count: 100
+  - Id: 2012
+    Title: "cozinheiro"
+    Targets:
+      - Mob: CONDOR
+        Count: 100
+  - Id: 2013
+    Title: "ferreiro"
+    Targets:
+      - Mob: GOLEM
+        Count: 100
+  - Id: 2014
+    Title: "Zambatô Refinada"
+  - Id: 2015
+    Title: "Bastão Fino"
+  - Id: 2016
+    Title: "Soqueira Fina"
+  - Id: 2017
+    Title: "Newbie quest - hospital"
+  - Id: 2018
+    Title: "Newbie quest - Armazém"
+  - Id: 2019
+    Title: "Newbie quest - Sato"
+  - Id: 2020
+    Title: "Newbie quest - girinos"
+    Targets:
+      - Mob: THARA_FROG
+        Count: 10
+  - Id: 2021
+    Title: "Newbie quest - Guarda ando"
+  - Id: 2022
+    Title: "Newbie quest - esgoto"
+    Targets:
+      - Mob: FARMILIAR
+        Count: 20
+  - Id: 2023
+    Title: "Newbie quest - Escritório do kage"
+  - Id: 2024
+    Title: "Newbie quest - Guarda ito"
+  - Id: 2025
+    Title: "Newbie quest - bichoujis"
+    Targets:
+      - Mob: THIEF_BUG
+        Count: 20
+  - Id: 2026
+    Title: "Newbie quest - Equipes - final"
+  - Id: 2027
+    Title: "Newbie quest - Planta"
+  - Id: 2028
+    Title: "Newbie quest - Genins"
+  - Id: 2029
+    Title: "Newbie quest - Genins"
+  - Id: 2030
+    Title: "Profissão: Lenhador"
+    Targets:
+      - Mob: GHOUL
+        Count: 100
+  - Id: 2031
+    Title: "Profissão: Pescador"
+    Targets:
+      - Mob: TOGASHIRO
+        Count: 100
+  - Id: 2032
+    Title: "Profissão: Mineirador"
+    Targets:
+      - Mob: KAVAC
+        Count: 100
+  - Id: 2033
+    Title: "Profissão: Agricultor"
+    Targets:
+      - Mob: WHITE_PLANT
+        Count: 100
+  - Id: 2034
+    Title: "Job Change to Alchemist"
+  - Id: 2035
+    Title: "Job Change to Alchemist"
+  - Id: 2036
+    Title: "Job Change to Alchemist"
+  - Id: 2037
+    Title: "Job Change to Alchemist"
+  - Id: 2038
+    Title: "Job Change to Alchemist"
+  - Id: 2039
+    Title: "Job Change to Alchemist"
+  - Id: 2040
+    Title: "Job Change to Alchemist"
+  - Id: 2041
+    Title: "Genjutsu básico: Raigen Raikouchuu"
+  - Id: 2042
+    Title: "Genjutsu básico: Jigoku Kouka no Jutsu"
+  - Id: 2043
+    Title: "Genjutsu básico: Kanashibari no Genjutsu"
+  - Id: 2044
+    Title: "Genjutsu básico: Fukai Yasumi"
+  - Id: 2045
+    Title: "Genjutsu básico: Nehan Shouja no Jutsu"
+  - Id: 2046
+    Title: "Genjutsu intermediário: Genjutsu no Harg"
+    Targets:
+      - Mob: SNAKE
+        Count: 35
+  - Id: 2047
+    Title: "Genjutsu intermediário: Kokohi Tatakai"
+    Targets:
+      - Mob: POISON_TOAD
+        Count: 30
+  - Id: 2048
+    Title: "Genjutsu intermediário: Jigyaku no Chakra"
+    Targets:
+      - Mob: POPORING
+        Count: 30
+  - Id: 2049
+    Title: "Genjutsu intermediário: Sakki no Jutsu"
+    Targets:
+      - Mob: KOBOLD_LEADER
+        Count: 30
+  - Id: 2050
+    Title: "Genjutsu intermediário: Goukan Sakusou"
+    Targets:
+      - Mob: MOLE
+        Count: 30
+  - Id: 2051
+    Title: "Genjutsu intermediário: Ryou Mayakashi no Jutsu"
+    Targets:
+      - Mob: GHOUL
+        Count: 25
+  - Id: 2052
+    Title: "Genjutsu Avançado: Idou no Kaibutsu"
+    Targets:
+      - Mob: TOAD
+        Count: 20
+  - Id: 2053
+    Title: "Genjutsu Avançado: Bakuhatsu Kemuri"
+    Targets:
+      - Mob: GRIZZLY
+        Count: 20
+  - Id: 2054
+    Title: "Genjutsu Avançado: Konohi Kemuri"
+    Targets:
+      - Mob: DARK_SNAKE_LORD
+        Count: 20
+  - Id: 2055
+    Title: "Genjutsu Avançado: Fukai Kemuri"
+    Targets:
+      - Mob: YOYO
+        Count: 20
+  - Id: 2056
+    Title: "Genjutsu Avançado: Miro no Gen"
+    Targets:
+      - Mob: VERIT
+        Count: 20
+  - Id: 2057
+    Title: "Taijutsu básico: Kage Buyou"
+  - Id: 2058
+    Title: "Taijutsu básico: Shippo Tetsu Rendan"
+  - Id: 2059
+    Title: "Taijutsu básico: Jyuuken Ryuu"
+  - Id: 2060
+    Title: "Taijutsu básico: Remover Armadilha"
+  - Id: 2061
+    Title: "Taijutsu básico: Shikomishindan"
+  - Id: 2062
+    Title: "Taijutsu básico: Tokken"
+  - Id: 2063
+    Title: "Taijutsu intermediário: Dinamyc Entry"
+    Targets:
+      - Mob: POISON_TOAD
+        Count: 30
+  - Id: 2064
+    Title: "Taijutsu intermediário: Chakra no Mesu"
+    Targets:
+      - Mob: POPORING
+        Count: 30
+  - Id: 2065
+    Title: "Taijutsu intermediário: Senton Kaisen"
+    Targets:
+      - Mob: KOBOLD_LEADER
+        Count: 30
+  - Id: 2066
+    Title: "Taijutsu intermediário: Hakkeshou Gutten"
+    Targets:
+      - Mob: MOLE
+        Count: 30
+  - Id: 2067
+    Title: "Taijutsu intermediário: Hakke Kuushou"
+    Targets:
+      - Mob: GHOUL
+        Count: 25
+  - Id: 2068
+    Title: "Taijutsu intermediário: Dekopin"
+    Targets:
+      - Mob: UNGOLIANT
+        Count: 25
+  - Id: 2069
+    Title: "Taijutsu intermediário: Contra-Ataque"
+    Targets:
+      - Mob: AGAV
+        Count: 25
+  - Id: 2070
+    Title: "Taijutsu intermediário: Souryuu Dai Senkai"
+    Targets:
+      - Mob: BLOODY_MURDERER
+        Count: 25
+  - Id: 2071
+    Title: "Taijutsu intermediário: Dai Senkou"
+  - Id: 2072
+    Title: "Taijutsu intermediário: Genzouga"
+    Targets:
+      - Mob: THIEF_BUG_
+        Count: 30
+  - Id: 2073
+    Title: "Taijutsu Avançado: Cambalhota"
+    Targets:
+      - Mob: TOAD
+        Count: 20
+  - Id: 2074
+    Title: "Taijutsu Avançado: Sawarabi no Mai"
+  - Id: 2075
+    Title: "Taijutsu Avançado: TsuutenKyaku"
+  - Id: 2076
+    Title: "Taijutsu Avançado: Shoufuu Rendan"
+  - Id: 2077
+    Title: "Taijutsu Avançado: Muralha de Chakra"
+  - Id: 2078
+    Title: "Taijutsu Avançado: Rasengan"
+  - Id: 2079
+    Title: "Medicina básico: Raigen Raikouchuu"
+  - Id: 2080
+    Title: "Medicina básico: Jigoku Kouka no Jutsu"
+  - Id: 2081
+    Title: "Medicina básico: Kanashibari no Genjutsu"
+  - Id: 2082
+    Title: "Medicina básico: Fukai Yasumi"
+  - Id: 2083
+    Title: "Medicina básico: Nehan Shouja no Jutsu"
+  - Id: 2084
+    Title: "Medicina intermediário: Kage Kubi Shibari no Jutsu"
+  - Id: 2085
+    Title: "Medicina intermediário: Masei Seijutsu"
+  - Id: 2086
+    Title: "Medicina intermediário: Tsubaki no Mai"
+    Targets:
+      - Mob: POPORING
+        Count: 30
+  - Id: 2087
+    Title: "Medicina intermediário: Benção"
+    Targets:
+      - Mob: KOBOLD_LEADER
+        Count: 30
+  - Id: 2088
+    Title: "Medicina intermediário: Nikudan Sensha"
+    Targets:
+      - Mob: MOLE
+        Count: 30
+  - Id: 2089
+    Title: "Medicina Avançado: Shugo Hakke Rokujuuyonshou"
+    Targets:
+      - Mob: TOAD
+        Count: 20
+  - Id: 2090
+    Title: "Medicina Avançado: Suiken Ryuu"
+  - Id: 2091
+    Title: "Medicina Avançado: Kujaku Myoho"
+    Targets:
+      - Mob: DARK_SNAKE_LORD
+        Count: 20
+  - Id: 2092
+    Title: "Medicina Avançado: Shouen no Jutsu"
+    Targets:
+      - Mob: YOYO
+        Count: 20
+  - Id: 2093
+    Title: "Fuuinjutsu básico: Jiun Jutsu"
+  - Id: 2094
+    Title: "Fuuinjutsu básico: Mahi no Jutsu"
+  - Id: 2095
+    Title: "Fuuinjutsu básico: Aura Ninja"
+  - Id: 2109
+    Title: "Fuuinjutsu básico: Proteção Nina"
+  - Id: 2110
+    Title: "Fuuinjutsu intermediário: Jhoko Boom"
+    Targets:
+      - Mob: SNAKE
+        Count: 35
+  - Id: 2111
+    Title: "Fuuinjutsu intermediário: Wheel Kessho"
+    Targets:
+      - Mob: POISON_TOAD
+        Count: 30
+  - Id: 2112
+    Title: "Fuuinjutsu intermediário: Kaisher"
+    Targets:
+      - Mob: POPORING
+        Count: 30
+  - Id: 2113
+    Title: "Fuuinjutsu intermediário: Shikon no Jutsu"
+    Targets:
+      - Mob: KOBOLD_LEADER
+        Count: 30
+  - Id: 2114
+    Title: "Fuuinjutsu Avançado: Shiki Fuujin"
+    Targets:
+      - Mob: TOAD
+        Count: 20
+  - Id: 2115
+    Title: "Fuuinjutsu Avançado: Doryuu Heki"
+    Targets:
+      - Mob: GRIZZLY
+        Count: 20
+  - Id: 2116
+    Title: "Fuuinjutsu Avançado: Mushi Kame no Jutsu"
+    Targets:
+      - Mob: DARK_SNAKE_LORD
+        Count: 20
+  - Id: 2117
+    Title: "Fuuinjutsu Avançado: Chikatsu no Jutsu"
+    Targets:
+      - Mob: YOYO
+        Count: 20
+  - Id: 2118
+    Title: "Aprender ninjutsu básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2119
+    Title: "Aprender taijutsu básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2120
+    Title: "Aprender genjutsu básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2121
+    Title: "Aprender medicina básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2122
+    Title: "Aprender fuuinjutsu básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2123
+    Title: "Aprender velocidade básico"
+    Targets:
+      - Mob: KUKRE
+        Count: 40
+  - Id: 2124
+    Title: "Pergaminho Elemental Fuuton"
+  - Id: 2125
+    Title: "Pergaminho Elemental Doton"
+  - Id: 2126
+    Title: "Pergaminho Elemental Katon"
+  - Id: 2127
+    Title: "Pergaminho Elemental Suiton"
+  - Id: 2128
+    Title: "Pergaminho Elemental Raiton"
+  - Id: 2129
+    Title: "tsutenkyaku"
+  - Id: 2130
+    Title: "Fuuinjutsu básico: glória"
+  - Id: 2131
+    Title: "dekopin"
+  - Id: 2143
+    Title: "Guild Dungeon Event"
+    TimeLimit: +50s
+  - Id: 2144
+    Title: "Guild Dungeon Event"
+  - Id: 2147
+    Title: "Kunai Reforçada"
+  - Id: 2148
+    Title: "Shuriken Reforçada"
+  - Id: 2149
+    Title: "Lâmina Pesada"
+  - Id: 2150
+    Title: "Waki Reforçada"
+  - Id: 2151
+    Title: "Katana Pesada"
+  - Id: 2152
+    Title: "Ninja-to Reforçada"
+  - Id: 2153
+    Title: "Zambatô Reforçada"
+  - Id: 2154
+    Title: "Bastão Pesado"
+  - Id: 2155
+    Title: "Soqueira Pesada"
+  - Id: 2156
+    Title: "Kunai Avançada"
+  - Id: 2157
+    Title: "Shuriken Avançada"
+  - Id: 2158
+    Title: "Lâmina Curva"
+  - Id: 2159
+    Title: "Waki Avançada"
+  - Id: 2179
+    Title: "Katana Curva"
+  - Id: 2180
+    Title: "Ninja-to Avançada"
+  - Id: 2181
+    Title: "Zambatô Avançada"
+  - Id: 2182
+    Title: "Bastão Curvo"
+  - Id: 2183
+    Title: "Soqueira Protegida"
+  - Id: 2184
+    Title: "Kunai-Espada"
+  - Id: 2185
+    Title: "Shuriken das Sombras"
+  - Id: 2186
+    Title: "Lâmina Forte"
+  - Id: 2187
+    Title: "Lâmina Forte"
+  - Id: 2188
+    Title: "Lâmina Forte"
+  - Id: 2189
+    Title: "Lâmina Forte"
+  - Id: 2190
+    Title: "Lâmina Forte"
+  - Id: 2191
+    Title: "Lâmina Forte"
+  - Id: 3000
+    Title: "Waki Enrriquecida"
+  - Id: 3001
+    Title: "Katana Forte"
+  - Id: 3002
+    Title: "Zambatô Enriquecida"
+  - Id: 3003
+    Title: "Bastão Forte"
+  - Id: 3006
+    Title: "Soqueira Forte"
+    Targets:
+      - Mob: BRILIGHT
+        Count: 50
+  - Id: 3007
+    Title: "Kunai Gigante"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3008
+    Title: "Shuriken Gigante"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3009
+    Title: "Lâmina Especial"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3010
+    Title: "Waki Gigante"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3011
+    Title: "Katana Especial"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3012
+    Title: "Ninja-to Gigante"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3013
+    Title: "Zambatô Gigante"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3014
+    Title: "Bastão Especial"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3015
+    Title: "Soqueira Especial"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3016
+    Title: "Kunai Dupla-Lâmina"
+    Targets:
+      - Mob: DRAGON_TAIL
+        Count: 50
+  - Id: 3017
+    Title: "Shuriken de 6 pontas"
+    Targets:
+      - Mob: RAYDRIC
+        Count: 50
+  - Id: 3018
+    Title: "Lâmina Mortal"
+    Targets:
+      - Mob: DRAGON_TAIL
+        Count: 50
+  - Id: 3019
+    Title: "Waki Dupla-Lâmina"
+    Targets:
+      - Mob: RAYDRIC
+        Count: 50
+  - Id: 3020
+    Title: "Katana Mortal"
+    Targets:
+      - Mob: DRAGON_TAIL
+        Count: 50
+  - Id: 3021
+    Title: "Ninja-to Dupla-Lâmina"
+    Targets:
+      - Mob: RAYDRIC
+        Count: 50
+  - Id: 3022
+    Title: "Zambatô Dupla-Lâmina"
+    Targets:
+      - Mob: DRAGON_TAIL
+        Count: 50
+  - Id: 3023
+    Title: "Bastão Mortal"
+    Targets:
+      - Mob: RAYDRIC
+        Count: 50
+  - Id: 3024
+    Title: "Soqueira Mortal"
+    Targets:
+      - Mob: DRAGON_TAIL
+        Count: 50
+  - Id: 3025
+    Title: "Kunai Completa"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3026
+    Title: "Shuriken de 8 pontas"
+    Targets:
+      - Mob: INJUSTICE
+        Count: 50
+  - Id: 3027
+    Title: "Lâmina Encantada"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3028
+    Title: "Waki Completa"
+    Targets:
+      - Mob: INJUSTICE
+        Count: 50
+  - Id: 3029
+    Title: "Katana Encantada"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3030
+    Title: "Ninja-to Completa"
+    Targets:
+      - Mob: INJUSTICE
+        Count: 50
+  - Id: 3031
+    Title: "Zambatô Completa"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3032
+    Title: "Bastão Encantado"
+    Targets:
+      - Mob: INJUSTICE
+        Count: 50
+  - Id: 3040
+    Title: "Soqueira Encantada"
+    Targets:
+      - Mob: PASANA
+        Count: 50
+  - Id: 3041
+    Title: "Kunai Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3042
+    Title: "Shuriken Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3043
+    Title: "Lâmina Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3044
+    Title: "Waki Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3045
+    Title: "Katana Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3046
+    Title: "Ninja-to Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3050
+    Title: "Zambatô Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3051
+    Title: "Bastão Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3052
+    Title: "Soqueira Final"
+    Targets:
+      - Mob: TOAD
+        Count: 50
+  - Id: 3053
+    Title: "Jutsu rank E - Instalar armadilha"
+  - Id: 3054
+    Title: "Jutsu rank E - Salto Ninja"
+  - Id: 3055
+    Title: "Jutsu rank E - Corrida"
+  - Id: 3056
+    Title: "Jutsu rank E - Concentrar chakra nos pés"
+  - Id: 3060
+    Title: "Peregrino1 - Matar Espirito mokuton e raiton"
+  - Id: 3061
+    Title: "Kids in Veins - Find a way to unlock the shackles!"
+  - Id: 3062
+    Title: "Kids in Veins - Find the Locksmith!"
+  - Id: 3063
+    Title: "Kids in Veins - Mr. Lockenlock?"
+  - Id: 3064
+    Title: "Kids in Veins - Organic Chamelepu Soap"
+  - Id: 3065
+    Title: "Kids in Veins - Soap Ingredients"
+  - Id: 3066
+    Title: "Kids in Veins - To make a Chamelepu Soap..."
+  - Id: 3067
+    Title: "Kids in Veins - Camel Appetite Stimulants"
+  - Id: 3068
+    Title: "Kids in Veins - Getting the Camel Dung"
+  - Id: 3069
+    Title: "Kids in Veins - Where's the Silk Sand Camel?"
+  - Id: 3070
+    Title: "Kids in Veins - Silk Sand Camel is gone!"
+  - Id: 3071
+    Title: "Kids in Veins - Silk Sand Camel is found!"
+  - Id: 3072
+    Title: "Kids in Veins - 1 lump of Camel dung obtained"
+  - Id: 3073
+    Title: "Kids in Veins - 2 lumps of Camel dung obtained"
+  - Id: 3074
+    Title: "Kids in Veins - 3 lumps of Camel dung obtained"
+  - Id: 3075
+    Title: "Kids in Veins - 4 lumps of Camel dung obtained"
+  - Id: 3076
+    Title: "Kids in Veins - 5 lumps of Camel dung obtained"
+  - Id: 3077
+    Title: "Kids in Veins - Go to Ms. Ivory"
+  - Id: 3078
+    Title: "Kids in Veins - Chamalepu Soap is completed!"
+  - Id: 3079
+    Title: "Kids in Veins - Making the key mold"
+  - Id: 3080
+    Title: "Kids in Veins - Bringing the key mold"
+  - Id: 3081
+    Title: "Kids in Veins - All you need is Steel!"
+  - Id: 3082
+    Title: "Kids in Veins - The Key is Made!"
+  - Id: 3083
+    Title: "Kids in Veins - Mr. Lockenlock's key"
+  - Id: 3085
+    Title: "Call from the commander"
+  - Id: 3086
+    Title: "Commander's Duty"
+  - Id: 3087
+    Title: "Report to Rune Midgard"
+  - Id: 3088
+    Title: "Report to the continent - Accident!"
+  - Id: 3089
+    Title: "Report to the continent - How to restore"
+  - Id: 3090
+    Title: "Report to the continent - Location of reports"
+  - Id: 3091
+    Title: "Report to the continent - Location of reports"
+  - Id: 3092
+    Title: "Report to the continent - Success to restore!"
+  - Id: 3093
+    Title: "Report to the continent - Report to the continent"
+  - Id: 3094
+    Title: "Report to the continent - Return to the expedition"
+  - Id: 3100
+    Title: "Consolidating Heavy Debt - Lost Bond of Debt"
+  - Id: 3101
+    Title: "Consolidating Heavy Debt - Strange Heap of Earth"
+  - Id: 3102
+    Title: "Consolidating Heavy Debt - Bond of Debt Found,but..."
+  - Id: 3103
+    Title: "Consolidating Heavy Debt - Inventor Dorian"
+  - Id: 3104
+    Title: "Consolidating Heavy Debt - Repair Materials of Magic Dryer"
+  - Id: 3105
+    Title: "Consolidating Heavy Debt - Repairing Magic Dryer"
+  - Id: 3106
+    Title: "vigor"
+  - Id: 3107
+    Title: "Consolidating Heavy Debt - Repairing Magic Dryer Successful"
+  - Id: 3108
+    Title: "Consolidating Heavy Debt - Let's Run the Magic Dryer"
+  - Id: 3109
+    Title: "Consolidating Heavy Debt - Restoring the Bond of Debt"
+  - Id: 3110
+    Title: "Stolen Diamond - Tracking the Diamond"
+  - Id: 3111
+    Title: "Stolen Diamond - Leblo's Favor"
+  - Id: 3112
+    Title: "Stolen Diamond - Wola the Doctor"
+  - Id: 3113
+    Title: "Stolen Diamond - Wola the Doctor"
+  - Id: 3114
+    Title: "Stolen Diamond - Wola the Doctor"
+  - Id: 3115
+    Title: "Stolen Diamond - Leblo's Information"
+  - Id: 3116
+    Title: "Stolen Diamond - Information from Rogue Investigator"
+  - Id: 3117
+    Title: "Stolen Diamond - Odd Switches"
+  - Id: 3118
+    Title: "Stolen Diamond - Diamond Found!"
+  - Id: 3119
+    Title: "Z Gang Wanted - Wanted Notice"
+  - Id: 3120
+    Title: "Z Gang Wanted - About Z Gang"
+  - Id: 3121
+    Title: "Z Gang Wanted - Valdes's Favor"
+  - Id: 3122
+    Title: "Z Gang Wanted - Information from Valdes"
+  - Id: 3123
+    Title: "Z Gang Wanted - Marybell's Test"
+  - Id: 3124
+    Title: "Z Gang Wanted - Challenging Moonho Ahn"
+  - Id: 3125
+    Title: "Z Gang Wanted - Challenging Moonho Ahn"
+  - Id: 3126
+    Title: "Z Gang Wanted - Information from Marybell"
+  - Id: 3127
+    Title: "Z Gang Wanted - Z Gang's Attack"
+  - Id: 3128
+    Title: "Z Gang Wanted - Z Gang's Attack"
+  - Id: 3129
+    Title: "Z Gang Wanted - Strange Letter"
+  - Id: 3130
+    Title: "Z Gang Wanted - Decrypting the letter..."
+  - Id: 3131
+    Title: "Z Gang Wanted - Code's Broken!"
+  - Id: 3132
+    Title: "Z Gang Wanted - Find the Z Gang's Agit"
+  - Id: 3133
+    Title: "Z Gang Wanted - Agit Found!"
+  - Id: 3134
+    Title: "Z Gang Wanted - Clean Sweep of Z Gang"
+  - Id: 3135
+    Title: "Nidhoggur's Nest"
+  - Id: 3136
+    Title: "Nidhoggur's Nest Time Limit"
+  - Id: 4000
+    Title: "Pesquisa: Metamorfose"
+    Targets:
+      - Mob: RICE_CAKE_BOY
+        Count: 1
+  - Id: 4001
+    Title: "Job Change to Hunter"
+  - Id: 4002
+    Title: "Job Change to Hunter"
+  - Id: 4003
+    Title: "Job Change to Hunter"
+  - Id: 4004
+    Title: "Job Change to Hunter"
+  - Id: 4005
+    Title: "Job Change to Hunter"
+  - Id: 4006
+    Title: "Job Change to Hunter"
+  - Id: 4007
+    Title: "Job Change to Hunter"
+  - Id: 4008
+    Title: "Job Change to Hunter"
+  - Id: 4009
+    Title: "Job Change to Hunter"
+  - Id: 4010
+    Title: "Job Change to Hunter"
+  - Id: 4011
+    Title: "Job Change to Hunter - Test"
+  - Id: 4012
+    Title: "Job Change to Hunter"
+  - Id: 4013
+    Title: "Job Change to Hunter"
+  - Id: 4015
+    Title: "Becoming an Adventurer Appraiser"
+  - Id: 4016
+    Title: "Proof of Qualification"
+  - Id: 4017
+    Title: "Qualification Test"
+  - Id: 4018
+    Title: "Preparations for Meeting Princes"
+  - Id: 4020
+    Title: "Interview with the Prince"
+  - Id: 4021
+    Title: "Interview with the Prince"
+  - Id: 4022
+    Title: "Interview with the Prince"
+  - Id: 4023
+    Title: "Interview with the Prince"
+  - Id: 4024
+    Title: "Interview with the Prince"
+  - Id: 4025
+    Title: "Interview with the Prince"
+  - Id: 4026
+    Title: "Interview with the Prince"
+  - Id: 4027
+    Title: "Interview with the Prince"
+  - Id: 4028
+    Title: "The prince,Peter's Favor"
+  - Id: 4029
+    Title: "The Girl's Favor"
+  - Id: 4030
+    Title: "The Story of Ahrum and Ernst"
+  - Id: 4031
+    Title: "The Story of Ahrum and Ernst"
+  - Id: 4032
+    Title: "Conspiracy of the two families"
+  - Id: 4033
+    Title: "Death of Ahrum"
+  - Id: 5000
+    Title: "The Crow of the Fate - 7"
+  - Id: 6000
+    Title: "Job Change to Taekwon"
+  - Id: 6001
+    Title: "Job Change to Taekwon"
+  - Id: 6002
+    Title: "Job Change to Taekwon"
+  - Id: 6005
+    Title: "Job Change to Soul-Linker"
+  - Id: 6006
+    Title: "Job Change to Soul-Linker"
+  - Id: 6007
+    Title: "Job Change to Soul-Linker"
+  - Id: 6008
+    Title: "Job Change to Soul-Linker"
+  - Id: 6010
+    Title: "Job Change to Super Novice"
+  - Id: 6015
+    Title: "A favor from Cougar"
+  - Id: 6016
+    Title: "A favor from a Suspicious Man"
+  - Id: 6017
+    Title: "Red Leopard Joe's Reply"
+  - Id: 6018
+    Title: "Cougar's Madness"
+  - Id: 6020
+    Title: "Master Miller's Letter"
+  - Id: 6021
+    Title: "Wise Bull Horn's voucher"
+  - Id: 6022
+    Title: "Making a voucher"
+  - Id: 6023
+    Title: "Wise Bull Horn's Favor"
+  - Id: 6024
+    Title: "Job Change to Gunslinger!"
+  - Id: 6025
+    Title: "KVM Guillaume"
+    TimeLimit: +5mn
+  - Id: 6026
+    Title: "KVM Croix"
+    TimeLimit: +5mn
+  - Id: 6027
+    Title: "KVM Indicator"
+    TimeLimit: +5mn
+  - Id: 7000
+    Title: "Job Change to Dancer!"
+  - Id: 7001
+    Title: "Job Change to Dancer!"
+  - Id: 7002
+    Title: "Job Change to Dancer!"
+  - Id: 7003
+    Title: "Job Change to Dancer!"
+  - Id: 7004
+    Title: "Job Change to Dancer!"
+  - Id: 7005
+    Title: "Job Change to Dancer!"
+  - Id: 7006
+    Title: "Job Change to Dancer!"
+  - Id: 7007
+    Title: "Warrior of the Sun,the Moon,and the Stars"
+  - Id: 7008
+    Title: "Warrior of the Sun,the Moon,and the Stars - Nature"
+  - Id: 7009
+    Title: "Warrior of the Sun,the Moon,and the Stars - the Altar"
+  - Id: 7010
+    Title: "Warrior of the Sun,the Moon,and the Stars - Stars?"
+  - Id: 7011
+    Title: "Warrior of the Sun,the Moon,and the Stars"
+  - Id: 7012
+    Title: "Pursuing Rayan Moore"
+  - Id: 7013
+    Title: "Pursuing Rayan Moore"
+  - Id: 7014
+    Title: "Pursuing Rayan Moore"
+  - Id: 7015
+    Title: "Pursuing Rayan Moore"
+  - Id: 7016
+    Title: "Pursuing Rayan Moore"
+  - Id: 7017
+    Title: "Pursuing Rayan Moore"
+  - Id: 7018
+    Title: "Pursuing Rayan Moore"
+  - Id: 7019
+    Title: "Pursuing Rayan Moore"
+  - Id: 7020
+    Title: "Pursuing Rayan Moore"
+  - Id: 7021
+    Title: "Pursuing Rayan Moore"
+  - Id: 7022
+    Title: "Pursuing Rayan Moore"
+  - Id: 7023
+    Title: "Pursuing Rayan Moore"
+  - Id: 7024
+    Title: "Pursuing Rayan Moore"
+  - Id: 7025
+    Title: "Pursuing Rayan Moore"
+  - Id: 7026
+    Title: "Pursuing Rayan Moore"
+  - Id: 7027
+    Title: "Pursuing Rayan Moore"
+  - Id: 7028
+    Title: "Pursuing Rayan Moore"
+  - Id: 7029
+    Title: "Pursuing Rayan Moore"
+  - Id: 7030
+    Title: "Pursuing Rayan Moore"
+  - Id: 7031
+    Title: "Pursuing Rayan Moore"
+  - Id: 7032
+    Title: "Pursuing Rayan Moore"
+  - Id: 7033
+    Title: "Pursuing Rayan Moore"
+  - Id: 7034
+    Title: "Pursuing Rayan Moore"
+  - Id: 7035
+    Title: "Pursuing Rayan Moore"
+  - Id: 7036
+    Title: "Pursuing Rayan Moore"
+  - Id: 7037
+    Title: "Case closed?"
+  - Id: 7038
+    Title: "Passion for Baked Sweet Potatoes"
+  - Id: 7039
+    Title: "Dodging the conversation"
+  - Id: 7040
+    Title: "Dodging the conversation"
+  - Id: 7041
+    Title: "Politics is for the Politicians"
+  - Id: 7042
+    Title: "Part-time Job - Tatacho's feed"
+  - Id: 7043
+    Title: "Part-time Job - Cornus's feed"
+  - Id: 7044
+    Title: "Part-time Job - Hillthrion's feed1"
+  - Id: 7045
+    Title: "Part-time Job - Hillthrion's feed2"
+  - Id: 7046
+    Title: "Part-time Job - warm rugs"
+  - Id: 7047
+    Title: "Part-time Job - Let's call it a day!"
+    TimeLimit: +5h
+  - Id: 7048
+    Title: "Thanatos Tower - Burled's Favor"
+  - Id: 7049
+    Title: "Thanatos Tower - Sealed Tower"
+  - Id: 7050
+    Title: "Thanatos Tower - Sealed Tower"
+  - Id: 7051
+    Title: "Thanatos Tower - Sealed Tower"
+  - Id: 7052
+    Title: "Thanatos Tower - Sealed Tower"
+  - Id: 7053
+    Title: "Thanatos Tower - What they want is.."
+  - Id: 7054
+    Title: "Myu's Favor - Teach them a lesson!"
+  - Id: 7055
+    Title: "Myu's Favor - Not the cat!"
+  - Id: 7056
+    Title: "Messenger - Arc's Favor"
+  - Id: 7057
+    Title: "Messenger - Arc's Favor"
+  - Id: 7058
+    Title: "Messenger - Arc's Favor"
+  - Id: 7059
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7060
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7061
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7062
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7063
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7064
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7065
+    Title: "Messenger - Terra's Whereabouts"
+  - Id: 7066
+    Title: "Messenger - Prove the Truth"
+  - Id: 7067
+    Title: "Messenger - Prove the Truth"
+  - Id: 7068
+    Title: "Messenger - Prove the Truth"
+  - Id: 7069
+    Title: "Messenger - Too late!"
+  - Id: 7070
+    Title: "Messenger - Terra's Return"
+  - Id: 7071
+    Title: "Messenger - Invitation"
+  - Id: 7074
+    Title: "Rata Hunt"
+    Targets:
+      - Mob: RATA
+        Count: 1
+  - Id: 7075
+    Title: "Duneyrr Hunt"
+    Targets:
+      - Mob: DUNEYRR
+        Count: 1
+  - Id: 7076
+    Title: "Wanted: Dandelion"
+  - Id: 7077
+    Title: "Collecting Dragon Eggs"
+  - Id: 7078
+    Title: "Collecting Dragon Eggs"
+    TimeLimit: +1d
+  - Id: 7079
+    Title: "Finding Refined Bradium"
+  - Id: 7080
+    Title: "Finding Refined Bradium"
+    TimeLimit: +1d
+  - Id: 7081
+    Title: "Helping the Laphine Craftsman"
+  - Id: 7082
+    Title: "Helping the Laphine Craftsman"
+    TimeLimit: +1d
+  - Id: 8000
+    Title: "Quitting Job Change"
+  - Id: 8001
+    Title: "Job Change to Assassin"
+  - Id: 8002
+    Title: "Job Change to Assassin"
+  - Id: 8003
+    Title: "Job Change to Assassin"
+  - Id: 8004
+    Title: "Job Change to Assassin"
+  - Id: 8005
+    Title: "Job Change to Assassin"
+  - Id: 8006
+    Title: "Find the Guild Master!"
+  - Id: 8007
+    Title: "Acceptance from the Guild Master"
+  - Id: 8008
+    Title: "Job Change to Assassin"
+  - Id: 8009
+    Title: "Applying for Job Change to Priest"
+  - Id: 8010
+    Title: "Job Change to Priest"
+  - Id: 8011
+    Title: "Job Change to Priest"
+  - Id: 8012
+    Title: "Job Change to Priest"
+  - Id: 8013
+    Title: "Job Change to Priest"
+  - Id: 8014
+    Title: "Job Change to Priest"
+  - Id: 8015
+    Title: "Job Change to Priest"
+  - Id: 8016
+    Title: "Job Change to Priest"
+  - Id: 8017
+    Title: "Factory Inspection"
+  - Id: 8018
+    Title: "Factory Inspection"
+  - Id: 8019
+    Title: "Factory Inspection"
+  - Id: 8020
+    Title: "Factory Inspection"
+  - Id: 8021
+    Title: "Factory Inspection"
+  - Id: 8022
+    Title: "Factory Inspection"
+  - Id: 8023
+    Title: "Factory Inspection"
+  - Id: 8024
+    Title: "Factory Inspection"
+  - Id: 8025
+    Title: "Factory Inspection"
+  - Id: 8026
+    Title: "Factory Inspection"
+  - Id: 8027
+    Title: "Factory Inspection"
+  - Id: 8028
+    Title: "Factory Inspection"
+  - Id: 8029
+    Title: "Factory Inspection"
+  - Id: 8030
+    Title: "Factory Inspection"
+  - Id: 8031
+    Title: "Factory Inspection"
+  - Id: 8032
+    Title: "Tarlock's Favor"
+  - Id: 8033
+    Title: "Ferlock's Favor"
+  - Id: 8034
+    Title: "Ferlock's Favor"
+  - Id: 8035
+    Title: "How the Airship Works"
+  - Id: 8036
+    Title: "Hallen's Favor"
+  - Id: 8037
+    Title: "The Dice Roller"
+  - Id: 8038
+    Title: "The Dice Roller"
+  - Id: 8039
+    Title: "Secret of Airships"
+  - Id: 8040
+    Title: "Secret of Airships"
+  - Id: 8041
+    Title: "Secret of Airships"
+  - Id: 8042
+    Title: "Secret of Airships"
+  - Id: 8043
+    Title: "Secret of Airships"
+  - Id: 8044
+    Title: "Euslan's Fiancee"
+  - Id: 8045
+    Title: "Tips from Kaci"
+  - Id: 8046
+    Title: "Ferlock's Passengers list"
+  - Id: 8047
+    Title: "Euslan's Favor"
+  - Id: 8048
+    Title: "Eukran's Testimony"
+  - Id: 8049
+    Title: "Thierry's Favor"
+  - Id: 8050
+    Title: "Danger coming on to Thierry"
+  - Id: 8051
+    Title: "Euslan's Medicine"
+  - Id: 8052
+    Title: "Thierry's Favor"
+  - Id: 8053
+    Title: "Find Postell"
+  - Id: 8054
+    Title: "Message from Postell"
+  - Id: 8055
+    Title: "Nursing Allen"
+  - Id: 8056
+    Title: "Little something in return"
+  - Id: 8057
+    Title: "Grumbling Manainne"
+  - Id: 8058
+    Title: "Conversation with El Schatt"
+  - Id: 8059
+    Title: "Conversation with Perfitz"
+  - Id: 8060
+    Title: "Stubborn El Schatt"
+  - Id: 8061
+    Title: "Stories of the past"
+  - Id: 8062
+    Title: "Kanainne"
+  - Id: 8063
+    Title: "Kanainne's spirit"
+  - Id: 8064
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8065
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8066
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8067
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8068
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8069
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8070
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8071
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8072
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8073
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8074
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8075
+    Title: "Cellette's Fish Cake Soup"
+  - Id: 8076
+    Title: "Klitzer and Calla"
+  - Id: 8077
+    Title: "Klitzer and Calla"
+  - Id: 8078
+    Title: "Klitzer and Calla"
+  - Id: 8079
+    Title: "Klitzer and Calla"
+  - Id: 8080
+    Title: "Klitzer and Calla"
+  - Id: 8081
+    Title: "Klitzer and Calla"
+  - Id: 8082
+    Title: "Klitzer and Calla"
+  - Id: 8083
+    Title: "Klitzer and Calla"
+  - Id: 8084
+    Title: "Klitzer and Calla"
+  - Id: 8085
+    Title: "Klitzer and Calla"
+  - Id: 8086
+    Title: "Klitzer and Calla"
+  - Id: 8087
+    Title: "Klitzer and Calla"
+  - Id: 8088
+    Title: "Klitzer and Calla"
+  - Id: 8089
+    Title: "Stolen Gemstone"
+  - Id: 8090
+    Title: "Mr. Manson"
+  - Id: 8091
+    Title: "Jenny the gardener"
+  - Id: 8092
+    Title: "Searching the Market"
+  - Id: 8093
+    Title: "Mysterious Message"
+  - Id: 8094
+    Title: "Double Crossed?"
+  - Id: 8095
+    Title: "Find Phobe"
+  - Id: 8096
+    Title: "Stolen Gemstone Found"
+  - Id: 8097
+    Title: "Informing Jenny"
+  - Id: 8098
+    Title: "Keeping the Secret"
+  - Id: 8099
+    Title: "Vincent's Recommendation"
+  - Id: 8100
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8101
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8102
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8103
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8104
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8105
+    Title: "Recommendation from High Priest Zhed"
+  - Id: 8106
+    Title: "Mr. Shendar's daughter"
+  - Id: 8107
+    Title: "Lachellen's Testimony"
+  - Id: 8108
+    Title: "A Foreigner,Katinshuell"
+  - Id: 8109
+    Title: "Bruspetti's scent"
+  - Id: 8110
+    Title: "Bruspetti's scent"
+  - Id: 8111
+    Title: "Lachellen's Testimony"
+  - Id: 8112
+    Title: "Freya's Spring"
+  - Id: 8113
+    Title: "Bruspetti's Diary"
+  - Id: 8114
+    Title: "Bruspetti's Diary"
+  - Id: 8115
+    Title: "Suspicious Katinshuell"
+  - Id: 8116
+    Title: "Lachellen's Testimony"
+  - Id: 8117
+    Title: "Freya's Spring"
+  - Id: 8118
+    Title: "Conversation with Mr. Shendar"
+  - Id: 8119
+    Title: "Bruspetti's Diary"
+  - Id: 8120
+    Title: "Conversation with Katinshuell"
+  - Id: 8121
+    Title: "Conversation with Katinshuell"
+  - Id: 8122
+    Title: "Bruspetti's resting place"
+  - Id: 8123
+    Title: "Ayotaya's world famous dish,Tom Yum Goong"
+  - Id: 8124
+    Title: "Ayotaya's world famous dish,Tom Yum Goong"
+  - Id: 8125
+    Title: "Ayotaya's world famous dish,Tom Yum Goong"
+  - Id: 8126
+    Title: "Ayotaya's world famous dish,Tom Yum Goong"
+  - Id: 8127
+    Title: "Momotaro Field Trip"
+  - Id: 8128
+    Title: "Momotaro Field Trip"
+  - Id: 8129
+    Title: "Momotaro Field Trip"
+  - Id: 8130
+    Title: "Momotaro Field Trip"
+  - Id: 8131
+    Title: "The mother of lord in Amatsu"
+  - Id: 8132
+    Title: "The mother of lord in Amatsu"
+  - Id: 8133
+    Title: "Song of the fox"
+  - Id: 8134
+    Title: "Boy at the Northern Shrine"
+  - Id: 8135
+    Title: "Fox Expelled"
+  - Id: 8136
+    Title: "The Gray Wolf's Warning"
+  - Id: 8137
+    Title: "Finding the Keymaker"
+  - Id: 8138
+    Title: "Blacksmith's Request"
+  - Id: 8139
+    Title: "The Golden Key"
+  - Id: 8140
+    Title: "The Red Ring"
+  - Id: 8141
+    Title: "Mashenka's Red Ring"
+  - Id: 8142
+    Title: "Searching the Marsh"
+  - Id: 8143
+    Title: "The Flute's Voice"
+  - Id: 8144
+    Title: "Ryubaba's Confession"
+  - Id: 8145
+    Title: "Worried Mother's Request"
+  - Id: 8146
+    Title: "Finding Lusalka"
+  - Id: 8147
+    Title: "Lusalka's Beloved"
+  - Id: 8148
+    Title: "Lusalka's Beloved"
+  - Id: 8149
+    Title: "Searching for Igor"
+  - Id: 8150
+    Title: "Igor's message"
+  - Id: 8151
+    Title: "Marozka's Cave"
+  - Id: 8152
+    Title: "The Golden Thread"
+  - Id: 8153
+    Title: "Test of mind and wisdom"
+  - Id: 8154
+    Title: "The Keymaker"
+  - Id: 8155
+    Title: "Baba Yaga's Favor"
+  - Id: 8156
+    Title: "Baba Yaga's Favor"
+  - Id: 8157
+    Title: "Baba Yaga's Favor"
+  - Id: 8158
+    Title: "Baba Yaga's Favor"
+  - Id: 8159
+    Title: "Baba Yaga's Favor"
+  - Id: 8160
+    Title: "Baba Yaga's Favor"
+  - Id: 8161
+    Title: "Baba Yaga's Favor"
+  - Id: 8162
+    Title: "Baba Yaga's Favor"
+  - Id: 8163
+    Title: "Baba Yaga's Favor"
+  - Id: 8164
+    Title: "Baba Yaga's Favor"
+  - Id: 8165
+    Title: "Baba Yaga's Favor"
+  - Id: 8166
+    Title: "Baba Yaga's Favor"
+  - Id: 8167
+    Title: "The Golden Key"
+  - Id: 8168
+    Title: "Koshei,the Immortal"
+  - Id: 8169
+    Title: "Living and Dead Water"
+  - Id: 8170
+    Title: "Living and Dead Water"
+  - Id: 8171
+    Title: "Living and Dead Water"
+  - Id: 8181
+    Title: "Sight Blaster"
+  - Id: 8182
+    Title: "Push Back Theory"
+  - Id: 8183
+    Title: "Sight Blaster"
+  - Id: 8184
+    Title: "Elemental Converter"
+  - Id: 8185
+    Title: "Elemental Change"
+  - Id: 8186
+    Title: "Fire Elemental Change"
+  - Id: 8187
+    Title: "Earth Elemental Change"
+  - Id: 8188
+    Title: "Wind Elemental Change"
+  - Id: 8189
+    Title: "Water Elemental Change"
+  - Id: 8190
+    Title: "Charming Wink"
+  - Id: 8191
+    Title: "Charming Advisor"
+  - Id: 8192
+    Title: "Selfish Advisor"
+  - Id: 8193
+    Title: "Selfish Advisor"
+  - Id: 8194
+    Title: "Drunken Advisor"
+  - Id: 8195
+    Title: "Kind Canell"
+  - Id: 8196
+    Title: "The Tripartite Union's Feud"
+  - Id: 8197
+    Title: "Document Delivery"
+  - Id: 8198
+    Title: "Report to the United Research Official"
+  - Id: 8199
+    Title: "United Research Official's Favor"
+  - Id: 8200
+    Title: "Ryosen's Document Requests"
+  - Id: 8201
+    Title: "Missing Document"
+  - Id: 8202
+    Title: "Document Restoration"
+  - Id: 8203
+    Title: "Document Restoration"
+  - Id: 8204
+    Title: "Ryosen"
+  - Id: 8205
+    Title: "Report to the United Research Official"
+  - Id: 8206
+    Title: "Researchers' Meeting"
+  - Id: 8207
+    Title: "Hansenne is not guilty."
+  - Id: 8208
+    Title: "Hansenne's Favor"
+  - Id: 8209
+    Title: "Hue's Report"
+  - Id: 8210
+    Title: "Report to the United Research Official"
+  - Id: 8211
+    Title: "Shurank's Lecture"
+  - Id: 8212
+    Title: "Shurank's Lecture"
+  - Id: 8213
+    Title: "Shurank's Lecture"
+  - Id: 8214
+    Title: "Shurank's Lecture"
+  - Id: 8215
+    Title: "Shurank's Lecture"
+  - Id: 8216
+    Title: "Shurank's Order"
+  - Id: 8217
+    Title: "Dequ'ee's Message"
+  - Id: 8218
+    Title: "Shurank's Lecture"
+  - Id: 8219
+    Title: "Shurank's Lecture"
+  - Id: 8220
+    Title: "Shurank's Lecture"
+  - Id: 8221
+    Title: "Shurank's Lecture"
+  - Id: 8222
+    Title: "Shurank's order"
+  - Id: 8223
+    Title: "Dequ'ee's order"
+  - Id: 8224
+    Title: "The clue"
+  - Id: 8225
+    Title: "Dequ'ee's Reasoning"
+  - Id: 8226
+    Title: "Bankley's Death"
+  - Id: 8227
+    Title: "Return to Shurank"
+  - Id: 8228
+    Title: "Shurank's Lecture"
+  - Id: 8229
+    Title: "Guarnien's Lecture"
+  - Id: 8230
+    Title: "Guarnien's Lecture"
+  - Id: 8231
+    Title: "Guarnien's Lecture"
+  - Id: 8232
+    Title: "Guarnien's Lecture"
+  - Id: 8233
+    Title: "Guarnien's Lecture"
+  - Id: 8234
+    Title: "Prontera Market Research"
+  - Id: 8235
+    Title: "Guarnien's Lecture"
+  - Id: 8236
+    Title: "Guarnien's Lecture"
+  - Id: 8237
+    Title: "Guarnien's Lecture"
+  - Id: 8238
+    Title: "Guarnien's Lecture"
+  - Id: 8239
+    Title: "Guarnien's Lecture"
+  - Id: 8240
+    Title: "Guarnien's Lecture"
+  - Id: 8241
+    Title: "Collection of Red Jewel"
+  - Id: 8242
+    Title: "Collection of blue Jewel"
+  - Id: 8243
+    Title: "Learning new languages"
+  - Id: 8244
+    Title: "Fairies and Tree Giants"
+  - Id: 8245
+    Title: "Language sample investigation"
+  - Id: 8246
+    Title: "Language sample investigation"
+  - Id: 8247
+    Title: "Research progress"
+  - Id: 8248
+    Title: "Research progress"
+  - Id: 8249
+    Title: "Compressing Information"
+  - Id: 8250
+    Title: "Storage Gem"
+  - Id: 8251
+    Title: "Injection of Magic"
+  - Id: 8252
+    Title: "Handworked jewels"
+  - Id: 8253
+    Title: "Language translation device"
+    TimeLimit: +1h
+  - Id: 9000
+    Title: "Job Change to Knight"
+  - Id: 9001
+    Title: "Loyalty of a Knight"
+  - Id: 9002
+    Title: "Loyalty of a Knight"
+  - Id: 9003
+    Title: "The Honor of a Knight"
+  - Id: 9004
+    Title: "The Honor of a Knight"
+  - Id: 9005
+    Title: "Tenacity of a Knight"
+  - Id: 9006
+    Title: "Tenacity of a Knight"
+  - Id: 9007
+    Title: "The Honor of a Knight"
+  - Id: 9008
+    Title: "Etiquette as a Knight"
+  - Id: 9009
+    Title: "Life as a Knight"
+  - Id: 9010
+    Title: "Quality of reverence"
+  - Id: 9011
+    Title: "Life as a Knight"
+  - Id: 9012
+    Title: "Glory of a Knight!"
+  - Id: 9013
+    Title: "Job Change to Wizard"
+  - Id: 9014
+    Title: "Job Change to Wizard"
+  - Id: 9015
+    Title: "Job Change to Wizard"
+  - Id: 9016
+    Title: "Job Change to Wizard"
+  - Id: 9017
+    Title: "Job Change to Wizard"
+  - Id: 9018
+    Title: "Certified as a Wizard!"
+  - Id: 9058
+    Title: "O'Riley's Request"
+  - Id: 9059
+    Title: "Happy St. Patrick's Day"
+  - Id: 9117
+    Title: "Lina's Curse"
+  - Id: 9118
+    Title: "Lina's Curse - Deviruchi Hunt"
+  - Id: 9119
+    Title: "Lina's Curse - Wraith Dead Hunt"
+  - Id: 9120
+    Title: "Lina's Curse - Dullahan Hunt"
+  - Id: 9121
+    Title: "Lina's Curse - Nightmare Terror Hunt"
+  - Id: 9122
+    Title: "Lina's Curse"
+  - Id: 9123
+    Title: "Lina's Curse"
+  - Id: 10000
+    Title: "To the Prontera Royal Court"
+  - Id: 10001
+    Title: "Qualification Test"
+  - Id: 10002
+    Title: "Qualification Review"
+  - Id: 10003
+    Title: "Instructions on what to do"
+  - Id: 10004
+    Title: "Interim Report"
+  - Id: 10005
+    Title: "Prince Eigen Ahrum"
+  - Id: 10006
+    Title: "Prince Ernst"
+  - Id: 10007
+    Title: "Prince Poe"
+  - Id: 10008
+    Title: "Prince Peter"
+  - Id: 10009
+    Title: "Prince Urugen"
+  - Id: 10010
+    Title: "Prince Helmut"
+  - Id: 10011
+    Title: "Prince Erich"
+  - Id: 10012
+    Title: "Conversation of the two princes"
+  - Id: 10013
+    Title: "Searching for the unknown girl"
+  - Id: 10014
+    Title: "Back to Peter"
+  - Id: 10015
+    Title: "Test 15"
+  - Id: 10016
+    Title: "A Guest from the Walter Family"
+  - Id: 10017
+    Title: "Conspiracy"
+  - Id: 10018
+    Title: "Villainous Ahrum - Poe"
+  - Id: 10019
+    Title: "Villainous Ahrum - Peter"
+  - Id: 10020
+    Title: "Villainous Ahrum - Erich"
+  - Id: 10021
+    Title: "Villainous Ahrum - Urugen"
+  - Id: 10022
+    Title: "Villainous Ahrum - Helmut"
+  - Id: 10023
+    Title: "Eigen Ahrum and Ernst -Former-"
+  - Id: 10024
+    Title: "Eigen Ahrum and Ernst -Latter-"
+  - Id: 10025
+    Title: "Good-bye,dear!"
+  - Id: 10026
+    Title: "Reforming Meto"
+  - Id: 10027
+    Title: "Reforming Meto"
+  - Id: 10028
+    Title: "Reforming Meto"
+  - Id: 10029
+    Title: "Reforming Meto"
+  - Id: 10030
+    Title: "Reforming Meto"
+  - Id: 10031
+    Title: "Reforming Meto"
+  - Id: 10032
+    Title: "Reforming Meto"
+  - Id: 10033
+    Title: "Reforming Meto"
+  - Id: 10034
+    Title: "Search the knife"
+  - Id: 10035
+    Title: "Deliver the knife"
+  - Id: 10036
+    Title: "Material Supply-Candy"
+  - Id: 10037
+    Title: "Material Supply-Crap Shells"
+  - Id: 10038
+    Title: "Material Supply-Conch"
+  - Id: 10039
+    Title: "Material Supply-Fish Tail"
+  - Id: 10040
+    Title: "Material Supply-White Platter"
+  - Id: 10041
+    Title: "Material Supply-?"
+  - Id: 10042
+    Title: "Find the Piano Keys-5 remained"
+  - Id: 10043
+    Title: "Find the Piano Keys-5 remained"
+  - Id: 10044
+    Title: "Find the Piano Keys-4 remained"
+  - Id: 10045
+    Title: "Find the Piano Keyboard-4 remained"
+  - Id: 10046
+    Title: "Find the Piano Keyboard-3 remained"
+  - Id: 10047
+    Title: "Find the Piano Keyboard-3 remained"
+  - Id: 10048
+    Title: "Find the Piano Keyboard-2 remained"
+  - Id: 10049
+    Title: "Find the Piano Keyboard-2 remained"
+  - Id: 10050
+    Title: "Find the Piano Keyboard-1 remained"
+  - Id: 10051
+    Title: "Find the Piano Keyboard-1 remained"
+  - Id: 10052
+    Title: "Find the Piano Keyboard-To the piano"
+  - Id: 10053
+    Title: "Find the Piano Keyboard-Fill the empty spot"
+  - Id: 10054
+    Title: "On the Verge of the Escape-Clint Kana"
+  - Id: 10055
+    Title: "Understanding the culture of Utan"
+  - Id: 10056
+    Title: "Learning Utan Language"
+  - Id: 10057
+    Title: "Onward to the Other World"
+  - Id: 10058
+    Title: "Onward to the Other World"
+  - Id: 10059
+    Title: "Onward to the Other World"
+  - Id: 10060
+    Title: "Onward to the Other World"
+  - Id: 10061
+    Title: "Onward to the Other World"
+  - Id: 10062
+    Title: "Onward to the Other World"
+  - Id: 10063
+    Title: "Onward to the Other World"
+  - Id: 10064
+    Title: "Onward to the Other World"
+  - Id: 10065
+    Title: "Onward to the Other World"
+  - Id: 10066
+    Title: "Onward to the Other World"
+  - Id: 10067
+    Title: "Onward to the Other World"
+  - Id: 10068
+    Title: "Onward to the Other World"
+  - Id: 10069
+    Title: "Onward to the Other World"
+  - Id: 10070
+    Title: "Onward to the Other World"
+  - Id: 10071
+    Title: "Onward to the Other World"
+  - Id: 10072
+    Title: "Onward to the Other World"
+  - Id: 10073
+    Title: "Onward to the Other World"
+  - Id: 10074
+    Title: "Onward to the Other World"
+  - Id: 10075
+    Title: "Onward to the Other World"
+  - Id: 10076
+    Title: "Onward to the Other World"
+  - Id: 10077
+    Title: "Onward to the Other World"
+  - Id: 10078
+    Title: "Onward to the Other World"
+  - Id: 10079
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10080
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10081
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10082
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10083
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10084
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10085
+    Title: "Escape from the reality,into the broad world"
+    TimeLimit: +1d
+  - Id: 10086
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10087
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10088
+    Title: "Escape from the reality,into the broad world"
+  - Id: 10089
+    Title: "Escape from the reality,into the broad world"
+  - Id: 11000
+    Title: "Inspection of Odin Shrine"
+  - Id: 11001
+    Title: "Inspection of Odin Shrine"
+  - Id: 11002
+    Title: "Inspection of Odin Shrine"
+  - Id: 11003
+    Title: "Inspection of Odin Shrine"
+  - Id: 11004
+    Title: "Inspection of Odin Shrine"
+  - Id: 11005
+    Title: "Inspection of Odin Shrine"
+  - Id: 11006
+    Title: "Inspection of Odin Shrine"
+  - Id: 11007
+    Title: "Inspection of Odin Shrine"
+  - Id: 11008
+    Title: "Inspection of Odin Shrine"
+  - Id: 11009
+    Title: "Morriphen's Request"
+  - Id: 11010
+    Title: "Fetching the medicine"
+  - Id: 11011
+    Title: "Medicine for two"
+  - Id: 11012
+    Title: "Find Makkie"
+  - Id: 11013
+    Title: "Red Plant Stem Powder"
+  - Id: 11014
+    Title: "The researcher's medicine"
+  - Id: 11015
+    Title: "Siria's cure"
+  - Id: 11016
+    Title: "Morriphen's story"
+  - Id: 11017
+    Title: "Exploring Juperos"
+  - Id: 11018
+    Title: "Exploring Juperos"
+  - Id: 11019
+    Title: "Exploring Juperos"
+  - Id: 11020
+    Title: "Exploring Juperos"
+  - Id: 11021
+    Title: "Exploring Juperos"
+  - Id: 11022
+    Title: "Exploring Juperos"
+  - Id: 11029
+    Title: "Going to the Turtle Island.."
+  - Id: 11030
+    Title: "Going to the Turtle Island.."
+  - Id: 11031
+    Title: "Going to the Turtle Island.."
+  - Id: 11032
+    Title: "Going to the Turtle Island.."
+  - Id: 11033
+    Title: "Going to the Turtle Island.."
+  - Id: 11034
+    Title: "Going to the Turtle Island.."
+  - Id: 11035
+    Title: "Going to the Turtle Island.."
+  - Id: 11036
+    Title: "Going to the Turtle Island.."
+  - Id: 11037
+    Title: "Going to the Turtle Island.."
+  - Id: 11038
+    Title: "Meet the Dead"
+  - Id: 11039
+    Title: "Meet the Dead"
+  - Id: 11040
+    Title: "Meet the Dead"
+  - Id: 11041
+    Title: "Meet the Dead"
+  - Id: 11042
+    Title: "Meet the Dead"
+  - Id: 11043
+    Title: "Meet the Dead"
+  - Id: 11044
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11045
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11046
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11047
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11048
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11049
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11050
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11051
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11052
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11053
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11054
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11055
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11056
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11057
+    Title: "Herb Medicine - Being a Doctor's Assistance"
+  - Id: 11070
+    Title: "Poison King"
+  - Id: 11071
+    Title: "Poison King"
+  - Id: 11072
+    Title: "Poison King"
+  - Id: 11073
+    Title: "Poison King"
+  - Id: 11074
+    Title: "Poison King"
+  - Id: 11075
+    Title: "Poison King"
+  - Id: 11076
+    Title: "Poison King"
+  - Id: 11077
+    Title: "Poison King"
+  - Id: 11078
+    Title: "Poison King"
+  - Id: 11079
+    Title: "Poison King"
+  - Id: 11080
+    Title: "Poison King"
+  - Id: 11081
+    Title: "Poison King"
+  - Id: 11082
+    Title: "Poison King"
+  - Id: 11083
+    Title: "Poison King"
+  - Id: 11084
+    Title: "New Surroundings"
+  - Id: 11085
+    Title: "New Surroundings"
+  - Id: 11086
+    Title: "New Surroundings"
+  - Id: 11087
+    Title: "Repairing the Tent"
+  - Id: 11088
+    Title: "Repairing the Tent"
+  - Id: 11089
+    Title: "Repairing the Tent"
+  - Id: 11090
+    Title: "Repairing the Tent"
+  - Id: 11091
+    Title: "Delivering Supplies"
+  - Id: 11092
+    Title: "Delivering Supplies"
+  - Id: 11093
+    Title: "Delivering Supplies"
+  - Id: 11094
+    Title: "Delivering Supplies"
+  - Id: 11095
+    Title: "Delivering Supplies"
+  - Id: 11096
+    Title: "Delivering Supplies"
+  - Id: 11097
+    Title: "Delivering Supplies"
+  - Id: 11098
+    Title: "Delivering Supplies"
+  - Id: 11099
+    Title: "To My Friend"
+  - Id: 11100
+    Title: "To My Friend"
+  - Id: 11101
+    Title: "Secret note of Bazet"
+  - Id: 11102
+    Title: "Secret note of Bazet"
+  - Id: 11103
+    Title: "Secret note of Bazet"
+  - Id: 11104
+    Title: "Resting time"
+  - Id: 11105
+    Title: "Tendrilrion skin"
+  - Id: 12000
+    Title: "An old friend"
+  - Id: 12001
+    Title: "Digotz,Maku's old friend"
+  - Id: 12002
+    Title: "Messenger of Friendship"
+  - Id: 12003
+    Title: "Digotz's message"
+  - Id: 12004
+    Title: "Maku's other friend"
+  - Id: 12005
+    Title: "Benkaistein"
+  - Id: 12006
+    Title: "Benkaistein's lost item"
+  - Id: 12007
+    Title: "Kazien"
+  - Id: 12008
+    Title: "Researcher Garins"
+  - Id: 12009
+    Title: "Failed mission"
+  - Id: 12010
+    Title: "No entrance"
+  - Id: 12011
+    Title: "Lyozien"
+  - Id: 12012
+    Title: "Meet Mr. Ahman"
+  - Id: 12013
+    Title: "Delivery complete"
+  - Id: 12014
+    Title: "More missions"
+  - Id: 12015
+    Title: "Ghalstein"
+  - Id: 12016
+    Title: "Sneaking into the Laboratory"
+  - Id: 12017
+    Title: "Membership approved"
+  - Id: 12018
+    Title: "Meeting the President"
+  - Id: 12019
+    Title: "The President's Mission"
+  - Id: 12020
+    Title: "Rescuing a Secret Wing Member"
+  - Id: 12021
+    Title: "The Sealed File Folder"
+  - Id: 12022
+    Title: "The Sealed File Folder"
+  - Id: 12023
+    Title: "Shinokas the researcher"
+  - Id: 12024
+    Title: "Kafra Corporation Agent"
+  - Id: 12025
+    Title: "Rekenber's Secret Archive"
+  - Id: 12026
+    Title: "Rekenber's Secret Archive"
+  - Id: 12027
+    Title: "Rekenber's Secret Archive"
+  - Id: 12028
+    Title: "Kurelle the traitor"
+  - Id: 12029
+    Title: "Lost Engagement Ring"
+  - Id: 12030
+    Title: "Engagement Ring Found"
+  - Id: 12031
+    Title: "Find Annon"
+  - Id: 12032
+    Title: "Searching for Annon"
+  - Id: 12033
+    Title: "Traces of blood"
+  - Id: 12034
+    Title: "Annon's side of the story"
+  - Id: 12035
+    Title: "Holy Threads"
+  - Id: 12036
+    Title: "The Stone Slate Message"
+  - Id: 12037
+    Title: "Holier Threads"
+  - Id: 12038
+    Title: "Searching for the Sa-mhing Tiger"
+  - Id: 12039
+    Title: "Boonthom's Comrade"
+  - Id: 12040
+    Title: "Benkaistein's Journal"
+  - Id: 12041
+    Title: "Benkaistein's Journal"
+  - Id: 12042
+    Title: "Benkaistein's Journal"
+  - Id: 12043
+    Title: "Pass to the Slums"
+  - Id: 12044
+    Title: "Soothing a crying child 1"
+  - Id: 12045
+    Title: "Soothing a crying child 2"
+  - Id: 12046
+    Title: "Soothing a crying child 3"
+  - Id: 12047
+    Title: "Soothing a crying child 4"
+  - Id: 12048
+    Title: "Soothing a crying child 5"
+  - Id: 12049
+    Title: "Job Quest 1 - Rogue"
+  - Id: 12050
+    Title: "Job Quest 2 - Rogue"
+  - Id: 12051
+    Title: "Job Quest 3 - Rogue"
+  - Id: 12052
+    Title: "Job Quest 4 - Rogue"
+  - Id: 12053
+    Title: "Job Quest 5 - Rogue"
+  - Id: 12054
+    Title: "Job Quest 6 - Rogue"
+  - Id: 12055
+    Title: "Job Quest - Assassin"
+  - Id: 12056
+    Title: "Job Quest - Assassin"
+  - Id: 12057
+    Title: "Pass to the Lab"
+  - Id: 12058
+    Title: "Admission Restricted to the 102 Tower"
+  - Id: 12059
+    Title: "Orc's Memory Time Limit"
+    TimeLimit: +2h40mn
+  - Id: 12060
+    Title: "Today's Fishing Closed"
+    TimeLimit: +1d
+  - Id: 12061
+    Title: "Concentration"
+  - Id: 12062
+    Title: "Today's Mining Closed"
+    TimeLimit: +1d
+  - Id: 12070
+    Title: "Limited time for enter"
+  - Id: 12099
+    Title: "Limited time for enter"
+    Targets:
+      - Mob: IRON_FIST
+        Count: 50
+  - Id: 12100
+    Title: "Limited time for enter"
+  - Id: 12101
+    Title: "Limited time for enter"
+  - Id: 12102
+    Title: "Limited time for enter"
+    Targets:
+      - Mob: CHOCO
+        Count: 50
+  - Id: 12103
+    Title: "Limited time for enter"
+  - Id: 12104
+    Title: "Limited time for enter"
+  - Id: 12090
+    Title: "Limited time for enter"
+    Targets:
+      - Mob: THARA_FROG
+        Count: 50
+  - Id: 12091
+    Title: "Limited time for enter"
+  - Id: 12092
+    Title: "Limited time for enter"
+  - Id: 12096
+    Title: "Limited time for enter"
+    Targets:
+      - Mob: GALION
+        Count: 50
+  - Id: 12097
+    Title: "Limited time for enter"
+  - Id: 12098
+    Title: "Limited time for enter"
+  - Id: 12093
+    Title: "Limited time for enter"
+    Targets:
+      - Mob: SIDE_WINDER
+        Count: 50
+  - Id: 12094
+    Title: "Limited time for enter"
+  - Id: 12095
+    Title: "Limited time for enter"
+  - Id: 16000
+    Title: "Metz Brayde's Notice"
+  - Id: 16001
+    Title: "First examination"
+  - Id: 16002
+    Title: "Fetching Items for Arian -1"
+  - Id: 16003
+    Title: "Fetching Items for Arian -2"
+  - Id: 16004
+    Title: "Fetching Items for Arian -3"
+  - Id: 16005
+    Title: "Fetching Items for Arian -4"
+  - Id: 16006
+    Title: "Fetching Items for Arian -5"
+  - Id: 16007
+    Title: "Fetching Items for Arian -6"
+  - Id: 16008
+    Title: "Quiz time!"
+  - Id: 16009
+    Title: "Quiz time!"
+  - Id: 16010
+    Title: "Daewoon's Test"
+  - Id: 16011
+    Title: "Sir Jore's Test"
+  - Id: 16012
+    Title: "Sir Jore's Materials"
+  - Id: 16013
+    Title: "The Stone of Sage"
+  - Id: 16014
+    Title: "The Stone of Sage"
+  - Id: 16015
+    Title: "Lady Jesqurienne"
+  - Id: 16016
+    Title: "Jesquerinne's Quiz Challenge"
+  - Id: 16017
+    Title: "Failed Quiz Challenge"
+  - Id: 16018
+    Title: "Quiz Challenge Triumph"
+  - Id: 16019
+    Title: "Search for Dearles"
+  - Id: 16020
+    Title: "Dearles' Test"
+  - Id: 16021
+    Title: "Test of Appreciation"
+  - Id: 16022
+    Title: "Dearles' Test Part Two"
+  - Id: 16023
+    Title: "Rhythm Test Passed"
+  - Id: 16024
+    Title: "Find Bakerlan"
+  - Id: 16025
+    Title: "Bakerlan's delivery"
+  - Id: 16026
+    Title: "Mahatra's delivery"
+  - Id: 16027
+    Title: "Bakerlan's Receipt"
+  - Id: 16028
+    Title: "Find Seylin"
+  - Id: 16029
+    Title: "Vigorgra Medicine"
+  - Id: 16030
+    Title: "Vigorgra Ingredients"
+  - Id: 16031
+    Title: "Vigorgra Ingredients"
+  - Id: 16032
+    Title: "Seylin's Request"
+  - Id: 16033
+    Title: "Back to Seylin"
+  - Id: 16034
+    Title: "Back to Mahatra"
+  - Id: 16035
+    Title: "Report to Bakerlan"
+  - Id: 16036
+    Title: "The last Crumb"
+  - Id: 16037
+    Title: "Finding Engel Howard"
+  - Id: 16038
+    Title: "Liana's Letter"
+  - Id: 16039
+    Title: "Combining the Starlight"
+  - Id: 16040
+    Title: "Letter to Engel's Family"
+  - Id: 16041
+    Title: "Talk to Liana"
+  - Id: 16042
+    Title: "Sobbing Starlight Progress"
+  - Id: 16043
+    Title: "Restored Sobbing Starlight"
+  - Id: 16044
+    Title: "Combining the Starlight"
+  - Id: 16045
+    Title: "Starlight message"
+  - Id: 16046
+    Title: "The man in Umbala"
+  - Id: 16047
+    Title: "Into the Tree"
+  - Id: 16048
+    Title: "Ancient Papers"
+  - Id: 16049
+    Title: "Record of Ancient Language"
+  - Id: 16050
+    Title: "The Fastidious Old Man"
+  - Id: 16051
+    Title: "Blurry Vision"
+  - Id: 16052
+    Title: "Translating the Document"
+  - Id: 16053
+    Title: "Translated Ancient Language"
+  - Id: 16054
+    Title: "Where the rejected live"
+  - Id: 16055
+    Title: "Misfortunate of Niflheim"
+  - Id: 16056
+    Title: "Removed Curse"
+  - Id: 16057
+    Title: "Meeting the witch"
+  - Id: 16058
+    Title: "Wing Of Crow"
+  - Id: 16059
+    Title: "Wing Of Crow"
+  - Id: 16060
+    Title: "Misfortunate of Niflheim"
+  - Id: 16061
+    Title: "Bard in Niflheim"
+  - Id: 16062
+    Title: "Gen of Niflheim"
+  - Id: 16063
+    Title: "The Witch's Aid"
+  - Id: 16064
+    Title: "Misfortunate of Niflheim"
+  - Id: 16065
+    Title: "The Queen's Symbol"
+  - Id: 16066
+    Title: "Knowledge of the Symbol"
+  - Id: 16067
+    Title: "Knowledge of Asgard"
+  - Id: 16068
+    Title: "Finding the Soul Pieces"
+  - Id: 16069
+    Title: "Finding the Soul Pieces"
+  - Id: 16070
+    Title: "Finding the Soul Pieces"
+  - Id: 16071
+    Title: "Finding the Soul Pieces"
+  - Id: 16072
+    Title: "Finding the Soul Pieces"
+  - Id: 16073
+    Title: "Agrboda's Soul"
+  - Id: 16074
+    Title: "Symbol of the Nine Realms"
+  - Id: 16075
+    Title: "Serin's Ambitions"
+  - Id: 16076
+    Title: "Witch's Tonic"
+  - Id: 16077
+    Title: "Serin's Release"
+  - Id: 16078
+    Title: "Visit with Lady Hell"
+  - Id: 16079
+    Title: "The Sign"
+  - Id: 16080
+    Title: "Dark Lord's return"
+  - Id: 16081
+    Title: "Serin's Ambitions"
+  - Id: 16082
+    Title: "Dark Lord's return"
+  - Id: 16083
+    Title: "Serin's Realization"
+  - Id: 16084
+    Title: "The Sign"
+  - Id: 16085
+    Title: "The Sign"
+  - Id: 16086
+    Title: "The Sign"
+  - Id: 16087
+    Title: "The Sign"
+  - Id: 16101
+    Title: "Kiel Hyre Academy"
+  - Id: 16102
+    Title: "Kiel Hyre Academy"
+  - Id: 16103
+    Title: "Kiel Hyre Academy"
+  - Id: 16104
+    Title: "Kiel Hyre Academy"
+  - Id: 16105
+    Title: "Kiel Hyre Academy"
+  - Id: 16106
+    Title: "Kiel Hyre Academy"
+  - Id: 16107
+    Title: "Kiel Hyre Academy"
+  - Id: 16108
+    Title: "Kiel Hyre Academy"
+  - Id: 16109
+    Title: "Kiel Hyre Academy"
+  - Id: 16110
+    Title: "Kiel Hyre Academy"
+  - Id: 16111
+    Title: "Kiel Hyre Academy"
+  - Id: 16112
+    Title: "Kiel Hyre Academy"
+  - Id: 16113
+    Title: "Kiel Hyre Academy"
+  - Id: 16114
+    Title: "Kiel Hyre Academy"
+  - Id: 16115
+    Title: "Kiel Hyre Academy"
+  - Id: 16116
+    Title: "Kiel Hyre Academy"
+  - Id: 16117
+    Title: "Mysterious World Map"
+  - Id: 16118
+    Title: "Hidden poem"
+  - Id: 16119
+    Title: "Snake swords"
+  - Id: 16120
+    Title: "A dream?"
+  - Id: 16121
+    Title: "Secret Code?"
+  - Id: 16122
+    Title: "Old Copper Key"
+  - Id: 16123
+    Title: "Green Keycard"
+  - Id: 16124
+    Title: "Steel Box"
+  - Id: 16125
+    Title: "Kiel Hyre Academy"
+  - Id: 16126
+    Title: "Kiel Hyre Academy"
+  - Id: 16127
+    Title: "Kiel Hyre Academy"
+  - Id: 16128
+    Title: "Kiel Hyre Academy"
+  - Id: 16129
+    Title: "Kiel Hyre Academy"
+  - Id: 16130
+    Title: "Kiel Hyre Academy"
+  - Id: 16131
+    Title: "Kiel Hyre Academy"
+  - Id: 16132
+    Title: "Kiel Hyre Academy"
+  - Id: 16133
+    Title: "Kiel Hyre Academy"
+  - Id: 16134
+    Title: "Kiel Hyre Academy"
+  - Id: 16135
+    Title: "Kiel Hyre Academy"
+  - Id: 16136
+    Title: "Kiel Hyre Academy"
+  - Id: 16137
+    Title: "Kiel Hyre Academy"
+  - Id: 16138
+    Title: "Kiel Hyre Academy"
+  - Id: 16139
+    Title: "Kiel Hyre Academy"
+  - Id: 16140
+    Title: "Kiel Hyre Academy"
+  - Id: 16141
+    Title: "Kiel Hyre Academy"
+  - Id: 16142
+    Title: "Kiel Hyre Academy"
+  - Id: 16143
+    Title: "Kiel Hyre Academy"
+  - Id: 16144
+    Title: "Kiel Hyre Academy"
+  - Id: 16145
+    Title: "Kiel Hyre Academy"
+  - Id: 16146
+    Title: "Kiel Hyre Academy"
+  - Id: 16200
+    Title: "Limberg's Request"
+  - Id: 16201
+    Title: "TPS Report"
+  - Id: 16202
+    Title: "TPS Report"
+  - Id: 16203
+    Title: "TPS Report"
+  - Id: 16204
+    Title: "Crack in the Wall"
+  - Id: 16205
+    Title: "The Empty Lava Tube"
+  - Id: 17000
+    Title: "Meet with Father Bamph"
+  - Id: 17001
+    Title: "Meet with Larjes"
+  - Id: 17002
+    Title: "Report to Father Bamph"
+  - Id: 17003
+    Title: "Travel to Rachel"
+  - Id: 17004
+    Title: "Travel to Veins"
+  - Id: 17005
+    Title: "Frustrated Magistrate"
+  - Id: 17006
+    Title: "Interrogated Smugglers"
+  - Id: 17007
+    Title: "Written Orders"
+  - Id: 17008
+    Title: "Investigating"
+  - Id: 17009
+    Title: "More Investigating"
+  - Id: 17010
+    Title: "Further Investigations"
+  - Id: 17011
+    Title: "Kurdi's Father"
+  - Id: 17012
+    Title: "Karyn's Boat"
+  - Id: 17013
+    Title: "To the Island"
+  - Id: 17014
+    Title: "Investigating the Island"
+  - Id: 17015
+    Title: "The Research Note"
+  - Id: 17016
+    Title: "Regicide"
+  - Id: 17017
+    Title: "Reporting the King's Death"
+  - Id: 18001
+    Title: "Delivery for Rooney"
+  - Id: 18002
+    Title: "Delivery for Rooney"
+  - Id: 18003
+    Title: "Delivery for Rooney"
+  - Id: 18004
+    Title: "Lasda's Request"
+  - Id: 18005
+    Title: "Jesse's Request"
+  - Id: 18006
+    Title: "Sir Krieg's Approval"
+  - Id: 18007
+    Title: "Sir Krieg's Trust"
+  - Id: 18008
+    Title: "Sir Krieg's Trust"
+  - Id: 18009
+    Title: "Into the prison"
+  - Id: 18010
+    Title: "Jail Break"
+  - Id: 18011
+    Title: "Bodyguard work"
+  - Id: 18012
+    Title: "Bodyguard work"
+  - Id: 18013
+    Title: "Bodyguard work"
+  - Id: 18014
+    Title: "Bodyguard work"
+  - Id: 18015
+    Title: "Bodyguard work"
+  - Id: 18016
+    Title: "Bodyguard work"
+  - Id: 18017
+    Title: "Jail Break"
+  - Id: 18018
+    Title: "Jail Break"
+  - Id: 18019
+    Title: "Vitre's Songs"
+  - Id: 18020
+    Title: "Vitre's Songs"
+  - Id: 18021
+    Title: "Vitre's Songs"
+  - Id: 18022
+    Title: "Vitre's Songs"
+  - Id: 18023
+    Title: "Vitre the Spy"
+  - Id: 18030
+    Title: "Gaebolg Family Curse"
+  - Id: 18031
+    Title: "Gaebolg Family Curse"
+  - Id: 18032
+    Title: "Gaebolg Family Curse"
+  - Id: 18033
+    Title: "Gaebolg Family Curse"
+  - Id: 18034
+    Title: "Gaebolg Family Curse"
+  - Id: 18035
+    Title: "Gaebolg Family Curse"
+  - Id: 18036
+    Title: "Gaebolg Family Curse"
+  - Id: 18037
+    Title: "Gaebolg Family Curse"
+  - Id: 18038
+    Title: "Gaebolg Family Curse"
+  - Id: 18039
+    Title: "Gaebolg Family Curse"
+  - Id: 18040
+    Title: "Gaebolg Family Curse"
+  - Id: 18041
+    Title: "Gaebolg Family Curse"
+  - Id: 18042
+    Title: "Gaebolg Family Curse"
+  - Id: 18043
+    Title: "Gaebolg Family Curse"
+  - Id: 18044
+    Title: "Gaebolg Family Curse"
+  - Id: 18045
+    Title: "Gaebolg Family Curse"
+  - Id: 18046
+    Title: "Gaebolg Family Curse"
+  - Id: 18047
+    Title: "Gaebolg Family Curse"
+  - Id: 18048
+    Title: "Gaebolg Family Curse"
+  - Id: 18049
+    Title: "Gaebolg Family Curse"
+  - Id: 18050
+    Title: "Gaebolg Family Curse"
+  - Id: 18051
+    Title: "Gaebolg Family Curse"
+  - Id: 18052
+    Title: "Gaebolg Family Curse"
+  - Id: 18060
+    Title: "Missing boy Mikhail"
+  - Id: 18061
+    Title: "Mikhail's Whereabouts"
+  - Id: 18062
+    Title: "Missing boy Mikhail"
+  - Id: 18063
+    Title: "The isolated swamp"
+  - Id: 18064
+    Title: "Back to the Village"
+  - Id: 18065
+    Title: "High-strength Adhesive"
+  - Id: 18066
+    Title: "Back to the swamp"
+  - Id: 18067
+    Title: "Make the paste"
+  - Id: 18068
+    Title: "Fixing the Matrushka"
+  - Id: 18069
+    Title: "Report to Gallina"
+  - Id: 18070
+    Title: "Banishing Winter"
+  - Id: 18071
+    Title: "Making the magic dust"
+  - Id: 18072
+    Title: "Making the magic dust"
+  - Id: 18073
+    Title: "The Dragon's Lair"
+  - Id: 18074
+    Title: "The Magic Gourd Bottle"
+  - Id: 18075
+    Title: "Containing People's Speech"
+  - Id: 18076
+    Title: "Containing People's Speech"
+  - Id: 18077
+    Title: "Csar's Request"
+  - Id: 18078
+    Title: "Baba Yaga's Secret Medicine"
+  - Id: 18079
+    Title: "Winter is Banished"
+  - Id: 18100
+    Title: "Legends from Moscovia"
+  - Id: 18101
+    Title: "The Moving Island"
+  - Id: 18102
+    Title: "In Search of The Moving Island"
+  - Id: 18103
+    Title: "In Search of The Moving Island"
+  - Id: 18104
+    Title: "Mr. Ibanoff's New Friend"
+  - Id: 18105
+    Title: "Repairing Charabel"
+  - Id: 18106
+    Title: "As the Tide Turns"
+  - Id: 18107
+    Title: "Departing"
+  - Id: 18108
+    Title: "The Moving Island?"
+  - Id: 18109
+    Title: "The Moving Island???"
+  - Id: 18110
+    Title: "The Aged Stranger"
+  - Id: 18111
+    Title: "Whale Island!"
+  - Id: 18112
+    Title: "A Story for the Csar"
+  - Id: 18113
+    Title: "Evidence for the Csar"
+  - Id: 18114
+    Title: "Before Sunset"
+  - Id: 18115
+    Title: "Departing"
+  - Id: 18116
+    Title: "Whale Island!"
+  - Id: 18117
+    Title: "Materials for Evidence"
+  - Id: 18118
+    Title: "Mysterious Musical Instrument"
+  - Id: 18119
+    Title: "Gusli"
+  - Id: 18120
+    Title: "Gusli"
+  - Id: 18121
+    Title: "Shafka"
+  - Id: 19101
+    Title: "The Eye of Hellion"
+  - Id: 19102
+    Title: "The Eye of Hellion"
+  - Id: 19103
+    Title: "The Eye of Hellion"
+  - Id: 19104
+    Title: "The Eye of Hellion"
+  - Id: 19105
+    Title: "The Eye of Hellion"
+  - Id: 19106
+    Title: "The Eye of Hellion"
+  - Id: 19107
+    Title: "The Eye of Hellion"
+  - Id: 19108
+    Title: "The Eye of Hellion"
+  - Id: 19109
+    Title: "The Eye of Hellion"
+  - Id: 19110
+    Title: "The Eye of Hellion"
+  - Id: 19111
+    Title: "The Eye of Hellion"
+  - Id: 19112
+    Title: "The Eye of Hellion"
+  - Id: 19113
+    Title: "The Eye of Hellion"
+  - Id: 19114
+    Title: "The Eye of Hellion"
+  - Id: 19115
+    Title: "The Eye of Hellion"
+  - Id: 19116
+    Title: "The Eye of Hellion"
+  - Id: 19117
+    Title: "The Eye of Hellion"
+  - Id: 19118
+    Title: "The Eye of Hellion"
+  - Id: 19119
+    Title: "The Eye of Hellion"
+  - Id: 19120
+    Title: "The Eye of Hellion"
+  - Id: 19121
+    Title: "The Eye of Hellion"
+  - Id: 19122
+    Title: "The Eye of Hellion"
+  - Id: 19123
+    Title: "The Eye of Hellion"
+  - Id: 19124
+    Title: "The Eye of Hellion"
+  - Id: 19125
+    Title: "The Eye of Hellion"
+  - Id: 19126
+    Title: "The Eye of Hellion"
+  - Id: 19127
+    Title: "The Eye of Hellion"
+  - Id: 19128
+    Title: "The Eye of Hellion"
+  - Id: 19129
+    Title: "The Eye of Hellion"
+  - Id: 50000
+    Title: "Pirate Dagger materials"
+  - Id: 50001
+    Title: "Weather Beaten Old Man"
+  - Id: 50002
+    Title: "Lost Treasure?"
+  - Id: 50003
+    Title: "Lost Treasure?"
+  - Id: 50004
+    Title: "The Old Man's Treasure"
+  - Id: 50005
+    Title: "The Old Man's Treasure"
+  - Id: 50006
+    Title: "The Old Man's Treasure"
+  - Id: 50007
+    Title: "The Old Man's Treasure"
+  - Id: 50008
+    Title: "The Old Man's Treasure"
+  - Id: 50009
+    Title: "The Old Man's Treasure"
+  - Id: 50010
+    Title: "A special lock pick"
+  - Id: 50011
+    Title: "The special lock pick"
+  - Id: 50012
+    Title: "Use the lock pick"
+  - Id: 50013
+    Title: "Broken lock pick"
+  - Id: 50015
+    Title: "The empty treasure box"
+  - Id: 50016
+    Title: "The empty treasure box"
+  - Id: 50017
+    Title: "The empty treasure box"
+  - Id: 50018
+    Title: "The empty treasure box"
+  - Id: 50019
+    Title: "The empty treasure box"
+  - Id: 50020
+    Title: "The empty treasure box"
+  - Id: 50021
+    Title: "J Roger"
+  - Id: 50022
+    Title: "J Roger's key materials"
+  - Id: 50023
+    Title: "Conversation with J Roger"
+  - Id: 50024
+    Title: "Bury the treasure"
+  - Id: 50025
+    Title: "Bury the treasure"
+  - Id: 50026
+    Title: "Bury the treasure"
+  - Id: 50027
+    Title: "Buried treasure"
+  - Id: 50028
+    Title: "Stolen treasure!"
+  - Id: 50029
+    Title: "A Pirate's Spirit!"
+  - Id: 60001
+    Title: "Monster Extermination"
+  - Id: 60002
+    Title: "Monster Extermination"
+  - Id: 60003
+    Title: "Monster Extermination"
+  - Id: 60004
+    Title: "Monster Extermination"
+  - Id: 60005
+    Title: "Monster Extermination"
+  - Id: 60006
+    Title: "Monster Extermination"
+  - Id: 60007
+    Title: "Endless Tower Effect"
+  - Id: 60008
+    Title: "Endless Tower Time Limit"
+  - Id: 60009
+    Title: "Orc Hero"
+  - Id: 60010
+    Title: "Derik Ver's Request"
+  - Id: 60011
+    Title: "Investigation of Byalan"
+  - Id: 60012
+    Title: "Investigation of Abyss"
+  - Id: 60013
+    Title: "Monster Investigation"
+  - Id: 60014
+    Title: "Geffen Dungeon's Monster Investigation"
+  - Id: 60015
+    Title: "Geffen Dungeon's Monster Investigation"
+  - Id: 60016
+    Title: "Geffen Dungeon's Monster Investigation"
+  - Id: 60017
+    Title: "Geffen Dungeon's Monster Investigation"
+  - Id: 60018
+    Title: "Byalan Dungeon's Monster Investigation"
+  - Id: 60019
+    Title: "Byalan Dungeon's Monster Investigation"
+  - Id: 60020
+    Title: "Byalan Dungeon's Monster Investigation"
+  - Id: 60021
+    Title: "Byalan Dungeon's Monster Investigation"
+  - Id: 60022
+    Title: "Abyss Lake's Monster Investigation"
+  - Id: 60023
+    Title: "Abyss Lake's Monster Investigation"
+  - Id: 60024
+    Title: "Abyss Lake's Monster Investigation"
+  - Id: 60025
+    Title: "Abyss Lake's Monster Investigation"
+  - Id: 60026
+    Title: "Continuing the Investigation"
+  - Id: 60027
+    Title: "Investigating Aldebaran"
+  - Id: 60028
+    Title: "Monster Investigation"
+  - Id: 60029
+    Title: "Aldebaran Monster Investigation"
+  - Id: 60030
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60031
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60032
+    Title: "Lutie Field Monster Investigation"
+  - Id: 60033
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60034
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60035
+    Title: "Aldebaran Monster Investigation"
+  - Id: 60036
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60037
+    Title: "Clock Tower Monster Investigation"
+  - Id: 60038
+    Title: "Aldebaran Monster Investigation"
+  - Id: 60039
+    Title: "Investigation of Glastheim"
+  - Id: 60040
+    Title: "Investigation of Glastheim"
+  - Id: 60041
+    Title: "Monster Investigation"
+  - Id: 60042
+    Title: "Investigation of Glastheim"
+  - Id: 60043
+    Title: "Glastheim Monster Investigation"
+  - Id: 60044
+    Title: "Glastheim Monster Investigation"
+  - Id: 60045
+    Title: "Investigation of Glastheim"
+  - Id: 60046
+    Title: "Glastheim Monster Investigation"
+  - Id: 60047
+    Title: "Glastheim Monster Investigation"
+  - Id: 60048
+    Title: "Investigation of Glastheim"
+  - Id: 60049
+    Title: "Glastheim Monster Investigation"
+  - Id: 60050
+    Title: "Glastheim Monster Investigation"
+  - Id: 60051
+    Title: "Investigation of Glastheim"
+  - Id: 60052
+    Title: "Glastheim Monster Investigation"
+  - Id: 60053
+    Title: "Glastheim Monster Investigation"
+  - Id: 60054
+    Title: "Investigation of Glastheim"
+  - Id: 60055
+    Title: "Glastheim Monster Investigation"
+  - Id: 60056
+    Title: "Glastheim Monster Investigation"
+  - Id: 60057
+    Title: "Glastheim Monster Investigation"
+  - Id: 60058
+    Title: "Derik Ver's Brother"
+  - Id: 60059
+    Title: "A history lesson"
+  - Id: 60060
+    Title: "The Crown of Deceit"
+  - Id: 60061
+    Title: "A magic solvent"
+  - Id: 60062
+    Title: "Rendering the crown Inert"
+  - Id: 60101
+    Title: "Hunting Peco Pecos"
+    Targets:
+      - Mob: PECOPECO
+        Count: 50
+  - Id: 60102
+    Title: "Hunting Peco Pecos"
+    Targets:
+      - Mob: PECOPECO
+        Count: 100
+  - Id: 60103
+    Title: "Hunting Peco Pecos"
+    Targets:
+      - Mob: PECOPECO
+        Count: 150
+  - Id: 60104
+    Title: "Hunting Hodes"
+    Targets:
+      - Mob: HODE
+        Count: 50
+  - Id: 60105
+    Title: "Hunting Hodes"
+    Targets:
+      - Mob: HODE
+        Count: 100
+  - Id: 60106
+    Title: "Hunting Hodes"
+    Targets:
+      - Mob: HODE
+        Count: 150
+  - Id: 60107
+    Title: "Hunting Fabres"
+    Targets:
+      - Mob: FABRE
+        Count: 50
+  - Id: 60108
+    Title: "Hunting Fabres"
+    Targets:
+      - Mob: FABRE
+        Count: 100
+  - Id: 60109
+    Title: "Hunting Fabres"
+    Targets:
+      - Mob: FABRE
+        Count: 150
+  - Id: 60110
+    Title: "Hunting Pupa"
+    Targets:
+      - Mob: PUPA
+        Count: 50
+  - Id: 60111
+    Title: "Hunting Pupa"
+    Targets:
+      - Mob: PUPA
+        Count: 100
+  - Id: 60112
+    Title: "Hunting Pupa"
+    Targets:
+      - Mob: PUPA
+        Count: 150
+  - Id: 60113
+    Title: "Hunting Cocos"
+    Targets:
+      - Mob: COCO
+        Count: 50
+  - Id: 60114
+    Title: "Hunting Cocos"
+    Targets:
+      - Mob: COCO
+        Count: 100
+  - Id: 60115
+    Title: "Hunting Cocos"
+    Targets:
+      - Mob: COCO
+        Count: 150
+  - Id: 60116
+    Title: "Hunting Caramels"
+    Targets:
+      - Mob: CARAMEL
+        Count: 50
+  - Id: 60117
+    Title: "Hunting Caramels"
+    Targets:
+      - Mob: CARAMEL
+        Count: 100
+  - Id: 60118
+    Title: "Hunting Caramels"
+    Targets:
+      - Mob: CARAMEL
+        Count: 150
+  - Id: 60119
+    Title: "Hunting Alligators"
+    Targets:
+      - Mob: ALLIGATOR
+        Count: 50
+  - Id: 60120
+    Title: "Hunting Alligators"
+    Targets:
+      - Mob: ALLIGATOR
+        Count: 100
+  - Id: 60121
+    Title: "Hunting Alligators"
+    Targets:
+      - Mob: ALLIGATOR
+        Count: 150
+  - Id: 60122
+    Title: "Hunting Creamys"
+    Targets:
+      - Mob: CREAMY
+        Count: 50
+  - Id: 60123
+    Title: "Hunting Creamys"
+    Targets:
+      - Mob: CREAMY
+        Count: 100
+  - Id: 60124
+    Title: "Hunting Creamys"
+    Targets:
+      - Mob: CREAMY
+        Count: 150
+  - Id: 60125
+    Title: "Hunting Demon Pungus"
+    Targets:
+      - Mob: DEMON_PUNGUS
+        Count: 50
+  - Id: 60126
+    Title: "Hunting Demon Pungus"
+    Targets:
+      - Mob: DEMON_PUNGUS
+        Count: 100
+  - Id: 60127
+    Title: "Hunting Demon Pungus"
+    Targets:
+      - Mob: DEMON_PUNGUS
+        Count: 150
+  - Id: 60128
+    Title: "Hunting Dokebi"
+    Targets:
+      - Mob: DOKEBI
+        Count: 50
+  - Id: 60129
+    Title: "Hunting Dokebi"
+    Targets:
+      - Mob: DOKEBI
+        Count: 100
+  - Id: 60130
+    Title: "Hunting Dokebi"
+    Targets:
+      - Mob: DOKEBI
+        Count: 150
+  - Id: 60131
+    Title: "Hunting Dryads"
+    Targets:
+      - Mob: DRYAD
+        Count: 50
+  - Id: 60132
+    Title: "Hunting Dryads"
+    Targets:
+      - Mob: DRYAD
+        Count: 100
+  - Id: 60133
+    Title: "Hunting Dryads"
+    Targets:
+      - Mob: DRYAD
+        Count: 150
+  - Id: 60134
+    Title: "Hunting Frilldora"
+    Targets:
+      - Mob: FRILLDORA
+        Count: 50
+  - Id: 60135
+    Title: "Hunting Frilldora"
+    Targets:
+      - Mob: FRILLDORA
+        Count: 100
+  - Id: 60136
+    Title: "Hunting Frilldora"
+    Targets:
+      - Mob: FRILLDORA
+        Count: 150
+  - Id: 60137
+    Title: "Hunting Goats"
+    Targets:
+      - Mob: GOAT
+        Count: 50
+  - Id: 60138
+    Title: "Hunting Goats"
+    Targets:
+      - Mob: GOAT
+        Count: 100
+  - Id: 60139
+    Title: "Hunting Goats"
+    Targets:
+      - Mob: GOAT
+        Count: 150
+  - Id: 60140
+    Title: "Hunting Golems"
+    Targets:
+      - Mob: GOLEM
+        Count: 50
+  - Id: 60141
+    Title: "Hunting Golems"
+    Targets:
+      - Mob: GOLEM
+        Count: 100
+  - Id: 60142
+    Title: "Hunting Golems"
+    Targets:
+      - Mob: GOLEM
+        Count: 150
+  - Id: 60143
+    Title: "Hunting Leaf Cats"
+    Targets:
+      - Mob: LEAF_CAT
+        Count: 50
+  - Id: 60144
+    Title: "Hunting Leaf Cats"
+    Targets:
+      - Mob: LEAF_CAT
+        Count: 100
+  - Id: 60145
+    Title: "Hunting Leaf Cats"
+    Targets:
+      - Mob: LEAF_CAT
+        Count: 150
+  - Id: 60146
+    Title: "Hunting Skeletons"
+    Targets:
+      - Mob: SKELETON
+        Count: 50
+  - Id: 60147
+    Title: "Hunting Skeletons"
+    Targets:
+      - Mob: SKELETON
+        Count: 100
+  - Id: 60148
+    Title: "Hunting Skeletons"
+    Targets:
+      - Mob: SKELETON
+        Count: 150
+  - Id: 60149
+    Title: "Hunting Munaks"
+    Targets:
+      - Mob: MUNAK
+        Count: 50
+  - Id: 60150
+    Title: "Hunting Munaks"
+    Targets:
+      - Mob: MUNAK
+        Count: 100
+  - Id: 60151
+    Title: "Hunting Munaks"
+    Targets:
+      - Mob: MUNAK
+        Count: 150
+  - Id: 60152
+    Title: "Hunting Sohees"
+    Targets:
+      - Mob: SOHEE
+        Count: 50
+  - Id: 60153
+    Title: "Hunting Sohees"
+    Targets:
+      - Mob: SOHEE
+        Count: 100
+  - Id: 60154
+    Title: "Hunting Sohees"
+    Targets:
+      - Mob: SOHEE
+        Count: 150
+  - Id: 60155
+    Title: "Hunting Firelock Soldiers"
+    Targets:
+      - Mob: ANTIQUE_FIRELOCK
+        Count: 50
+  - Id: 60156
+    Title: "Hunting Firelock Soldiers"
+    Targets:
+      - Mob: ANTIQUE_FIRELOCK
+        Count: 100
+  - Id: 60157
+    Title: "Hunting Firelock Soldiers"
+    Targets:
+      - Mob: ANTIQUE_FIRELOCK
+        Count: 150
+  - Id: 60158
+    Title: "Hunting Tengus"
+    Targets:
+      - Mob: TENGU
+        Count: 50
+  - Id: 60159
+    Title: "Hunting Tengus"
+    Targets:
+      - Mob: TENGU
+        Count: 100
+  - Id: 60160
+    Title: "Hunting Tengus"
+    Targets:
+      - Mob: TENGU
+        Count: 150
+  - Id: 60161
+    Title: "Hunting Venatu"
+    Targets:
+      - Mob: VENATU
+        Count: 25
+  - Id: 60162
+    Title: "Hunting Venatu"
+    Targets:
+      - Mob: VENATU
+        Count: 50
+  - Id: 60163
+    Title: "Hunting Venatu"
+    Targets:
+      - Mob: VENATU
+        Count: 75
+  - Id: 60164
+    Title: "Hunting Archdam"
+    Targets:
+      - Mob: ARCHDAM
+        Count: 50
+  - Id: 60165
+    Title: "Hunting Archdam"
+    Targets:
+      - Mob: ARCHDAM
+        Count: 100
+  - Id: 60166
+    Title: "Hunting Archdam"
+    Targets:
+      - Mob: ARCHDAM
+        Count: 150
+  - Id: 60167
+    Title: "Hunting Siromas"
+  - Id: 60168
+    Title: "Hunting Siromas"
+  - Id: 60169
+    Title: "Hunting Siroma"
+  - Id: 60170
+    Title: "Hunting Ice Titans"
+    Targets:
+      - Mob: ICE_TITAN
+        Count: 50
+  - Id: 60171
+    Title: "Hunting Ice Titans"
+    Targets:
+      - Mob: ICE_TITAN
+        Count: 100
+  - Id: 60172
+    Title: "Hunting Ice Titans"
+    Targets:
+      - Mob: ICE_TITAN
+        Count: 150
+  - Id: 60173
+    Title: "Hunting Disguises"
+    Targets:
+      - Mob: DISGUISE
+        Count: 50
+  - Id: 60174
+    Title: "Hunting Disguises"
+    Targets:
+      - Mob: DISGUISE
+        Count: 100
+  - Id: 60175
+    Title: "Hunting Disguises"
+    Targets:
+      - Mob: DISGUISE
+        Count: 150
+  - Id: 60176
+    Title: "Hunting Loli Ruri"
+    Targets:
+      - Mob: LOLI_RURI
+        Count: 50
+  - Id: 60177
+    Title: "Hunting Loli Ruri"
+    Targets:
+      - Mob: LOLI_RURI
+        Count: 100
+  - Id: 60178
+    Title: "Hunting Loli Ruri"
+    Targets:
+      - Mob: LOLI_RURI
+        Count: 150
+  - Id: 60179
+    Title: "Hunting Mantis"
+    Targets:
+      - Mob: MANTIS
+        Count: 50
+  - Id: 60180
+    Title: "Hunting Mantis"
+    Targets:
+      - Mob: MANTIS
+        Count: 100
+  - Id: 60181
+    Title: "Hunting Mantis"
+    Targets:
+      - Mob: MANTIS
+        Count: 150
+  - Id: 60182
+    Title: "Hunting Dancing Dragons"
+  - Id: 60183
+    Title: "Hunting Dancing Dragons"
+  - Id: 60184
+    Title: "Hunting Dancing Dragons"
+  - Id: 60185
+    Title: "Hunting Necromancers"
+  - Id: 60186
+    Title: "Hunting Necromancers"
+  - Id: 60187
+    Title: "Hunting Necromancers"
+  - Id: 60188
+    Title: "Hunting Apocalypse"
+    Targets:
+      - Mob: APOCALIPS
+        Count: 50
+  - Id: 60189
+    Title: "Hunting Apocalypse"
+    Targets:
+      - Mob: APOCALIPS
+        Count: 100
+  - Id: 60190
+    Title: "Hunting Apocalypse"
+    Targets:
+      - Mob: APOCALIPS
+        Count: 150
+  - Id: 60200
+    Title: "Endless Tower Effect"
+  - Id: 60201
+    Title: "Endless Tower Time Limit"
+  - Id: 60301
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: PETIT
+        Count: 100
+  - Id: 60302
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: PETIT
+        Count: 200
+  - Id: 60303
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: FERUS
+        Count: 100
+  - Id: 60304
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: FERUS
+        Count: 200
+  - Id: 60305
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: FERUS_
+        Count: 100
+  - Id: 60306
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: FERUS_
+        Count: 200
+  - Id: 60307
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: ACIDUS
+        Count: 100
+  - Id: 60308
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: ACIDUS
+        Count: 200
+  - Id: 60309
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: ACIDUS_
+        Count: 100
+  - Id: 60310
+    Title: "Dragon Hunting"
+    Targets:
+      - Mob: ACIDUS_
+        Count: 200

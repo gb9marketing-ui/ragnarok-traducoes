@@ -41,7 +41,7 @@ systemctl enable -q --now mariadb
 if [ ! -f "$CRED" ]; then
   DBPASS=$(openssl rand -hex 16)
   S1USER="nngo_$(openssl rand -hex 3)"
-  S1PASS=$(openssl rand -hex 12)
+  S1PASS=$(openssl rand -hex 8)
   printf "DB_USER=nngo\nDB_PASS=%s\nS1_USER=%s\nS1_PASS=%s\n" "$DBPASS" "$S1USER" "$S1PASS" > "$CRED"
   chmod 600 "$CRED"
   mysql -e "CREATE DATABASE IF NOT EXISTS nngo; CREATE USER IF NOT EXISTS 'nngo'@'localhost' IDENTIFIED BY '$DBPASS'; GRANT ALL ON nngo.* TO 'nngo'@'localhost'; FLUSH PRIVILEGES;"
